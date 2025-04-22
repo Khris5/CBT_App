@@ -1,0 +1,2747 @@
+[
+  {
+    "id": "med001",
+    "questionText": "A 10 year old child has undergone surgery and has been received in to the ward with severe pains. Which immediate post-operative pain relief medication would be effective for this child?",
+    "options": ["Demerol.", "Morphine.", "Paracetamol."],
+    "correctAnswer": "B",
+    "rationale": "It is a potent opioid analgesic that is effective in treating severe pain in post-operative patients."
+  },
+  {
+    "id": "med002",
+    "questionText": "A 12-year old Master Setor has been admitted to your ward with the diagnosis of tonsillitis. Which of the following manifestation of patient indicates a systemic response of inflammatory process of his conditions?",
+    "options": ["Dysphagia.", "Fever.", "Weakness."],
+    "correctAnswer": "B",
+    "rationale": "Because it is a physiological response triggered by the release of cytokines which initiates an inflammatory process, a sign of the body's immune system trying to fight off an infection or inflammation."
+  },
+  {
+    "id": "med003",
+    "questionText": "A 15 year old boy was sent to the medical ward with history of poor quality of life since birth. After series of investigation there was a final diagnosis of congenital megacolon. Possible diagnostic investigation requested for patient could be:",
+    "options": [
+      "Barium enema",
+      "CT scan of abdomen",
+      "Full thickness biopsy of colon"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Barium enema is the most appropriate investigation for diagnosing congenital megacolon as it allows direct visualization of the dilated colon."
+  },
+  {
+    "id": "med004",
+    "questionText": "A 16 year old boy has been booked for laparotomy following a diagnosis of intestinal obstruction. Describe the measures for allaying his anxiety prior to surgery? I. Allow patient to express his fears and anxiety II. Encourage patient to start grieving before the surgery III. Ensure relative stay with patient 24 hours",
+    "options": ["I only", "I and II.", "I and III"],
+    "correctAnswer": "A",
+    "rationale": "Encouraging the patient to start grieving before the surgery may increase his stress levels, while ensuring a relative stays with the patient for 24 hours may not be feasible and to necessarily alleviate the patient's anxiety."
+  },
+  {
+    "id": "med005",
+    "questionText": "A 17-year-old student has been booked for laparotomy following a diagnosis of intestinal obstruction. Which of the following measures would you put in place to allay patient's anxiety prior to the surgery? I. Allow patient to express fears and anxieties II. Encourage patient to start grieving before the surgery III. Ensure relatives stay with patient 24 hours IV. Provide a relaxed and non-threatening atmosphere.",
+    "options": ["I and III", "I, III and IV.", "I and V."],
+    "correctAnswer": "B",
+    "rationale": "Encouraging the patient to start grieving before the surgery may increase his anxiety and stress levels, while ensuring a relative stays with the patient for 24 hours may not be feasible and may not necessarily alleviate the patient's anxiety."
+  },
+  {
+    "id": "med006",
+    "questionText": "A 19-year-old female complains of a tender fluctuating left subareolar breast mass. The patient states that she noticed the mass at or around 4 months after giving birth. She denies fever, discomfort, skin changes, trauma to the breast or change in diet. She denies taking any medications and does not breastfeed. Physical exam reveals a slightly larger left breast as compared to the right. No skin changes are noted but a mass is palpable. A white transparent fluid is exuded from bilateral nipples. Ultrasound-guided aspiration of the mass is performed and reveals an echogenic cystic structure with a milk-like fluid. Fat globules are appreciated from the aspirated cyst contents. What is the next best step in management for this patient?",
+    "options": [
+      "Excisional biopsy with wide margins of the cyst.",
+      "Initiate a short course of bromocriptine.",
+      "Follow-up ultrasound to ensure cyst has not recurred."
+    ],
+    "correctAnswer": "C",
+    "rationale": "This will ensure that the cyst has resolved on its own and has not recurred. Option A is incorrect since the ultrasound-guided aspiration did not reveal malignancy, and Bromocriptine is not indicated since there is no evidence of a hormone-related disorder."
+  },
+  {
+    "id": "med007",
+    "questionText": "A 19-year-old female who bites her nails presents with pain that she relates to a hangnail. On examination, there is a painful, fluctuant area with erythema at the proximal nail bed. She has full painless range of motion of the joints of her finger. Sensation is intact. What is the patient's diagnosis?",
+    "options": ["Herpetic whitlow.", "Onychomycosis.", "Paronychia."],
+    "correctAnswer": "C",
+    "rationale": "Paronychia is a common infection of the nail fold that can be caused by bacteria, fungi or viruses, and it typically presents as a painful, red, swollen, and tender area around the nail, which may contain pus or fluid, and in severe cases, it may lead to the formation of an abscess or cellulitis."
+  },
+  {
+    "id": "med008",
+    "questionText": "A 20 year old level 100 student was brought to the OPD by her roommate with complains of inability to sleep and concentrate in class. During history taking, Patient told you she will start menstruation in the next 2 days. She added that she usually feel this way before menstruation. What will be the possible diagnosis of her problem?",
+    "options": [
+      "Dysmenorrhea.",
+      "Endometriosis.",
+      "Premenstrual Dysphoric disorder."
+    ],
+    "correctAnswer": "C",
+    "rationale": "PMDD is a condition in which a woman experiences severe emotional and physical symptoms, such as irritability, mood swings, depression, and bloating, in the days leading up to her menstrual period."
+  },
+  {
+    "id": "med009",
+    "questionText": "A 20-year-old dispatch rider was rushed to the emergency unit with difficulty in breathing. restlessness, chest pain, lacerations on the face and a lost tooth in a fight with a colleague rider. Upon assessment he was diagnosed with Pneumothorax. Which position would ensure improvement in respiration rate? position.",
+    "options": ["Fowler's", "Supine.", "Prone. Surgical Nursing"],
+    "correctAnswer": "A",
+    "rationale": "Pneumothorax is a condition in which air accumulates in the pleural space, causing the lung to collapse and leading to difficulty in breathing. Fowler's position helps to improve respiration by expanding the chest and reducing pressure on the diaphragm."
+  },
+  {
+    "id": "med010",
+    "questionText": "A 21-year-old SIIS graduate reported to your facility with the complaints of swollen neck. On assessment she was diagnosed of having a simple goitre. Which of the following signs and symptoms upon assessment indicate the patient would need a surgical treatment? I. Dysphagia. II. Dyspnea. III. Hoarseness of voice. IV. Cosmetic disfigurement.",
+    "options": ["I. II. III and IV.", "I, and II.", "II, III and IV."],
+    "correctAnswer": "A",
+    "rationale": "Dysphagia can cause difficulty in swallowing, dyspnoea can cause difficulty in breathing, hoarseness of voice can cause difficulties in speech, and cosmetic disfigurement can affect the patient's self-esteem and quality of life. All these are significant signs and symptoms that indicate the need for surgical intervention to relieve symptoms and prevent further complications."
+  },
+  {
+    "id": "med011",
+    "questionText": "A 23 year old lady with a 3 day old new born baby noticed that the baby had not passed stools since birth. She took the baby to the Traditional Birth Attendant who examined the baby and realized that the baby had no anus. The mother and her baby have been referred to your facility for emergency surgery to correct the anomaly. Which operation is likely to be performed for the baby?",
+    "options": ["Anorectoplasty.", "Colostomy.", "Ileostomy."],
+    "correctAnswer": "A",
+    "rationale": "It involves creating a new anal opening and reconstructing the rectum to allow for normal bowel movements."
+  },
+  {
+    "id": "med012",
+    "questionText": "A 23 year old patient is admitted to the surgical ward on account of suspected appendicitis. The patient complains of pain around the umbilicus that extends to the lower part of the abdomen, which is about one third distance between the anterior superior iliac spine and umbilicus. Patient's pain is likely to be emanating from...... point.",
+    "options": ["Rousing's", "Hamman's", "McBurney's"],
+    "correctAnswer": "C",
+    "rationale": "Is a classic sign of appendicitis due to its location at the intersection of the right lateral abdominal muscles and the line drawn from the right anterior superior iliac spine to the umbilicus, where tenderness is often present during inflammation of the appendix."
+  },
+  {
+    "id": "med013",
+    "questionText": "A 23 year old patient is admitted to the surgical ward on account of suspected appendicitis. The patient complains of pain around the umbilicus that extends to the lower part of the abdomen, which is about one third distance between the anterior superior illiac spine and umbilicus. Which of the following is NOT a clinical manifestation of appendicitis?",
+    "options": [
+      "Abdominal rebound tenderness.",
+      "Abdominal flaccidity.",
+      "Umbilical pain that extends in the right lower quadrant."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Inflamed appendices cause abdominal rigidity, not flaccidity."
+  },
+  {
+    "id": "med014",
+    "questionText": "A 23-year-old female with a history of smoking is on admission on your ward for the removal of uterine fibroids. Which of the following is NOT a risk factor for postoperative nausea and vomiting?",
+    "options": ["Smoking history.", "Female sex.", "Gynecological surgery."],
+    "correctAnswer": "B",
+    "rationale": "Being a female is not a risk factor in and of itself."
+  },
+  {
+    "id": "med015",
+    "questionText": "A 24-year old woman comes into your office after spilling hot tea on her hand. The affected area is red with a few blisters. On examination, the burn blanched with pressure. The patient notes worsening pain when the burn is exposed to the cold wind. How would you classify this burn?",
+    "options": [
+      "Superficial partial-thickness",
+      "Deep partial-thickness",
+      "Full thickness"
+    ],
+    "correctAnswer": "A",
+    "rationale": "The presence of redness, blisters, and pain are indicative of a burn affecting the epidermis and upper dermis. The blanching with pressure also suggests that the burn has not destroyed the underlying dermal vessels."
+  },
+  {
+    "id": "med016",
+    "questionText": "A 25-year old man undergoes 3 column excisional hemorrhoidectomy for combined internal external hemorrhoids unresponsive to medical therapy. Later that evening of the postoperative day zero, he develops suprapubic discomfort and inability to urinate. Which of the following likely contributed the MOST to this complication?",
+    "options": [
+      "Prolonged duration of hemorrhoid symptoms.",
+      "Performing 3 quadrant hemorrhoidectomy instead of 2.",
+      "Limiting intravenous fluids in the postoperative recovery unit."
+    ],
+    "correctAnswer": "B",
+    "rationale": "This may have caused the compression of the pudendal nerve which plays a role in controlling the external urethral sphincter, leading to urinary retention and suprapubic discomfort."
+  },
+  {
+    "id": "med017",
+    "questionText": "A 25-year-old university student reports at your facility with a small painless lump in her left breast. She is anxious that it might be cancer because her mother died of cervical cancer. Your response to her will be based on the knowledge that the MOST likely cause of breast lump is",
+    "options": ["Fibroadenoma", "Breast abscess", "Fibrocystic complex"],
+    "correctAnswer": "A",
+    "rationale": "Fibroadenomas are the most common type of benign breast tumour and are frequently seen in young women. Breast abscess and fibrocystic complex are less likely causes of a painless breast lump in a young woman."
+  },
+  {
+    "id": "med018",
+    "questionText": "A 25-year-old woman presents to the Emergency Unit with burns sustained after dropping a pan of hot oil. The Nurse noticed bright red skin with bullae on the anterior trunk and the right arm. The patient states her pain is 9 on a scale of 1-10. What is the total body surface area (TBSA) of the patient's burns?",
+    "options": ["18%", "27%", "9%"],
+    "correctAnswer": "B",
+    "rationale": "According to the rule of nines, the anterior trunk represents 18% of the total body surface area, while the right arm represents 9% of the total body surface area. Therefore, the total body surface area (TBSA) of the patient's burns would be 18% + 9% = 27%."
+  },
+  {
+    "id": "med019",
+    "questionText": "A 27-year-old Mechanic with burns is to be admitted to your ward where you work. Upon assessment, you noticed that he has fluid filled vesicles that are red, shiny and moderate oedema on the face, anterior trunk, and in both arms and legs. He is also in severe pains suspected to be caused by nerve injury. Which of the following actions would you avoid in order to prevent infection of patient's wound?",
+    "options": [
+      "Adhering to strict hand hygiene practices in the care of the patient.",
+      "Covering patient's wound with prescribed antimicrobial cream.",
+      "Using a clean glove when applying antimicrobial ointments."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Covering the patient's wound with antimicrobial cream may trap in moisture and create a favourable environment for bacterial growth, leading to wound infection."
+  },
+  {
+    "id": "med020",
+    "questionText": "A 27-year-old Seamstress is to be admitted to your ward for further management of burns involving the face, anterior trunk, arms, perineum and both legs. She was unconscious on arrival. Which of the following complications of the urinary system is the patient likely to experience in the emergent phase?",
+    "options": [
+      "Acute renal failure.",
+      "Renal ischemia.",
+      "Acute tubular necrosis."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Due to the decrease in renal blood flow, caused by hypovolemia and/or hypotension, which can result in acute tubular necrosis and subsequent renal failure."
+  },
+  {
+    "id": "med021",
+    "questionText": "A 29-year-old Teacher with a diagnosis of Diabetes Mellitus reported with a necrossed wound on the right limb which had spread to adjacent tissues. The Surgeon recommended below knee amputation which was subsequently done. Later, patient complained she felt the limb was still present. Which of the following post-operative nursing diagnosis would be considered when caring for the patient? Surgical Nursing I. Disturbed body image related to amputation. II. Impaired physical mobility related to amputation of lower limb. III. Ineffective airway clearance related to bronchial obstruction.",
+    "options": ["II and III", "I and II.", "I and III"],
+    "correctAnswer": "B",
+    "rationale": "Option III is not relevant to the patient's situation as it does not address any issues related to the amputation of the patient's limb."
+  },
+  {
+    "id": "med022",
+    "questionText": "A 30-year old lady went through a routine assessment of the cervical epithelium. The histology report revealed changes in cell size, shape and organization. This indicates cellular ...... ",
+    "options": ["Atrophy", "Hyperplasia", "Dysplasia"],
+    "correctAnswer": "C",
+    "rationale": "Cellular dysplasia refers to abnormal changes in the size, shape and organization of cells which can potentially lead to cancer formation if left untreated."
+  },
+  {
+    "id": "med023",
+    "questionText": "A 30-year-old dispatch rider was rushed to the emergency unit with difficulty in breathing, restlessness, chest pain, lacerations on the face and a lost tooth in a fight with a colleague rider. Upon assessment he was diagnosed with Pneumothorax. A chest tube has been inserted for a patient with pneumothorax. Which of the following is an appropriate finding when assessing the chest tube drainage system?",
+    "options": [
+      "Accumulation of clots in the tubing.",
+      "Bubbling during expiration.",
+      "Chest tube is inserted in the fifth intercostal space."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It indicates that air is being removed from the pleural space through the chest tube, which is necessary for the lungs to re-expand and for the pneumothorax to resolve."
+  },
+  {
+    "id": "med024",
+    "questionText": "A 30-year-old female is diagnosed with Hashimoto’s thyroiditis. Which of the following characterizes this disorder?",
+    "options": [
+      "Increased basal metabolic rate.",
+      "Autoantibodies against TSH receptors.",
+      "Increased production of T4."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Hashimoto's thyroiditis is autoimmune disorder in which the body produces antibodies against its own thyroid gland, leading to inflammation and damage to the gland, which results in decreased production of thyroid hormones (hypothyroidism)."
+  },
+  {
+    "id": "med025",
+    "questionText": "A 30-year-old female undergoes CT scan for a minor trauma and is found incidentally to have a 2cm cystic mass in the presacral space. She is otherwise health, with no family history. Reetal exam confirms a small mass felt posteriority. The examining finger is able to easily reach above the mass. MRI confirms a cystic lesion without invasion. What do you recommend next?",
+    "options": [
+      "Stool softeners, fiber.",
+      "Observation",
+      "Flexible sigmoidoscopy."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The patient is asymptomatic and the lesion is incidentally discovered. The fact that the examining finger can easily reach above the mass suggests that it is low in the presacral space, making malignancy less likely. Additionally, the MRI confirms a cystic lesion without invasion. Therefore, observation is the most appropriate next step."
+  },
+  {
+    "id": "med026",
+    "questionText": "A 30-year-old male patient complains of diffuse low back pain without radicular symptom. His pain is worse in the morning and usually improves with ibuprofen. Radiographic studies reveal a \"bamboo\" appearance to the spine. Which of the following is most likely the cause of the patient's back pain?",
+    "options": [
+      "Ankylosing spondylitis",
+      "Herniated dise",
+      "Rheumatoid arthritis"
+    ],
+    "correctAnswer": "A",
+    "rationale": "The \"bamboo\" appearance of the spine on radiographic studies is a classic finding of ankylosing spondylitis, a chronic inflammatory disease that affects the spine and sacroiliac joints."
+  },
+  {
+    "id": "med027",
+    "questionText": "A 30-year-old Microsoft Developer reported to the Out Patient Department of your hospital with a history of blurred vision as a result of splash of pepper in the right eye. At the hospital, he was taken through a series of visual test and examinations. A diagnosis of glaucoma was finally made. Which of the following are possible nursing diagnosis for the patient.",
+    "options": ["II and III.", "I and II.", "I and III."],
+    "correctAnswer": "C",
+    "rationale": "I and III can increase the risk of injury and affect the patient's ability to perform activities of daily living, while II is not relevant as glaucoma does not directly affect fluid volume."
+  },
+  {
+    "id": "med028",
+    "questionText": "A 30-year-old reported to the Out Patient Department of your hospital with a history of blurred vision as a result of splash of pepper in the right eye. At the hospital, she was taken through series of visual test and examination. A diagnosis of glaucoma was finally made. Visual acuity of the patient can be measured using a Snellen's chart placed at ...... m from the patient ",
+    "options": ["5.", "3.", "6."],
+    "correctAnswer": "C",
+    "rationale": "To provide a standardized distance for measuring visual acuity, which is determined by the smallest letters that a person can read accurately from that distance."
+  },
+  {
+    "id": "med029",
+    "questionText": "A 32 year old known hypertensive is admitted to your ward for abdominal surgery. During your assessment, you found out that he uses diuretics to manage the hypertension. Which of the following would you reports to the surgeon?",
+    "options": [
+      "Serum potassium of 3.3",
+      "Blood pressure of 140/80mmHg",
+      "Pulse rate of 105 beats per minutes"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Diuretics can cause potassium loss through increased urine output, and low serum potassium levels can result in life-threatening cardiac arrhythmias."
+  },
+  {
+    "id": "med030",
+    "questionText": "A 32 year old Mason has been referred to your facility with the diagnosis of spinal injury secondly to fall from height two days ago. On arrival to your ward, you noticed that patient was dehydrated and his rounds, patient's doctor said the healthcare team should immobilize patient's neck. As a Nurse, which of the following techniques would you avoid in stabilizing the patients neck? The use of a",
+    "options": ["Backrest", "Soft cervical collar.", "Towel roll."],
+    "correctAnswer": "A",
+    "rationale": "The use of a backrest can cause hyperextension of the neck and further damage to the spinal cord, making it an inappropriate technique for stabilizing the patient's neck."
+  },
+  {
+    "id": "med031",
+    "questionText": "A 32 year old woman has been admitted for knee surgery. Which of the following data obtained from her during your pre-operative assessment should be reported to the surgeon before surgery?",
+    "options": [
+      "Lack of knowledge of the procedure.",
+      "History of postoperative infection following a enesarean section.",
+      "Statement that her last menstrual period was 8 weeks ago,"
+    ],
+    "correctAnswer": "B",
+    "rationale": "This could indicate a risk for surgical site infection during the knee surgery. The surgeon may want to take additional precautions or prescribe prophylactic antibiotics to prevent infection. Option C is important to note for anaesthetists but not necessarily for the surgeon,"
+  },
+  {
+    "id": "med032",
+    "questionText": "A 32-year-old food vendor is to be admitted to your ward for further management of burns involving the face, anterior trunk, arms, perineum and both legs. She was unconscious on arrival. The cardiovascular system complications that the patient is most likely to experience are dysrhythmia and ....... shock.",
+    "options": ["Hypovolemic.", "Septic", "Neurogenic"],
+    "correctAnswer": "A",
+    "rationale": "Burns involving a large surface area of the body can lead to a significant loss of fluids and electrolytes, resulting in hypovolemia and subsequent shock."
+  },
+  {
+    "id": "med033",
+    "questionText": "A 33 year old banker reports to your facility with complains of low appetite and fatigue. His past medical history indicates he's suffering from anaemia for the past two (2) years. Family medical history indicates he lost his elder sister to acute leukemia. The physician has requested of an image to help inspect his blood flow, oxygen intake and metabolism of the organs and tissues. The patient is anxious because he remembers his sister suffered claustrophobia after the imaging. What education would you give to him to alleviate his fears about claustrophobia.",
+    "options": [
+      "It is normal to experience that as it is associated with the process.",
+      "It is situational and short-lived and it would no longer bother him.",
+      "It is not everyone who experiences this condition after the procedure."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Claustrophobia is an anxiety disorder that is characterized by an irrational and intense fear of enclosed or small spaces. While some people may feel anxious or claustrophobic during imaging procedures, this is not a universal experience."
+  },
+  {
+    "id": "med034",
+    "questionText": "A 33-year-old Accountant who works in a community factory was seen trapped under debris after the building was razed down by fire. He sustained second degree burns with spinal injury. He is to be admitted into your ward for management. As a Registered Nurse who works at the burns unit, which of the following would you consider as the greatest threat to a patient with a major burns?",
+    "options": [
+      "Wound infection.",
+      "Disturbed body image.",
+      "Hypovolemic shock"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It can lead to decreased blood flow to vital organs and tissues, resulting in organ failure and death."
+  },
+  {
+    "id": "med035",
+    "questionText": "A 34 year old man has been brought in to the ward from theatre after an appendectomy. His BP has dropped from 140/80mmHg to 110/60mmHg with pulse change of 68bpm to 84bpm, which of the following would you include in your nursing action. I. Increase oxygen rate. II. Reduce IV infusion rate. III. Check vital signs IV. Assess for bleeding.",
+    "options": ["I and II.", "I, II and IV.", "II and III."],
+    "correctAnswer": "B",
+    "rationale": "The patient's decreased BP and increased heart rate suggest hypovolemia and possible bleeding. Increasing the O2 rate can help ensure adequate tissue oxygenation, reducing the IV fusion rate can prevent fluid overload and assessing for beeding can help identify and address any post-operative haemorrhage."
+  },
+  {
+    "id": "med036",
+    "questionText": "A 34 year old woman has been diagnosed with an obstructed fallopian tube due to an infection, What will you anticipate teaching this patient about?",
+    "options": [
+      "Use of hormonal therapy.",
+      "Possible difficulty in getting pregnant.",
+      "Irregularities of menstrual cycle."
+    ],
+    "correctAnswer": "B",
+    "rationale": "An obstructed fallopian tube can impair the passage of the egg for fertilization and implantation, making it difficult to get pregnant naturally."
+  },
+  {
+    "id": "med037",
+    "questionText": "A 34-year-old woman who is 24 weeks pregnant arrives at a level one trauma center after being struck by an all-terrain vehicle. She is stable at the seene with mild complaints of mid-epigastric pain on palpation. The nurse inmediately starts electronic fetal monitoring. Her respiratory rate is 16cpm, heart rate is 88 bpm, and a B/P of 130/85mmHg. Her CBC and urinalysis are normal and her toxicology sereen is negative. Trauma series radiographs are unremarkable. Kleihaur- Betke test is negative. Obstetrics has been consulted. Which of the following is the next best step in the evaluation of this patient?",
+    "options": [
+      "Perform a speculum exam to look for signs of abruption.",
+      "Perform a diagnostic peritoneal lavage.",
+      "Perform Focused Assessment with Sonography in Trauma examination at the bedside."
+    ],
+    "correctAnswer": "C",
+    "rationale": "A FAST exam will provide real-time imaging of potential abdominal bleeding which needs to be ruled out given the traumatic injury."
+  },
+  {
+    "id": "med038",
+    "questionText": "A 35 year old Tiller has been referred to your facility with the diagnosis of spinal injury secondly to fall from height two days ago. On arrival to your ward, you noticed that patient was dehydrated and his clothes were soaked with urine. As a Registered Nurse, which of the following nursing interventions would you consider most appropriate for the management of patient's urinary related problem? I. Monitor patient's fluid intake and output. II. Insert the correct size of urinary catheter and connect to a drainage bag III. Check patient's vital signs and record. IV. Ensure patient has at least 31. of fluid omaks 24 hours.",
+    "options": ["1. II and III", "1, II and IV.", "1, 111 and IV."],
+    "correctAnswer": "A",
+    "rationale": "Option iv focuses on increasing flou intake, which may exacerbate the patient's urmay incontinence,"
+  },
+  {
+    "id": "med039",
+    "questionText": "A 35-year man with known ileocecal Crofur disease controlled with sulfasalazime presents w 1 week of severe pain and bright red bleeding afte bowel movements. The pain last about 45 minu and is improved with sitz baths. On examination you noticed a small superficial tear in the anodem in the posterior midline, without any othe abnormalities. He cannot tolerate anoscopy due pain. How do you proceed?",
+    "options": [
+      "Lateral internal sphincterotomy.",
+      "Exam under anesthesia, biopsy.",
+      "Fiber supplementation, sitz batis."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The patient's symptoms and physical exam findings are consistent with an acute and fissure. Treatment options include stool softeners, increased fibre intake, sitz baths, and topical analgesics."
+  },
+  {
+    "id": "med040",
+    "questionText": "A 35-year-old trader reported to your facility will difficulty in swallowing, hoarseness of voice and pain in the neck and throat. Upon assessment, the lymph nodes in the neck were swollen with a lump A diagnosis of Thyroid Cancer was established Which of the following investigation is most appropriate to confirm the diagnosis?",
+    "options": ["Biopsy.", "Physical examination.", "Blood test."],
+    "correctAnswer": "A",
+    "rationale": "Biopsy is the gold standard for confirming a diagnosis of cancer. It involves taking a sample of the affected tissue for laborato analysis, which can accurately determine th presence of cancerous cells and the type of caticer"
+  },
+  {
+    "id": "med041",
+    "questionText": "A 35-year-old woman is evaluated for a bulge noted at the umbilicus by her primary physician, Other than morbid obesity, she denies any other medical history. On further questioning, the patient rates discomfort. The patient has a body mass index of 45 kg/m2 with a small bulge apparent at the umbilicus during Valsalva, with a fascial defect of approximately 5 mm. It is easily reducible. She has no previous scars. What do you recommend?",
+    "options": ["Observation.", "CT scan.", "Ultrasound."],
+    "correctAnswer": "A",
+    "rationale": "An ultrasound is a non-invasive and cost-effective modality that can diagnose an umbilical hernia, assess the size of the defect, and evaluate the contents of the hernia sac without radiation exposure."
+  },
+  {
+    "id": "med042",
+    "questionText": "A 35-year-old woman presents to the emergency department after an episode of syncope. Family members state that she developed acute-onset right-sided chest pain accompanied by shortness of breath earlier that day. She underwent an appendectomy approximately 1 month ago. Physical examination shows an heart rate of 120bpm, respiratory rate of 26cpm, and BP of 80/50mmHg. Computed tomographic pulmonary angiogram of the chest confirms the presence of large bilateral pulmonary emboli. Lower extremity ultrasound is negative for deep venous thrombosis. The patient is started on unfractionated heparin and transferred to the ICU, Four hours later, vital signs show a blood pressure of 70/50 mmHg and a heart rate of 125bpm. After appropriate fluid resuscitation, she is started on an infusion with norepinephrine. Which of the following is most appropriate at this time?",
+    "options": [
+      "Continue anticoagulation and administer -PA only if an echocardiogram confirms RV straio,",
+      "Administer -PA and discontinue anticoagulation with heparin during thrombolysis.",
+      "Change anticoagulation to low-molecular-weight heparin and administer t-PA."
+    ],
+    "correctAnswer": "A",
+    "rationale": "t-PA administration is reserved for high-risk patients with massive pulmonary embolism or significant RV strain, confirmed by echocardiography, and not routinely given in all patients with pulmonary embolism. Discontinuing anticoagulation during thrombolysis can increase the risk of recurrent thrombosis (B). Changing anticoagulation to low-molecular-weight heparin and administering t-PA simultaneously is not recommended because of the risk of bleeding complications. (C)."
+  },
+  {
+    "id": "med043",
+    "questionText": "A 36 weeks pregnant mother reported to the OPD with contractions. The term \"contraction of the uterus\" means",
+    "options": [
+      "Abdominal pain felt by the pregnant woman at term.",
+      "Temporary shortening and thickening of muscle fibres.",
+      "Permanent partial shortening of muscle fibres."
+    ],
+    "correctAnswer": "B",
+    "rationale": "This occurs due to the coordinated contraction of uterine smooth musele cells, which is initiated by the release of oxytocin and leads to the expulsion of the foetus during childbirth,"
+  },
+  {
+    "id": "med044",
+    "questionText": "A 36 year old mother of two is to undergo Hysterectomy as a result of bleeding fibroids. The main focus of psychological preparation of a patient for a surgical operation is",
+    "options": [
+      "knowing the culture of the patient.",
+      "knowing what the patient knows about the operation.",
+      "knowing the supporting system of patient."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Patients may feel more confident and supported when they have a clear understanding of who will be there for them before, during, and after the surgery."
+  },
+  {
+    "id": "med045",
+    "questionText": "A 36-year-old teacher who has been on admission on your ward with a diagnosis of spinal injury is experiencing a sense of loss. She has been exhibiting signs of depression such as sadness and refusal to participate in self-care. As a Nurse, which of the following interventions would you avoid in the management of the patient's behavior? The nurse must I. Encourage family involvement in patient's care. II. Give cheerful and willing assistance with activities of daily living. III. Be sympathetic towards the patient. IV. Maintain a sense of humour.",
+    "options": ["I, II, III and IV.", "III and IV", "I, II and III."],
+    "correctAnswer": "B",
+    "rationale": "Being sympathetic implies pity towards the patient which can make the patient feel helpless and incapable, while using humour can be misinterpreted as belittling the patient's feelings, especially when dealing with patients who are experiencing depression."
+  },
+  {
+    "id": "med046",
+    "questionText": "A 39-year-old Tiller reported to your facility with abdominal pain, straining on urination and urine dribbling out after urination. He further explained that he urinates frequently at night which affects his sleep. Upon assessment patient was diagnosed with Bemgn Prostatic Hyperplasia and admitted to the ward. As a nurse in charge, what actions would you take to reduce the risk of renal shut down? I. Monitor vital signs and report any abnormally. II. Weigh patient daily III. Maintain adequate intake and output. IV. Observe for peripheral edema.",
+    "options": ["I, II and III", "I, III and IV.", "L, II and Land IV."],
+    "correctAnswer": "C",
+    "rationale": "Option I will help detect any early signs of renal shutdown. Il will help to monitor fluid status and detect any changes in weight. III will help prevent dehydration and ensure that the patient's kidneys are functioning optimally. IV is important to detect any fluid buildup, which may be a sign of renal failure."
+  },
+  {
+    "id": "med047",
+    "questionText": "A 37-year-old driver was involved in a Road Traffic Accident (RTA) and was diagnosed with head injury. He was transferred to your ward for further management. The patient has increased intracranial pressure and a decreased level of consciousness. There is the need to maintain a patent airway for this patient. As a Nurse, which nursing interventions would you carry out to achieve this goal? 1. Keep patient lying on the side. II. Elevate the head of the bed to 30 degrees. III. Suction patient less frequently a suction should last less than 10 seconds. IV. Insert nasogastric tube, aspirate stomach contents to prevent aspiration,",
+    "options": ["I, II, III and IV.", "II, III and IV.", "I, II and III."],
+    "correctAnswer": "C",
+    "rationale": "Keeping a patient with increased intracranial pressure lying on their side can increase the pressure on the affected side of the brain, leading to further damage and compromising the patient's neurological status."
+  },
+  {
+    "id": "med048",
+    "questionText": "A 37-year-old Exporter reported to the Out Patiem Department of your hospital with a history of blurred vision as a result of splash of pepper in the right eye. At the hospital, he was taken through series of visual test and examinations. A diagnosis of glaucoma was finally made. Which of the following would you include in your postoperative teaching for the client to avoid 1. Driving for long distance. II. Lifting objects. III.Bending.",
+    "options": ["II and III.", "I and III.", "I and II."],
+    "correctAnswer": "A",
+    "rationale": "These two activities can significantly increase intraocular pressure and put stress on the eye, which can interfere with the healing process and increase the risk of complications."
+  },
+  {
+    "id": "med049",
+    "questionText": "A 37-year-old female presents to her family physician with a complaint of nipple discharge that she noticed after awakening in the morning. According to the patient, the discharge was intermixed with a brown and clear substance without frank blood. She denies associated pain. fever, or tenderness. She takes a multivitamin and has no previous significant medical history. A physical examination reveals no palpable masses or cords. A small amount of brownish discharge is expressed with manual palpation of the nipple. Labs are unremarkable, and her beta-HCG is negative. Thyroid panel is within normal limits. She denies any trauma to the breast or recent infections. An ultrasound is completed and reveals a dilated duct in her left breast. She undergoes a bilateral mammogram which reveals a small focus of calcification within the duct. What is the next best step in management of this patient?",
+    "options": [
+      "Punch biopsy of the skin, and percutaneous biopsy of any underlying lesion.",
+      "Aspiration then send fluid for gram stain and culture and start intravenous antibiotics.",
+      "Single duct excision is preferred because it breast-feed. preserves nipple sensation and the ability"
+    ],
+    "correctAnswer": "C",
+    "rationale": "This is the next best step becatise single duct excision is the gold standard for the diagnosis and treatment of intraductal papillomas which can present with nipple discharge and imaging findings like a dilated duct and calcifications."
+  },
+  {
+    "id": "med050",
+    "questionText": "A 37-year-old Mechanie with burns is to be admitted to your ward where you work. Upon assessment, you noticed that he has fluid filled vesicles that are red. shiny and moderate oedema on the face, anterior trunk, and in both arms and legs. He is also in severe pains suspected to be caused by nerve injury. The patient is at risk for wound infection related to",
+    "options": [
+      "Nutritional deficit.",
+      "Altered skin integrity..",
+      "Poor wound care practices."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Burns disrupt the skin's natural barrier function, leaving it vulnerable to infection."
+  },
+  {
+    "id": "med051",
+    "questionText": "A 37-year-old woman was involved in a road traffic accident. She was rush to the emergency department with B/P of 70/30mmIIg, heart rate of 140/bpm, and O2 saturation of 72% She continues to decompensate despite two liters of iv fluids. Blood samples are drawn for type and cross match. What is the most appropriate treatment in this situation?",
+    "options": [
+      "Transfuse type AB fresh frozen plasma to replace volume while waiting for type-specific.",
+      "Continue crystalloids and wait for the blood bank to release type-specific.",
+      "Transfuse type O negative blood first until patient's blood type is determined."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Type O negative blood can be given as it is considered a universal donor and does not require cross-matching."
+  },
+  {
+    "id": "med052",
+    "questionText": "A 38 year old Mechanic reported to your facility with lower abdominal pain, burning sensation during urination and a feeling of incomplete bladder emptying after urination for the past 3 weeks. Upon assessment he was diagnosed with urethral stricture and admitted to the surgical ward. As the nurse on duty, what nursing interventions would you take to promote urination? 1. Allow the patient to listen to sound of running water. II. Encourage regular intake of fluids if not contraindicated. III. Provide privacy. IV. Serve prescribed medication.",
+    "options": ["I, III and IV.", "I, II and IV,", "I, II, III and IV."],
+    "correctAnswer": "C",
+    "rationale": "Option I can be a helpful distraction technique for patients who are having difficulty urinating. II helps to flush out the urinary system and reduce the risk of infection. III allows the patient to relax. IV may include medications such as alpha-blockers to help relax the urethru and improve urine flow,"
+  },
+  {
+    "id": "med053",
+    "questionText": "A 38 year old Mechanic reported to your facility with lower abdominal pain, burning sensation during urination and a feeling of incomplete bladder emptying after urination for the past 3 weeks. Upon assessment he was diagnosed with urethral stricture and admitted to the surgical ward. As the nurse on duty, you have been instructed by the Nurse Manager to develop a nursing care plan for the client. You would include all the following in the patient's plan of care EXCEPT?",
+    "options": [
+      "Patient experiencing oliguria.",
+      "Restrict calcium intake.",
+      "Keep patient in a supine position."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Urethral stricture is a condition that causes narrowing of the urethra, making it difficult to pass urine. Lying flat on their back (supine) can actually worsen the condition by putting pressure on the urethra and causing further obstruction of urine flow."
+  },
+  {
+    "id": "med054",
+    "questionText": "A 38-year-old woman reported to the reproductive health unit with the complains of faeces draining through the vagina. The gynaecologist assessed and suspected a",
+    "options": ["fissure,", "infection.", "fistula"],
+    "correctAnswer": "C",
+    "rationale": "A rectovaginal fistula is a type of fistula that occurs between the rectum and the vagina, allowing for the passage of faecal matter or gas through the vagina."
+  },
+  {
+    "id": "med055",
+    "questionText": "A 3rd year midwifery student explained to her junior in the first year the hormone that is responsible for reduction of immune response in pregnancy. Which is the MOST appropriate answer?",
+    "options": ["Human chorionic gonadotrophin.", "Oestrogen.", "Progesteron"],
+    "correctAnswer": "C",
+    "rationale": "During Pregnancy, progesterone levels increases substantially to prevent the mother's body from recognizing the foetus as foreign tissue and mounting an immunological attack against it."
+  },
+  {
+    "id": "med056",
+    "questionText": "A 40 year old man sustained an injury in the left palm while at work. He seeks for treatment at your unit with severe bleeding and happens to meet you. As the Charge Nurse, how would you stop the bleeding?",
+    "options": [
+      "Sprinkle tablet salt on the wound to help stop bleeding.",
+      "Rinse the wound with water first.",
+      "Put clean absorbent bandages or fabric over the wound, keep applying pressure."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Applying pressure to the wound is the most effective way to stop bleeding as it promotes blood clotting and reduces blood flow to the injured aren."
+  },
+  {
+    "id": "med057",
+    "questionText": "A 40-year-old male is referred to a general surgeon for evaluation of an abdominal mass. The patient has a history of HIV infection which he acquired by having sex with other men. During physical examination, the surgeon palpates the abdominal mass, in addition to significant splenomegaly. A CT scan revealed lymphoma. An infectious disease panel is performed which is negative. Which of the following is the MOST likely diagnosis regarding this patient's abdominal mass?",
+    "options": [
+      "Immunoblastic lymphoma.",
+      "Marginal zone lymphoma.",
+      "Follicular lymphoma."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Given the patient's HIV status which suppresses the immune system, he is prone to develop immunoblastic lymphoma. Marginal zone and follicular lymphomas are typically indolent, slow growing lymphomas which are less likely in an immunocompromised individual."
+  },
+  {
+    "id": "med058",
+    "questionText": "A 40-year-old male is referred to a general surgeon for evaluation of an abdominal mass. The patient has a history of HIV infection which he acquired by having sex with other men. During physical examination, the surgeon palpates an abdominal mass, in addition to significant splenomegaly. An infectious disease panel is performed which is negative. Which of the following is the MOST likely diagnosis regarding this patient's abdu mass?",
+    "options": [
+      "Marginal zone lymphoma.",
+      "Follicular lymphoma,",
+      "Diffuse large B cell lymphom"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It is the most common type lymphoma in patients with HIV infection and often associated with systemic sympton splenomegaly, and extranodal involvement"
+  },
+  {
+    "id": "med059",
+    "questionText": "A 40-year-old woman sustained fracture of distal shaft of the femur. Which of the following commonly used in managing such fractures?",
+    "options": [
+      "Use of Kuntscher rod.",
+      "Application of cast brace.",
+      "Intramedullary nailing."
+    ],
+    "correctAnswer": "C",
+    "rationale": "It is commonly used in managn fractures of the distal shaft of the femur due to ability to provide stable fixation, facilitate en mobilization, and promote bone healing."
+  },
+  {
+    "id": "med060",
+    "questionText": "A 41-year-old reported to the hospital with swelli on the head. Doctor assessed and suspecte meningioma, Which of the following is not a featu of meningioma?",
+    "options": [
+      "Responds to only surgery.",
+      "Responds to radiotherapy only.",
+      "Growth of cells very fast."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Meningioma is a tumour that arises inn the meninges. It is generally slow growing an rarely metastasizes."
+  },
+  {
+    "id": "med061",
+    "questionText": "A 42-year old fashion designer has been admited the female surgical ward for removal of pant lump on the neck. The surgery was purposely improve patient quality of life. This type of surger will be termed;",
+    "options": ["Palliative", "Reconstructive", "Curative"],
+    "correctAnswer": "A",
+    "rationale": "It is a type of surgery aimed at relieve symptoms and improving quality of life, not cung the underlying condition. Reconstructive surgery aimed at restoring appearance or function, Curative surgery is aimed at curing the underl condition."
+  },
+  {
+    "id": "med062",
+    "questionText": "A 42-year-old Journalist reported to the Out Patient Department of your hospital with a history of blurred vision as a result of splash of pepper in the right eye At the hospital, he was taken through a series of visual test and examinations. A diagnosis of glaucoma was finally made. How would you interpret a visual acuity of $20/50?$ The patient",
+    "options": [
+      "Cars sec at 20 feet instead of 50 feet",
+      "Has normal visual acuity.",
+      "Can see 50 feet instead of 20 feet"
+    ],
+    "correctAnswer": "A",
+    "rationale": "A visual acuity of $20/50$ means that the patient can see at 20 feet what a person with normal vision can see at 50 feet."
+  },
+  {
+    "id": "med063",
+    "questionText": "A 43 year old interior decorator is booked to undergo laryngectomy. In patient teaching, what would be your priority?",
+    "options": [
+      "Ability to sing and laugh would be lost.",
+      "Ensure adequate intake of soft foods.",
+      "Ability to and laugh would be maintained."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Laryngectomy removes the larynx. making eating and swallowing difficult; therefore, adequate nutrition and soft food intake are essential for a speedy recovery and health maintenance. while the ability to sing and laugh becomes secondary."
+  },
+  {
+    "id": "med064",
+    "questionText": "A 43 year old Tailor was involved in a road traffic accident and sustained fracture of the left femur with associated pain at the site. Which of the following best describe pain associated with the fracture?",
+    "options": ["Sore and aching", "Dull deep pain.", "Sharp aud piercing"],
+    "correctAnswer": "C",
+    "rationale": "Pain associated with bone fractures is asually described as sharp and piercing, as the sharp edges of the broken bone irritate and damage surrounding tissues and nerve endings."
+  },
+  {
+    "id": "med065",
+    "questionText": "A 43-year-old Mechanic with burns is to be admitted to your ward where you work. Upon assessment, you noticed that he has fluid filled vesieles that are red, shiny and moderate oedema on the face, anterior trunk, and in both arms and legs. He is also in severe pains suspected to be caused by nerve injury. Which of your following actions would be considered inappropriate in the management of the wound?",
+    "options": [
+      "Cleaning of the wound daily with warm water.",
+      "Serving patient with high protein and caloric diet",
+      "Accurate recording of fluid intake and output."
+    ],
+    "correctAnswer": "A",
+    "rationale": "It can cause further damage to the already fragile and sensitive tissue, as it may cause the blisters to rupture, increasing the risk of infection and delaying the healing process."
+  },
+  {
+    "id": "med066",
+    "questionText": "A 43-year-old miner was admitted with the diagnosis of spinal injury after he fell into a pit three days. As part of the initial management of the patient, surgery was not considered. The patient has been immobilized due to his condition. As a Nurse, you anticipated that he could develop bed sores. Which of the following nursing diagnoses would you formulate to guide your care for this patient?",
+    "options": [
+      "Impaired skin integrity related to immobility.",
+      "Risk for impaired skin integrity related to immobility.",
+      "Risk for impaired skin integrity related to poor nutrition."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Because the patient has not yet developed skin breakdown, but is at risk due to the immobilization."
+  },
+  {
+    "id": "med067",
+    "questionText": "A 43-year-old reported to the health facility with a swelling on the right arm. Doctor assessed and suspected a tumour. Which of the following investigations confirms the doctors suspicion?",
+    "options": ["Tumour market.", "Biopsy.", "Blood analysis."],
+    "correctAnswer": "B",
+    "rationale": "This is the only investigation that can provide a definitive diagnosis of a tumour, as it involves taking a sample of tissue from the suspected tumour site and examining it under a microscope to identify any abnormal or cancerous cells"
+  },
+  {
+    "id": "med068",
+    "questionText": "A 44-year-old Accountant reported to the Out Patient Department of your hospital with a history of blurred vision as a result of splash of pepper in the right eye. At the hospital, he was taken through a series of visual test and examinations. A diagnosis of glaucoma was finally made. What should be the immediate nursing care for this patient?",
+    "options": [
+      "Prevent injury.",
+      "Reduce intraocular pressure.",
+      "Relief patient of pain."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Elevated pressure within the eye in glaucoma can cause damage to the optie nerve, leading to irreversible vision loss."
+  },
+  {
+    "id": "med069",
+    "questionText": "A 45 year old woman is admitted to the surgical emergency with complains of sudden onset of a sharp and severe pain at her left flank. Whiles awaiting the results from a CT scan, the Doctor plans to titrate a patient- controlled opioid infusion to relief her pain. During patient assessment you found out that this was her first time receiving opioid medication. Which of the following nursing action would be appropriate?",
+    "options": [
+      "Teaching about the need to decrease opioid doses by the second day.",
+      "Assessing tor signs of that patient is becoming addicted to opioid.",
+      "Emphasizing that the risk of opioid side effect increases over time."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The patient is opioid-naive, increasing the risk of side effects. Educating the patient on potential adverse effects (nausea, drowsiness, constipation, and respiratory depression) allows for early identification and management, promoting safety and comfort."
+  },
+  {
+    "id": "med070",
+    "questionText": "A 45-year-old Driver started smoking at the age of 17 years. At age 34, he started experiencing some respiratory symptoms such as productive cough and occasionally difficulty in breathing. He was sent to the hospital and investigations revealed collection of fluids in the Right Lung. A diagnosis of Right Lung Abscess was established and the surgeon booked him for Pneumonectomy. When performing the recommended surgery of Pneumonectomy, what structure would be removed by the surgeon?",
+    "options": [
+      "The affected ling.",
+      "A lobe of the lung.",
+      "A segment of the lung."
+    ],
+    "correctAnswer": "A",
+    "rationale": "During a pneumonectomy, the entire lung is removed from the patient's thoracic cavity So in this case, the surgeon would remove the entire right lung of the patient."
+  },
+  {
+    "id": "med071",
+    "questionText": "A 45-year-old food vendor is to be admitted to your ward for further management of burns involving the face, anterior trunk, arms, perineum and both legs. She was unconscious on arrival as a result of hypoxia. Upon further observation, it was notaczaj that circulation to the patients lower extremities wa severely impaired. To prevent ischemi paraesthesia, necrosis and gangrene, which of the following procedures should the attending doctor perform?",
+    "options": ["Dermabrasion.", "Debridement", "Ischiarotomy"],
+    "correctAnswer": "C",
+    "rationale": "It is a surgical procedure in which an incision is made through the eschar (dead tissue caused by a burn injury) to relieve pressure and restore circulation."
+  },
+  {
+    "id": "med072",
+    "questionText": "A 46-year-old miner was admitted with the diagnosis of spinal injury after he fell into a pit three days. After general ward rounds by a team of doctors, the patient has been booked for cervical traction. Patient appeared apprehensive. As a Nuse, what steps would you take to allay the fears of operation in the patient? 1. Allow the patient to ask questions to clear all his doubts. II. Introduce patient to a colleague nurse. III. Explain pain management strategies to be instituted after surgery. IV. Let the patient see the persons involved in his operation.",
+    "options": ["I, II, III and IV.", "I, II and III.", "1, III and IV."],
+    "correctAnswer": "C",
+    "rationale": "Option L. helps the patient gain a better understanding of the procedure and clarify any misconception about the surgery. III provides the patient with information about how pain will b managed post-surgery. TV help build trust and rapport between the patient and healthcare team."
+  },
+  {
+    "id": "med073",
+    "questionText": "A 48-year-old female patient undergoes open real of fractured femur which she sustained in a molur vehicle collision. Three days post-op, she devel a low grade fever, tachypnea, pleuritic, chest pain and a cough. CT scan reveals a pulmonary embolism. Which of the following findings MOST likely to be associated with this condition?",
+    "options": [
+      "Decreased pulmonary arterial pressure.",
+      "Decreased A-a gradient.",
+      "Positive D-dimer test."
+    ],
+    "correctAnswer": "C",
+    "rationale": "It indicates the presence of fibrin degradation products, which are produced when blood clots are broken down, and can be elevated in conditions such as deep vein thrombosis (DVT) and pulmonary embolism (PE)."
+  },
+  {
+    "id": "med074",
+    "questionText": "A 48-year-old Fisherman reported to your facility with the complaints of palpitation, hot flashes. excessive sweating and inability to tolerate heat. She also complained of change in body image with bulging eyes and weight loss. The doctor diagnosed his with Graves' Disease. Which of the following are possible side effects the patient is likely to experience after taking Methimazole? 1. Weight gain. II. Headache. III. Skin discoloration. IV. Hair loss.",
+    "options": ["I, II and III.", "1, 11 and IN", "II, III and IV."],
+    "correctAnswer": "B",
+    "rationale": "Methimazole is an antithyroid medication that inhibits the synthesis of thyroid hormones in the body. Weight gain may be due to reduced metabolic rate, while headache and hair loss are attributed to allergic reactions to the drug. Skin discoloration is not a common side effect of Methimazole and is not typically associated with the drug."
+  },
+  {
+    "id": "med075",
+    "questionText": "A 49-year-old Accountant who works in a community factory was seen trapped under debris after the building was razed down by fire. He sustained second degree burns with spinal injury. He is to be admitted into your ward for management. In the fluid and electrolyte management of the patient, you would consider all the following as signs of fluid volume deficit EXCEPT",
+    "options": ["Thirst.", "Cyanosis.", "Low urine output"],
+    "correctAnswer": "B",
+    "rationale": "Rationale is not a sign of fluid volume deficit but rather a sign of decreased oxygenation or perfusion, while thirst and low urine output are classic signs of fluid volume deficit."
+  },
+  {
+    "id": "med076",
+    "questionText": "A 49-year-old man on your ward has been diagnosed as having an advanced form of Empyema, The best management for him would be",
+    "options": [
+      "Perform decortication.",
+      "Administer antibiotics.",
+      "lusert chest drainage ribe."
+    ],
+    "correctAnswer": "C",
+    "rationale": "To drain the pus and fluid that has accumulated in the pleural space."
+  },
+  {
+    "id": "med077",
+    "questionText": "A 5 year old boy was brought to the Hospital with tympanic membrane perforation. He has been booked for surgery. Which of the following surgical procedure will the Doctor perform for the patient?",
+    "options": [
+      "Ossiculoplasty Thes Cave perform to repair Smale bone",
+      "Myringotomy",
+      "Blephonotomy-bis home to remove the excesive Skin Fron the eyelids"
+    ],
+    "correctAnswer": "B",
+    "rationale": "This surgical procedure is performed in cases of tympanic membrane perforation to relieve pressure, drain fluid or pus, and improve hearing."
+  },
+  {
+    "id": "med078",
+    "questionText": "A 50 year old patient weighing 96kg reported to the emergency ward with left hip pain following a minor trauma. He had fever and cough before the trauma. He was treated with ibuprofen for 7 days. He also presented with a limited and painful range of motion of the left hip and could not bear weight. Blood test showed raised WBC count. He was admitted for suspected osteomyelitis. What might have contributed to the patient developing osteomyelitis?",
+    "options": ["Accident.", "Over weight.", "Corticosteroid."],
+    "correctAnswer": "C",
+    "rationale": "The patient's recent infection, combined with the use of corticosteroids which suppress the immune system, may have made the patient more vulnerable to developing osteomyelitis."
+  },
+  {
+    "id": "med079",
+    "questionText": "A 50-year-old carpenter sustained an injury to the back in an attempt of lifting a load at the workplace. At the casualty unit, he reported of severe backache with difficulty in movement. The following techniques must be observed when lifting load to prevent injury to the back EXCEPT",
+    "options": [
+      "Flex the knee and hip joint before lifting.",
+      "Keep the object close to the body.",
+      "Bend the spine when lifting from the ground"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It increases the distance between the load and the centre of gravity of the body, which can cause increased stress on the back and increase the risk of injury."
+  },
+  {
+    "id": "med080",
+    "questionText": "A 50-year-old female patient complains of morning stiffness in both her wrists and hands that improves gradually over the course of the day. She has recently felt unusually fatigued and complains of generalized aching. Which of the following diagnoses is MOST likely?",
+    "options": [
+      "Osteoarthritis.",
+      "Psoriatic arthritis.",
+      "Rheumatoid arthritis."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rheumatoid arthritis is a chronic autoimmune disorder that primarily affects the joints of the body. It is characterized by inflammation, pain, and stiffness that is often worse in the morning and improves throughout the day with activity."
+  },
+  {
+    "id": "med081",
+    "questionText": "A 52-year old man spilled hot coffee on a small portion of his thigh. The burn blisters is painful. The burn blanches on examination. Which of the following is the best treatment for the burn?",
+    "options": [
+      "Topical thiamcinolone",
+      "Polysporon with Mepitel dressing",
+      "Prophylactic antibiotics"
+    ],
+    "correctAnswer": "B",
+    "rationale": "The burn blistered and blanched, indicating it is a superficial second-degree burn. Polysporon with Mepitel dressing is appropriate for superficial second-degree burns as it helps protect the burn, promote healing and provides pain relief."
+  },
+  {
+    "id": "med083",
+    "questionText": "A 54-year-old farmer reported to your facility with the complaints of palpitation, hot flashes, excessive sweating and inability to tolerate licat. She alse complains of change in body image with bulging eyes and weight loss. Which of the following is the most likely cause of the patient complaints",
+    "options": ["Hypothyroidism.", "Graves disease.", "Goiter."],
+    "correctAnswer": "B",
+    "rationale": "Is a type of autoimmune disorder that leads to overactivity of the thyroid gland, abe known as hyperthyroidism, causing symptoms such as palpitation, hot flashes, excessive sweating, weight loss, bulging eyes, and intolerance to heat due to increased metabolic activity."
+  },
+  {
+    "id": "med084",
+    "questionText": "A 55-year-old Mason reported to your facility with complaints of pain which radiates from the anal region to the scrotum. Upon assessment he was unable to void and was diagnosed with Renal Calculi. As the Nurse on duty, you are to provide education for the patient prior to discharge. Which of the following foods would you encourage client to avoid?",
+    "options": [
+      "Tomatoes, cabbage and lettuce.",
+      "Rice, bread and potatoes.",
+      "Liver, beef and pork."
+    ],
+    "correctAnswer": "A",
+    "rationale": "These foods are high in oxalate, a compound that binds with calcium in the urine, forming crystals that can lead to the formation of kidney stones."
+  },
+  {
+    "id": "med085",
+    "questionText": "A 55-year-old Ward Assistant reported to your facility with abdominal pain, straining on urination and urine dribbling out after urination. He furthur explained that he urinates frequently at night which affects his sleep. Upon assessment patient was diagnosed with Benign Prostatic Hyperplasia (BPH) and admitted to the ward. A Radical Prostatectomy was performed on him. The patient has been transferred from the recovery to the surgical wand hours after surgery. As the Nurse on the shift, whit assessment data would you obtain: from patient? Check I. Vital signs. II. Urethral bleeding around catheter. III. Urine volume and colour.",
+    "options": ["I and III.", "I and II.", "1, II and III"],
+    "correctAnswer": "C",
+    "rationale": "These are crucial for detecting potential complications related to bleeding, infection, or urinary retention and guiding appropriate nursing interventions to promote the patient's recovery after Radical Prostatectomy (removal of the entire prostate gland along with the seminal vesicles) surgery."
+  },
+  {
+    "id": "med086",
+    "questionText": "A 58 year old lawyer on your ward has colostomy wound. The purpose of irrigating a colostomy is to",
+    "options": [
+      "Prevent constipation.",
+      "Dilute bowel content.",
+      "Regulate bowel movement."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Irrigating a colostomy helps empty the bowel by flushing out its contents, which in turn regulates when and how often the stoma releases waste,"
+  },
+  {
+    "id": "med087",
+    "questionText": "A 5-year-old girl presents with a recurrent UTI. Physical examination indicates possible sexual abuse. The child's mother is a single parent and lives with her boyfriend. She claimed she is \"eertain\" that the boyfriend has not sexually abused the child. She requests confidentiality and states she will not leave the child alone with the boyfriend. Which of the following is the MOST appropriate next step?",
+    "options": [
+      "Without clear evidence of abuse, do not report this incident to authorities.",
+      "Follow-up soon to verify compliance.",
+      "Report this case immediately to DOVVSU."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The mother's request for confidentiality should be respected, but it should not override the need to ensure the child's safety. Suspected child abuse must be reported to the authorities (e.g. DOVVSU - Domestic Violence and Victim Support Unit), and failure to do so could put the child at risk of further harm."
+  },
+  {
+    "id": "med088",
+    "questionText": "A 6 days post operative patient who had abdominal surgery is scheduled for discharge later today. On assessment before her discharge, you observed that the surgical wound site had about 2 inches of internal structures protruding through the incision. Which of the following interventions is appropriate?",
+    "options": [
+      "Cover the wound with sterile normal saline dressing.",
+      "Put the patient in prone position to put pressure on the site.",
+      "Notify the doctor and administer prescribed anti emetic."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The patient is experiencing wound evisceration and the most immediate intervention is to protect the exposed tissue and prevent further damage or infection while you notify the Doctor."
+  },
+  {
+    "id": "med089",
+    "questionText": "A 60-year-old male patient complaints of a painless mass that protrudes from his anus when be defecates. It reduces spontaneously, but he sometimes sees bright red blood on the toilet paper and occasionally has a mucoid discharge from the anus that stains his underwear. Which of the following is this patient's MOST likely diagnosis?",
+    "options": [
+      "Mesenteric ischemia.",
+      "Colon cancer.",
+      "Internal hemorrhoids."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The presence of a painless mass protruding from the anus, mucoid discharge and bright red blood on toilet paper is indicative of internal haemorrhoids rather than colon cancer, which typically presents with a change in bowel habits, weight loss, and anaemia."
+  },
+  {
+    "id": "med090",
+    "questionText": "A 60-year-old man presents to your office. He has been having bleeding per rectum for two months. His primary care physician diagnosed him with an external hemorrhoid in the left lateral position. On examination, you find a two and a half centimeter had mass located 3 centimeters outside the anal verge. It does not appear to be involving the sphincter mechanism on exam. Thera are no intra- anal abnormalities on a anoscopy. Biopsy performed reveals squamous cell carcinoma. Which of the following is correct regarding the anatomy and likely treatment of this lesion?",
+    "options": [
+      "This is a perianal squamous cell cancer that should be treated with chemoradiation.",
+      "This is a perianal squamous cell cancer thai should be treated with wide local exciston given its size.",
+      "This is a skin cancer and should be treated with wide local excision."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The described lesion is a perianal squamous cell carcinoma that can be treated with wide local excision to achieve complete removal of the tumour while preserving sphincter function."
+  },
+  {
+    "id": "med097",
+    "questionText": "A 63-year-old male with history of tobacco use, diabetes, and hypertension presents with severe symptoms of claudication. His left lower extremity is cool to touch, and his left big toe shows shinny skin, absent hair, and no palpabie dorsal pedis or posterior tibalis pulses. The arterial brachial index confirms peripheral arterial disease. What is the next step in the management of this patient?",
+    "options": [
+      "Supervised exercise program",
+      "Smoking cessation",
+      "Surgical intervention"
+    ],
+    "correctAnswer": "C",
+    "rationale": "The severity of his symptoms and the presence of peripheral arterial disease indicate that conservative measures such as exercise and smoking cessation are unlikely to be effective."
+  },
+  {
+    "id": "med098",
+    "questionText": "A 65-year-old woman with rectal prolapse comes to your facility with 6 months of increasing symptoms. She is a mother of three vaginal deliveries. She has become less social and isolated due to bowel incontinence. She denies urinary incontinence or constipation. You confirm reducible rectal prolapse on exam, about 10 em in length, with poor sphincter tone and no masses on digital exam. She has no evidence of cystocele or vaginal prolapse. She desires surgery. Which of the following should be done before proceeding with an operative repair?",
+    "options": ["Detecography.", "Cardiac stress test.", "Colonoscopy."],
+    "correctAnswer": "A",
+    "rationale": "It can confirm the extent of the rectal prolapse and to identify any associated pelvic organ prolapse, including a rectocele or cystocele, which could affeet the surgical approach."
+  },
+  {
+    "id": "med099",
+    "questionText": "A 67-year-old female patient who fell on an outstretched hand now complaints of hand pain. On examination, she has tenderness over the anatomic snuffbox. There is no evident of deformity and she has intact sensation and movement. What is the likely lesion?",
+    "options": [
+      "Scaphoid fracture.",
+      "Pisiform fracture.",
+      "Carpal tunnel syndrome,"
+    ],
+    "correctAnswer": "A",
+    "rationale": "The anatomic snuflbox overlies the scaphoid bone, which is commonly fractured in falls on outstretched hands. Tenderness over the snuffbox is a classic sign of this injury. The intact sensation and movement suggest that there is no nerve or tendon damage."
+  },
+  {
+    "id": "med100",
+    "questionText": "A 67-year-old High Court Judge reported to your facility with abdominal pain, straining on urination and urine dribbling out after urination. He further explained that he urinates frequently at night which affects his sleep. Upon assessment patient was diagnosed with Benign Prostatic Hyperplasia (BPH) and admitted to the ward. Based on the assessment data obtained from the patient, which of the following statements are appropriate nursing diagnosis? 1. Urinary retention related to obstruction. II. Pain related to bladder distention. III. Anxiety related to inadequate knowledge of BPH. IV. Difficulty urinating related to pain",
+    "options": ["I, II, III and IV.", "I, II and III.", "I and II."],
+    "correctAnswer": "B",
+    "rationale": "Option iv is not an appropriate nursing diagnosis because pain is not the cause of the difficulty urinating. The difficulty urinating is caused by the obstruction of the flow of urine due to the enlarged prostate."
+  },
+  {
+    "id": "med101",
+    "questionText": "A 68-year-old male on dialysis for end stage renal disease undergoes a kidney transplant without complication. Five weeks later he presents to the outpatient clinic with complaints of not being able to urinate. His labs are remarkable for increased urine creatinine. The decision is made to perform a biopsy with results conclusive for acute rejection of the graft. The patient is placed on a rejection dosage of methylprednisolone. Two days later there is no change in status. He is then placed on a new immunosuppressive agent. He immediately develops lu like symptoms, tremors, and chest pain. What is the next course of management for this patient?",
+    "options": [
+      "Start the patient on ganciclovir.",
+      "Plasmapheresis.",
+      "Diphenhydramine."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Plasmapheresis removes antibodies and plasma that may be rejecting the transplanted kidney."
+  },
+  {
+    "id": "med102",
+    "questionText": "A 69-year-old post-menopausal female complaints of leakage of urine with coughing and when she laughs. She states it has become increasingly worse over the past six months. Which of the under listed steps if taken by the Charge Nurse would be MOST beneficial to the patient?",
+    "options": [
+      "Recommend fluid restriction to 1 litre per day.",
+      "Educate the patient about Kegel exercises",
+      "Refer the patient to a urologist for cystoscopy."
+    ],
+    "correctAnswer": "A",
+    "rationale": "These types of exercises are beneficial for strengthening the pelvic floor muscles, which can help improve stress urinary incontinence caused by weakened muscles."
+  },
+  {
+    "id": "med103",
+    "questionText": "A 73-year-old Kente Weaver reported to your facility with abdominal pain, straining on urination and urine dribbling out after urination. He further explained that he urinates frequently at night which affects his sleep. Upon assessment patient was diagnosed with Benign Prostatic Hyperplasia and admitted to the ward. The patient is booked for Transurethral Resection of the Prostate. As a Nurse, what pre-operative nursing intervention would you take to reduce anxiety observed in the patient? 1. Reassure patient and family. 11. Give prescribed antibioties. III. Provide bowel preparation. IV. Provide information about the surgery.",
+    "options": ["1 and IV.", "I, II and IV.", "I, II, III and IV."],
+    "correctAnswer": "A",
+    "rationale": "Option I can help to reduce anxiety and fear of the unknown, while IV can also help to alleviate anxiety by giving the patient a better understanding of what to expect during and after the surgery."
+  },
+  {
+    "id": "med104",
+    "questionText": "A 75 year old man with a history of type 1 von Willebrand disease and an Hgb of 14.3 g/dL is scheduled for total hip replacement surgery. Which of the following is the most appropriate treatment to decrease his risk of severe bleeding during his procedure?",
+    "options": [
+      "Prophylacbe DIAVE",
+      "Low dese activated Factor",
+      "Prophylactic F P wansfusiom"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Von Willebrand disease is a blende disorder caused by deficiem or defecuva Willebrand factor and factor VIII, and DDAVI (Desmopressin) can stimulate the release of vo Willebrand factor and factor VIII, which can hay reduce the risk of severe bleeding during surgery"
+  },
+  {
+    "id": "med105",
+    "questionText": "A 75-year-old female with a past medical hatmy of well-controlled diabetes is adnuned to hospital with a right hip fracture. Her surgical repos is uncomplicated. Which of the following me can be taken post operatively to prevent delirune",
+    "options": [
+      "larly pmbulation and mobilization",
+      "Additional opioid pain uredication prior sedation wearing off",
+      "Giving lorazepam prophylactically to help wit sleep,"
+    ],
+    "correctAnswer": "A",
+    "rationale": "It prevents delirium by stimulating the mind and body, maintaming orientation circadian rhythins, and expediting recovery."
+  },
+  {
+    "id": "med106",
+    "questionText": "A 78-year-old Station Master reported to you facility with abdominal pain, straining on urinate and urine dribbling out after urination. He fut explained that he urinates frequently at night which affects his sleep. Upon assessment patient was diagnosed with Benign Prostatic Hyperplasia admitted to the ward. On the day of Surgery, ydi would be your immediate care before senim patient to the theatre? Help patient 1. Wear identification bracelet. II. Changed into hospital gown. III. Sign consent form.",
+    "options": ["I and III.", "I, II and III.", "II and III."],
+    "correctAnswer": "B",
+    "rationale": "Option 1. helps to identify the patte correctly and ensure that they receive the catre surgery. helps to prevent infection and previ access to the area that will be operated on, and l important to ensure that the patient understands the risks and benefits of the surgery has given their informed consent."
+  },
+  {
+    "id": "med107",
+    "questionText": "A 90 year old patient had a fall while going to the bathroom unassisted. It appears the patient has sustained fracture on the left leg and is unable to move the affected leg. Patient is oriented and alert but in severe pain, What would be your first nursing intervention?",
+    "options": [
+      "Immobilize the fracture with a splint,",
+      "Elevate the extremity above the chest level.",
+      "Apply ice pack covered with towel to the site."
+    ],
+    "correctAnswer": "A",
+    "rationale": "To stabilize the broken bone and prevent further injury or displacement and severe pain from movement until X-ray confirms the extent of injury and physician evaluates for definitive treatment."
+  },
+  {
+    "id": "med108",
+    "questionText": "A cylinder containing a gas can be identified by the colors. The oxygen cylinder body has a white neck with.. body.",
+    "options": ["Black.", "Blue", "Grey."],
+    "correctAnswer": "B",
+    "rationale": "The body of an oxygen cylinder is typically painted in blue colour to indicate that it contains compressed medical oxygen."
+  },
+  {
+    "id": "med109",
+    "questionText": "A decision of skin grafting was taken for a patient who sustained a burn injury. Which of the following skin grafts is least likely to be rejected by the patient's immune system?",
+    "options": ["Heterograft.", "Autographs", "Allografts."],
+    "correctAnswer": "B",
+    "rationale": "Because the skin used for grafting is taken from the patient's own body. Allografts are taken from another person of the same species and may be rejected over time. Heterografts are taken from a different species and are often rejected quickly."
+  },
+  {
+    "id": "med110",
+    "questionText": "A diabetic patient who has undergone abdominal surgery has been observed to be experiencing wound evisceration. Which of the following is the MOST appropriate immediate nursing action to take? Cover the wound with",
+    "options": [
+      "Sterile saline moistened gauze.",
+      "Savlon soaked gauze",
+      "Sterile dry gauze."
+    ],
+    "correctAnswer": "A",
+    "rationale": "To keep the exposed organs moist. preventing tissue damage and reducing the risk of infection."
+  },
+  {
+    "id": "med111",
+    "questionText": "A Director in a Law Firm reported to the hospital with complains of bleeding haemorrhoids. He is shy and withdrawn. As a Nurse assessing this patient. what will be the possible cause of this condition?",
+    "options": ["Pruritus", "Constipation", "Prolong sitting"],
+    "correctAnswer": "C",
+    "rationale": "His occupation suggests that he spends a significant amount of time sitting at a desk. Prolong sitting causes increased intra-abdominal pressure which gets transmitted to the lower rectum leading to engorgement of rectal veins resulting in haemorrhoids."
+  },
+  {
+    "id": "med112",
+    "questionText": "A farmer aged 55 years sustained a dislocation of the right arm while weeding on his farm. He reported at the emergency department with complains of pain in the right shoulder joint. The most serious complication of that can occur in this joint dislocation is",
+    "options": [
+      "infection of the joint.",
+      "avascular necrosis.",
+      "deep vein thrombosis."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Due to lack of blood supply to the bone tissues surrounding the dislocated joint."
+  },
+  {
+    "id": "med113",
+    "questionText": "A female diabetic patient has been admitted to your ward for a laparotomy. What will you include in your nursing intervention to promote wound healing?",
+    "options": [
+      "Ensure adequate amount of dietary carbohydrate.",
+      "Maintain normal blood glucose range.",
+      "Apply dry, sterile dressing to wound daily."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Hyperglycemia can impair the healing process by reducing blood flow to the wound site and impairing immune function."
+  },
+  {
+    "id": "med114",
+    "questionText": "A female patient scheduled for surgery is extremely obese and has cardiac problems. As a theater nurse you understand that placing this patient in a supine position will cause patient to experience",
+    "options": [
+      "comfort without complications in that position.",
+      "limited range of motion when placed in that position.",
+      "orthopsea or dyspnoca when placed in that"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It will cause orthopnoca or dyspnoca (difficulty breathing) due to reduced chest expansion and oxygen intake."
+  },
+  {
+    "id": "med115",
+    "questionText": "A housewife sustained a knife laceration while cooking. The wound bled profusely because the cut was deep and was rushed to the accident center for care. The wound was aseptically cleaned and sutured. She came back to the clinic after two weeks with much improvement. Her wound has healed by",
+    "options": ["Second intention.", "Third intention.", "First intention."],
+    "correctAnswer": "C",
+    "rationale": "Is a type of wound healing that occurs when the edges of a wound are brought together and held in place by sutures or staples."
+  },
+  {
+    "id": "med116",
+    "questionText": "A junior colleague of yours approached you to brief him on scrubbing before the commencement of operation at the theatre. As a final year student, your response may include the following EXCEPT;",
+    "options": [
+      "Allow water from rinsed hands to drip from the elbow,",
+      "The hands should be raised above the elbow at all times after washing.",
+      "The second wash during the scrubbing should cover the whole length of the fore arm."
+    ],
+    "correctAnswer": "A",
+    "rationale": "This can contaminate the sterile field, as the elbow is considered non-sterile during surgical hand scrubbing,"
+  },
+  {
+    "id": "med117",
+    "questionText": "A long leg cert is applied for Kokui Kraba a 22-year-old man after sustaining fracture of the right tibia. The nurse observes that Kraba's exposed twes are swollen and he complained of numbness in the toe. Which of the following nursing diagnoses is most appropriate for kokui?",
+    "options": [
+      "Fluid volume excess related to vascular compression by cast.",
+      "Peripheral dysfunction related to vascular insufficiency and nerve compression by cert",
+      "Fluid volume excess related to edema."
+    ],
+    "correctAnswer": "B",
+    "rationale": "his swollen toes and indicative of impaired peripheral nerve function due to the constricting long leg cast."
+  },
+  {
+    "id": "med118",
+    "questionText": "A male patient aged 50 years as undergone a major surgical procedure and ban transferred to the recovery room where you wur further management. During your implinit operative assessment, you observed that pomem suddenly become cyanotic. The MOST app nursing action you will take will be to",
+    "options": [
+      "administer oxygen through a nasal catimla 61pm.",
+      "reposition patient's head and determinar patency.",
+      "call for assistance and begin cardiopulm resuscitation."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Cyanosis indicates hypoxemia, md priority is to establish an open airway and en adequate oxygenation before initiating any funte interventions such as CPR."
+  },
+  {
+    "id": "med119",
+    "questionText": "A male patient aged 67 years dingnosed w benign prostate enlargement is expected to repo your facility for a prostatectomy. Laboratory and investigations have all been completed reviewed. Which of the following is the MOS appropriate pre-operative nursing care patient?",
+    "options": [
+      "High oral fluid intake should be encouraged",
+      "Check for correct placement of urethral cathe",
+      "Maintain nil per os a day prior to surgery"
+    ],
+    "correctAnswer": "A",
+    "rationale": "To prevent the risk of aspirati stomach contents during anaesthesia."
+  },
+  {
+    "id": "med120",
+    "questionText": "A male patient presents with sudden a scrotal pain that radiates to his abdomen playing tennis, He denies sexual activity Be afebrile with normal vital signs. His left su tender and high-riding, and he has discharge or lesion. He has cremasterio refies affected side Which of the following treatment of choice?",
+    "options": [
+      "Detorsion and fixation",
+      "Tlevation of the affected testes and erral",
+      "Ceftriaxone 250mg IM and azithromycin./ po"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale mmmintory"
+  },
+  {
+    "id": "med121",
+    "questionText": "A male patient scheduled for surgery complains of increased respiratory secretions. Which of the anaesthetist? following drugs is likely to be administered by the",
+    "options": ["Neostigmine.", "Atropine", "Pitocarpine."],
+    "correctAnswer": "B",
+    "rationale": "is an anticholinergic drug that reduces respiratory secretions by inhibiting parasympathetic stimulation."
+  },
+  {
+    "id": "med122",
+    "questionText": "A male patient started shivering uncontrollably after surgery. As part of your immediate post operative care, what nursing intervention would be your priority?",
+    "options": [
+      "Apply warm blankets and continue oxygen therapy.",
+      "Consult the doctor for further orders.",
+      "Adjust the temperature in the room."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Shivering is a common response to anaesthesia and surgery, and it can increase oxygen consumption and heat loss. Therefore, the priority nursing intervention is to provide warmth and adequate oxygen as indicated in option A."
+  },
+  {
+    "id": "med123",
+    "questionText": "A man sustained a cut while gardening. Why would he be given anti-tetanus immunoglobulin?",
+    "options": [
+      "For increased active immunity",
+      "For immediate protection hy antibodies",
+      "To provide a target for lymphocytes"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Tetanus can progress rapidly and be life- threatening, and the immunoglobulin contains pre- formed antibodies that can neutralize the tetanus unxin and provide immediate protection against the disease."
+  },
+  {
+    "id": "med124",
+    "questionText": "A manifestation of cancer of the cervix that would bring the patient to the gynaecologist is......",
+    "options": [
+      "Heaviness in the abdomen",
+      "Bloody sporting after intercourse",
+      "Foul-smelling discharge"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Cervical cancer causes changes in the cervix that can lead to bleeding, especially after the cervix is irritated during intercourse."
+  },
+  {
+    "id": "med125",
+    "questionText": "A medical procedure in which an olive-shape device is placed in the vaginal with the help of a laparoscopy in the treatment of vaginal hypoplasia is known as....",
+    "options": ["Vaginal dilatation", "Veccehietti", "Vaginoplasty"],
+    "correctAnswer": "B",
+    "rationale": "Is a surgical procedure used to treat vaginal agenesis or vaginal hypoplasia. In this procedure, an olive-shaped device is inserted laparoscopically into the space between the bladder and rectum and then pulled upwards over a period of several days."
+  },
+  {
+    "id": "med126",
+    "questionText": "A middle age man diagnosed of colon cancer uses opioid to control his pain at level 8 of 0-10 scale and request for something more potent. The BEST way to document this is......",
+    "options": ["Neuropathic pain.", "Somatic pain.", "Break through pain."],
+    "correctAnswer": "C",
+    "rationale": "Is a type of pain that occurs despite ongoing pain management with medication and is often more severe and sudden in onset than the baseline pain being managed. In this case, the patient is already using opioids to control their pain at a level of 8 out of 10, but is still experiencing pain severe enough to require additional medication."
+  },
+  {
+    "id": "med127",
+    "questionText": "A middle aged man who experienced a compound fracture of the right arm was rush to the emergency unit. What nursing intervention will you adopt with this type of fracture?",
+    "options": [
+      "Cover the fracture with a sterile dressing",
+      "Place a tight compression bandage over the fracture.",
+      "Place the arm below the heart level."
+    ],
+    "correctAnswer": "A",
+    "rationale": "To prevent contamination and reduce the risk of infection, as well as provide support and protection for the injured area.."
+  },
+  {
+    "id": "med128",
+    "questionText": "A middle aged woman was admitted to the surgical unit on account of left sided hemiparesis, dizziness and severe headache. Which of the following nursing measures is inappropriate when providing oral hygiene?",
+    "options": [
+      "Cleaning the mouth with a toothbrush and toothpaste.",
+      "Keeping portable suctioning machine.",
+      "Placing the patient on the back with pillow under the head."
+    ],
+    "correctAnswer": "C",
+    "rationale": "It can increase intracranial pressure and exacerbate symptoms of dizziness and headache"
+  },
+  {
+    "id": "med129",
+    "questionText": "A Midwife was teaching the student Nurse about the partograph and mentioned that the following are part of the progress of labour EXCEPT:",
+    "options": ["Cervical dilation.", "Moulding.", "Contractions."],
+    "correctAnswer": "B",
+    "rationale": "It refers to the shaping of the foetal head to fit through the maternal pelvis during labour and is not a measure of progress."
+  },
+  {
+    "id": "med130",
+    "questionText": "A newly married couple came to your facility and wanted to know when ovulation usually takes place so that, they can plan their family. In response the Midwife/Nurse explains that ovulation occurs 14",
+    "options": ["Before.", "Between.", "After."],
+    "correctAnswer": "A",
+    "rationale": "Ovulation usually occurs around day 14 of a 28-day menstrual cycle, which is 14 days before the start of the next menstrual period."
+  },
+  {
+    "id": "med131",
+    "questionText": "A Non-Steroidal Anti-Inflammatory drugs commonly known as NSAIDs are classified under non-narcotic analgesics. Which of the following is widely used to manage post-operative pain?",
+    "options": ["Tramadol.", "Ibuprofen", "Paracetamol."],
+    "correctAnswer": "B",
+    "rationale": "It is an NSAID that has analgesic, anti- inflammatory, and antipyretic effects, making it effective in reducing pain and inflammation after surgery."
+  },
+  {
+    "id": "med132",
+    "questionText": "A normal reproductive function that way t altered in a patient who andergone prostatectomy is",
+    "options": [
+      "Production of testosterone.",
+      "Production of semmal fluid.",
+      "Release of sperm from the epididyma"
+    ],
+    "correctAnswer": "B",
+    "rationale": "The prostate gland, which produces secretes seminal fluid. is removed durme procedure."
+  },
+  {
+    "id": "med133",
+    "questionText": "A nurse assessing a patient's ove identifies involuntary rhythmic movements of the eyes. Th can be documented as",
+    "options": ["vertigo.", "nystagmus.", "astigmatism."],
+    "correctAnswer": "B",
+    "rationale": "It is a condition characterized by involuntary, repetitive, and rhythmic movemens the eyes, which may involve horizontal, vertical, rotary oscillations. It can be a normal physiologu response or a sign of an underlying neurological vestibular disorder."
+  },
+  {
+    "id": "med134",
+    "questionText": "A Nurse caring for a patient after a then surgery is concerned that the patient's midstem wound is at risk for dehiscence. Which of following is the BEST intervention to prevent complication?",
+    "options": [
+      "Use appropriate sterile technique to change dressing",
+      "Place a pillow over incision site when chesti attempting to cough",
+      "Administer antibiotics"
+    ],
+    "correctAnswer": "B",
+    "rationale": "The pressure from coughing can disel sutures or staples used to close surgical wo leading to dehiscence. By placing a pillow over t incision site during coughing, this pressure i alleviated and prevent further injury."
+  },
+  {
+    "id": "med135",
+    "questionText": "A nurse is dressing an abdominal wound and te wound drain has to be removed. The understands that the decision to remove the deat mostly depends on",
+    "options": [
+      "Extent of the incision",
+      "Absence of infection",
+      "Amount of drainage"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rattimale Nac The conderel"
+  },
+  {
+    "id": "med143",
+    "questionText": "A nursing intervention to assist a pre-operative patient in coping with fear of pain would be to",
+    "options": [
+      "Explain the availability of pain medication.",
+      "Describe the degree of pain expected.",
+      "Divert the patient when taking about pain."
+    ],
+    "correctAnswer": "A",
+    "rationale": "This will assure them that there are measures in place to manage pain and increase their sense of control over their situation."
+  },
+  {
+    "id": "med144",
+    "questionText": "A patient aged 32 just had a caesarian section for her third child. For her not to return for removal of sutures, the surgeon requested for ....... type of suture.",
+    "options": [
+      "Synthetic non-absorbable suture.",
+      "Synthetic absorbable suture.",
+      "Natural absorbable suture."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Synthetic absorbable sutures are used in situations where the suture material will be absorbed by the body over time, eliminating the need for removal."
+  },
+  {
+    "id": "med145",
+    "questionText": "A patient aged 47years had a surgical procedure performed for him. The results of the procedure detected some minor problems with his heart's blood vessels. The procedure carried out on him can be classified as an example of ...... study.",
+    "options": [
+      "Invasive pre-operative.",
+      "Non-invasive intra-operative.",
+      "Invasive intra-operative"
+    ],
+    "correctAnswer": "C",
+    "rationale": "The fact that the procedure was performed during the surgery, with direct access to the patient's internal tissues and blood vessels, makes it an invasive intra-operative study."
+  },
+  {
+    "id": "med146",
+    "questionText": "A patient at the female surgical ward had under gone colostomy surgery. In planning care post operatively major aspects of the Nursing care to consider are; 1. Emotional support II. Teaching about stoma care III. Teaching about colostomy IV. Sexual activities",
+    "options": ["I and II", "1. II and III", "I, II, III and IV"],
+    "correctAnswer": "B",
+    "rationale": "They help to ensure the patient physical and emotional well-being, and mome successful management of the stoma. Howere sexual activities is not a major aspect to sonid because it is not immediately necessary for the patient's recovery and does not directly affect the physical health."
+  },
+  {
+    "id": "med147",
+    "questionText": "A patient being prepared for a major abdommal surgery is instructed to take nothing by mouth by a period of.... hours before surgery",
+    "options": ["6 to 8", "2 to 4", "8 to 12"],
+    "correctAnswer": "A",
+    "rationale": "A period of 6 to 8 hours is recommended to reduce the risk of aspiration of stomach contents during anaesthesia."
+  },
+  {
+    "id": "med148",
+    "questionText": "A Patient complains of feeling dizzy whiles walking in the ward on the 2nd post-operative day. As a Nurse on duty, what will be your nursing action? 1. Sit patient down. II. Take patient full history. III. Check patient BP. IV. Administer analgesics.",
+    "options": ["II, III and IV.", "1 and II.", "I and III."],
+    "correctAnswer": "B",
+    "rationale": "The first nursing action should be to si the patient down to prevent a fall. The next step should be to check the patient's blood pressure as dizziness could be a sign of hypotension Analgesics are only administered when patient is experiencing pain."
+  },
+  {
+    "id": "med149",
+    "questionText": "A patient complains of feeling of dizzy Wholes walking in the ward on the 2nd post-operative day As a Nurse on duty, what will be your nursing action? 1. Sit patient down II. Take patient full history III. Check patient BP IV. Administer analgesics",
+    "options": ["II, III and IV", "I and III", "I and II"],
+    "correctAnswer": "B",
+    "rationale": "Sitting the patient down prevents falls and checking the BP could point to the cause of dizziness which could be low BP (hypotension)."
+  },
+  {
+    "id": "med150",
+    "questionText": "A patient complains of severe pains of 2 days following surgery. The nurse should first",
+    "options": [
+      "Administer the p.r.n analgesic",
+      "Ensure the patient is having enough rest",
+      "Find out when the last analgesic was given"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Administration of an \"as needed\" (p.r.n.) analgesic without knowing when the patient's last dose was given can result in overdose and subsequent respiratory depression."
+  },
+  {
+    "id": "med151",
+    "questionText": "A patient convalescing from abdominal surgery develops thrombophlebitis. Which signs will indicate to you that this complication has occurred?",
+    "options": [
+      "Severe pain on exertion of the extremity",
+      "Intermittent claudication",
+      "Localized warmth and tenderness of the leg"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Thrombophlebitis is the inflammation of a vein caused by a blood clot, and it is characterized by localized warmth and tenderness of the affected Brea"
+  },
+  {
+    "id": "med152",
+    "questionText": "A patient developed a 5cm erythema on the sacrum which has developed into a blister two days later, with the appearance of surrounding \"bruising\" extending bilaterally over the buttocks. Which of the following is the MOST likely diagnosis?",
+    "options": [
+      "Stage I pressure ulcer.",
+      "Stage III pressure ulcer",
+      "Stage II pressure ulcer."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The presence of a blister and surrounding \"bruising\" extending bilaterally over the buttocks suggest deep tissue damage that has progressed to a full-thickness skin loss with damage to the underlying tissues. This is consistent with a Stage III pressure ulcer."
+  },
+  {
+    "id": "med153",
+    "questionText": "A patient diagnosed with first stage cancer of the colon was scheduled for colostomy. The post- operative care of the stoma following colostomy includes the following EXCEPT",
+    "options": [
+      "Chunying the colostomy every Shours",
+      "Changing dressing as and when sailed.",
+      "Cleming of the storma when changing dressing and bay."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Changing a colostomy bag too frequently can lead to irritation of the skin around the stoma. In addition, the colostomy bags are usually changed when about 1/3 full and not according to a fixed schedule of every 3 hours, which may be too frequent for some patients."
+  },
+  {
+    "id": "med154",
+    "questionText": "A patient diagnosed with peptic ulcer may be booked for surgery when she presents with the following signs and symptoms",
+    "options": [
+      "Vomiting and pain.",
+      "Fever and indigestion.",
+      "Haemorrhage and fever"
+    ],
+    "correctAnswer": "C",
+    "rationale": "This may indicate a severe and potentially life-threatening complication, such as perforation or penetration of the ulcer, which may require surgical intervention to manage."
+  },
+  {
+    "id": "med155",
+    "questionText": "A patient diagnosed with thyroid gland cancer was operated on. A total thyroidectomy was performed. Which of the under listed hormone is expected to increase in the blood?",
+    "options": [
+      "Thyroid hormone.",
+      "Thyroid tumour markers.",
+      "Thyroid stimulating hormone."
+    ],
+    "correctAnswer": "C",
+    "rationale": "TSH is produced by the pituitary gland and stimulates the thyroid gland to produce thyroid hormone. When there is a deficiency of thyroid hormone, the pituitary gland increases its production of TSH to stimulate the thyroid gland to produce more thyroid hormone."
+  },
+  {
+    "id": "med156",
+    "questionText": "A Patient enters the emergency department with a lower leg injury. There is a visible deformity to the lower aspect of the leg and it appears shorter than the other leg. The patient complained of pain and swollen in the area as well as signs of bruising. The patient is likely to be diagnosed of which of the following?",
+    "options": ["Fracture", "Contusion.", "Sprain."],
+    "correctAnswer": "A",
+    "rationale": "The visible deformity, shortening of the leg, pain, swelling, and bruising are all classic signs of a fracture."
+  },
+  {
+    "id": "med157",
+    "questionText": "A patient had jejunal grafting with NG tube in situ. To reduce the risk of pulmonary aspiration in a patient with NG tube in situ, the nurse should",
+    "options": ["II, III and IV,", "I, II and III.", "CLI and IV"],
+    "correctAnswer": "C",
+    "rationale": "Giving more fluids with the feeds may actually increase the risk of aspiration by making the contents of the stomach more likely to reflux into the lungs."
+  },
+  {
+    "id": "med158",
+    "questionText": "A patient has a fracture of the right femur and is in a skeletal traction. Which appropriate bed accessory would help relieve pressure on the buttocks?",
+    "options": ["Trapeze", "Side rails", "Sand bag"],
+    "correctAnswer": "A",
+    "rationale": "It is a bar with attached ropes that provides a patient with extra support to sit up, turn or move. It helps relieve pressure points and makes positioning and movement easier."
+  },
+  {
+    "id": "med159",
+    "questionText": "A patient has been admitted to your ward for planned abdominal surgery. Which of the following would be MOST appropriate to include in your pre- operative teaching?",
+    "options": [
+      "Effective deep breathing and coughing",
+      "Medication during surgery",
+      "Care of incision site"
+    ],
+    "correctAnswer": "A",
+    "rationale": "This will prevent respiratory complications after abdominal surgery by clearing airways of secretions, increasing oxygenation, and preventing atelectasis (lung collapse),"
+  },
+  {
+    "id": "med160",
+    "questionText": "A patient has been brought back to the surgical ward after a prostatomy operation. Manual irrigation of urethral catheter following prostatectomy is necessary to",
+    "options": [
+      "Remove blood clots.",
+      "Relieve abdominal pain.",
+      "Maintain patency."
+    ],
+    "correctAnswer": "C",
+    "rationale": "A urethral catheter is inserted after a prostatectomy to allow urine drainage, but debris like blood clots and mucus can obstruct urine flow and cause discomfort. To maintain catheter patency, manual irrigation is used to flush out the obstructions."
+  },
+  {
+    "id": "med161",
+    "questionText": "A patient has been diagnosed with diverted disease. As the attending nurse you understand tha this condition commonly occurs in which part of the colon?",
+    "options": ["Transverse.", "Descending.", "Ascending."],
+    "correctAnswer": "B",
+    "rationale": "Diverticular disease is common in the sigmoid colon because it experiences high pressure due to its location at the end of the descending colon where stool accumulates before being eliminated through the rectum."
+  },
+  {
+    "id": "med162",
+    "questionText": "A patient has been on your ward for the past 4 days. She was booked for diagnostic surgery. Which of the following is likely to be performed on her?",
+    "options": [
+      "Exploratory laparotomy.",
+      "Gastro-jejunostomy.",
+      "Cholecystectomy."
+    ],
+    "correctAnswer": "A",
+    "rationale": "It is a surgical procedure in which ar incision is made in the abdomen to examine the abdominal organs and tissues for the presence of any abnormality or disease."
+  },
+  {
+    "id": "med163",
+    "questionText": "A patient has been received into the operating room for thyroidectomy. Which of the following is NOT applicable to the intended procedure?",
+    "options": ["Sand bag.", "Foot rest.", "Tracheostomy set"],
+    "correctAnswer": "C",
+    "rationale": "Thyroidectomy does not involve making an incision into the trachea or manipulating the airway, as it is a surgical procedure that involves removing part or all of the thyroid gland located in the neck."
+  },
+  {
+    "id": "med164",
+    "questionText": "A patient has reported severely at the OPD wit the diagnosis of primary hyperparathyroidism Which of these indicators would require surgical intervention?",
+    "options": [
+      "Serum calcium level greater than 0.28tomal",
+      "Urinary calcium of 10mmol/l",
+      "Urinary calcium of 8mmmol/l"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Primary hyperparathyroidism results in increased serum calcium levels, and a level greater than 0.25 mmol/L indicates severe hypercalcemia which can cause complications like kidney stones, osteoporosis, and cardiac arrhythmias, Surgery is such cases. the definitive treatment for hyperparathyroidism in"
+  },
+  {
+    "id": "med165",
+    "questionText": "A patient has undergone a four hour abdominal surgery under spinal anaesthesia. She was transferred to the surgical unit and started complaining of severe incisional pain after one and half hours. The patient's skin is pale and surgical dressing is dry and intact. The MOST appropriate nursing intervention is to",
+    "options": [
+      "Put the patient in a high fowler's position and administer oxygen.",
+      "Report findings to the surgeon.",
+      "Administer prescribed analgesics."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The patient is likely experiencing pain due to the surgical procedure, and the administration of the prescribed post-op analgesics can help to effectively alleviate the incisional pain."
+  },
+  {
+    "id": "med166",
+    "questionText": "A patient has undergone an abdominal surgery and is been managed on the ward. In order to prevent wound dehiscence, the Nurse would:",
+    "options": [
+      "Teach patient how to Splint the when Coughing.",
+      "Administer prescribed antibiotics every",
+      "Serve food rich in vitamins and protein."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Coughing generates pressure in the abdominal area, which can potentially cause the surgical incision to open up, resulting in wound dehiscence. Splinting the incision with a pillow or other support during coughing can help to reduce the pressure on the incision."
+  },
+  {
+    "id": "med167",
+    "questionText": "A patient involved in a RTA has compound fracture of the left. It means that.",
+    "options": [
+      "There is risk for impaired skin integrity",
+      "Skin integrity is impaired as well as bone",
+      "Bone is broken inside but skin is intact"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Compound fracture means that the broken bone has punctured the skin, leading to damage and compromised skin integrity along with broken bone"
+  },
+  {
+    "id": "med168",
+    "questionText": "A patient involved in RTA had a fractured right lower limb. in order to Traction would be applied to the limb",
+    "options": [
+      "Elevate the limb in neutral position",
+      "Pull the bone ends to maintain apposition",
+      "Avoid weight bearing and muscle strain"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Traction pulls the fractured bone ends into proper alignment in order to facilitate union during immobilization and healing."
+  },
+  {
+    "id": "med169",
+    "questionText": "A patient involves in RTA had a fractured right lower limb. Traction would be applied to the limb in order to",
+    "options": [
+      "Elevate the limb in neutral position",
+      "Pull the bones ends to maintain apposition",
+      "Avoid weight bearing and muscles strain"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Traction helps in aligning the fractured bone ends by applying force to pull them, which aids in proper healing."
+  },
+  {
+    "id": "med170",
+    "questionText": "A patient is being prepared for diagnosis and staging of suspected cancer in the stomach. The student nurse understands that the most reliable diagnostic test is",
+    "options": ["Biopsy", "Gastroscopy", "Computerized tomographic Scan"],
+    "correctAnswer": "A",
+    "rationale": "It involves taking a small sample of tissue from the suspected cancerous area in the stomach, which is then examined under a microscope for the presence of cancer cells."
+  },
+  {
+    "id": "med171",
+    "questionText": "A patient is diagnosed with peptic ulcer disease has received medical treatment but still not had any improvement in the condition. She is scheduled for vagotomy. As the nurse caring for this patient you understand that the rationale for performing vagotomy for this patient with peptic ulcer is to",
+    "options": [
+      "Decrease stimulation of peristalsis.",
+      "Reduce the emptying time of the stomach.",
+      "Reduce production of hydrochloric acid."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Vagotomy involves cutting the vagus nerve, which innervates the stomach, in order to decrease acid secretion and reduce the risk of ulcer formation or promote uleer healing."
+  },
+  {
+    "id": "med172",
+    "questionText": "A patent is ovaluated by Nurse Joloto afler a fall. Nurse Joloty is likely to use varus stress test of the knee in the evaluation. This action of the Nurse is referred to as",
+    "options": [
+      "Forse dud moves the joint away from the midue",
+      "Stress on the vagus nerve.",
+      "Movement of joint toward the midline of the body"
+    ],
+    "correctAnswer": "A",
+    "rationale": "The varus stress test is used in the evaluation of a patient after a fall as it involves applying a force that moves the knee joint away from the midline to assess for medial collateral ligament (MCL) injury."
+  },
+  {
+    "id": "med173",
+    "questionText": "A patient is finding it difficult to void after an indwelling catheter has been removed. This may be due to",
+    "options": [
+      "Fluid imbalance",
+      "Nervous tension following the procedure",
+      "As interruption in the normal voiding habits"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It occurs as a result of bladder muscle weakness caused by prolonged reliance on the catheter for urine output"
+  },
+  {
+    "id": "med174",
+    "questionText": "A Patient is on your ward with fractured right humerus. Testing for crepitus in a Patient with fracture of the humerus should be avoided because",
+    "options": [
+      "Can produce further tissue damage.",
+      "Will lead to gangrene formation,",
+      "Can lead to shortening of the limb."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Crepitus is the grating, crunching or crackling sensation felt when two fractured bone ends rub against each other, Testing for crepitus can further damage the surrounding soft tissues and fracture fragments,"
+  },
+  {
+    "id": "med175",
+    "questionText": "A patient is rushed to your emergency department after sustaining burn injuries to the arms and trunk. In assessing the patient you know that the severity of a burn injury depends on 1. Age of patient IL Amount of surface area burnt III. Presence of inhalation injury IV. Prompt treatment given",
+    "options": [" , II, III and IV.", "II. III and IV.", "I, II and II."],
+    "correctAnswer": "B",
+    "rationale": "While older adülts may have a harder time recovering from burn injuries, age is not significant factor in determining barn injury severity."
+  },
+  {
+    "id": "med176",
+    "questionText": "A patient is scheduled for a wide local excision with axillary clearance in the theater. The anaesthetist will use which of the following to aid ur intubation of the patient?",
+    "options": ["Laryngoscope.", "Magill's forceps.", "Bougie,"],
+    "correctAnswer": "A",
+    "rationale": "It provides a direct line of sight to the larynx and vocal cords which allows the anaesthetis to pass the endotracheal tube into the trachea during intubation"
+  },
+  {
+    "id": "med177",
+    "questionText": "A patient is suspected of having a basilar skull fracture if there is 1. Bleeding on the eye II. Cerebrospinal fluid leaks through the nose III. Cerebrospinal fluid leaks through the ears IV. Bruising over the mastoid",
+    "options": ["I, II and IV", "I, II and III.", "II and IIL"],
+    "correctAnswer": "C",
+    "rationale": "Cerebrospinal fluid (CSF) leaks through the nose or ears are signs of basilar skull fracture because they indicate a tear in the meninges, which are protective membranes that cover the brain and spinal cord, and this can cause CSF to leak out of the skull."
+  },
+  {
+    "id": "med178",
+    "questionText": "A patient is suspected of having diverticulitus Which of the under listed diagnostic investigations can be used to confirm the diagnosis? 1. Colonoscopy II. Barium enema III. Digital rectal examination IV. WBC count",
+    "options": ["I only.", " and 11.", "I. II, III and IV."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Options I and II can identify the presence of diverticula and complications, while"
+  },
+  {
+    "id": "med179",
+    "questionText": "A patient on admission in your ward is suspected to have cancer of the oral cavity and throat. Which of the following data from the patient during history taking increases the risk of patient's condition?",
+    "options": [
+      "A history of smoking.",
+      "Worked as a banker.",
+      "Adult onset of diabetes."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Smoking exposes the oral cavity and throat tissues to carcinogens present in tobacco tumour formation."
+  },
+  {
+    "id": "med180",
+    "questionText": "A patient on continuous bladder irrigation complains of lower abdominal discomfort. The nurse's BEST action is to",
+    "options": [
+      "Assess the amount of urine in bag.",
+      "Monitor the vital signs.",
+      "Check the patency of the catheter,"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It could indicate if there is a blockage or obstruction in the catheter tubing, which may be the cause of the discomfort."
+  },
+  {
+    "id": "med181",
+    "questionText": "A patient on your ward had a successful abdominal surgery done and is recovering. As a nurse caring for this patient you would be most concerned about monitoring for wound dehiscence during which period.",
+    "options": [
+      "One week after surgery.",
+      "4th post-operative day.",
+      "2nd post-operative day"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Wound dehiscence (surgical incision separation) is more likely to occur on the 2nd to 3rd postoperative day because this is the time when the surgical incision is most vulnerable due to decreased tensile strength, leading to increased stress on the wound from coughing, vomiting, and other activities."
+  },
+  {
+    "id": "med182",
+    "questionText": "A patient on your ward is experiencing a Hypovolemic shock on your ward following a burn injury can be prevented through 1. Administering IV fluids II. Administering oxygen III. Putting patient in semi fowlers position IV. Giving patient analgesies",
+    "options": ["I, II and IV", "I, II and II", "Land II."],
+    "correctAnswer": "B",
+    "rationale": "Administering IV flods can help to replenish the lost volume. II can help to improve tissue oxygenation. III can help to increase venons return and improve cardiac output, thereby preventing shock. Giving patient analgesics can help to manage pain but does not directly prevent hypovolemic shock."
+  },
+  {
+    "id": "med183",
+    "questionText": "A patient post operative day three (3) is unable to move his bowel. As a newly qualified nurse you know that difficulty in having bowel movement days after surgery can result from 1. Decreased mobility II. Inadequate oral intake III. Opioid analgesics IV. High fatty diet",
+    "options": ["Land II.", "I. II and III", "I, II and IV."],
+    "correctAnswer": "B",
+    "rationale": "Decreased mobility leads to decreased bowel motility, Opioid analgesics results in decreased stool bulk and slower intestinal transit time, while opioid analgesics decrease bowel motility. High fatty diet does not directly affect bowel motility or stool consistency."
+  },
+  {
+    "id": "med184",
+    "questionText": "A patient presenting with painless ulcer with raised edges in the mouth which bleeds easily with persistent white patches is MOST likely to be diagnosed of",
+    "options": ["Oral Cancer.", "Cancrum oris.", "Buruli ulcer."],
+    "correctAnswer": "A",
+    "rationale": "It frequently presents as non-healing ulcers (open sores) with a raised margin and central necrosis (tissue death) that may be associated with leukoplakia (white patches on the mucous membranes) or erythroplakia (red patches on the mucous membranes)."
+  },
+  {
+    "id": "med185",
+    "questionText": "spinal additives would be the best option to intensify the block in the ambulatory setting?",
+    "options": ["Morphine.", "Epinephrine", "Fentanyl"],
+    "correctAnswer": "C",
+    "rationale": "It has a faster onset, shorter duration, and less risk of causing postoperative respiratory depression."
+  },
+  {
+    "id": "med186",
+    "questionText": "A patient presents with shallow ulcerated lesions on the lower legs above ankles. He has noticeable varicosities in the lower extremities with pitting edema to the midpoint of his lower leg. The lower extremities are warn and the lesions are characterized by irregular margins and granulation tissue. The skin of the lower extremities is hyper- pigmented to 4cm above the ankles Which of the following is the MOST likely diagnosis?",
+    "options": ["Diabetic ulcer", "Pressure ulcer", "Venous stasts ulcer"],
+    "correctAnswer": "A",
+    "rationale": "Varicosities and oedema are hallmarks of chronic venous insufficiency (CVI) which results in pooling of blood in the extremities. Stagnation caused by CVI leads to tissue hypoxia or anoxia predisposing patients with CVI to develop ulcers known as \"venous stasis ulcers.\""
+  },
+  {
+    "id": "med187",
+    "questionText": "A patient presents with wrist drop. The Charge Nurse would be concerned about compression of which of the following nerves?",
+    "options": ["Radiai", "Ulnar", "Median"],
+    "correctAnswer": "A",
+    "rationale": "It is responsible for the movement and sensation of the extensor muscles in the forearm, wrist, and hand, and compression or injury to the nerve can lead to wrist drop, which is the inability to extend the wrist and fingers."
+  },
+  {
+    "id": "med188",
+    "questionText": "A patient reported at the emergency unit with bleeding from the car. Initial assessment showed perforation of the tympanic membrane. The nurse understands that the surgical intervention of choice will be",
+    "options": ["tympanoplasty", "tympanosomy.", "tympanoscopy."],
+    "correctAnswer": "A",
+    "rationale": "This surgical procedure aims to repair perforated tympanic membrane or middle a ossicles, often due to infection, trauma, or chronic otitis media."
+  },
+  {
+    "id": "med189",
+    "questionText": "A patient reported to the emergency ward with left hip pain following a minor trauma, fever and cough before the trauma. He was treated with ibuprofen for 7 days. He also presented with s limited and painful range of motion of the left hip and could not bear weight. Blood test showed raised WBC count. He was admitted for suspectel osteomyelitis. Possible nursing diagnosis may include the following EXCEPT:",
+    "options": [
+      "Impaired physical mobility.",
+      "Ineffective thermoregulation.",
+      "Ineffective airway elearance"
+    ],
+    "correctAnswer": "C",
+    "rationale": "This is not relevant to the patient's condition as there is no indication that the patient is experiencing any respiratory symptoms such as shortness of breath, or chest congestion."
+  },
+  {
+    "id": "med190",
+    "questionText": "A Patient reported to the Hospital with swollen neck and hoarseness of voice. He was diagnosed of having hyperthyroidism. The following could be the cause of his condition EXCEPT:",
+    "options": [
+      "Thyroiditis.",
+      "Toxic multi nodular goiter.",
+      "Hashimoto's thyroiditis."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Hashimoto's thyroiditis is not a cause of hyperthyroidism but rather a cause hypothyroidism."
+  },
+  {
+    "id": "med191",
+    "questionText": "A patient reported with epigastric pain 3-4 hours after eating. The pain also wakes her up during the night. She is likely to be diagnosed of",
+    "options": ["Gastric ulcer.", "Oesophageal ulcer.", "Duodenal ulcer"],
+    "correctAnswer": "C",
+    "rationale": "Gastric ulcers typically cause pam 1-2 hours after eating a meal, as the stomach starts t release acid to digest the food. Duodenal ulcers tend to cause pain 2-3 hours after cating when the partially digested food has left the stomach and enters the duodenum."
+  },
+  {
+    "id": "med192",
+    "questionText": "A patient reports having an allergy to pencillis Which of the following questions would client the most useful information for the nurse?",
+    "options": [
+      "What type of allergic reaction did you have?",
+      "Did you notify your physician of the allergy?",
+      "What infection did you have that required penicillin?"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Different types of reactions may require different interventions or treatments, and knowing this information is critical in avoiding potential harm to the patient"
+  },
+  {
+    "id": "med193",
+    "questionText": "A patient returned to the ward after undergoing open reduction and internal fixation. She complained of severe pain despite opioid analgesic administration. Further assessment suggested compartment syndrome. The nurse understands that a delay in reporting the pain can ultimately result in",
+    "options": ["Bleeding.", "Necrosia", "Infection."],
+    "correctAnswer": "B",
+    "rationale": "Compartment syndrome results in increased pressure within an enclosed anatomic space. This reduces capillary blood flow resulting in tissue ischemia and ultimately tissue death (necrosis) if left untreated."
+  },
+  {
+    "id": "med194",
+    "questionText": "A patient returns to the ward fully awake following a bronchoscopy and biopsy. The Nurse should",
+    "options": [
+      "Advise patient to lie flat for 2 hours",
+      "Lyubrate the presence of gag reflox",
+      "Advise the patient to cough frequently"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Evaluating the gag reflex helps determine if the patient's airway is functioning properly and reduces the risk of aspiration, which is erucial for patient safety after the procedure,"
+  },
+  {
+    "id": "med195",
+    "questionText": "A patient scheduled for caesarian section is to have spinal anaesthesia. Which of the following is the MOST dangerous complication during the induction of spunal anaesthesia?",
+    "options": ["Cardiac arrest", "Hyperthermia.", "Hypotension"],
+    "correctAnswer": "C",
+    "rationale": "Spinal anaesthesia blocks sympathetic nerve fibres leading to vasodilation, which decreases blood pressure and can cause hypotension"
+  },
+  {
+    "id": "med196",
+    "questionText": "A patient suffering from cataract will experience which of the following symptoms?",
+    "options": [
+      "Cloudiness of lens,",
+      "Narrowing of visual field.",
+      "Softening of the lens."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Cataract is the clouding of the eye's lens."
+  },
+  {
+    "id": "med197",
+    "questionText": "A patient sustained a simple fracture on the left leg and is on admission on your ward. A Plaster of Paris is to be applied to the leg. As the nurse on duty managing this patient, in order to prevent indentation on a wet plaster cast you need to use",
+    "options": ["Her palms.", "More assistance.", "Both hands."],
+    "correctAnswer": "C",
+    "rationale": "When applying a plaster cast, it is important to use both hands to evenly distribute pressure and prevent indentation on the wet plaster cast."
+  },
+  {
+    "id": "med198",
+    "questionText": "A patient sustained a transverse fracture of the tibia 3 days ago was treated in the Emergency Unit with closed reduction and cast. Today he presents with increased pain, tingling and numbness. The lower extremity is tender, with swelling and increased pain with passive movement. The patient has increased sensation over the foot on the affected side. Which of the following is indicated?",
+    "options": [
+      "Ventilation-perfusion scan",
+      "Measurement of compartment pressure",
+      "CT scan of the lower extremity"
+    ],
+    "correctAnswer": "B",
+    "rationale": "The patient's symptoms are consistent with compartment syndrome, which is caused by increased pressure in a closed anatomical space (compartment), and measuring the pressure can confirm diagnosis and prompt immediate intervention, such as fasciotomy."
+  },
+  {
+    "id": "med199",
+    "questionText": "A patient sustains a penetrating chest injury and is rushed to your emergency department. Which of the following can you do to identify the involvement of the aorta in a patient with this type of injury?",
+    "options": [
+      "Bleeding into the pleural space.",
+      "Checking the peripheral pulse.",
+      "Noting and reporting hypotension."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The sorta is a major blood vessel, and damage to it can cause significant blood loss, leading to a drop in blood pressure."
+  },
+  {
+    "id": "med200",
+    "questionText": "A patient undergoing surgery has to be given preoperative medication, The purpose of this medication is to 1. Allay anxiety 11. Decrease secretion Ill Prevent pain IV. Reduces side effects of the operation",
+    "options": ["1, II and III", "1 11 and IV", "II, III and IV"],
+    "correctAnswer": "B",
+    "rationale": "The purpose of preoperative medication is to make the patient comfortable before and during surgery by addressing psychological, physiological and physical discomforts, but it is not necessarily intended to prevent pain."
+  },
+  {
+    "id": "med201",
+    "questionText": "A patient undergoing surgery under general anaesthesia is at risk of developing deep vein thrombosis. Which of the under listed are likely to cause this condition? 1. Dehydration II. Pressure on calf muscles III Immobility IV. Varicose veins",
+    "options": ["I, II and IV.", "I, II and III.", "II, III and IV."],
+    "correctAnswer": "B",
+    "rationale": "Varicose veins are a risk factor for DVT, but not necessarily in the context of surgery under general anaesthesia."
+  },
+  {
+    "id": "med202",
+    "questionText": "A Patient was admitted to the Female Surgical ward with the diagnosis of maliguant tumour of the left breast. The following are characteristics of malignant cells EXCEPT",
+    "options": [
+      "Usually localized",
+      "Spread by metastasis.",
+      "Rate of growth is variable,"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Malignant cells are cancerous cells that have the ability to invade surrounding tissues and spread to distant parts of the body through the bloodstream or lymphatic system. They have uncontrolled growth, abnormal morphology, and loss of differentiation."
+  },
+  {
+    "id": "med203",
+    "questionText": "A patient was brought to the OPD with complaint of severe pain in the right lower quadras of the abdomen. On assessment, Rawing's g positive for which of the following inflammatory processes?",
+    "options": ["Pancreatitis.", "Appendicitis", "Diverticulitis."],
+    "correctAnswer": "B",
+    "rationale": "Rowing's sign is a clinical test used evaluate for appendicitis. It involves having ar patient lift their right leg while the examiner.apple pressure to the left lower quadrant of the abdomen If the test is positive, it can indicate inflammation of the appendix."
+  },
+  {
+    "id": "med204",
+    "questionText": "A patient was brought to the OPD with the complaint of severe pain in the right lower quadrant of the abdomen. On assessment, Rovsing's sign was positive. Which of the following inflammatory processes is indicated?",
+    "options": ["Appendicitis", "Pancreatitis", "Diverticulitis"],
+    "correctAnswer": "A",
+    "rationale": "Rovsing's sign is a tenderness in the lower right quadrant of the abdomen that is elicited when the left lower quadrant is palpated, suggesting appendicitis."
+  },
+  {
+    "id": "med205",
+    "questionText": "A patient was rushed into the surgical emergency with protrusion of abdominal organs through gaped wound after discharge following abdominal surgery. What will be the most suitable position to nurse this patient?",
+    "options": ["Lateral.", "Fowler's.", "Lithotomy."],
+    "correctAnswer": "B",
+    "rationale": "It reduces pressure on the abdominal wound, supports the organs, and helps prevent further complications."
+  },
+  {
+    "id": "med206",
+    "questionText": "A Patient was rushed to the emergency unit of your facility with an infected wound. You have been tasked to assess the wound to inform the Doctors decision. The following would be your assessment findings EXCEPT:",
+    "options": [
+      "Odorous discharge.",
+      "Formation of epithelial cells.",
+      "Redness of the edges."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It is a sign of wound healing and is not expected in an infected wound."
+  },
+  {
+    "id": "med207",
+    "questionText": "A patient was rushed to the emergency unit with the diagnosis of cholecystitis. Which diagnostic investigation will the doctor order to help diagnose cholecystitis?",
+    "options": ["Abdominal X-ray.", "Abdominal ultrasound.", "Colonoscopy."],
+    "correctAnswer": "B",
+    "rationale": "It is a non-invasive imaging modality that can visualize the gallbladder and identify gallstones or inflammation."
+  },
+  {
+    "id": "med208",
+    "questionText": "A patient who had a procedure performed for him, returned to work after 3 days stay in the hospital. He was advised by the nurse to avoid smoking, strenuous exercises and wait at least 1 week before bathing or swimming. The results of the procedure detected some minor problems with his heart's blood vessels. What procedure might have been performed for him?",
+    "options": ["Ultrasound.", "Angiography", "Angiogram."],
+    "correctAnswer": "B",
+    "rationale": "is a medical imaging technique used to visualize the inside of blood vessels and organs of the body, typically using a contrast agent and X- rays. Angiogram is an X-ray of blood vessels but it is not a procedure by itself. Angiography refers to the entire procedure,"
+  },
+  {
+    "id": "med209",
+    "questionText": "A patient who had abdominal surgery with naso- gastric tube in situ is vomiting. The nurse action should be: 1. elevate head of the bed 11. administer antiemetic III. encourage the patient to breathe deeply IV. check the patency of the tube",
+    "options": ["L. II, III", "I, IL, and IV.", "CII, III and IV"],
+    "correctAnswer": "B",
+    "rationale": "Encouraging the patient to breathe deeply is not likely to effectively address the issue of vomiting and may even increase the risk of aspiration."
+  },
+  {
+    "id": "med210",
+    "questionText": "A patient who had cholecystectomy and choledochotomy performed complaining of nausea indigestion and pain after eating fatty foods. This is because",
+    "options": [
+      "The liver is not producing bile.",
+      "Saturated fats are difficult to digest.",
+      "Bile is not entering the duodenun."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Cholecystectomy removes the reservoir for bile storage and choledochotomy can lead to blockage/narrowing of the common bile duct, both of which can prevent proper drainage of bile into the duodenum."
+  },
+  {
+    "id": "med211",
+    "questionText": "A patient who had RTA sustained fracture of the nose. What would be the immediate nursing intervention?",
+    "options": [
+      "Apply ice and keep the head elevated",
+      "Apply direct pressure to the nose",
+      "Splint the nose with gauze"
+    ],
+    "correctAnswer": "A",
+    "rationale": "This will reduce swelling and control bleeding. Applying direct pressure or splinting the nose with a gauze may further aggravate the injury and cause more pain and bleeding."
+  },
+  {
+    "id": "med212",
+    "questionText": "A patient who had total gastrectomy performed for him needs total nursing care. As the nurse in charge your nursing concern will be towards his",
+    "options": [
+      "Body image perception.",
+      "Nutritional needs.",
+      "Activities for daily living."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Due to the removal of the stomach and its effect on digestion and absorption of nutrients."
+  },
+  {
+    "id": "med213",
+    "questionText": "A patient who has been on admission for the past 3 days is scheduled for paracentesis tomorrow morning. In which of the following conditions can paracentesis be done as therapeutic and diagnostic procedure?",
+    "options": ["Liver laceration.", "Ectopic gestation.", "Ovarian cyst."],
+    "correctAnswer": "C",
+    "rationale": "The fluid in the cyst can be drained and analysed for diagnosis and treatment purposes using paracentesis."
+  },
+  {
+    "id": "med214",
+    "questionText": "A patient who has had colostomy should follow A diet that ja",
+    "options": [
+      "As close to normal as possible",
+      "Bigs in carbohydrate",
+      "Low in fibre content"
+    ],
+    "correctAnswer": "A",
+    "rationale": "it promotes a balanced intake of essential nutrients and helps maintain optimal digestive health and overall well-being. Option C can be harmful and can lead to constipation, which can increase the risk of bowel obstruction"
+  },
+  {
+    "id": "med215",
+    "questionText": "A patient who has had lobectomy is brought hack to the ward with chest tube drainage system in place. The nurse action include the following EXCEPT",
+    "options": [
+      "Add 5 mls of sterile saline to the water seal chamber",
+      "H. Mark the time and fluid level on the side of the drainage system",
+      "Raise the drainage system to bed level to check patency"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Doing so will break the air seal which can delay lung expansion and cause pneumothorax."
+  },
+  {
+    "id": "med216",
+    "questionText": "A patient who has had right mastectomy performed and has returned from theater should be assessed for hemorrhage by.",
+    "options": [
+      "Plany a gloved hand beneath the shoulders",
+      "Asking her if her back feels wet",
+      "Testing her stool for occult blood"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Thug method provides a direct and reliable way to detect any signs of bleeding, as opposed to relying on the patient's subjective perception option B) or testing for occult blood in stool (oplion C), which is unrelated to post- mastectomy haemorrhage."
+  },
+  {
+    "id": "med217",
+    "questionText": "A patient who has successfully undergone a total hip replacement is complaining of pain at the operative site. Your appropriate initial nursing action would he",
+    "options": [
+      "Assess the patient's pain level and vital sigus.",
+      "Change the patient's position",
+      "Administer prescribed analgesics"
+    ],
+    "correctAnswer": "A",
+    "rationale": "To determine the severity of the pain and whether there are any other underlying issues that need to be addressed before d pain medication."
+  },
+  {
+    "id": "med218",
+    "questionText": "A patient who has suitsmed head injury Сальстовпess and is able to move the ex This suggests nou nvolvement of the",
+    "options": ["Posteentral gyrus", "Precentral gyrus", "Basal ganglia"],
+    "correctAnswer": "B",
+    "rationale": "The patient's ability to move extremities suggests that the Precentral gyrus w controls voluntary movements was not damage"
+  },
+  {
+    "id": "med219",
+    "questionText": "A patient who has sustained inhalational bu likely to show the following signs exсер",
+    "options": [
+      "Difficulty in swallowing",
+      "Respiratory distress,",
+      "Burnt nasal hair"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Inhalational burns affect the respiratey tract and not the digestive tract."
+  },
+  {
+    "id": "med220",
+    "questionText": "A patient who has sustained severe burns a experiencing a multiple organ failure. Mulupe organ failure in a patient with burns usually result from 1. Oedema II. Hypovolemia III. Ischemia IV. Bleeding",
+    "options": ["1, II and III.", " , II, III and IV.", "II, III and IV."],
+    "correctAnswer": "C",
+    "rationale": "Oedema, which is the accumulation of fluid in tissues, does not directly cause the failured of multiple organs, but can contribute to org dysfunction through impaired circulation oxygen delivery."
+  },
+  {
+    "id": "med221",
+    "questionText": "A patient who is undergoing thyroidectoon requires constant monitoring. Which of the theate team members is primarily responsible monitoring patient's physical status throughout surgery?",
+    "options": ["Surgeon.", "Scrub nurse.", "Apaesthetist"],
+    "correctAnswer": "C",
+    "rationale": "The anaesthetist directly monitors the patient's physiological status by checking parameters such as pulse, blood pressure, oxygen levels, temperature etc. to ensure adequate depth of anaesthesia and physiological stability."
+  },
+  {
+    "id": "med222",
+    "questionText": "A patient who receives general anaesthesia passes through several stages. In which of the stages can the surgical procedure be performed?",
+    "options": [
+      "Exeitement stage.",
+      "Surgical anaesthesia stage.",
+      "Medullary depression stage."
+    ],
+    "correctAnswer": "B",
+    "rationale": "In this stage the patient is unconscious, has adequate muscle relaxation, and is stable enough to tolerate the procedure without pain or movement."
+  },
+  {
+    "id": "med223",
+    "questionText": "A patient who sustained a transverse fracture of the tibia three days ago was treated in the Emergency Unit with closed reduction and cast. Today he presents with increased pain, tingling, and numbness. The lower extremity is tender, with swelling and increased pain with passive movement. The patient has decreased sensation over the foot on the affected side. Which of the following is indicated?",
+    "options": [
+      "Measurement of compartment pressure.",
+      "CT scan of the lower extremity.",
+      "Ventilation-perfusion scan."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The patient is presenting with symptoms of of acute compartment syndrome (increased pressure within a closed space), which is a surgical emergency. Measuring compartment pressure can confirm the diagnosis and prompt urgent intervention."
+  },
+  {
+    "id": "med224",
+    "questionText": "A patient who sustained penetrating chest trauma had chest tube inserted. The rationale for the chest tube insertion is/are to remove 1. Air II. Blood III. Fluid IV. Pus",
+    "options": ["I, II and IV.", "II only.", "1 and 1."],
+    "correctAnswer": "C",
+    "rationale": "Chest tube insertion is done to remove air (pneumothorax) and/or blood (hemothorax) from the pleural space to prevent respiratory distress and maintain lung function."
+  },
+  {
+    "id": "med225",
+    "questionText": "A patient who undergues surgery to remove tumours in the hypothalamus or pituitary gland are likely to suffer",
+    "options": [
+      "Diabetes mellitus.",
+      "Diabetes insipidus.",
+      "Hyperparathyroidism."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The Surgery can damage the parts of the brain responsible for producing antidiuretic hormone (ADH), which can lead to a decrease in ADH production, resulting in excessive urine production and dehydration, a condition known as diabetes insipidus."
+  },
+  {
+    "id": "med226",
+    "questionText": "A patient who was diagnosed with Hyperthyroidism was recently discharged from your facility. She was put on Carbimazole. The Patient has been re-admitted with complaints of palpitation, swollen and tearing eyes. Reports from the family indicated that the patient was not taking her medication at home as ordered. The patient is put on Radioactive Iodine therapy. As the Nurse on the ward, what would you include in your education of the treatment?",
+    "options": ["Excessive thirst.", "Fever.", "Metallie taste in your mouth"],
+    "correctAnswer": "C",
+    "rationale": "The use of radioactive iodine therapy in the treatment of hyperthyroidism can cause metallic taste in the mouth as a side effect due to the iodine concentration in the saliva,"
+  },
+  {
+    "id": "med227",
+    "questionText": "A patient who was diagnosed with Hyperthyroidism was recently discharged from your facility. She was put on Carbimazole. The Patient has been re-admitted with complaints of palpitation, swollen and tearing eyes. Reports from the family indicated that the patient was not taking her medication at home as ordered. The patient has been booked for thyroidectomy. As a Nurse on duty what would be your immediate preoperative eare? I. Take vital signs and report. II. Give prescribed medication. III. Shave the patient. IV. Cross match patient's blood..",
+    "options": ["I, II and I", "I, III and IV.", "C. I, II, III and IV."],
+    "correctAnswer": "B",
+    "rationale": "Option 1. helps to identify the patte correctly and ensure that they receive the catre surgery. helps to prevent infection and previ access to the area that will be operated on, and l important to ensure that the patient understands the risks and benefits of the surgery has given their informed consent."
+  },
+  {
+    "id": "med228",
+    "questionText": "A patient who was diagnosed with Hyperthyroidism was recently discharged from your facility. She was put on Carbimazole. The Patient has been re-admitted with complaints of palpitation, swollen and tearing eyes. Reports from the family indicated that the patient was not taking her medication at home as ordered. Which of the following signs and symptoms observed in the patient after assessment would require immediate intervention by the Nurse after thyroidectomy?",
+    "options": [
+      "Heart rate-80bpm, temperature-37.40C, Blood pressure- $120/65mm/Hg.$",
+      "Heart rate-154bpm. temperature-38.20C, Blood pressure-1-49/86min. Hg.",
+      "Sp02 of 96, temperature-37.40C, Blood pressure-130/70mm/Hg."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The patient's heart rate is significantly elevated, the temperature is higher than normal, and the blood pressure is elevated as well, which may indicate thyroid storm, a potentially life-threatening condition that requires immediate intervention."
+  },
+  {
+    "id": "med229",
+    "questionText": "A patient with a traumatic wound necessitated debridement of 4 cm of devitalized tissue. Which of the following is the MOST appropriate wound care treatment?",
+    "options": [
+      "Pack with wet to moist saline gauze.",
+      "Primary closure with sutures or staples.",
+      "Cover with a dry dressing fixed with tape or Tegaderm."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The debridement of the wound indicates the presence of necrotic tissue. Wet-to-moist saline gauze helps in removing the necrotic tissue, while maintaining a moist environment to facilitate healing."
+  },
+  {
+    "id": "med230",
+    "questionText": "A patient with benign prostatic hyperplasia (BPH) complained to you that small amount of urine is seen in his clothes. Which of the following types of incontinence is he suffering from?",
+    "options": ["Stress.", "Overflow.", "Functional."],
+    "correctAnswer": "B",
+    "rationale": "The term \"overflow incontienus defined as the involuntary release of urine due to full bladder that is unable to empty compless leading to the overflow of urine"
+  },
+  {
+    "id": "med231",
+    "questionText": "A patient with cancer of the colon is to under bowel preparation before the surgical intervention The student nurse knows that the following could be the benefits of bowel preparation EXCEPT",
+    "options": [
+      "Increase visualization of the site",
+      "Prevent accidental injury to the bowel",
+      "Facilitate the surgery"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Bowel preparation clears the bowels uf faecal matter and helps visualize the surgical better, but it does not directly facilitate the surgery"
+  },
+  {
+    "id": "med232",
+    "questionText": "A patient with cervical cancer complains of irregular vaginal bleeding in between her periods This type of bleeding can be referred to as",
+    "options": ["Amenorrhea", "Metrorhagia", "Menorrhagia"],
+    "correctAnswer": "B",
+    "rationale": "This refers to irregular bleeding berwen menstrual periods. Amenorrhea refers to the absence of menstrual periods, while menorrhags refers to heavy bleeding during menstrual periods."
+  },
+  {
+    "id": "med233",
+    "questionText": "A patient with fracture of the tibia and fibula is to undergo open reduction and internal fixation The act of reduction ensures that",
+    "options": [
+      "there is reduction in blood loss.",
+      "the bone ends are in alignment.",
+      "pain is reduced to the minimum."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Open reduction and internal fixation is a surgical procedure used to realign broken bones and hold them together with metal plates, screws, of rods. The act of Reduction aims to bring back the broken bone segments into anatomical alignment"
+  },
+  {
+    "id": "med234",
+    "questionText": "A patient with gastric ulcer is being assessed for the presence of Helicobacter pylori bacteria. Which of the following tests is most relevant?",
+    "options": ["Gastroscopy.", "Urea breath test", "Hydrogen breath test."],
+    "correctAnswer": "B",
+    "rationale": "It detects the bacterial enzyme urease, which breaks down urea to produce carbon dioxide, leading to a positive test result indicative of an H. pylori infection."
+  },
+  {
+    "id": "med235",
+    "questionText": "A patient with hiatal hernia is admitted to your ward. Which of the following complications is associated with hiatal hernias?",
+    "options": [
+      "Bulging of the hernia when straining to lift heavy objects.",
+      "Strangulation of the stomach portion above the diaphragm",
+      "Chronic dependence on medication for GERD with tolerance."
+    ],
+    "correctAnswer": "B",
+    "rationale": "A hiatal hernia occurs when the stomach pushes through the diaphragm, and in some cases. the herniated portion can become twisted or compressed, leading to a loss of blood supply and strangulation of the hernia."
+  },
+  {
+    "id": "med236",
+    "questionText": "A patient with metastatic Colorectal is Scheduled for both Chemotherapy and radiation therapy. Patient teaching regarding these therapies would include an explanation that",
+    "options": [
+      "Chemotherapy and radiation can be used as palliative treatment.",
+      "Radiation is routinely used as adjuvant therapy.",
+      "Chemotherapy can be used to cure colorectal cancer."
+    ],
+    "correctAnswer": "A",
+    "rationale": "They can be used with the aim of palliating (relieving) symptoms and improving quality of life, but rarely offer a curative treatment option."
+  },
+  {
+    "id": "med237",
+    "questionText": "A patient with oesophageal stricture has NG tube for feeding and medications. To ensure patency of the tube, the nurse administers.... of water after feeding",
+    "options": ["70-100mls.", "30-50ml", "50-70mls"],
+    "correctAnswer": "B",
+    "rationale": "This quantity of water helps to ensure patency by flushing any remaining food or medication through the tube and into the stomach, while also preventing clogging or blockages in the tube"
+  },
+  {
+    "id": "med238",
+    "questionText": "A patient with osteoporosis reported to the hospital with hip fracture. How would you document this type of fracture before X-ray is done?",
+    "options": [
+      "Compression fracture.",
+      "Avulsion fracture.",
+      "Pathologie fracture."
+    ],
+    "correctAnswer": "C",
+    "rationale": "This type of fracture occurs as a result of weakened bones due to an underlying disease or condition such as osteoporosis, cancer, or infection, rather than from a traumatic injury or stress."
+  },
+  {
+    "id": "med239",
+    "questionText": "A patient with the diagnosis of malignant caneer is undergoing radiation therapy through internal implants. Such a therapy can be described as",
+    "options": ["Tele therapy.", "Chemotherapy.", "Brachytherapy."],
+    "correctAnswer": "C",
+    "rationale": "It is a type of radiation therapy where a radiation source is placed inside or close to the area that requires treatment, delivering a high dose of radiation directly to the targeted tissue while minimizing exposure to surrounding healthy tissue."
+  },
+  {
+    "id": "med240",
+    "questionText": "A pharmacology tutor mentioned during her lectures that some category of medications could increase surgical risk in patients undergoing surgery. An example of such medication is",
+    "options": ["Antibiotics,", "Sedatives.", "Anticoagulants,"],
+    "correctAnswer": "C",
+    "rationale": "They reduce blood clotting and can lead to increased bleeding during surgery, which can be life-threatening."
+  },
+  {
+    "id": "med241",
+    "questionText": "A post operative laparotomy patient has developed wound evisceration. As the attending nurse you are obliged to carry out all the following interventions EXCEPT",
+    "options": [
+      "Call for help and reassure patient.",
+      "Keep patient in a supine position with knees and hips bent.",
+      "Attempt to re-insert the organs"
+    ],
+    "correctAnswer": "C",
+    "rationale": "This can cause further injury, infection, or complications. This intervention should only be performed by a surgeon in a sterile environment."
+  },
+  {
+    "id": "med242",
+    "questionText": "A post operative thoracotomy patient is to use the incentive spirometer after surgery. You as a nurse understand that the use of incentive spirometer in the post-operative management is to",
+    "options": [
+      "Monitor oxygen saturation.",
+      "Ro expand the lungs",
+      "Improve coughing reflex."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Incentive spirometry helps re-expand the collapsed lung tissue by encouraging deeper and controlled breathing after surgery, which prevents respiratory complications like atelectasis."
+  },
+  {
+    "id": "med243",
+    "questionText": "A postoperative bedside unit include the",
+    "options": [
+      "Sphygmomanometer, thermometer. stethoscope and",
+      "Patient's folder and bedside notes.",
+      "A hand washing area"
+    ],
+    "correctAnswer": "C",
+    "rationale": "A postoperative bedside unit is an area located near the operating room where patients recover from surgery. Providing a hand washing area helps to reduce the risk of infection transmission."
+  },
+  {
+    "id": "med244",
+    "questionText": "A pregnant woman came to your facility and complained of burning sensation. The Midwife in explanation said this is due to the relaxing effect which is caused by the hormone progesterone. Which of the following is appropriate for the Midwife to say?",
+    "options": [
+      "Elevate the foot end of the bed when in bed.",
+      "Lie flat on your back when in bed.",
+      "Prop up will pillows when in bed."
+    ],
+    "correctAnswer": "C",
+    "rationale": "To help alleviate the burning sensation caused by acid reflux due to the relaxing effect of progesterone on the lower oesophageal sphincter."
+  },
+  {
+    "id": "med245",
+    "questionText": "A pregnant woman who uses antibiotic such as erythromycin during the first trimester of the pregnancy is at risk of delivering a baby with the following except:",
+    "options": ["Intussusception", "Pyloric stenosis", "Umbilical Hernia"],
+    "correctAnswer": "C",
+    "rationale": "Erythromycin can interfere with fetal motility and development of gastrointestinal tract which can lead to intussusception and pyloric stenusis, but not umbilical herma."
+  },
+  {
+    "id": "med246",
+    "questionText": "A previously healthy young man sud started complaining of productive co clubbing of the fingers. A visit to the my revealed that he had Bronchiectasis They objective in managing this condition is by",
+    "options": [
+      "Promoting bronchial drainage",
+      "Controlling of infection.",
+      "Ensuring proper dietary management."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Bronchiectasis is a chronic conditum which the airways in the lungs become permane damaged and widened, leading to the accumulu of mucus in the lungs. Promoting bronchi drainage helps to clear the bronchial secretium prevent recurrent infections"
+  },
+  {
+    "id": "med247",
+    "questionText": "A priority nursing diagnosis for a patient wi ulcerative colitis is",
+    "options": [
+      "Diarrhoea related to hypermotility.",
+      "High risk for infection",
+      "Ineffective coping"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Ulcerative colitis increases the risk of infection due to frequent diarrhoea, inflammatie and compromised immunity."
+  },
+  {
+    "id": "med248",
+    "questionText": "A sensation of food sticking in the lower portor of the oesophagus is the key feature of which ofile following conditions?",
+    "options": ["Pharyngeal pouch.", "Atresia,", "Achalasia."],
+    "correctAnswer": "C",
+    "rationale": "It is a disorder of the oesophagus which the lower oesophageal sphincter does n relax properly, causing difficulty in swallowing and a sensation of food sticking in the lower portion the oesophagus."
+  },
+  {
+    "id": "med249",
+    "questionText": "A serious danger to which a patient wall intestinal obstruction is exposed because intestinal suction is excessive loss of",
+    "options": [
+      "Water and electrolyte",
+      "Energy carbohydrates",
+      "Protein enzymes"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Intestinal suction removes nuids fro the gastrointestinal tract, causing dehydration ou an imbalance of essential minerals (electrolytes) the body."
+  },
+  {
+    "id": "med250",
+    "questionText": "A serious gastrointestinal disturbance that frequently occurs in a severely burnt patient is",
+    "options": ["Paralytic ileus.", "Ulcerative colitis,", "Haematemesis."],
+    "correctAnswer": "A",
+    "rationale": "Burn injury triggers the release of inflammatory mediators, which cause gut dysfunction and decreased bowel motility, which results in a blockage of the normal flow of intestinal contents, leading to abdominal distension, nausea, and vomiting."
+  },
+  {
+    "id": "med251",
+    "questionText": "A specimen taken from a patient during surgery must be well preserved for histopathology with which of the following solution?",
+    "options": ["Hydrochloraldehyde.", "Formaldehyde.", "Chloroaldehyde."],
+    "correctAnswer": "B",
+    "rationale": "It is a commonly used fixative in histopathology as it helps to preserve the cellular structures of the specimen as it penetrates tissues readily and halts the process of decay by fixing the cell proteins."
+  },
+  {
+    "id": "med252",
+    "questionText": "A Staff Nurse at the female surgical outpatient went to observe posture of clients waiting for admission into the surgical ward. She observed some clients with fetal posture, supine posture with outstretched legs and seated posture and restless. Afler interacting with the clients, she discovered each one has a history of Acute Abdominal pain. Clients with supine posture with outstretched legs is likely indicative of....... Pain.",
+    "options": ["Noiceptive.", "Visceral.", "Neuropathic"],
+    "correctAnswer": "A",
+    "rationale": "Outstretched legs in supine posture helps to relax the abdominal muscles, thus relieving Visceral pain arising from internal organs in the abdomen."
+  },
+  {
+    "id": "med253",
+    "questionText": "A staff Nurse at the female surgical outpatient went to observe posture of clients waiting far admission into the surgical ward. She observed some clients with fetal posture, supine posture with outstretched legs and seated posture and restless. Afler interacting with the clients, she discovered each one has a history of Acute Abdominal pain Clients with fetal posture as a result of acute abdominal pain are likely to be associated with peritoneal",
+    "options": ["Leakage.", "Irritation.", "Abscess,"],
+    "correctAnswer": "B",
+    "rationale": "The foetal posture assumed by clients with acute abdominal pain is an involuntary protective mechanism that helps to reduce peritoneal irritation and prevent further damage to the inflamed or injured abdominal organs."
+  },
+  {
+    "id": "med254",
+    "questionText": "A staff Nurse is reviewing records of a client with sensorineural hearing loss. The Nurse understands that clients with sensorineural hearing loss",
+    "options": [
+      "Reversal of damage caused by ototoxic drugs.",
+      "Hears low pitched sounds.",
+      "Diffienlty understanding sounds."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Sensorineural hearing loss involves damage to the inner ear (cochlea) or the auditory nerve, which impairs the transmission of sound to the brain, resulting in difficulty understanding speech and complex sounds."
+  },
+  {
+    "id": "med255",
+    "questionText": "A student Midwife asked her colleague where matured sperm is stored. Which of the following answers given by the student is correct?........and deferent duct.",
+    "options": ["Seminal vesicles.", "Epididymis.", "Prostate gland."],
+    "correctAnswer": "B",
+    "rationale": "It serves as a site for the maturation, storage, and transportation of sperm from the testis to the deferent duet (vas deferens), which carries sperm to the urethra during ejaculation."
+  },
+  {
+    "id": "med256",
+    "questionText": "A student nurse assigned to the theater where you work for clinical placement, she suddenly drops a foreign substance on a sterile instrument trolley set for a surgical procedure. What is the MOST appropriate action to take?",
+    "options": [
+      "Clear the source of contamination and proceed.",
+      "Inform the operative team and reset the trolley.",
+      "Educate the student on operating room standards."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It is a sign of wound healing and is not expected in an infected wound."
+  },
+  {
+    "id": "med257",
+    "questionText": "A teenager admitted to your ward is scheduled for hypophysectomy. You as the nurse in charge explains to the first year student that hypophysectomy is the surgical intervention for",
+    "options": [
+      "Hypothalamus hyper functioning.",
+      "Adrenal tumour.",
+      "Pimituary tumour."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Hypophysectomy is the surgical removal of the pituitary gland, which is used to treat pituitary tumours that cause hormonal imbalances. or compress brain structures."
+  },
+  {
+    "id": "med258",
+    "questionText": "A terminally ill patient who is experiencing severe pain use more than one form of analgesics concurrently to relief pain. The approach is known",
+    "options": [
+      "Balance Analgesia",
+      "Pro Re Nata.",
+      "Patient-controlled Analgesia."
+    ],
+    "correctAnswer": "A",
+    "rationale": "It is a pain management approach where a combination of analgesics with different mechanisms of action is used to achieve better pain control and reduce the risk of side effects associated with high doses of a single medication."
+  },
+  {
+    "id": "med259",
+    "questionText": "A theater nurse have very intportant duties to perform in the day to day activities of the operating room, Which of the following is one of the MOST importam duties of the theater nurse.",
+    "options": [
+      "Ensures proper admission of the surgical patient into the theater.",
+      "Scrubs to assist surgeon and circulate during surgical procedures.",
+      "Aco as a patent advocate for those undergoing surgical and procedures"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It is the most important duty because it helps ensure patient safety and well-being throughout the perioperative period."
+  },
+  {
+    "id": "med260",
+    "questionText": "A tumour removed from the ovary of a lady was found to contain a tooth. The tintour is most likely to be",
+    "options": [
+      "Abnormal bone fomiation",
+      "Dermoid tumour",
+      "Abnormal foetal development"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Dermoid tumours, also known as malun cystic teratomas, are a type of ovarian tumour th typically contain various types of body tissues sur's as skin, hair, teeth, and bone."
+  },
+  {
+    "id": "med261",
+    "questionText": "A urine output averaging 20mls per hour the finu postoperative day",
+    "options": [
+      "Is a normal expected finding",
+      "Is normal if the patient had genitourinary surgery",
+      "Requires an evaluation of the patient's fluid status"
+    ],
+    "correctAnswer": "C",
+    "rationale": "20mls per hour indicates a decreased urine output which requires an evaluation of the patient's fluid status."
+  },
+  {
+    "id": "med262",
+    "questionText": "A well-known staff Nurse in a community werit to the market to purchase some tomatoes after closing from work. As she was interacting with the tomato seller, another market seller approached her with epistaxis. As a staff Nurse, which of the following positions would be a priority for the client?",
+    "options": [
+      "Sitting patient with head bowed down.",
+      "Sitting patient with head held forward.",
+      "Sitting patient with head held back-wards."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The priority position for a client with epistaxis (nosebleed) is the sitting position with the head tilted forward to prevent aspiration of blood."
+  },
+  {
+    "id": "med263",
+    "questionText": "A woman aged 50 years came to the OPD with the complaints of a medium size lump in her right breast. Which of the following questions will be appropriate to ask during history taking?",
+    "options": [
+      "At what age did you start menstruation?",
+      "Any breast injury in the past",
+      "Is there any family history of fibrocystic bremst"
+    ],
+    "correctAnswer": "C",
+    "rationale": "By asking about a family history of this condition, the healthcare provider can better assess the patient's risk for breast cancer and determine further diagnostic testing is necessary."
+  },
+  {
+    "id": "med264",
+    "questionText": "A woman reported to the health facility with the excessive bleeding at the time of regular menstrual obstetrical history of having prolonged arul flow, Wlint is the likely diagnosis for the woman",
+    "options": ["dysmenorrhea.", "amenorrhoea..", "menorrhagia,"],
+    "correctAnswer": "C",
+    "rationale": "Is the medical term used to describe abnormally heavy or prolonged menstrual bleeding during a woman's menstrual cycle."
+  },
+  {
+    "id": "med265",
+    "questionText": "A woman's child bearing ability depends on the effectiveness of the levator ani muscles. Which of the muscles listed below form part of the levator ani?",
+    "options": [
+      "External anal and urethral sphincter.",
+      "Pubococcygeus, ischiococcygeus.",
+      "Ischiocavernosus, ischiococcygeus."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The Pubococcygeus and ischiococcygeus muscles are key components of the levator ani, which helps to support the pelvic organs and maintain their position during pregnancy, childbirth, and other activities that put pressure on the pelvic region."
+  },
+  {
+    "id": "med266",
+    "questionText": "A young boy was brought into the surgical emergency with a swollen ankle after an injury sustained while playing football. Which of the following nursing interventions would be appropriate?",
+    "options": [
+      "Apply warm compress.",
+      "Apply a compression bandage,",
+      "Assess ankle range of motion."
+    ],
+    "correctAnswer": "B",
+    "rationale": "To reduce oedema and provide support to the injured ankle. Option C is not appropriate immediately following an injury. In addition, it is more appropriate to use cold therapy to help reduce swelling and pain than heat."
+  },
+  {
+    "id": "med267",
+    "questionText": "A young man was brought into the surgical emergency in severe cramping pain. As a nurse, what would be your first nursing intervention regarding pain?",
+    "options": [
+      "Acknowledge pain and reassure patient.",
+      "Use pain assessment scale to identify intensity of pain.",
+      "Document severity of pain."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It helps the nurse to determine the appropriate pain management interventions and evaluate the effectiveness of the interventions."
+  },
+  {
+    "id": "med268",
+    "questionText": "Abdullai Otika is a mechanic at Abbosey Okai. He was working underneath a vehicle when the jerk dislodged from under the vehicle and hit his abdomen. Two days after, he reported to the hospital with chest pain and",
+    "options": [
+      "Difficulty in breathing",
+      "Nausea and vomiting",
+      "Swelling of the abdomen"
+    ],
+    "correctAnswer": "A",
+    "rationale": "The impact on the abdomen could have caused internal injuries to the lungs or diaphragm leading to difficulty in breathing."
+  },
+  {
+    "id": "med269",
+    "questionText": "Abdullai Otika is a mechanic at Abbosey Okai. He was working underneath a vehicle when the jerk dislodged from under the vehicle and hit his abdomen. Two days after, he reported to the hospital with chest pains and cough. Chest x-ray showed accumulation of blood in his right lung and was diagnosed with haemothorax. To aid effective respiration prior to surgery to drain the blood from his pleural cavity, the Nurse will: 1. Administer oxygen. II. Administer salbutamol inhaler. III. Prop patient up in bed. IV. Serve prescribed IV fluids.",
+    "options": ["I and III.", "II only.", "I, II, III and IV."],
+    "correctAnswer": "A",
+    "rationale": "The nurse will aid effective respiration to drain the blood from patient's plural cavity by increasing oxygen saturation (1) and reducing the pressure on the diaphragm (III)."
+  },
+  {
+    "id": "med270",
+    "questionText": "Abena Charles is a 2 year old girl, who began walking at age 1 year, 2 months. She has knocked knees. Her condition is known in surgical terms as",
+    "options": ["Genu varum.", "Genu valgum", "Asterixis."],
+    "correctAnswer": "B",
+    "rationale": "Genu valgum, also known as \"knock- knees,\" is a condition where the knees touch but the ankles remain apart, causing the lower legs to angle inward."
+  },
+  {
+    "id": "med271",
+    "questionText": "Abnormal production of large amounts of cerumen in the external auditory canal can accumulate until it becomes impacted, preventing sesand waves fres reaching the eardrum This condinon can be treated by",
+    "options": [
+      "Persodi eur arigation with water",
+      "Use of cotton tipped swabs",
+      "Antibiotic instillation"
+    ],
+    "correctAnswer": "A",
+    "rationale": "This is a safe and effective method for removing impacted cerumen without causing harm to the delicate structures of the ear canal. Options B can push the cerumen further down the canal, while option C is not indicated."
+  },
+  {
+    "id": "med273",
+    "questionText": "Adiza Burkari is a 22 year old young woman with an anterior neck mass. She was seen by the surgeon and diagnosed with nodular goiter. She underwent thyroidectomy and could not phonate after surgery, Which of the under listed nerves could have been severed or damaged during surgery?",
+    "options": [
+      "Recurreni laryngeal nerve",
+      "Vestibulochochlear nerve",
+      "Occulomotor nerve"
+    ],
+    "correctAnswer": "A",
+    "rationale": "This uerve is responsible for innervating the muscles of the larynx, including the vocal cords, and damage to this nerve during surgery can result in vocal cord paralysis."
+  },
+  {
+    "id": "med275",
+    "questionText": "Advantages of abdominal ultrasonography include the following EXCEPT",
+    "options": [
+      "There is no ionization radiation.",
+      "It has no noticeable side effects.",
+      "It can be used for bony cavities origans."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Abdominal ultrasound uses sound waves that cannot penetrate bone, making it unable to visualize structures within bony cavities."
+  },
+  {
+    "id": "med276",
+    "questionText": "Afari Mensah, a 30 year old farmer underwent open reduction and internal fixation (ORIF) for a hip fracture. On ward rounds, patient appeared stable and had normal vital signs. Few hours later. his brother frantically calls you to his room and says Mensah is suddenly acting confused and has difficulty in breathing. Which of the following nursing actions would take the utmost PRIORITY",
+    "options": [
+      "Elevate both legs on a pillow.",
+      "Monitor vital signs.",
+      "Administer intranasal oxygen at 4L/min."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The sudden onset of confusion and difficulty in breathing is an indication of possihic respiratory distress. The administration of oxyge will help to improve oxygenation and preven further complications"
+  },
+  {
+    "id": "med277",
+    "questionText": "After a fire outbreak patients were rushed your emergency department. In assessing patients you understand that the following posse the greatest threat to a patient with thermal bur EXCEPT",
+    "options": [
+      "Percentage of total body surface burned.",
+      "Presence of other injuries.",
+      "Presence of inhalation."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Although other injuries may complicate the management of a thermal burn, they do not pose an immediate life-threatening risk as compared to the percentage of TBS burned and the presence of inhalation injury."
+  },
+  {
+    "id": "med278",
+    "questionText": "After a health talk on cervical cancer at the outpatient department, the public health Nune aska cam",
+    "options": [
+      "21 years old who reports first sexual partner at the age of 14 years and she has at least 10 sex partners",
+      "A 32 year old woman who has not been vaccinated.",
+      "A 60 year old with a history of syphilis and cigarette smoking."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Early age at first sexual intercourse and multiple sexual partners are established risk factors for developing cervical cancer because they increase the likelihood of being exposed to human papillomavirus (HPV), which is the primary cause of cervical cancer."
+  },
+  {
+    "id": "med279",
+    "questionText": "After cataract extraction for 60 year old Maame Atta, the Nurse should",
+    "options": [
+      "Encourage eye exercises to strengthen the ocular muscles.",
+      "Advise her to refrain from vigorous brushing of tecth and hair",
+      "Instruct the patient to avoid driving for 2 weeks."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Activities such as rigorous brushing of hair and teeth cause increased intraocular pressure and may lead to haemorrhage in the anterior chamber"
+  },
+  {
+    "id": "med280",
+    "questionText": "After cataract extraction the patient is encouraged to",
+    "options": [
+      "Lie on his abdomen while sleeping",
+      "Avoid bending his head below the waist",
+      "lift weights to increase muscle strength"
+    ],
+    "correctAnswer": "B",
+    "rationale": "It can cause a sudden rise in blood pressure inside the eye (intraocular pressure), causing pain, swelling, bleeding into the eye and disturb the wound healing."
+  },
+  {
+    "id": "med281",
+    "questionText": "After cholecystectomy, as soon as the patient is received into bed the nurse should",
+    "options": [
+      "Check patient's notes for surgeon's orders.",
+      "Connect dramage tube to drainage bottle.",
+      "Ensure IV infusion is running as ordered."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It is time-sensitive, and delaying it can result in the accumulation of bile or blood in the surgical area, increasing the risk of infection and delaying the healing process."
+  },
+  {
+    "id": "med282",
+    "questionText": "After closure of duodenal ulcer, which of these analgesics would you not administer?",
+    "options": [
+      "Paracetamol tablets",
+      "Suppository diclofenac",
+      "Pethidine injection"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It can irritate the stomach and duodemum after ulcer closure, unlike paracetamol tablets or suppository diclofenac which are safer options"
+  },
+  {
+    "id": "med283",
+    "questionText": "After delivery of the placenta, the Midwife examining it describe the membranes to the students. She explained that the chorion is",
+    "options": [
+      "Transparent, thick and opaque.",
+      "Tough, transparent and friable.",
+      "Friable, thick and opaque."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The chorion is tough to withstand pressure, transparent to allow gas exchange, and friable to facilitate separation from the uterine wall during delivery."
+  },
+  {
+    "id": "med284",
+    "questionText": "After every operation, the theater nurse is to keep a complete record of patient's surgical procedure. This documentation is primarily essential for both medical and legal purposes. Which of the following should NOT be part of this record?",
+    "options": [
+      "Patient's anxiety and stress level.",
+      "Surgical findings and everything removed.",
+      "Surgeons description of the procedure."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The record should focus on medically relevant details and not subjective information such as the patient's emotions."
+  },
+  {
+    "id": "med285",
+    "questionText": "After parent teaching session, one mother asked which of the reflexes is controlled by the musculoskeletal system.",
+    "options": ["Cough.", "Blinking.", "Grasp."],
+    "correctAnswer": "C",
+    "rationale": "This reflex involves the contraction of hand muscles in response to tactile stimulation, which is a function of the musculoskeletal system."
+  },
+  {
+    "id": "med286",
+    "questionText": "After spontaneous delivery, a mother complains that when her baby cries, the eye on the left side fails to close, the mouth is pulled across to the opposite side. This is suggestive of",
+    "options": [
+      "Brachial nerve palsy.",
+      "Facial nerve palsy.",
+      "Sub conjunctival palsy."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The features described suggest facial nerve palsy as the eye closure, facial movements and mouth are controlled by the facial nerve."
+  },
+  {
+    "id": "med287",
+    "questionText": "After undergoing a cardiac surgery, Mr. Anum had fluid and blood clots accumulating in his pericardial sac resulting in compression of the heart, Which of the following complications has Patient developed?",
+    "options": ["Fluid overload.", "Cardiac embolism.", "Cardiac tamponade."],
+    "correctAnswer": "C",
+    "rationale": "It is a condition where fluid or blood accumulates in the pericardial sac, causing compression of the heart and limiting its ability to fill and pump effectively."
+  },
+  {
+    "id": "med288",
+    "questionText": "Afua Adams has been brought to the ward after mastectomy. She complains of soreness, numbness and tightness around the chest. As the Nurse on duty, you would explain to Madam Adams that this ......",
+    "options": [
+      "Indicates a complication in the heart.",
+      "Normally occurs days to months after mastectomy.",
+      "Shows that the disease has spread to other organs."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It is usually due to damage to the nerves and removal of the breast tissue, rather than a complication in the heart or a spread of the disease to other organs."
+  },
+  {
+    "id": "med289",
+    "questionText": "Akosua Bobor, a 40 year old woman is on admission following a myomectomy. A week after surgery, you noticed the wound has gaped with abdominal organs protruding through. This can be described as",
+    "options": ["Evisceration.", "Gaping.", "Dehiscence."],
+    "correctAnswer": "A",
+    "rationale": "Evisceration refers to the protrusion of abdominal organs through an open wound, while dehiscence is the partial or complete separation of a surgical incision, and gaping refers to an open or widened wound that may or may not involve protrusion of abdominal organs"
+  },
+  {
+    "id": "med290",
+    "questionText": "All measures that are put together to prevent the contamination of a surgical wound are termed",
+    "options": ["Surgical asepsis.", "Disinfection.", "Medical asepsis."],
+    "correctAnswer": "A",
+    "rationale": "Surgical asepsis involves all measures taken to prevent the introduction of microorganisms into the surgical wound, while medical asepsin involves measures taken to reduce the number of microorganisms and prevent their spread from one person to another."
+  },
+  {
+    "id": "med291",
+    "questionText": "All the following are methods of assisted reproductive technologies (ART) used in the treatment of infertility EXCEPT:",
+    "options": [
+      "Blastocyst intra fallopian transfer.",
+      "In vitro fertilization.",
+      "The use pulsatile gonadotropin hormone"
+    ],
+    "correctAnswer": "C",
+    "rationale": "It is not a method of ART, as it does not involve any manipulation of eggs or sperm outside of the body, but rather a treatment for certain types of infertility caused by hormonal imbalances."
+  },
+  {
+    "id": "med292",
+    "questionText": "All the following are methods of treatment for malignant cancers. 1. radiotherapy II. chemotherapy III.surgery IV. hormonal therapy V. adjuvant therapy",
+    "options": ["1, II, III and IV.", "I III, IV and V.", "I, II and V."],
+    "correctAnswer": "A",
+    "rationale": "These treatments are designed to kill cancer cells, prevent the spread of cancer, and shrink tumours. Adjuvant therapy is often used in addition to primary treatment to prevent the recurrence of cancer."
+  },
+  {
+    "id": "med293",
+    "questionText": "All the following describes the growth of cancer cells EXCEPT;",
+    "options": ["dysplasia.", "anaplasia,", "carsaplasia."],
+    "correctAnswer": "C",
+    "rationale": "Dysplasia is where cells appear abnormal but are not yet cancerous, and anaplasia is where cells lose their normal characteristics and become eancerous. However, \"carsaplasia\" is not a recognized term in the context of cancer cell growth."
+  },
+  {
+    "id": "med294",
+    "questionText": "Ama Mensah, a 34 year old teacher is on admission for a planned myomectomy. During your preoperative assessment you noticed she was anxious. Which of the following behaviour depicted her anxiety?",
+    "options": [
+      "Repeatedly asking the same questions.",
+      "Empathize with other patients.",
+      "Answer questions asked."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Excessive repetitive questioning reveals ongoing distressing thoughts regarding an imminent stressful event."
+  },
+  {
+    "id": "med295",
+    "questionText": "Ama was admitted to the ICU after craniotomy. Patient is at risk of increased intracranial pressure. Which of the following will indicate the nurse's post-operative management? L. Assess for vomiting II. Monitor intake and output III.Monitor vital signs for bradycardia IV. Monitor vital signs for tachycardia",
+    "options": ["I, II & IV", "I, III & IV", "L, II & III"],
+    "correctAnswer": "A",
+    "rationale": "Increased intracranial pressure (elevated pressure in the skull and brain) is more likely to result in tachycardia (fast heart rate) and not bradycardia (slow heart rate)."
+  },
+  {
+    "id": "med296",
+    "questionText": "Amina is admitted to the burns unit with burns involving the face, truck, upper and lower limbs. The following are nurse's intervention for the diagnosis of \"impaired skin integrity\" except:",
+    "options": [
+      "apply Mafenide acetate",
+      "gently debride the wound",
+      "take wound swab for enlture"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Taking a wound swab for culture is a diagnostic action, not an intervention to address impaired skin integrity."
+  },
+  {
+    "id": "med297",
+    "questionText": "An 18 year old girl has been admitted with severe ear ache and discharge. She has been assessed and booked for Mastoidectomy. Which of the following is an indication for Mastoidectomy?",
+    "options": [
+      "Perforated ear drum.",
+      "Chronse otitis media.",
+      "Meniere's disease."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Chronic otitis media can lead to the destruction of the mastoid bone, and mastoidectomy is performed to remove infected or diseased mastoid air cells that have been resistant to medical treatment."
+  },
+  {
+    "id": "med298",
+    "questionText": "An 82-year-old retired Researcher reported to your facility with abdominal pain, straining on urination and urine dribbling out afler urination. He further explained that he urinates frequently at night which affects his sleep. Upon assessment patient was diagnosed with Benign Prostatic Hyperplasia (BPH) and admitted to the ward. During discharge education for the patient after TURP for BPH, the nurse determines that additional instruction is needed when the patients says; Which of the following statements from the patient requires further education during discharge education?",
+    "options": [
+      "\"I will increase my fluid intake to prevent constipation\".",
+      "\"I will report to the hospital if have incontinence at home\".",
+      "\"Incontinence is common several weeks after surgery\"."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Incontinence is a potential complication of TURP (Transurethral Resection of the Prostate), but it is not considered a normal or expected occurrence after several weeks of recovery"
+  },
+  {
+    "id": "med299",
+    "questionText": "An athlete sustained an injury to the ligaments that surrounds the ankle joint while training. This injury is termed a",
+    "options": [", sprain.", "dislocation.", "strain."],
+    "correctAnswer": "A",
+    "rationale": "A sprain refers to the stretching or tearing of a ligament, while a strain refers to the stretching or tearing of a muscle or tendon."
+  },
+  {
+    "id": "med301",
+    "questionText": "A 10 year old comes to the clinic complaining of buzzing in the ears. The Nurse's assessment should be centered on",
+    "options": [
+      "Listening to loud music frequently.",
+      "Family history of deafness.",
+      "Childhood ear infections."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Buzzing in the ears, also known as imnitus, is a common symptom of childhood ear infections. Infections can cause damage to the car structures and nerves involved in hearing, leading to tinnitus as a result of the brain trying to compensate for the hearing loss."
+  },
+  {
+    "id": "med302",
+    "questionText": "A 13 year old neighbour's daughter came to access family planning services at your elinic. Another neighbor saw the girl and informed the parents. The parents carne to your house to find out the problem the daughter came with. You did not give them the information. You are right by applying which of the these ethical principles?",
+    "options": ["Confidentiality", "Veracity", "Consent"],
+    "correctAnswer": "A",
+    "rationale": "The 13-year-old girl has a right to confidentiality regarding her health status and the services she sought, and the nurse has a duty to protect her privacy."
+  },
+  {
+    "id": "med303",
+    "questionText": "A 14 year old girl with 36 weeks gestation has just arived at the ward in labour. Which of the following signs shown by her is a positive sign of labour?",
+    "options": [
+      "Increased painful rhythmic uterine contractions.",
+      "Increased frequency of mieturation.",
+      "Increased effacement of the cervix."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Effacement of the cervix, which indicates thinning and shortening of the cervix, is a positive sign of labour as it means the cervix is preparing for delivery."
+  },
+  {
+    "id": "med304",
+    "questionText": "A 16 year old Sandra Adjei who has been sexually abused by her neighbor was referred to your facility for care, What will you do during your interaction to make her open up with her responses? 1. Start with general conversation. 11. Ensure adequate privacy. III. Inform her about the duration of the interview",
+    "options": ["I and II.", "I and III.", "II and III."],
+    "correctAnswer": "A",
+    "rationale": "Starting with general conversation to establish rapport and ensuring adequate privacy can make the patient feel more comfortable, safe, and secure during the interview and facilitate discussing sensitive topics such as sexual abuse while maintaining confidentiality."
+  },
+  {
+    "id": "med305",
+    "questionText": "A 16-year-old girl was rushed to the emergency unit with complains of severe abdominal pains and distention. Upon assessment, a Naso Gastric tube is to be passed. It is recommended to have the patient do which of the following to make the insertion caster.",
+    "options": ["Swallow,", "Exhale.", "Cough."],
+    "correctAnswer": "A",
+    "rationale": "Swallowing helps to relax the muscles in the throat and oesophagus, making it easier to pass and reducing the risk of complications such as dislodgement or misplacement."
+  },
+  {
+    "id": "med306",
+    "questionText": "A 19-year-old female who often bites her nails presents with pain that she relates to a hangnail. On examination, there is a painful, fluctuant area with erythema at the proximal nail bed. She has full painless range of motion of the joints of her finger with intact Sensation. What is the patient's diagnosis?",
+    "options": ["Onychomycosis.", "Paronychia.", "Herpetic whitlow."],
+    "correctAnswer": "B",
+    "rationale": "The patient's symptoms are suggestive of paronychia, which is a bacterial infection of the nail fold, characterised by erythema, swelling, and pain. Onychomycosis is a fungal infection of the nail, typically causing discoloration and thickening, and herpetic whitlow is a viral infection of the finger, characterised by grouped vesicles on an erythematous base."
+  },
+  {
+    "id": "med307",
+    "questionText": "A 19-year-old female who often bites her nails presents with pain that she relates to a hangnail. On examination, there is a painful, fluctuant area with erythema at the proximal nail bed. She has full painless range of motion of the joints of her finger with intact Sensation. What is the patient's diagnosis?",
+    "options": ["Herpetic whitlow.", "Paronychia", "Onychomycosis."],
+    "correctAnswer": "B",
+    "rationale": "The patient's symptoms of a painful, fluctuant area with erythema at the proximal nail bed are consistent with the diagnosis of paronychia, which is an infection of the tissue surrounding the nail."
+  },
+  {
+    "id": "med308",
+    "questionText": "A 2 weeks old baby has been brought to your facility with complains of constipation and projectile vomiting, which occurs immediately after feeding. What will be your intervention before the arrival of the doctor?",
+    "options": [
+      "Ask the mother not to give anything by mouth to baby",
+      "Encourage the mother to feed the baby with more breast milk",
+      "Quickly set in an IV line and administer 250mls in Ringer's Lactate"
+    ],
+    "correctAnswer": "A",
+    "rationale": "This is because constipation and projectile vomiting can be symptoms of a serious condition such as pyloric stenosis, and it is best to avoid feeding the baby anything by mouth to prevent further vomiting and aspiration until the underlying cause of the symptoms can be determined and appropriate treatment administered."
+  },
+  {
+    "id": "med309",
+    "questionText": "A 20-year-old asthmatic patient was brought to the emergency unit as a result of asthmatic attack. After being resuscitated and made stable, the Nurse teaches the patient how to use the respiratory inhaler. Which of the following actions by the patient indicate the need for further education?",
+    "options": [
+      "Waits 1 to 2 minutes between putts if more than one putt is required.",
+      "Press the carister down with her finger as she breathes in.",
+      "Jahales the mist and quickly exhales."
+    ],
+    "correctAnswer": "C",
+    "rationale": "It may result in the medication not being Jully absorbed and may also lead to coughing."
+  },
+  {
+    "id": "med310",
+    "questionText": "A 21 year old pregnant lady who was in labour was brought to the delivery room. At the initial state, the patient was calm but suddenly became agitated pacing up and down, speaking on high tone and refused to take her medications. Previous history reveals that she has suffered bipolar disorder before. The immediate nursing diagnosis for the patient will be ....",
+    "options": [
+      "Ineffective coping,",
+      "Impaired social interaction.",
+      "Risk for injury."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The immediate nursing diagnosis Ineffective coping, as the patient's behaviour suggests a need for support in developing effective coping strategies to manage her emotional response to labour."
+  },
+  {
+    "id": "med311",
+    "questionText": "M11. A 21 year old student had an abortion. Two years later she visits the hospital and the Midwife asked her if she had ever been pregnant; she replied \"No\" This behaviour is termed",
+    "options": ["Repression.", "Displacement.", "Sublimation."],
+    "correctAnswer": "A",
+    "rationale": "It is a common psychological defence mechanism, where traumatic experiences are unconsciously forgotten or blocked out, and it may have caused the woman to deny ever being pregnant, as a means for the mind to protect itself from highly stressful events by burying memories and emotions in the unconscious."
+  },
+  {
+    "id": "med312",
+    "questionText": "A 22 year old male threatened with divorce admitted to the ward and placed on suicide precautions. In assessing suicide potential, the Nurse should pay attention to the patient's",
+    "options": ["Thought process", "Mood and affect", "Level of thought"],
+    "correctAnswer": "B",
+    "rationale": "A patient's mood and affect can provid immediate and observable indications of suicide risk, such as expressions of hopelessness, despall. or extreme sadness, and therefore should be carefully monitored by healthcare providers."
+  }
+]

@@ -1,0 +1,2011 @@
+[
+  {
+    "id": "med001",
+    "questionText": "is characterized by slow progressive inflammatory disease and has the potential of affecting multiple organs. Some of the manifestations are dementia, psychosis, paresis, stroke or meningitis.",
+    "options": ["Tertiary syphilis.", "Cerebral malaria.", "Tetanus."],
+    "correctAnswer": "A",
+    "rationale": "Tertiary syphilis is a slow progressive inflammatory disease that can affect multiple organs and cause a range of symptoms, including dementia, psychosis, paresis, stroke, and meningitis. These symptoms are consistent with the later stages of syphilis infection."
+  },
+  {
+    "id": "med002",
+    "questionText": "body fluids make up 40% or more of the total body weight.",
+    "options": ["Extracellular.", "Intestinal.", "Intracellular."],
+    "correctAnswer": "A",
+    "rationale": "The intracellular fluid (ICF) makes up the majority of the body's fluid volume, accounting for approximately 60% of total body water, while extracellular fluid (ECF) makes up the remaining 40% and includes interstitial fluid, plasma, and other specialized fluids."
+  },
+  {
+    "id": "med003",
+    "questionText": "A 12-year-old girl was rushed to the emergency unit with the history of seizures and fever. The Nurse on assessment discovered an infected uleer on the right leg. Which of the following could be the possible diagnosis",
+    "options": ["Epilepsy.", "Meningitis.", "Tetanus."],
+    "correctAnswer": "C",
+    "rationale": "The possible diagnosis of Tetanus for the 12-year-old girl with seizures and fever is based on the presence of an infected ulcer, which can serve as an entry point for the bacterium Clostridium tetani and cause muscle stiffness, spasms, and seizures, a common symptom of Tetanus."
+  },
+  {
+    "id": "med004",
+    "questionText": "A 13 years old girl visits your facility with the father with complains of swollen guma, pain when brushing as well as halitosis. On examination, her gum was red and puffy and she had bad breath. Which of the following interventions is MOST appropriate to help relieve patient of pain and halitosis? I. Encourage the use of tap water or normal saline for mouth washi II. Discourage patient from using alcohol based mouth washes, III. Advise on liberal fluid intake and balanced diet. IV. Educate patient on importance of brushing teeth once daily.",
+    "options": ["II, III and IV.", "I, III and IV.", "I, II and III."],
+    "correctAnswer": "C",
+    "rationale": "These me measures are the most appropriate interventions to help relieve the patient's pain and halitosis, while discouraging the use of alcohol- based mouthwashes is also important to prevent further irritation of the gums."
+  },
+  {
+    "id": "med005",
+    "questionText": "15 year old Nephrotic syndrome patient is on furosemide. Which of the following electrolytes would be depleted in this patient?",
+    "options": ["Potassium.", "Calcium.", "Phosphate ."],
+    "correctAnswer": "A",
+    "rationale": "Furosemide is a loop diuretic medication that is commonly used in the treatment of oedema and fluid overload in patients with nephrotic syndrome. One of the major side effects of furosemide is the loss of electrolytes, particularly potassium, through increased urine output."
+  },
+  {
+    "id": "med006",
+    "questionText": "A 16 year old SHS boy was brought to your facility by the mother who complained of detecting some changes in his physical appearance with age. During Physical assessment of the patient, you noticed Clubbing of his fingers. Patient is likely to be diagnosed of having?",
+    "options": ["Bronchitis.", "Congenital heart disease.", "Anaemia"],
+    "correctAnswer": "B",
+    "rationale": "Clubbing of fingers is a medical condition where the fingertips enlarge and round at the nail base, due to increased tissue growth and changes in blood flow. Clubbing of fingers is a common physical sign of congenital heart disease and is a result of increased blood flow and oxygenation in the fingertips."
+  },
+  {
+    "id": "med007",
+    "questionText": "A 17 year old girl reports to the dental clinic where you work with the complains of sore throat, halitosis and difficulty swallowing. On examination, it was observed that the throat was red and the tonsils were inflamed. A diagnosis of Vincent's angina was made. Which of the following is the appropriate management for her?",
+    "options": [
+      "Penicillin, Amoxicillin and Saline mouth washes",
+      "Penicillin and Saline or salt water mouth washes.",
+      "Penicillin, Tetracycline and Hydrogen mouth washes"
+    ],
+    "correctAnswer": "B",
+    "rationale": "Vincent's angina is a bacterial infection of the oral cavity caused by a combination of anaerobic bacteria, Borrelia... recommended treatment is penicillin or other antibiotics effective against anaerobic bacteria, along with saline or salt water mouth washes to relieve symptoms and promote healing."
+  },
+  {
+    "id": "med008",
+    "questionText": "A 19 year old male is cardiomyopathy. Which concerning this condition?",
+    "options": [
+      "volume",
+      "The complete usually",
+      "The patient should be restricted from intense physical activity"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Hypertrophic cardiomyopathy is a condition in which the heart muscle becomes abnormally thick, making it harder for the heart to pump blood. One of the main concerns in hypertrophic cardiomyopathy is the risk of sudden cardiac death, which can occur during exercise or intense physical activity."
+  },
+  {
+    "id": "med009",
+    "questionText": "A 19-year-old male student reports at your facility with complains of generalized fatigue and frequent sinus infections. He has never seen a physician before and denies any previous admission history. He usually self medicates with antibiotics and pam relievers. He claims he is generally not active but experiences frequent joint paina Hin laboratory investigations indicated mild anemia with with of 9 gm/dL. Other investigations revealed sickle sell anaemia, What will be the MOST important cate for the patient?",
+    "options": [
+      "Antibiotic administration and relief of pain.",
+      "Blood transfusion and relief of pain.",
+      "Rehydration"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: disorder that cells blond hloud pain of sickle the underlying shortage of healthy"
+  },
+  {
+    "id": "med010",
+    "questionText": "What is/are the typical fest symptom(s) of myasthenia gravis?",
+    "options": [
+      "conduction.",
+      "symmetrical weakness.",
+      "Eyelids and extraocular muscles weakness."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Myasthenia gravis is an autoimmune neuromuscular disorder that affects the transmission of nerve impulses to the muscles, resulting in muscle weakness and fatigue. The disease often begins with weakness in the muscles that control eye movements and eyelid function, leading to symptoms such as drooping of the eyelids (ptosis) and double vision (diplopia)."
+  },
+  {
+    "id": "med011",
+    "questionText": "A 21 years old female of European descendants was rushed to the medical emergency department where you work as a newly qualified nurse. Patient complained of diarrhea, abdominal pain, nausea and vomiting which started 6 hours after taking noodles and vegetables. A diagnosis of coeliac disease was made. What would be the appropriate nursing care for the patient?",
+    "options": [
+      "Encourage liberal fluid and serve prescribed medications.",
+      "Ensure strict maintenance of Nil per OS and serve medications.",
+      "Monitor fluid intake and output, vital signs and provide supportive care."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Coeliac disease is an autoimmune disorder that damages the lining of the small antestine when gluten is ingested, leading to symptoms such as diarrhoea, abdominal pain. nausea, and vomiting, and the priority nursing totervention is to monitor fluid and electrolyte balance to prevent dehydration and electrolyte imbalances."
+  },
+  {
+    "id": "med012",
+    "questionText": "A 23 years old patient is on admission on your ward and diagnosed with hepatitis D. In caring for this patient the MOST important nursing intervention would be to provide bed rest,",
+    "options": [
+      "prevent transmission and manage weight",
+      "manage pruritis and weight.",
+      "manage pruritus and weight and prevent transmission."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Hepatitis D is a viral infection that affects the liver and can cause inflammation, liver damage, and other complications. Since its transmission is through exposure to infected blood or other bodily fluids, managing symptons and preventing the spread of the virus are essential to promoting recovery and preventing further complications"
+  },
+  {
+    "id": "med013",
+    "questionText": "A 24 year old female patient has recently began treatment with warfarin after an unprovoked deep vein thrombosis. Which of the following can decrease the effectiveness of warfarin?",
+    "options": [
+      "Oral contraceptives with Estrogen.",
+      "Omeprazole.",
+      "Vitamin E."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale: by the from clots in warfarin risk of blood"
+  },
+  {
+    "id": "med014",
+    "questionText": "A 24 year old man presents with headaches. He describes the headaches as a severe unilateral throbbing pain that is aggravated by movement. His headache is associated with nausea and sensitivity to light. His physical examination is completely normal. What is the MOST likely diagnosis? headache",
+    "options": ["Tension.", "Cluster.", "Migraine."],
+    "correctAnswer": "C",
+    "rationale": "The description of severe unilateral throbbing pain associated with nausea and sensitivity to light is a classic symptom of migraine headaches."
+  },
+  {
+    "id": "med016",
+    "questionText": "obese patient is being managed for GERD. She is concerned about some complications that may occur. As the attending nurse what will be the appropriate nursing diagnosis for this patient?",
+    "options": [
+      "Deficient knowledge related to lack of information regarding condition.",
+      "Risk for aspiration related to lack of information regarding condition/disease process.",
+      "Acute pain related to irritated oesophageal mucosa."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Because the patient is concerned about possible complications of GERD and may require education about the condition, its management, and potential complications to promote self-care and prevent complications."
+  },
+  {
+    "id": "med017",
+    "questionText": "A 26 year old man was rushed to the hospital by relatives who complained that patient sustained a cut on the left ankle while weeding his backyard two (2) weeks ago. He was reviewed and provisional diagnosis of tetanus given. Which of the following is NOT a clinical feature of tetanus?",
+    "options": ["Lockjaw.", "Low-grade fever.", "Low paise rate"],
+    "correctAnswer": "C",
+    "rationale": "Tetanus is a life-threatening infection caused by Clostridium tetani that affects the nervous system and presents with symptoms such as muscle stuffness, spasms, fever, sweating, rapid heart rate, high blood pressure, difficulty swallowing, and breathing."
+  },
+  {
+    "id": "med018",
+    "questionText": "A 26-year-old female with no past medical history presents with a low-grade fever, dysuria, and flank pain. She is diagnosed with pyelonephritis. What is the most likely causative pathogen in this case?",
+    "options": [
+      "Klebsiella pneumoniae.",
+      "Escherichia coli.",
+      "Staphylococcus saprophyticus."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The most likely causative pathogen for pyelonephritis, which is an infection of the kidney, in a young, healthy female with dysuria and flank pain is Escherichia coli, which is the most common causative organism in community-acquired urinary tract infections."
+  },
+  {
+    "id": "med019",
+    "questionText": "A 26-year-old man reports at your facility with complains of a painless penile lesion for several weeks and recent swelling in the groin. On examination, a single non-tender penile ulcer and bilateral palpable non-tender inguinal lymph nodes are present. Rapid plasma reagin test results are negative. What is the most likely diagnosis?",
+    "options": [
+      "Granuloma inguinal.",
+      "Herpes simplex virus.",
+      "Primary syphilis."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Paunary syphilis is characterized by the development of a painless ulcer at the site of infection and bilateral non-tender inguinal lymphadenopathy is a common finding, which helps to differentiate it from other causes of genital ulcers. Moreover, a negative lePR test does not rule out syphilis."
+  },
+  {
+    "id": "med020",
+    "questionText": "A 28-year-old female patient complains of vaginal discharge associated with burning, irritation, and pruritus. She is sexually active with one partner and her last menstrual period was 2 weeks earlier. On examination, her vulva is erythematous with edema. She has a thick white adherent discharge and no cervical motion tenderness or uterine tenderness is noted. Which of the following is the MOST common infectious cause of vulvovaginal pruritus?",
+    "options": ["Candidiasis.", "Bacterial vaginosis.", "Gonorrhea."],
+    "correctAnswer": "A",
+    "rationale": "Candidiasis is the most com infectious cause of vulvovaginal pruritus, as it is s fungal infection caused by an overgrowth of Candida yeast, which is normally present in the vagina, and can cause symptoms such as itching burning, and thick white discharge."
+  },
+  {
+    "id": "med021",
+    "questionText": "A 29-year-old man is on achoussion on your ward He complains of chest pain and ditticuity breathing His past medical history is asthma, for which he takes albuterol when needed Vital signe checked and recorded as: blood pressure 110/80 mm Hu pulse rate of 140 beats per minunte, and oxygen saturation of 90% on room ans A physical examination reveals diminished breath sounds on the right side of the chestibu no crackles, wheezes, or thouchi. Which of the following is the BEST initial investigation to confirm diagnosis?",
+    "options": [
+      "Chest radiograph",
+      "Echocardiogram.",
+      "Helical computed tomography."
+    ],
+    "correctAnswer": "A",
+    "rationale": "A chest radiograph is the best initial investigation to confirm the diagnosis of pneumothorax because it can visualize the presence of air in the pleural space, which is characteristic of pneumothorax and allows for prompt diagnosis and treatment."
+  },
+  {
+    "id": "med022",
+    "questionText": "A 30 year old female with a history of iron deficiency anemia presents with a complaint of double vision that increases in the evening. She also had difficult swallowing food over the past month. She takes no medications and does not drink or smoke. She was diagnosed as having Myastinia Gravis. Which of the following medications will be used to treat her?",
+    "options": ["Pyridostigmine.", "Sinemet.", "Fibrinolytics."],
+    "correctAnswer": "A",
+    "rationale": "Myasthenia Gravis is an autoimmune disorder that affects the neuromuscular junction, leading to muscle weakness and fatigue. Pyridostigmine is the medication of choice to treat myasthenia gravis because it increases the concentration of acetylcholine at the neuromuscular junction, improving neuromuscular transmission and reducing muscle weakness and fatigue."
+  },
+  {
+    "id": "med023",
+    "questionText": "A 30-year-old businessman was rushed to the emergency unit with the history of sudden loss of consciousness. Patient is to be catheterized for urine specimen to be collected as well as retained till patient gains consciousness. What measures would the murse take to prevent infecting the patient? I. Avoid unnecessary handling or manipulation of the catheter. II Ensure routine irrigation of the indwelling catheter. III. Empty the collection bag at least every 8 hours through the drainage spout. IV. use pre-assembled, sterile, closed urinary drainage system.",
+    "options": ["II and IV.", "III and IV.", "I, III and IV."],
+    "correctAnswer": "C",
+    "rationale": "Routine irrigation of the indwelling catheter is not recommended, as it can increase the risk of infection and is not considered best practice. Instead, the catheter should only be irrigated when necessary, and this should be done using sterile technique."
+  },
+  {
+    "id": "med024",
+    "questionText": "A 30-year-old man is on admission with glomerulonephritis. His vital signs cheeked and recorded. Which of the following readings will indicate that he is having high blood pressure?",
+    "options": [
+      "Diastolic pressure of $95mm/Hg$",
+      "Pulse deficit of 10 per minute.",
+      "Systolic pressure of $130imm/Hg.$"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Diastolic pressure is the bottom number of a blood pressure reading, and a normal diastolic pressure is usually around 80 mm/Hg. A diastolic pressure of $90~mm/Hg$ or higher is considered high blood pressure, or hypertension."
+  },
+  {
+    "id": "med025",
+    "questionText": "A 32-year-old woman reported for a review. She has read about Graves' disease online and is afraid she has the diagnosis. Which of the following is specific to Graves' disease?",
+    "options": ["Heat intolerance.", "Ophthalmopathy.", "Fine tremor."],
+    "correctAnswer": "B",
+    "rationale": "It is a specific symptom of Graves' disease, an autoimmune disorder that affects the thyroid gland and leads to an overproduction of thyroid hormones (hyperthyroidism), and i characterized by eye disease, such as bulging of the eyes (exophthalmos), dryness, irritation, and un severe cases, double vision or vision loss."
+  },
+  {
+    "id": "med026",
+    "questionText": "A 34-year-old female presented to the emergency unit after waking up with unilateral facial paralysis On physical examination, she has flattening of her forehead and nasolabial fold on the affected side, difficulty closing her eyelid, and a tingling sensation on that side as well, With your knowledge about the nervous system and its functions, which cranial nerve is responsible for her condition?",
+    "options": ["CN V.", "CN IX.", "CN IV."],
+    "correctAnswer": "A",
+    "rationale": "The patient's symptoms suggest involvement of cranial nerve V (trigeminal nerve) as it is responsible for the innervation of the museles of facial expression and sensation on the face, and any damage to this nerve can result in facial paralysis, flattening of the forehead and nasolabial fold, difficulty closing the eyelid, and a tingling sensation"
+  },
+  {
+    "id": "med027",
+    "questionText": "A 39-year-old female is on admission with a diagnosis of severe hypertension which is controlled with a beta-blocker and a thiazide diuretic. Her history also indicates she has type 2 diabetes, for which she is currently taking an oral hypoglycemic agent and is controlled. Her urinalysis reveals microscopic proteinuria but blood pressure seems not to settle. What is the MOST appropriate treatment to be added to her management?",
+    "options": [
+      "Discontinuation of hypoglycemics.",
+      "Insulin and an ACE inhibitor.",
+      "ACE inhibitor."
+    ],
+    "correctAnswer": "C",
+    "rationale": "An ACE inhibitor (angiotensin- converting enzyme inhibitor) is a medication commonly used in the treatment of hypertension, and it has been shown to be effective in reducing proteinuria in patients with diabetes. It can help to reduce blood pressure further, protect the kidneys, and prevent or slow down the progression of diabetic nephropathy."
+  },
+  {
+    "id": "med028",
+    "questionText": "A 39-year-old man presents with epigastric fullness and discomfort that worsen after meals. His history taken indicates that he smokes but has no prior diagnosis of ulcer disease. Which of the following is the best diagnostic approach?",
+    "options": [
+      "Breath testing for H. pylori and treatment if results are positive.",
+      "Empiric antimicrobial treatment of H. pylori.",
+      "Initial 8-week trial of a proton-pump inhibitor (PPI)."
+    ],
+    "correctAnswer": "C",
+    "rationale": "This is because this is the first-line diagnostic and treatment approach for most patients with dyspepsia, which is the presenting symptom. If the symptoms improve with the PPI trial, then the patient is unlikely to have an ulcer, and further investigation is unnecessary."
+  },
+  {
+    "id": "med029",
+    "questionText": "A 3-year old Musa Abdul is on admission with a valvular heart disease. In which of the valvular heart diseases can there he a backward flow of blood? I. Valvular Prolapse. II. Valvular regurgitation. III. Valvular Stenosis.",
+    "options": ["I only.", "I and II.", "II and III."],
+    "correctAnswer": "B",
+    "rationale": "Valvular prolapse is the abnormal bulging of a heart valve leaflet, which can cause valve regurgitation; valvular regurgitation is the backward flow of blood through an improperly closing valve, decreasing heart efficiency, and valvular stenosis is the narrowing of a heart valve, impeding forward blood flow and leading to decreased cardiac output."
+  },
+  {
+    "id": "med030",
+    "questionText": "A 40 year old male patient with type 2 diabetes and hypertension is treated for acute myocardial infarction. Prior to this hospitalization his cholesterol level has not been checked for five years, at which time he says it was \"normal.\" His current LDL is $195~mg/dL$ Which of the following is true?",
+    "options": [
+      "Because he is diabetic, his LDL level should be targeted to less than $130~mg/dL$.",
+      "He should be treated to achieve a 30% reduction in his LDL cholesterol.",
+      "He should be treated to achieve at least a 50% reduction in his LDL cholesterol."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The recommended target for LDL cholesterol levels in these patients is at least a 50% reduction from baseline levels, regardless of the starting level. to reduce the risk of furthe cardiovascular events."
+  },
+  {
+    "id": "med031",
+    "questionText": "A 40-year-old female patient is evaluated for paroxysmal pain that she describes as 12/10 and \"like an electrical shock\" that shoots from the comer of her mouth to the angle of her jaw. It usually lasts several seconds and is confined to the right side of her face. It begins after she chews or drinks hot coffee. She has had three episodes in the last four days. She is alchtile and ber examination unremarkable. No neurologie deficits are noted and she is currently pain free Which of the following is the most likely diagnosis",
+    "options": [
+      "Cluster headache.",
+      "Migraine headache.",
+      "Trigeminal neuralgia."
+    ],
+    "correctAnswer": "C",
+    "rationale": "is a condition that specifically affects the trigeminal nerve, which is responsible for sensation, in the face. The patient's symptoms of paroxysmal pain confined to one side of the face that is triggered by chewing or drinking hot beverages, along with a lack of neurologic deficits, suggest Trigeminal neuralgia as the most likely diagnosis"
+  },
+  {
+    "id": "med032",
+    "questionText": "A 40-year-old female with moderate intermittent asthma is treated for an asthma exacerbation with albuterol nebulizer failed. You are considering the use of systemic corticosteroids. Which of the following is TRUE about systemic corticosteroids?",
+    "options": [
+      "Parenteral therapy is preferable to oral therapy in acute exacerbation.",
+      "The maximum dose of prednisone for an adult is 40 mg daily.",
+      "The mechanism of action in treating asthma exacerbation is suppression of inflammation."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Systemic corticosteroids such as prednisone are used to treat moderate-to-severe asthma exacerbations due to their anti- inflammatory properties, including the reduction of airway inflanımation, mucosal oedema, and mucus hypersecretion. The preferred route administration is oral, and the dose and duration of therapy depend on the severity of the exacerbation and other patient factors. of"
+  },
+  {
+    "id": "med033",
+    "questionText": "A 40-year-old male patient presents with sudden onset of severe headache that increases with movement of the head. Which of the following diagnoses would be considered?",
+    "options": [
+      "Cluster headache.",
+      "Migraine headache.",
+      "Subarachnoid hemorrhage."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Subarachnoid haemorrhage can present with sudden onset of severe headache that worsens with movement due to bleeding in the space between the brain and the tissue that covers it."
+  },
+  {
+    "id": "med034",
+    "questionText": "A 40-year-old patient reported with paroxysmal pain that she describes as $12/10$ and \"like an electrical shock\" that shoots from the comer of her mouth to the angle of her jaw. It usually lasts several seconds and is confined to the right side of her face. It begins after she chews or drinks hot coffee. She has had three episodes in the last four days. She is afebrile with no notable neurologic deficits; she is currently pain free. Which of the following is the MOST likely diagnosis?",
+    "options": [
+      "Trigeminal neuralgia.",
+      "Cluster headache.",
+      "Migraine headache."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Trigeminal neuralgia is a chronic pain disorder that affects the trigeminal nerve, Cousing brief episodes of intense, stabbing, or electric shock-like pain in the face."
+  },
+  {
+    "id": "med035",
+    "questionText": "A 42-year-old Madam Abena Mensah reported of difficulty in breathing whiles receiving intravenous infusion. Which action by the nurse will confirm that Madam Mensah is having pulmonary edema? I. Auscultating the lungs for crackles II. Placing Madam Abena Mensah in the sitling up position III. Checking the fluid balance on the chart.",
+    "options": ["I, II and III.", "I and II.", "I and III."],
+    "correctAnswer": "B",
+    "rationale": "These are characteristic signs and symptoms of the condition, while checking fluid balance on the chart does not provide information about the patient's current condition."
+  },
+  {
+    "id": "med036",
+    "questionText": "A 42-year-old man is accompanied by his mother to the Emergency unit. During the history taking, he experienced a tonic-clonic seizure. First line management for convulsive seizures is:",
+    "options": [
+      "Lorazepam $0.1~mg/kg~Pi V$.",
+      "Phenytoin $20mg/kgl$ IV.",
+      "Phenobarbital 20mg/kg IV."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Lorazepam $0.1~mg/kg$ IV, is a fast acting benzodiazepine that can control the seizure activity, but it should be used as a short-term solution since it has the potential for addiction and ix less effective for preventing futore seizu compared to options B and C which are antiepileptic drugs that are used as long-term management for convulsive seizures."
+  },
+  {
+    "id": "med037",
+    "questionText": "A 43 years old banker reports to your facility with 4 episodes of vomuing bright red blood. He has no pain but feels light hended and wise Which of the following is appropriate step to confirm diagnosis?",
+    "options": [
+      "Computed Tomography scan.",
+      "Magnetic Rehance imagm",
+      "Endoscopy of digestive system"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Vomiting bright red blood, also known as hematemesis is a medical emergency that can indicate a serious underlying condition such as gastroustestinal bleeding. In this case, an endoscopy of the digestive system would be the most appropriate step to confirm the diagnosis, as it can visualize the gastrointestinal tract and identify the source of bleeding."
+  },
+  {
+    "id": "med038",
+    "questionText": "A 43-year-old female with a past medical history of chrome diabetes and hypertension comes to the hospital clinic for a routine visit. She complains of progressive dyspnea on exertion. Recently, she developed symptoms compatible with paroxysmal nocturnal dyspnea. She controls her hypertension and diabetes with losartan and metformin. Physical examination reveals a murmur in the aortic arca. An echocardiogram shows stenosis of the aortic valve. Which medical condition most likely led to her aortic stenosis?",
+    "options": ["Hypertension.", "Diabetes.", "Rheumatic fever,"],
+    "correctAnswer": "C",
+    "rationale": "Aortic stenosis is typically caused by progressive wear and tear of the aortic valve due to age or calcification, but it can also be caused by congenital heart defects, theumatic fever, or other conditions."
+  },
+  {
+    "id": "med039",
+    "questionText": "A 48 year old female has been taking ciprofloxacin for a urinary tract infection for three days. She reports to the hospital with a complaint of watery stools with abdominal cramping and bloating. She denies any blood or pus in the stools passed. She has been using over-the-counter Imodium without relivé Laboratory results indicates Cluetridium diffhoille tosin was positive. Which of the following antibioties is repummended as first llos therapy for this patient?",
+    "options": [
+      "Levofloxonin 780 mg",
+      "A Meranodarele 500 mg",
+      "Vaneontycin 135 mg"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Patient is likely experiencing antibiotics associated diarrhnea due to Clostridium difficile Infection, The flest fine treatment for this condition pral Vancomycin. Levofloxacin and metronidazole are not effective for the treatment of Clostridium dimeile infection"
+  },
+  {
+    "id": "med040",
+    "questionText": "A 48-year-old man reports drooping of the face and difficulty speaking for 48 hours. On examination, paralysis of the upper and lower face is present on the right side. He camiot raise his eyebrows or close his eye üghtly. Drooping of the right side of the mouth is present, and the nasolabial fold is smoothed out. Which of the following is true about the most likely diagnosis based on his sympton",
+    "options": [
+      "Upper motor lesion",
+      "Cererbrovascular accident,",
+      "Facial nerve paralysis"
+    ],
+    "correctAnswer": "C",
+    "rationale": "The symptoms exhibited by the patient are classic signs of Bell's palsy (facial nerve paralysis). A cerebrovascular accident, also kamwn as a stroke, can cause facial paralysis dit is typhudly associated with additional neurological symptoms, such as hemiparesis, sensory, deficita, of language impairment, that were not described in the pittent't presentation"
+  },
+  {
+    "id": "med041",
+    "questionText": "A 50 year old wonnu was adinitted to your ward with a story of constipation, hypertension and diabetes, She uses laxativen as needeibonce a week to help with her constipation. She has a family history of colon cancer. Physical examination is normal. Bloodscount and lipid profile are normal. The patient had hortust colonoscopy 1 week ago for screening. The report is as follows: The colonoscope was passed with ease to the cecum, as confirmed by the appendiceal orifice and ileocecal valve Mild diverticular disease was noted in the sigmoid colon. The prep was poor, and semisolid stool was noted mostly in the ascending colon. Two 2mun flat white polyps were removed by biopsy polypectomy from the rectum. The pathology of these polyps returned as hyperplastic polypa. Which of the following is the APPROPRIATE time Interval unit hepati calmoscopy in",
+    "options": ["3 years", "1 year", "5 years."],
+    "correctAnswer": "A",
+    "rationale": "Hationale: According to the Ar Compr Bociety (ACS) guidelines, for Individuals with normal solowacopy finding recommended interval for the next conscopy 10 years. However for indientuals with fam history of colon camere the AC recommends a repeat lonoscopy5yus assuming that the seaminion la notinal Siner the patient had twrenomail non- polyps, the recommended interval is shortened to 3 years"
+  },
+  {
+    "id": "med042",
+    "questionText": "A 50-yearald man with a histry of hypertension, serrures, and techol sidnec ja suuyadmission on your wald after two weeks of productive cough, difficily breathing fever and chills. On physical animation, his temperature is 39.20C, and his How Rate 110 bpm. An x-ray of the chest indicate an air-floid level in the right upper lube of the lung. The presumptive diagnosis is lung abscess and on beatment anspicillin, What is the mos nursing care for this patient?",
+    "options": [
+      "Assist patient into comfortable position record and report any changes.",
+      "Perform adequate drainage using chest tube record and report any changes.",
+      "Monitor and observe patient's vital signs, record and report any changes,"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Close monitoring and observation of the patient's vital signs, such as temperature and heart rate, while being treated with antibiotics for a lung abscess is crucial for identifying potential complications or adverse reactions, as well as for carly detection and intervention in case of deterioration in the patient's condition."
+  },
+  {
+    "id": "med043",
+    "questionText": "A 52-year-old woman has been referred by urologiat for a 3 cm right adrenal mass which was detected on abdominal scan. Her weight has been stable. She has not noted hirsutism, acne, proximal myopathy, or easy bruising but has felt depressed lately. She also reports diaphoresis and occasional headaches but no palpitations. Her last menstrual period was 6 months ago. She has a 2 year history of Diabetes Melitus that is well controlled by diet. Her last mammogram & months ago was negative, and no breast masses are present Her BP 115/85mmHg. pulse; 95b/m, and weight; 74kg. She has no supra clavieular fat, or abdominal strine Her Stool is negative for occult blood. Complete blood cell cotmt and chemistry profile are normal. Which of the following is the best initial strategy?",
+    "options": [
+      "Determine aldosterone-to-PRA ratio.",
+      "Overnight dexamethasone suppression test.",
+      "Serum and androstenedione levels."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The best initial strategy for the 52-year- old woman with a 3 cm right adrenal mass and symptoms suggestive of adrenal dysfunction is to perform an overnight dexamethasone suppression test to evaluate for cortisol excess, which is the most common cause of adrenal masses in non-smoking women."
+  },
+  {
+    "id": "med044",
+    "questionText": "A 53-year-old man with a history of chronic pancreatitis secondary to chronic alcohol use disorder on admission on your ward is complaining of acute worsening of epigastric pain and dizziness. His chronic pain has been hard to control despite adequate pain medications. On examination, he is afebrile, orthostatic, and has malena stool. Which of the following care is MOST appropriate?",
+    "options": [
+      "Monitor for changes in condition record and report.",
+      "Check vital signs 4 hourly record and report.",
+      "Observe changes in vital signs, stool and vomitus and report."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The patient is presenting with new symptoms of acute worsening of epigastric pain and dizziness, which may indicate a more severe complication of pancreatitis, such as pancreatic necrosis on haemorrhage, and the presence of melena stool suggests potential gastrointestinal bleeding, therefore observing changes in vital signs. stool and vomitus and promptly reporting them is the most appropriate nursing intervention."
+  },
+  {
+    "id": "med045",
+    "questionText": "A 54-year-old Madam Afua Nartey is on admission on account of heart failure. During her care she complained of difficulty in breathing. The appropriate nursing interventions that the Nurse will put in place to aid breathing in Madam Nartey are: L. Auscultate the lungs. II. Place her in high fowler's position. III. Administer oxygen as per hospital protocol. IV. Administer diuretics.",
+    "options": ["II and III.", "I and II.", "I, II and III."],
+    "correctAnswer": "C",
+    "rationale": "To assess for abnormal breath sounds or congestion, auscultation of the lungs should be performed, along with positioning reduce pressure on the diaphragm to improve lung expansion, and administration of oxygen to improve oxygenation and reduce respiratory distress."
+  },
+  {
+    "id": "med046",
+    "questionText": "A 55 year old man presents with confusion und fever. He had an acute infero posterior myocardial infarction and underwent coronary angioplasty to: the right coronary artery. He is tebrile. He is disoriented to place and times His heart rate is 85 bpm, and his BP 95/73 mmHg. He had a short tonio- clonic seizure while doing examining the patient physically. Although his postictal state lasts an hour, no focal neurologic abnormalities are detected on repeated neurologis examinations. Brain CT is unremarkable. Laboratory studies reveal the following hematocrit 24%, white blood cells. 7.100/mm3. platelets $11,000/mm3,$ prothrombin time 12 seconds, partial thromboplastin time 31 seconds, blood urea nitrogen $21~mg/dL$ serum creatinine $2.9~mg/dL$, lactate dehydrogenase 900 U/L, and direct Coombs' test negative. What is the NEXT STEP in making a diagnosis at this time?",
+    "options": [
+      "Intravenous fluid resuscitation.",
+      "Peripheral blood smear review.",
+      "Pulmonary artery catheterization."
+    ],
+    "correctAnswer": "B",
+    "rationale": "These findings raise the suspicion of thrombotic thrombocytopenic purpura (TTP), which is a medical emergency that requires urgent diagnosis and treatment. The next step in making a diagnosis in this case would be Peripheral blood smear review. A peripheral blood smear can help identify red blood cell fragments, known as schistocytes, which are characteristic of TTP."
+  },
+  {
+    "id": "med047",
+    "questionText": "A 55 years old patient on your ward is on admission with diagnosis of chronic renal failure. This has resulted in inadequate production of erythropoietin and patient can develop",
+    "options": ["Aalcium.", "Anaemia.", "Acidosis."],
+    "correctAnswer": "B",
+    "rationale": "Erythropoietin is a hormone produced by the kidneys that stimulates the production of red blood cells in the bone marrow. In chronic renal failure, the kidneys are unable to produce sufficient"
+  },
+  {
+    "id": "med048",
+    "questionText": "A 55-year-old female patient has stage Il hypertension. On exam, she has trace pedal edema bilaterally but her lungs are clear. Her ECG reveals second-degree heart block. Which of the following medications should be avoided?",
+    "options": [
+      "Diuretics.",
+      "Angiotensin receptor blockers.",
+      "Calcium channel blockers."
+    ],
+    "correctAnswer": "C",
+    "rationale": "They should be avoided in this patient due to their potential to worsen the second-degree heart block as seen in the ECG. They do this by slowing down the electrical conduction in the heart, potentially leading to a greater blockage of the electrical signals and exacerbating the condition."
+  },
+  {
+    "id": "med049",
+    "questionText": "A 55years old banker was admitted to the ward with diagnosis of acute cardiac tamponade. What is the MOST important intervention?",
+    "options": [
+      "Heart massage.",
+      "Epinephrine administration.",
+      "Fluid resuscitation."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The most important intervention in acute cardiac tamponade is to relieve the compression on the heart caused by the accumulation of fluid in the pericardial sac. This is typically achieved by draining the fluid with a pericardiocentesis procedure"
+  },
+  {
+    "id": "med050",
+    "questionText": "A 56 year old woman was admitted to the female ward with polydipsia, Kussmaal respiration, fruity odour, polyuria. She was disorientated and confused. How would this woman be diagnosed?",
+    "options": [
+      "Diabetic ketoacidosis.",
+      "Diabetes insipidus.",
+      "Gestational diabetes."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The symptoms described are characteristic of diabetic ketoacidosis (DKA), a potentially life-threatening complication of diabetes that occurs when the body produces high levels of blood acids called ketones due to insulin deficiency, and a blood test measuring ketone levels can be used to confirm the diagnosis."
+  },
+  {
+    "id": "med051",
+    "questionText": "A 56-year-old Kwame Quarshie has been diagnosed of having gout. In explaining the cause to him, you would mention that you as a res accumulation of ....... in the blood.",
+    "options": ["Creatinine.", "Urie acid.", "Purine."],
+    "correctAnswer": "B",
+    "rationale": "Gout occurs as a result of the accumulation of uric acid in the blood, which can form erystals that accumulate in the joints and cause pain, inflammation, and other symptoms associated with the condition"
+  },
+  {
+    "id": "med052",
+    "questionText": "A 56years old male presents to the hospital with complains of chest pain which began 3 hours price to his visit and feels like a squeezing soji Which of the following findings or clinical presentations would increase the likelihood of Myocardial Infarction in this patient?",
+    "options": [
+      "Hypotension.",
+      "Shortness of breith.",
+      "Reproducible chest pain."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It indicates possible pulmonary oedema which could be a complication of myocardial infarction due to decreased cardiac output leading to fluid buildup in the lungs."
+  },
+  {
+    "id": "med053",
+    "questionText": "A 6 years old girl from the rural area was brought to your facility by her mother with complains of child not able to play with peers and always squatting after a short period of activity. Per your assessment you observed that the child had clubbed fingers. In your understanding you know that clubbing of the fingers occurs in which of the following conditions?",
+    "options": ["Anaemia.", "Congenital heart disease.", "Bronchitis."],
+    "correctAnswer": "B",
+    "rationale": "Clubbing of the fingers is a medical condition in which the fingertips become enlarged and the nail bed becomes curved, giving the fingers a club-like appearance. It is commonly associated with several conditions including congenital heart disease, lung cancer, and other conditions that result in chronic hypoxia or low oxygen levels in the blood."
+  },
+  {
+    "id": "med054",
+    "questionText": "A 64-year-old man reports to the emergency room with a severe headache that began 5 hours ago as a unilateral dull ache over his left eye and temporal region accompanied by nausea and photophobia. He took acetaminophen followed by ibuprofen, without receiving treatment for acute low back pain. Which of the following drugs should be avoided in this patient due to cardiovascular concerns?",
+    "options": ["Hydrocodone.", "Naprosyn.", "Acetaminophen."],
+    "correctAnswer": "A",
+    "rationale": "It is an opioid drug that has the potential to cause cardiovascular effects such as increased heart rate and blood pressure, which can exacerbate the patient's existing cardiovascular issues and potentially lead to adverse events like heart attack or stroke."
+  },
+  {
+    "id": "med061",
+    "questionText": "Which of the following is TRUE regarding C. Difficile?",
+    "options": [
+      "Most commonly transmitted via airborn transmission.",
+      "An anaerobie gram-negative, spore-forming, toxin-producing bacillus.",
+      "A common predisposing risk in recent metronidazole use."
+    ],
+    "correctAnswer": "B",
+    "rationale": "C. Difficile is an anaerobic gram- negative, spore-forming, toxin-producing bacillus, and it is commonly associated with the use of antibiotics, which disrupt the normal gut microbiota and allow C. Difficile to proliferate and cause infection. It is transmitted via the faccal-ocal route and is not typically transmitted via airborne transmission."
+  },
+  {
+    "id": "med063",
+    "questionText": "A 72-year-old female is scheduled for CT scan with contrast. Which of the following medication sho be withheld prior to this examination?",
+    "options": ["Metformin.", "Lantus.", "Glipizide."],
+    "correctAnswer": "A",
+    "rationale": "This is to reduce the risk of kidney damage as the contrast material can be numful to the kidneys and affect their function, and Melformin ean futher worsen this effect by reducing kidney function."
+  },
+  {
+    "id": "med064",
+    "questionText": "Which of the following tests should be ordered Initially?",
+    "options": ["B. Amylase.", "C. Lipase.", "A. ECG."],
+    "correctAnswer": "C",
+    "rationale": "An ECG is the most appropriate initial test to order because the patient's symptoms and medical history are more suggestive of a cardiac event, which could be confirmed by ECG, while amylase and lipase could be considered later as part of the diagnostic workup if the ECG is normal."
+  },
+  {
+    "id": "med065",
+    "questionText": "A 72-year-old man with a history of alcoholic cirrhosis and recurrent ascites was admitted to the hospital 5 days ago with hematemesis and dark- colored urine. He has bilateral oedema of the lower extremities. What is the MOST likely explanation of the patient's condition?",
+    "options": [
+      "Acute tubular necrosis.",
+      "Contrast nephropathy.",
+      "Hepatorenal syndrome."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The most likely explanation is Hepatorenal syndrome, a reversible renal failure that can occur in patients with cirrhosis."
+  },
+  {
+    "id": "med072",
+    "questionText": "A client arrives at the emergency room with an impacted cerumen on the left car. Which initially? interventions would the nurse anticipate to perform",
+    "options": [
+      "Irrigation of the ear.",
+      "lastillation of antibiotic ear drop.",
+      "Instillation of olive oil."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The initial interventions for an impacted cerumen would be to attempt to soften the wax and allow it to naturally come out of the ear. Instillation wax and facilitate its removal. of olive oil is a common method used to soften the"
+  },
+  {
+    "id": "med073",
+    "questionText": "In planning the care, for gastroenteritis? which of the following is NOT a diagnostic finding",
+    "options": ["Endoscopy.", "Full blood count.", "Abdominal Xray."],
+    "correctAnswer": "C",
+    "rationale": "Abdominal X-ray is not typically used to diagnose gastroenteritis, as it does not provide much information about the digestive tract, X-rays can be useful in certain situations to check for complications such as blockages or foreign objects. but they are not a diagnostic finding for gastroenteritis itself."
+  },
+  {
+    "id": "med074",
+    "questionText": "A compound in a solution that usually dissociates into discrete particles is known as",
+    "options": ["Anions.", "Cations.", "Electrolyte."],
+    "correctAnswer": "C",
+    "rationale": "They are inmportant in the body us they conduct electricity in solution, helping to regulate fluid balance, muscle and nerve function, and acid- base balance, by breaking into positively charged dissolved in water.. cations and negatively charged anions when"
+  },
+  {
+    "id": "med075",
+    "questionText": "A CT scan report of Mrs. Gladys Bossman revealed a progressive disease of the heart and it is characterized by fat formation affecting the intimal and medial layers of large and midsize arteries. Mrs. Bossman is likely to be diagnosed of?",
+    "options": ["Arteriosclerosis.", "Atherosclerosis.", "Arteriogenie."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: The condition is character progressive formation of fit deposits in the ma and medial layers of large and midsize arteries"
+  },
+  {
+    "id": "med076",
+    "questionText": "A definitive diagnosis of sickle call on which diagnostic result?",
+    "options": [
+      "Bone marrow aspiration.",
+      "Full blood count..",
+      "Haemoglobin Electrophoresis."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Haemoglobin Bicctrophoresis is the definitive test for diagnosing siekio tell disease usi disease. identifies sickle hemoglobin, the hallmark of the"
+  },
+  {
+    "id": "med077",
+    "questionText": "A disease with an unknown cause is usually described as ...... disease.",
+    "options": ["Idiopathie.", "fatrogenic.", "Communicable"],
+    "correctAnswer": "A",
+    "rationale": "The term \"Idiopathic\" refers to a medical condition that has an unknown or spontaneous not identifiable. origin, and therefore emphasizes that the cause is"
+  },
+  {
+    "id": "med078",
+    "questionText": "A disorder of the internal ear characterized by recurrent attacks of severe vertigo, nausea, is called ...... vomiting, tinnitus and a progressive loss of hearing",
+    "options": ["Acute otitis media.", "Menieres's syndrome.", "Mastoiditis."],
+    "correctAnswer": "B",
+    "rationale": "The symptoms exhibited by the patient are characteristic of Meniere's syndrome, which is a disorder of the inner ear that affects balance and individual. hearing, and can be debilitating for the affected"
+  },
+  {
+    "id": "med079",
+    "questionText": "A farmer who self medicates with both herbal and orthodox medicines was rushed to your facility with complains of severe flank pain, tingling of the fingers and toes and muscle twitching. He was diagnosed with acute renal failure. This tingling and muscle twitching is caused by",
+    "options": ["Acidosis.", "Calcium depletion.", "Potassium retention."],
+    "correctAnswer": "C",
+    "rationale": "Rationale: In acute renal failure, the kidneys are not able to remove excess potassium from the body."
+  },
+  {
+    "id": "med080",
+    "questionText": "A female patient aged 31 is on admission on the ward with diagnosis of ulcerative colitis. The results of her endoscopy indicated the presence of many deranged enzymes and cells of the mucosal lining. Which of the following enzyme is not present in the small intestine?",
+    "options": ["Chemotrypsinogen.", "Enterokinase.", "Erepsin."],
+    "correctAnswer": "A",
+    "rationale": "The enzyme chemotrypsinogen is not present in the small intestine, but rather in the pancreas."
+  },
+  {
+    "id": "med081",
+    "questionText": "A female patient on your ward had severe drug reaction after administering her medication. Her lips were swollen and she had difficulty breathing. This reaction is known as",
+    "options": [
+      "drug intolerance.",
+      "medication reaction.",
+      "anaphylactic reaction."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Anaphylaxis is a severe and potentially life-threatening allergic reaction to a substance, such as a medication, food, or insect sting. Symptoms of anaphylaxis can tongue or throat, difficulty nausea, vomiting, and a"
+  },
+  {
+    "id": "med083",
+    "questionText": "A group of students contracted typhoid Tever Salmonella typhi winch is the causative organisin for this condition could have been transmitted through",
+    "options": [
+      "Droplets from an infected person throug coughing or sneezing.",
+      "Having unprotected ses with an infected person",
+      "Consumption of contaminul food or water"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: consumption Salmonella found becatise cun"
+  },
+  {
+    "id": "med085",
+    "questionText": "A known hypertensive female patient reports to your facility with complaints of severe abdominal pain. She was diagnosed of acute gastritis. Which of the following statements regarding acute gastritis is true?",
+    "options": [
+      "It can be the result of chronic intake of nonsteroidal analgesics.",
+      "It is primarily caused by lack of dietary fibre",
+      "The gold standard for evaluation is colonoscopy."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Acute gastritis can be caused by several factors, including chronic use of nonsteroidal anti- inflammatory drugs (NSAIDs), alcohol consumption, infections, and other factors that cause irritation or inflammation of the stomach lining."
+  },
+  {
+    "id": "med086",
+    "questionText": "A Laboratory investigation on Mr. Seidu Issaka revealed protozoa helminths and bacteria as the causative agents of his condition. The Doctor en duty assessed and diagnosed him as having concomitant infections. This indicates the presence of",
+    "options": [
+      "A parasite in one host.",
+      "Two or more parasites in one host.",
+      "Several parasites in one host."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Concomitant infections refer to the simultaneous presence of two or more infections in a single host (patient). In this case, Mr. Seidu Issaka was found to have protozoa, helminths, and bacteria as the causative agents of his condition, which one host. indicates the presence of twe or more parasites in"
+  },
+  {
+    "id": "med087",
+    "questionText": "A major objective of nursing patients with acute lymphocytic leukaemia on chemotherapeutic protocols is to",
+    "options": [
+      "baseline data for monitoring.",
+      "avoid contact with persons with infections.",
+      "improve patient's response to change in nursing actions."
+    ],
+    "correctAnswer": "B",
+    "rationale": "This is due to the immunosuppressive effects of chemotherapy."
+  },
+  {
+    "id": "med088",
+    "questionText": "A male patient aged 35, was admitted to the ward with a severe sinus infection and bacterial meningitis. He develops acute renal failure due to drug interactions. What nursing intervention will you put in place for the patient.",
+    "options": [
+      "Check vital signs 4hourly and report,",
+      "Monitor patient for signs of fluid volume exces",
+      "Ensure adequate hydration of patient,"
+    ],
+    "correctAnswer": "C",
+    "rationale": "This is to maintain renal perfusion and increase urine output, which will promote the elimination of drugs and metabolic wastes, prevent electrolyte imbalances, and improve renal function."
+  },
+  {
+    "id": "med089",
+    "questionText": "A male patient aged 52, is on admission on your ward and has not yet been diagnosed. During the general assessment of this patient, you observed an involuntary flapping movement of the hands which is usually associated with metabolic liver dysfunction. This is known as",
+    "options": ["Dystonia.", "Asterizis.", "Parkinson."],
+    "correctAnswer": "B",
+    "rationale": "Rationale Asnvista an involuntary movement of the banda, omaltynin patients with metabolic livin dyshua liver to detoxify ammonia, whistlesilatoa hepatic encephalopathy, dar the nabality of of toxins in the blood that affects the s causes neurological symptonsa"
+  },
+  {
+    "id": "med091",
+    "questionText": "A male patient visits the OPD of your facility. He treatment of choice is... was diagnosed with Vincent's angina. The BEST",
+    "options": ["Azithromycin.", "Amoxicillin", "Penicillin."],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Vincent's angina, an acute necrotizing ulcerative gingivitis caused by bacterial infection including Fusobacterium and Borrelia species. treated with antibiotics, primarily penicillin, control the infection and prevent complications such as ulceration, bleeding, and necrosis of the gums and mucous membranes in the mouth"
+  },
+  {
+    "id": "med092",
+    "questionText": "A middle age man was accompanied by his wife to the medical emergency where you work with complain of difficulty in breathing. Your initial assessment reveals he has collection of fluids in his lungs. As a Nurse on duty, what position will you breathing? Nurse the patient in order to facilitate euse in",
+    "options": ["Semi Fowler's.", "Flower's.", "Prone."],
+    "correctAnswer": "A",
+    "rationale": "Rationale: The Semi-Fowler's posinen, with the head of the bed elevated at a 45 degree angle. promotes ease of breathing by opening up the airways and reducing fluid accumulation in the hungs."
+  },
+  {
+    "id": "med093",
+    "questionText": "A minibus driver suddenly stopped the car and complained to his passengers of severe excruciating pain in the eyes and unable to see clearly. He was rushed to the nearest Eye clinic. History taken revealed tunnel vision and colored halos around lights. Ocular assessment revealed frosted corneal appearance and was diagnosed of Acute Angle Closure Glaucoma. The nurse at the elinie understands the driver's intraocular pressure may rise to",
+    "options": ["32.", "22.", "50."],
+    "correctAnswer": "C",
+    "rationale": "The intraocular pressure in Acute Angle Closure Glaucoma can be as high as 50 mmHg, which can lead to optic nerve damage and vision less, making option C the correct answer."
+  },
+  {
+    "id": "med094",
+    "questionText": "A mother brought her 16 year old JHS teenager to the hospital with suspected meningitis. Which of the following may be present during the initial phase of meningitis?",
+    "options": [
+      "Fever and headache.",
+      "Headache and neck stiffness.",
+      "Headache, nausea and vomiting."
+    ],
+    "correctAnswer": "A",
+    "rationale": "These are common symptoms of inflammation of the membranes that surround the brain and spinal cord, which can be caused by bacterial, viral, or fungal infections."
+  },
+  {
+    "id": "med095",
+    "questionText": "A mother brought her 16 year old JHS teenager to the hospital with suspected meningitis. Which of the following may be present during the initial phase of meningitis?",
+    "options": [
+      "Fever and headache.",
+      "Headache and neck stiffness.",
+      "Headache, nausea and vomiting."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The reason for why fever and headache are key signs of meningitis is because they result from the body's immune response to the infection, with the fever being a sign of inflammation and the headache being caused by increased pressure in the skull due to inflammation of the meninges."
+  },
+  {
+    "id": "med098",
+    "questionText": "A Nurse is educating a group of patient at the Out Patient Department (OPD) on Gout. A patient asked the Nurse to identify the foods that should be eaten. Which of the following foods should the Nurse educate them to eat?",
+    "options": ["1, II, III and IV.", "II and IV.", "I and IV."],
+    "correctAnswer": "B",
+    "rationale": "A diet that includes bananas and meat, while limiting sardines and wheat bread, may help to manage gout because bananas are low in purines, a substance that can increase uric acid levels, while meat contains moderate levels of purines, but provides essential nutrients needed for overall health."
+  },
+  {
+    "id": "med099",
+    "questionText": "A nurse is evaluating a patient with macrocytic anemia, most likely due to $B_{12}$ deficiency. Which of the following is associated with this type of anemia?",
+    "options": [
+      "Asterixis",
+      "Hair thinning",
+      "Tingling and numbness in the feel."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Vitamin B12 is critical for the proper Ametioning of the nervous system and the symptoms are a result of a deficiency in this vinamin"
+  },
+  {
+    "id": "med100",
+    "questionText": "A Nurse is teaching bank workers how to prevent varicose veins. Which of the following recommendations made by the Nurse is MOST accurate?",
+    "options": [
+      "Wear clean white cotton socks with shoes.",
+      "Wear support hose or thromboembolic deterrent stockings",
+      "Engage in passive range of motion exercise."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Varicose veins occur when the veins become swollen and twisted, usually in the legs. Jobs that require long periods of standing or sitting can increase the risk of developing varicose veins. To prevent varicose veins, it is recommended to wear compression stockings, which are specially designed to support blood flow in the legs, reduce swelling, and prevent blood clots."
+  },
+  {
+    "id": "med101",
+    "questionText": "A nurse is treating a 70-year-old male patient with a history of coronary artery disease and hypertension for acute low back pain. Which of the following drugs should she avoid in this patient due to cardiovascular concerns?",
+    "options": ["Acetaminophen.", "Tramadol.", "Naprosyn"],
+    "correctAnswer": "C",
+    "rationale": "It is a nonsteroidal anti-inflammatory drug (NSAID) that has been shown to increase the risk of cardiovascular events (such as heart attack and stroke) and can further increase blood pressure, putting more strain on the heart and blood vessels."
+  },
+  {
+    "id": "med102",
+    "questionText": "A nurse was asked to develop a nursing care plan for a patient with the diagnosis of Gout, what is the best nursing intervention to carry on?",
+    "options": [
+      "Administer Aspirin.",
+      "Apply cold and warm compress on the right foot daily.",
+      "Provide food high in purines."
+    ],
+    "correctAnswer": "B",
+    "rationale": "To reduce pain, swelling inflammation associated with gout, and healing of the affected joint."
+  },
+  {
+    "id": "med103",
+    "questionText": "A nursing diagnosis of \"fluid and clic imbalance related to fluid loss or shifts made a patient with DKA. The Nurse MUST prepats set up which of the following IV fluids patient?",
+    "options": [
+      "Dextrose in saline.",
+      "4.3% in $1/5$ normal saliric",
+      "0.9% normal salino"
+    ],
+    "correctAnswer": "C",
+    "rationale": "DKA is characterized by high levels of glucose in the hiood, which leads to amotic diuresis, fluid less, and dehydration. Using 0.9% normal saline is preferred over 4.3% in $1/5$ normal saline because it provides a more balanced and controlled replacement of fluids and electrolytes in patients with DKA due to its isotonic nature."
+  },
+  {
+    "id": "med104",
+    "questionText": "A nursing diagnosis of \"impaired verbal communication related to brain damage\" is made for a patient with ischaemic stroke. Which of the following nursing actions is MOST appropriate?",
+    "options": [
+      "Provide pen and paper for patient to write.",
+      "Establish eye contact when communicating with",
+      "Allow patient to ask questions about words he does not understand."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Establishing eye contact is crucial in communication with a patient with brain damage, as it facilitates nonverbal communication and creates a supportive environment communication. for effective"
+  },
+  {
+    "id": "med105",
+    "questionText": "A nursing diagnosis of Imbalance Nutrition less than body requirement is made for a patient with protein energy malnutrition. Which of the following should the nurse consider when planning care for the patient?",
+    "options": [
+      "Modify favourite foods for patients.",
+      "Provide highly nutritious meals to make up for the deficit.",
+      "Serve IV fluids if patient averts food."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The reason is to improve their nutritional status by providing highly nutritious meals that compensate for the deficit and provide the body with the necessary nutrients to maintain good health."
+  },
+  {
+    "id": "med106",
+    "questionText": "A panent aged 40 wax rushed to the emergency amit with history of bronchial asthma. With the key camplant of difficulty in breathing, which of the following nursing diagnosis would be correct?",
+    "options": [
+      "Ineffective breathing pattern related to slysphoca",
+      "Impaired physical mobility related to dyspnoca.",
+      "Caregiver role strain related to dyspnoea"
+    ],
+    "correctAnswer": "A",
+    "rationale": "In patients with respiratory problems, such as bronchial asthma, ineffective breathing pattern is a comunon nursing dinguosis that indicates impaired ventilation or gas exchange due to an alteration in the depth, rate, and/or rhythm of breathing, which is related to dyspnoea or difficulty breathing."
+  },
+  {
+    "id": "med107",
+    "questionText": "A patient aged 44 is diagnosed with chronic renal failure and experiencing metabolic acidosis. As the attending nurse you understand that metabolic acidosis usually occurs in chronic renal failure due to",
+    "options": [
+      "low hydrogen, high ammonia, low bicarbonate.",
+      "high hydrogen, low ammonia, low breathonate.",
+      "low hydrogen, low ammonia, high bicarbonate"
+    ],
+    "correctAnswer": "B",
+    "rationale": "In chronic renal failure, the kidneys are unable to excrete sufficient amounts of acid and maintain bicarbonate levels, leading to metabolic acidosis. The correct answer is B, which describes high hydrogen (resulting from the accumulation of acidic substances in the blood), low ammonia (resulting from impaired conversion of ammonia.to urea by the kidneys), and low bicarbonate (dire to decreased renal production and retention"
+  },
+  {
+    "id": "med108",
+    "questionText": "A pauent asks a nurse \"should I tell my husband I am HIV positive\"? The appropriate response should be",
+    "options": [
+      "\"are you having difficulty deciding what to say.",
+      "\"do not tell him anything unless he asks\".",
+      "\"this is a decision you need to make alone\"."
+    ],
+    "correctAnswer": "A",
+    "rationale": "This response acknowledges the patient's concerns and allows them to take ownership of the decision-making process, rather than being told what to do"
+  },
+  {
+    "id": "med109",
+    "questionText": "A patient came to the medical ward from the CPD with the diagnosis of acidosis. Which of the following will be the MOST sign/symptom she is likely in present?",
+    "options": ["Convulsions", "Irregular heartbeat", "Aliured mental as"],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Acidosis in a medical condition in wi there is an increase in the acidity of the blood of decrease in the concentration of bicarbonato, which is a base that helps to maintain the pll of the blood within a normal einge, flect the central nervous systern and her the pilof brain tissu leading to changes in counive funchon.jond mental"
+  },
+  {
+    "id": "med110",
+    "questionText": "A patient complains of severe gain in the left and right write joints a result of rheomatoid arthritis. What nonpharmacologic nursing intervention would you provide to help alles late the pain?",
+    "options": [
+      "Assist patient with a warm bath/shower,",
+      "Exercise the affected joints regularly.",
+      "Perform deep mussage therapy to the joints."
+    ],
+    "correctAnswer": "A",
+    "rationale": "This can help to reduce pain an stiffness by promoting circulation and relaxation the affected joints."
+  },
+  {
+    "id": "med112",
+    "questionText": "A patient diagnosed with cirrhosis of the live your ward had his laboratory results indic varied levels of enzymes. Which of these is T of this patient?",
+    "options": [
+      "Raised serum glutamic oxalo- transaminase.",
+      "Increased serum albumin normal prothrombin time.",
+      "Increased serum magnesium normal prothrombin time."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Raised serum glutamic oxalo- acetic transaminase (SGOT), also known as aspartate aminotransferase (AST), is a common finding in patients with liver cirrhosis and indicates liver damage."
+  },
+  {
+    "id": "med113",
+    "questionText": "A patient diagnosed with coeliac disease is on admission in your ward with complains of severe abdominal pain, nausea and vomiting, as well as diarrhea. The nursing management for this patient would include the following EXCEPT:",
+    "options": [
+      "Fluid replacement, and electrolytes administration of supplements.",
+      "Education on gluten free diet, vitamin and mineral supplement.",
+      "Encourage intake of cereals, crackers, noodles and wheat."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Encouraging the intake of cereals, crackers, noodles, and wheat is not appropriate in the management of a patient with coeliac disease since these foods contain gluten and can exacerbate the patient's symptoms."
+  },
+  {
+    "id": "med114",
+    "questionText": "A patient diagnosed with esophageal varices on your ward begins to vomit large volumes of bright red fluid. You are called by the patient next to the bedside to attend to him since he seems to be out of breath. As the nurse on duty, what would be your immediate action?",
+    "options": [
+      "Call for help, check vital signs, reassure patient and position patient.",
+      "Call or help. Assess level of consciousness, check vital signs, secure L.M. access and reassure patient.",
+      "Call for help, assess level of consciousness, vital signs and reassure patient."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationales The other options may be may be appropriate in some cases. However, in this scenario, the patient is already experiencing respiratory distress, so calling for help and reassessing the patient's vital signs should be the first priority before securing IV access. Additionally, since the patient is vomiting large volumes of blood, it's important to position the patient to prevent aspiration and protect their airway."
+  },
+  {
+    "id": "med115",
+    "questionText": "A patient diagnosed with leukemia is on chemotherapy for the past 3 weeks. He reports to the facility with complains of pain, burning sensation and difficult in swallowing. On examination of the mouth, he way ulcers in the mouth that wal mddish and looking tongue Patientis conce inability to eat or drinkk As the a what intervention would you recurtme",
+    "options": ["I. III and IV", "I, II and III.", ", III and IV"],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Patients with oral fulcers caused by chemotherapy should adbt beverages, spicy and salty foods, citrus fruits, take prescribed pain relievers, and parole with cool water and suck to promote pain relief, prevent further irritakon and promote healing."
+  },
+  {
+    "id": "med116",
+    "questionText": "A patient diagnosed with meningitis a cheduled for Lumber puncture. The nune explained to the patient that the spinal puncture needle will be introduced in between the",
+    "options": ["L2-L3.", "1.3-14.", "L1-L2"],
+    "correctAnswer": "B",
+    "rationale": "Rationale: During a lumbar puncture, a spinal puncture needle is inserted through the skin and tissues of the lower back and into the spinal canal to obtain a sample of cerebrospinal fluid (CSF) for testing. The spinal puncture needle is introduced between the L3 and L4 vertebrae because the spinal cord typically ends at the level of L1-12, and it is safer to avoid penetrating the lower spinal cord segments."
+  },
+  {
+    "id": "med117",
+    "questionText": "A patient diagnosed with severe hypertension was on admission on your ward and being managed for both hypertension and gastritis. As the attending nurse, you understand that the gastritis is as result of which of the following....",
+    "options": [
+      "Disease condition and stress.",
+      "Excessive production of gastric juice.",
+      "Medications and stress."
+    ],
+    "correctAnswer": "C",
+    "rationale": "The gastritis in this patient is likely due te a combination of medication use (such as NSAIDs for pain management) and the physiological stress associated with hypertension, which can increase the production of gastric acid, and can further irritate the stomach lining."
+  },
+  {
+    "id": "med118",
+    "questionText": "A patient experiencing and ischaemic stroke is sure to exhibit which of the following neurological symptoms?",
+    "options": ["Dyscrasia.", "Dysarthria.", "Dysthymia."],
+    "correctAnswer": "B",
+    "rationale": "Ischaemic stroke is caused by a blockage of blood flow to the brain, leading to neurological symptoms such as dysarthria, which is difficulty speaking and/or slurred speech."
+  },
+  {
+    "id": "med119",
+    "questionText": "A patient is admitted to the hospital with a diagnosis of bacterial meningitis. If the patient develops seizure, the Nurse should",
+    "options": [
+      "Note body movement, time and length seizure.",
+      "Restrain the patient with stirrups.",
+      "Tepid sponge the patient to reduce pyrexia."
+    ],
+    "correctAnswer": "A",
+    "rationale": "This information can be important for the medical team to determine the cause of the seizure and to guide appropriate treatment."
+  },
+  {
+    "id": "med120",
+    "questionText": "A patient is admitted to the ward with the diagnosis of hypocalcaemia. During assessment, the patient began twitching on the facial muscles as a response to tapping of the facial nerve. This characteristic sign of hypocalcaemia is",
+    "options": ["Rovsing's.", "Trousseau's.", "Chvostek's,"],
+    "correctAnswer": "C",
+    "rationale": "The twitching of the facial muscles in response to tapping of the facial nerve is known as Chvostek's sign, which is a characteristic sign of hypocalcaemia due to the increased neuronal excitability that occurs as a result of low levels of calcium."
+  },
+  {
+    "id": "med121",
+    "questionText": "A patient is admitted to your ward with the history of hemoptysis, weakness and cough. Which of the following respiratory disorders is the patient likely to be diagnosed of?",
+    "options": ["Empyema.", "Pneumonia.", "Bronchiectasis."],
+    "correctAnswer": "B",
+    "rationale": "The patient's symptoms of haemoptysis, weakness, and cough are commonly associated with pneumonia, an infection of the lung parenchyma, and suggest an inflaminatory response to the infection causing damage to the lung tissue and potentially leading to haemoptysis (coughing up of blood) and weakness."
+  },
+  {
+    "id": "med122",
+    "questionText": "A patient is on admission on your ward with pericarditis. The following could be the causes of his condition. I. Infections II. Brain injury III. Renal failure",
+    "options": ["I, II and III.", "I and III.", "II and II."],
+    "correctAnswer": "B",
+    "rationale": "Pericarditis is an inflammation of the pericardium, the fluid-filled sac that surrounds the heart, and can be caused by various factors such as infections and renal failure, causing chest pain and other symptoms."
+  },
+  {
+    "id": "med123",
+    "questionText": "A patient is on admission on your ward with pericarditis. The following could be the causes of his condition. I. Infections II. Brain injury III. Renal failure",
+    "options": ["I and III.", "I and II.", "II and III."],
+    "correctAnswer": "A",
+    "rationale": "Pericarditis is an inflammation of the pericardium, which is the sac-like membrane that surrounds the heart. It can be caused by infections and renal failure, but not brain injury, which is not commonly associated with pericarditis."
+  },
+  {
+    "id": "med124",
+    "questionText": "A patient is on the ward with haemolytic jaundice. Which of the following is the Nurse likely to observe in this patient?",
+    "options": [
+      "Urine appears dark brown.",
+      "Fats in the stool.",
+      "Stool is clay coloured."
+    ],
+    "correctAnswer": "A",
+    "rationale": "in haemolytic jaundice, the breakdown of red blood cells is increased, and the resulting lirubin is excreted in the urine, leading to dark brown urine, whereas stool is not affected, resulting in no change in the colour of stool."
+  },
+  {
+    "id": "med125",
+    "questionText": "A patient is to receive 3000ml of IV fluid in 12 hours. The drop factor is 10gtt/ml. To regulate the flow, how many drops per minute approximately, should the flow be?",
+    "options": ["30 to 32.", "27 to 29.", "40 το 42"],
+    "correctAnswer": "C",
+    "rationale": "To calculate the drops per minute (gtt/min), we can use the following formula: gtt/min (Volume to be infused x Drop factor)/ Time in minutes In this case, the volume to be infused is 3000 ml. and the time is 12 hours, which is equal to 720 minutes. So, $gtt/min=(3000\times10)/720=41.67$ Therefore, the flow rate should be approximately 40 to 42 drops per minute (option C)."
+  },
+  {
+    "id": "med126",
+    "questionText": "A Patient on adınission with type I diabetes goes into insulin coma. The causes of insulin coma include I. Inadequate food intake II. Increased insulin dose III. Skipping insulin dose IV. Strenuous exercises",
+    "options": ["I, II and IV.", "II, III and IV", "I, II and III."],
+    "correctAnswer": "A",
+    "rationale": "Insulin coma, also known as hypoglycaemia, is a condition in which the blood glucose level drops too low due to an excess of insulin in the body, resulting in a range of symptoms including confusion, seizures, and loss of consciousness."
+  },
+  {
+    "id": "med127",
+    "questionText": "A patient on admission, diagnosed with heart failure and receiving treatment starts vomiting with diarrhoea.. He also experiences abdominal pain. Which of the following drugs might be responsible for these manifestations?",
+    "options": ["Diuretics.", "Hydralazine.", "Digoxin."],
+    "correctAnswer": "A",
+    "rationale": "The drug that is matkusta vomiting, diarrhoea, and abdominal pa with heart failure is diuretics, which work increasing urine output sind reducing And but can also lead to electrolyte imbalances gastrointestinal disturbances"
+  },
+  {
+    "id": "med128",
+    "questionText": "A patient on IV fluid of 5% dextrose for time would lose weight due to",
+    "options": [
+      "Increased conventration of electrolytes in the cells.",
+      "Lack of protein supplementation,",
+      "Insufficient carbohydrate intake."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The 5% dextrose solution does not contain protein, and prolonged lack of protem intake can lead to muscle wasting and weight los"
+  },
+  {
+    "id": "med129",
+    "questionText": "A patient on the burns und where you work complains of abdominal pain, burning feeling in the stomach and abdominal bloating. As the attending nurse you understand that the patient may be experiencing",
+    "options": [
+      "Chronic stress gastritis.",
+      "Acute stress gastritis.",
+      "Erosive stress gastritis."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Acute stress gastritis is a type of stomach inflammation that can be caused by various factors, including burns, trauma, surgery, or severe illness."
+  },
+  {
+    "id": "med130",
+    "questionText": "A patient on your ward develops dysrhythmia The nursing diagnosis for this patient may include the following: I. Anxiety related to fear of the unknown II. Decreased cardiac output III. Deficient knowledge about the dysrhythmia and its treatment",
+    "options": ["I, II and II.", "I and II.", "II and III."],
+    "correctAnswer": "A",
+    "rationale": "These are all common nursing diagnoses for a patient with dysrhythmia, given the potential physical and psychological effects of the condition, and addressing these concerns can help improve the patient's overall health outcome."
+  },
+  {
+    "id": "med131",
+    "questionText": "A patient on your ward has been diagnosed with rabies. This patient would characteristically exhibit",
+    "options": ["Memory loss.", "Pharyngeal spasm.", "Urinary stasis."],
+    "correctAnswer": "B",
+    "rationale": "It is a result of the virus aflecting the central nervous system and causing contraction of the muscles in the throat, leading to difficulty swallowing and drooling."
+  },
+  {
+    "id": "med132",
+    "questionText": "A patient on your ward is diagnosed with Addison's disease and is being managed with hydrocortisone. As the attending nurse you understand that Addion's disease is caused by malfunctioning of which of the following gland?",
+    "options": ["Pituitary.", "Adrenal gland.", "Hypothalamus."],
+    "correctAnswer": "B",
+    "rationale": "Addison's disease is caused by destruction of the outer layer (cortex) of the adrenal glands, resulting in decreased production of the hormones cortisol and aldosterone, which can lead to a range of symptoms and medical complications."
+  },
+  {
+    "id": "med134",
+    "questionText": "A patient with a diagnosis of multiple sclerosis What response are of his condition. response to this patient?",
+    "options": [
+      "There is no cure for the condition.",
+      "If urinary complications do not occur, he can get well.",
+      "If he takes his medications as prescribed, he can be cured."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The most appropriate response would be to inform the patient that currently there is no cure for multiple sclerosis. However, it is important to let the patient know that with proper managemus sed treatment, it is possible to slow the pregrasion of the disease and manage symptoms effectively"
+  },
+  {
+    "id": "med136",
+    "questionText": "A 65 year old male patient who received a blood transfusion develops Fever and chills 2 hours after the transfusion Respiratory Rate: 16cpm. pulse:78bpm. Which is the MOST likely cause?",
+    "options": [
+      "ABO incompatibility.",
+      "Leukoagglutination reaction.",
+      "Host antibody response to donor white blood cell antigens."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The ABO incompatibility occurs when the patient's blood type differs from the blood type of the donor and the transfused blood is not compatible with the recipient's blood type, leading to an immune response and the release of pyrogens causing fever and chills."
+  },
+  {
+    "id": "med137",
+    "questionText": "A patient reported to the emergency unit where your work with complains of right upper quadrant pain with heart burns. What is the most likely cause of his complaints?",
+    "options": [
+      "Chronic gastric ulcer.",
+      "Chronic pancreatitis.",
+      "Chronic duodenal ulcer"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Chronic duodenal ulcer is a type of uleer that occurs in the duodenum, which is the first part of the small intestine. While chronic gastrie uleer can also cause right upper quadrant pain and heartburn, it is less commonly associated with these symptoms than chronic duodenal ulcer."
+  },
+  {
+    "id": "med138",
+    "questionText": "A patient reported to the hospital with painful cty blisters on the genitals which is suspected to be herpes zoster infection. As the nurse on duty you mas consider requesting for the following Investigations EXCEPT",
+    "options": ["ELISA test.", "Complete blood count", "Blood glucose levels."],
+    "correctAnswer": "A",
+    "rationale": "With suspected herpes zoster infection, you would not typically request an ELISA test, as this test is primarily used to detect antibodies to the human immunodeficiency virus (HIV), not herpes zoster"
+  },
+  {
+    "id": "med139",
+    "questionText": "A patient reports to the hospital with the complaints of right upper quadrant pain which is worsened when she takes in fatty meals. Which condition is she likely to have?",
+    "options": ["Cholecystitis.", "Hepatitis.", "Pancreatitis."],
+    "correctAnswer": "A",
+    "rationale": "The pain in the right upper quadrant of the abdomen that worsens with fatty meals is a classic symptom of cholecystitis, which is inflammation of the gallbladder caused by the presence of gallstones or the obstruction of the cystic duct."
+  },
+  {
+    "id": "med140",
+    "questionText": "A patient reports to the OPD with psoriasis. The Nurse should assess this patient for",
+    "options": [
+      "Multiple petechiae.",
+      "Shiny scaly lesions.",
+      "Erythematous macules."
+    ],
+    "correctAnswer": "B",
+    "rationale": "This is a hallmark symptom of the condition"
+  },
+  {
+    "id": "med141",
+    "questionText": "A patient reports to your facility with complains of abdominal cramps and pain, nausea and vomiting. Laboratory results indicates she was having enteritis. Which of the following is NOT a complication of Enteritis?",
+    "options": ["Poor urine output.", "Severe fatigue.", "Loss of appetite."],
+    "correctAnswer": "C",
+    "rationale": "Enteritis is an inflammation of the small intestine, usually caused by an infection. Poor urine output and severe fatigue can be complications of enteritis due to dehydration and nutrient loss, respectively. However, loss of appetite co symptom of enteritis and not a complication"
+  },
+  {
+    "id": "med142",
+    "questionText": "A patient reports to your facility with ou of fever, diaphoresis, joint pains and wan and ventricular gallops. A diagnosis of inte Assessment revealed altered heart edocarditis is made. The management of this p will include I. Antibiotics II. bed rest III. vital signs monitoring IV. surgery if needed",
+    "options": [", III, IV.", "I, II, III, IV."],
+    "correctAnswer": "A",
+    "rationale": "The management of infective endocarditis includes antibioties to eradicate the infection, vital signs monitoring to assess for complications, and surgical intervention if needed to prevent further damage to the heart. Option II is dependent on the severity of the condition,"
+  },
+  {
+    "id": "med143",
+    "questionText": "A patient reports to your facility with complains of heart burn, chest pain and difficulty in swallowing. A diagnosis of gastroesophageal reflux disease (GERD) was made. A student nurse on your ward is confused about the difference with patient's diagnosis and oesophagitis. Which of the following differentiates GERD from oesophagitis?",
+    "options": [
+      "Degree of chest pain and burning sensation.",
+      "Difficulty swallowing and hoarseness of voice.",
+      "Regurgitation of food and sensation of lump in throat."
+    ],
+    "correctAnswer": "C",
+    "rationale": "GERD is a reflux disease where stomach acid irritates the oesophagus causing heartburn and other symptoms, whereas oesophagitis is inflammation of the oesophagus that can be caused by GERD or other factors such as infections or medications."
+  },
+  {
+    "id": "med144",
+    "questionText": "A patient visits the O.P.D. with complains of painful mouth sore and difficulty in eating. She was diagnosed with stomatitis. Which of the following interventions would provide comfort and pain relief for the patient?",
+    "options": [
+      "Meticulous mouth care after meals.",
+      "Application of lubricating ointment.",
+      "Use of topical analgesics."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Stomatitis is an inflammation of the mucous lining of the mouth, which can cause painful sores, and the use of topical analgesics can provide pain relief by numbing the area and redueng discomfort during eating and other activities that require mouth movement."
+  },
+  {
+    "id": "med145",
+    "questionText": "A patient was rushed to the emergency unit and diagnosed of severe dehydration secondary to chronie gastroenteritis. As a qualified Nurse, you should anticipate which of the following complications if prompt treatment is not instituted?",
+    "options": [
+      "Deep vein thrombosis.",
+      "Cardiogenic shock.",
+      "Acute renal failure."
+    ],
+    "correctAnswer": "C",
+    "rationale": "This is because dehydration can lead to a decrease in blood flow to the kidneys, causing kidney darnage and eventually acute renal failure."
+  },
+  {
+    "id": "med146",
+    "questionText": "A patient who has CVA with a right hemiplegia should NOT have his $B/P$ checked using the right arm because circulatory impairment may",
+    "options": [
+      "Produce inaccurate readings.",
+      "Cause excessive pressure on the brachial artery.",
+      "Precipitate the formation of thrombus."
+    ],
+    "correctAnswer": "A",
+    "rationale": "A patient with right hemiplegia following a cerebrovascular accident (CVA) should not have their blood pressure affected (right) arm, as it readings due to the blood may be"
+  },
+  {
+    "id": "med147",
+    "questionText": "A patient something of of for 7 days. by the may be due to",
+    "options": [
+      "\"I have nausea and I cannot keep my food down\".",
+      "\"I have low back pain\".",
+      "\"I have some bright red blood in my urine\"."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Cystitis is a urinary tract infection that causes inflammation of the bladder. \"I have some bright red blood in my urine,\" can suggest a urinary tract infection (UTI) with haematuria, but can also indicate a more serious condition, such as bladder cancer or a kidney stone, especially if the blood is present throughout the entire void"
+  },
+  {
+    "id": "med148",
+    "questionText": "A patient who is diagnosed with Pulmonary emphysema may show the following clinical features I. Chronic cough II. Increasing shortness of breath III. Production of copious purulent sputum IV. Wheezing respiration",
+    "options": ["II, III and IV.", "I, II and IV.", "I, II and III."],
+    "correctAnswer": "B",
+    "rationale": "chronic by leads to Clinical of copious typical feature of and may indicate a"
+  },
+  {
+    "id": "med149",
+    "questionText": "A patient with a nursing acute pericarditis has a nursing acute pain (chest) related to inflammatory process. What would be the BEST nursing intervention for this patient?",
+    "options": [
+      "Put patient in the right lateral position with the head of the bed elevated.",
+      "Administer opioids as prescribed and monitor the effects on the patient and report.",
+      "Position patient in Fowler's position with a padded heart table for the patient to lean on."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It is the best nursing intervention for the patient because it effectively relieves acute chest pain related to the inflammatory process, while positioning changes may provide comfort but are not as effective in managing pain."
+  },
+  {
+    "id": "med150",
+    "questionText": "A patient with aneurysm presents with sudden intense and persistent chest pain that radiates to the back. She also has low blood pressure and shortness of breath. Which type of aneurysm is this patient suffering from?",
+    "options": ["Cerebral.", "Thoracic.", "Ventricular."],
+    "correctAnswer": "B",
+    "rationale": "This patient is likely suffering from a thoracic aortic aneurysm, as the symptoms described (sudden intense and persistent chest pain radiating to the back, low blood pressure, and shortness of breath) are consistent with a thoracic aortic rupture."
+  },
+  {
+    "id": "med151",
+    "questionText": "A patient with duodenal ulcer would probably describe the associated pain as;",
+    "options": [
+      "A gnawing sensation relieved by food.",
+      "An intermittent colicky flank pain.",
+      "An ache radiating to the left side."
+    ],
+    "correctAnswer": "A",
+    "rationale": "The pain associated with a duodenal uleer is typically described as a gnawing sensation relieved by food as eating stimulates the production of digestive juices, including gastric acid and bicarbonate, which can neutralize the acid in the stomach and relieve the pain caused by the erosions in the lining of the duodenum,"
+  },
+  {
+    "id": "med152",
+    "questionText": "A patient with epigastric pain that is unrelieved by antacids presents for review. He has a positive urea breath test. Which of the following of the medications would be appropriate for treatment?",
+    "options": [
+      "Amoxicillin plus clarithromycin plus sucralfate.",
+      "Metronidazole plus omeprazole plus clarithromycin.",
+      "Metronidazole plus ranitidine."
+    ],
+    "correctAnswer": "B",
+    "rationale": "A positive urca breath test for a patient with epigastric pain that is unrelieved by antacids indicates a possible H. pylori infection, for which a combination of metronidazole, omeprazole, and clarithromycin is an appropriate treatment, as this combination effectively targets the 11. pylori bacteria and reduces gastric acid secretion, thereby relieving the patient's symptoms."
+  },
+  {
+    "id": "med153",
+    "questionText": "A patient with gastric ulcer would probably describe the pain as",
+    "options": [
+      "A gnawing sensation relieved by food.",
+      "A burning epigastric pain after eating.",
+      "An intermittent colie flank pain."
+    ],
+    "correctAnswer": "B",
+    "rationale": "This type of pam is typically associated with gastric ulcers and is caused by the exposure of the ulcerated area to stomach acid. The pain is temporarily relieved by eating food."
+  },
+  {
+    "id": "med155",
+    "questionText": "A patient with liver cirrhosis developed oedend poor concentration and changes with a lusty odour. What medication will be MOST appartiene fir d patient at the moment?",
+    "options": ["Lactulose.", "Diuretics.", "Digoxin"],
+    "correctAnswer": "A",
+    "rationale": "Rationaler I stulose helps adidcess the underlying cause of hepatie encepluilopathy by removing toxins that have accumulated in the blood due to the liver's Intpaired function, while diureties may be used to reduce fluid accumulation but will not address the cattar, and digoxin is not appropriate fue treating liver cirrhosis."
+  },
+  {
+    "id": "med156",
+    "questionText": "A parient with nephrotic syndrome is having Hyperlipidemia. During your clinical teaching to s group of nursing students, you explained Hyperlipidemia to be caused by low level in",
+    "options": ["Sodium.", "Albumin.", "Glucose."],
+    "correctAnswer": "B",
+    "rationale": "Low levels of albumin, a protein produced by the liver, can lead to Hyperlipidemia in patients with Nephrotic Syndrome by affecting the regulation of lipid levels in the blood."
+  },
+  {
+    "id": "med157",
+    "questionText": "A patient with nephrotic syndrome laboratory investigations indicates an increase in lipid level. As the nurse managing this patient you understand that hyperlipidemia is caused by low.... level",
+    "options": ["glucose.", "albumin.", "sodium."],
+    "correctAnswer": "B",
+    "rationale": "Rationale. The nurse should understand that hyperlipidaemia is caused by low albumin levels. Nephrotic syndrome is a kidney disorder that causes protein to leak into the urine, resulting in hypoalbuminemia, which is a low level of albumin in the blood. This low albumin level leads to an"
+  },
+  {
+    "id": "med158",
+    "questionText": "A patient with peptic ulcer disease at the ward reports to you that she normally feels a burning pain mostly around 1-3am. This suggests which type of peptic ulcer",
+    "options": ["Duodenal.", "Gastric.", "Jejunal."],
+    "correctAnswer": "A",
+    "rationale": "A burning pain mostly around 1-3am suggests a duodenal ulcer because it is commonly related to the timing of gastric acid secretion, which is highest during the night."
+  },
+  {
+    "id": "med159",
+    "questionText": "A patient with restlessness, agitation, twitching. convulsion and serum sodium greater than 145mEq/L can be said to be suffering from;",
+    "options": ["Hypernatraemia.", "Hypokalaemia.", "Hypercalcaemia."],
+    "correctAnswer": "A",
+    "rationale": "The patient is exhibiting signs of hypernatraemia, which is a medical condition where there is a higher than normal level of sodium in the bloodstream."
+  },
+  {
+    "id": "med163",
+    "questionText": "insipidus withholding 5% of the body the patient's the test. Which of the calls for immediate",
+    "options": ["I, III and IV.", "I, II and III.", "I, II and IV."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Excessive weight loss, hypotension, and tachycardia are signs of dehydration and can lead to serious complications, such as hypovolemic shock, which requires immediate termination of the fluid deprivation test to prevent harm to the patient."
+  },
+  {
+    "id": "med164",
+    "questionText": "A patient with thyroid hormone dysfunction is being prepared for thyroid test to be done. The nurse prior to the test must determine whether the patient has taken medications that contain iodine because they can alter the test results. Which of these drugs MUST NOT be taken by the patient? I. Opiates. II. Anti-hypertensives. III. Antibiotics. IV. Corticosteroids.",
+    "options": ["II, III and IV.", "I, II and III.", "I, II and IV."],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Unlike options II, III and IV, Oplates do fofime and are not known to affect the results of thyroid tests, and therefore do not need to be avoided by the patient prior to the test"
+  },
+  {
+    "id": "med165",
+    "questionText": "A person exposed to hepatitis A is given gamma globulin to provide passive immunity to",
+    "options": [
+      "Provade antibodies that neutralize the antigen.",
+      "Accelerare antigen-antibody union at the hepatic SIDOS",
+      "Increase production of short-lived antibodies."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale. When a person is exposed to hepatitis A, the administration of gamma globulin introduces autodies into their bloodstream that are able to neutralize the virus and prevent it from causing iliness Hywever, the actual reason is to provide a quick and effective form of protection against the Vinis"
+  },
+  {
+    "id": "med166",
+    "questionText": "A zotalion purse at the Centre was tasked by an bye Nurse Specialist to educate a group of nurse trainegs about Glaucoma. One of the nurse trainegs asked about characteristics of Glaucoma during the teaching. Which of the following responses from the rotation nurse is MOST appropriate I. Increased Intraocular pressure. II. Optic nerve atrophy III. Optic nerve hypertrophy IV. Peripheral Visual field loss.",
+    "options": ["I, II and IV.", "1", "I, II and III."],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Glaucoma is a group of eye diseases that can damage the optie nerve and cause vision loss or blindness This option is appropriate because these three characteristics are the most commonly associated with glaucoma, while optic nerve hypertrophy is not typically observed in cases of glaucoma."
+  },
+  {
+    "id": "med167",
+    "questionText": "A severe anaemic patient is being transfused on your ward. Patient suddenly develops urticaria rash and starts to convulse. As the nurse in charge on duty, what would be the immediate action to take?",
+    "options": [
+      "Administer emergency drugs.",
+      "Stop the transfusion immediately.",
+      "Immediately notify the doctor."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationale: The patient is showing allergic reaction to the blood transfusion immediate action to take in to stop the troufusal prevent further reaction. The physician idol be notified, and emergency drugs thuy administered based on the severity of"
+  },
+  {
+    "id": "med169",
+    "questionText": "A staff nurse is evaluating nursing care rendered to a patient with Glaucoma prior to discharge from the ward. Which of the following would the staff nurse consider as important overall expected outcomes for the client? I. Comply with prescribed therapy. II. Obtain relief from pain associated the disease. III. Ensure no further loss of vision. IV. Safe function within the environment.",
+    "options": ["1. II and II.", "I and II.", "I, II, III and IV."],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Assessing all aspects of a patient's condition, including compliance with therapy, relief of symptoms, prevention of further complications. and safe functioning within their environment, is necessary to achieve the best possible outcomes for patients with Glaucoma."
+  },
+  {
+    "id": "med171",
+    "questionText": "Abiba Dede has been diagnosed with dracunculiasis in the community elinic. The Incubation period for Dracunculiasis Medinesis is",
+    "options": ["$6-9$ months.", "18-20.", "10-14."],
+    "correctAnswer": "C",
+    "rationale": "Rationale: It is an infection of the subcutaneous and deeper tissues with a larger nematode and lives in the subcutaneous tissue of man. The worm has an incubation period of about 1 year and has water snail (called eyelop) as its intermediate host."
+  },
+  {
+    "id": "med172",
+    "questionText": "Acute inspiratory stridor is most likely to occur in which of the following conditions?",
+    "options": ["Pneumonia.", "Epiglottitis.", "Tension pneumothorax."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Acute inspiratory stridor is a high- pitched wheezing sound during inhalation, typically caused by inflammation and swelling of the epiglottis narrowing the airway in epiglottutis."
+  },
+  {
+    "id": "med174",
+    "questionText": "After a physical assessment and history taken of an obese patient, a diagnosis of oesophagitis was made. He was admitted to your ward for further management. The nursing management of this patient would be?",
+    "options": [
+      "Encourage patient to rest after micals, promoting good oral care and serving prescribed medications.",
+      "Assessing of mucous membranes, vominas anil maximizing the use of prescribed medications",
+      "Promoting of adequate mutritional intake, maintaining Integrity of mucosal lining and minimizing pain."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale. The management should focus on promoting healing of the oesophageal mucosa, minimizing pain and discomfort and preventing complications by intake, lining, and"
+  },
+  {
+    "id": "med176",
+    "questionText": "After a tooth extraction for a 16 year old boy, the attending nurse instructed patient and mother to ensure that the patient rinses the mouth with warm saline water, brushes teeth twice daily and floss after every meal. The rationale of the instruction given is to....",
+    "options": [
+      "Reduce pain and swelling after the tooth extraction.",
+      "Help promote oral hygiene and prevent further cavities from forming.",
+      "Prevent the build-up of plague and tartar on the gum."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationale Brushing teeth twice daily, and flossing after meals can help remove food particles and prevent bacteria build-up in the mouth, promoting oral hygiene and preventing further tooth decay"
+  },
+  {
+    "id": "med177",
+    "questionText": "Ama Moses, a 10 year old is diagnosed of having typhoid fever. This disease is transmitted by:",
+    "options": [
+      "Air borne infection.",
+      "Faeco-oral infection.",
+      "Droplet infection."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Typhoid fever is primarily transmitted by the faeco-oral route through contaminated food or water, as the causative bacteria, Salmonella typhi, is shed in the feces of infected individuals."
+  },
+  {
+    "id": "med178",
+    "questionText": "An 18 year old female reports to your facility with complains of burning sensation which is localized in the midepigastrum. She also indicated that she experiences a gnawing pain which is only relieved by eating. Further questioning indicates that she usually eats a small portion of food in the afternoon and drinks orange juice for the rest of the day because she does not want to gain weight The goal of management for this patient would be to",
+    "options": [
+      "Maintaining fluid and nutritional status.",
+      "Relief of pain and maintenance of nutritional status.",
+      "Alleviating of burning sensation and promoting good nutrition."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationale: The patient's symptoms and history suggest peptic ulcer disense, which can cause burning epigastric pain and is often relieved by eating. The goal of management is to relieve pain and maintain good nutrition through provision of nutritional supplements or adjusting the patient's diet to address specific nutritional deficiencies to support healing of the ulcer and prevent complications."
+  },
+  {
+    "id": "med179",
+    "questionText": "An 18 year old SFS student reported to the hospital with painful and difficult micturition. A diagnosis of urinary tract infection was made. Which of the under listed pathogen is the MOST common cause of the disease?",
+    "options": [
+      "Enterococcus faecalis.",
+      "Staphylococcus aureus.",
+      "Escherichia coli."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: E. coli is a type of bacteria that is commonly found in the gastrointestinal tract and can sometimes spread to the unitary tract an infection. Other bacteria that can calle tract infections include Enterococcus f Staphylococcus aureus, but these are causes compared to. E. coli."
+  },
+  {
+    "id": "med180",
+    "questionText": "An 88 years old man comes to the hospita complains to you that he has recently been troch with impotence. The most appropriate action af time is to:",
+    "options": [
+      "Explain to him that at his age is normal.",
+      "Listen and respond.comjinthetically",
+      "Take a complete nealth fhusto includm medications"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: This is to identify potential causes of impotence and determine the most appropriate course of action, as this can be sign of underlying health issues and can be caused by a variety of physical, psychological, and medical factors, an well as certain medications."
+  },
+  {
+    "id": "med181",
+    "questionText": "An 88-year-old client was transfer in to the Rehabilitation Unit of the hospital with diagnosis of Benign Paroxysmal Positional Vertigo (BPPV). As a nurse at the unit, which of the following would you expect the physical therapist to recommend for the client? I. Epley. II. Heimlich. III. Semont. IV. Valsalva.",
+    "options": ["I and III.", "I and II.", "I and IV."],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Benign Paroxysmal Positional Vertigo (BPPV) is a common type of vertigo caused by the displacement of calcium carbonate crystals (otoconia) in the inner car. The physical therapist may recommend Epley and Semont maneuvers, to help reposition the otoconia and alleviate the symptoms of vertigo."
+  },
+  {
+    "id": "med182",
+    "questionText": "An antidiurectic substance important for maintaining fluid balance is released by",
+    "options": [
+      "Posterior pituitary gland,",
+      "Anterior pituitary gland.",
+      "Adrenal cortex."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Antidiuretic hormone (ADI), which is synthesized in the hypothalamus and released by the posterior pituitary gland, plays an important role in regulating fluid balance in the body by promoting water reabsorption in the kidneys."
+  },
+  {
+    "id": "med183",
+    "questionText": "An asthmatic patient on your ward is placed on theophylline as treatment. This medication is given to the patient to",
+    "options": [
+      "Reduce the constriction of bronchioles.",
+      "Reduce irritation in the airway.",
+      "Decrease airway inflammation,"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Theophylline is a bronchodilator medication that works by relaxing the smooth muscles in the airways and reducing bronchoconstriction, making it easier for the patient to breathe."
+  },
+  {
+    "id": "med184",
+    "questionText": "An elderly man on admission is complaining of hyperplasia of the gums. Which of these drugs that he is taking is responsible for his complaints?",
+    "options": ["Aspirin.", "Phenytoin.", "Digoxin."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Phenytoin is a medication that is known to cause hyperplasia of the gums as a side effect due to its ability to induce overgrowth of fibroblasts and gingival connective tissue, leading to an abnormal accumulation of gum tissue."
+  },
+  {
+    "id": "med186",
+    "questionText": "An Eye Nurse Specialist is conducting ocular examination for a client at the Eye Unit of your hospital. The ocular assessment revealed visual field loss, optic disc cupping, colored halos around lights and tunnel vision. As a rotation nurse at the Eye Unit assisting the ocular assessment, which of the assessment findings of the client in addition to optic dise cupping indicate optic nerve damage?",
+    "options": [
+      "Visual field loss.",
+      "Tunnel vision.",
+      "Colored halos around lights."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale: The optic nerve carries visual information from the eye to the brain, and damage to the nerve can result in visual field loss or blind spots."
+  },
+  {
+    "id": "med188",
+    "questionText": "An obese man, aged 40 reports to your facility with complains of severe heartburn, pain on swallowing, chest pain and cough. His eating habits indicated he takes in an appreciable amount of spicy foods at a sitting and usually self-medicates with Ibuprofen. A diagnosis of oesophagitis was made. Which of the following is a contributing factor to his condition? I. Obesity. II. Medication. III.Age. IV. Feeding habits.",
+    "options": ["I, II and III.", "I, II and IV.", "I, III and IV."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Feeding habits and medication such as Ibuprofen are known risk factors for oesophagitis, and obesity is also a risk factor as it can contribute to the development of gastroesophageal reflux disease (GERD), which can in turn cause oesophagitis."
+  },
+  {
+    "id": "med189",
+    "questionText": "An Olympic athletic swimmer who is in Ghana for a vacation tour visited your health facility's ENT unit. He complained of itoling, pain and foul- smelling discharge after swimming training session weeks ago. Which of the following is the swimmer likely to be suffering from?",
+    "options": ["Estemal Outia", "Labyrinthttis", "Ouia Media,"],
+    "correctAnswer": "A",
+    "rationale": "Rationale The swimmer is likely to be suffering from external otitis (option A), also known as \"wwinner's car,\" which is an infection of the external ear canal that is commonly caused by prolonged exposure to moisture,"
+  },
+  {
+    "id": "med190",
+    "questionText": "An outpatient with hepatitis A is put on phenobarbital sodium (Luminal). The nurse would advise the patient to contact the doctor if he/she notices",
+    "options": [
+      "Anal pruritus, orthostatic hypotension.",
+      "Decreased tolerance to common constipation.",
+      "Loss of appetite, persistent lethargy."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Phenobarbital sodium (Luminallis a barbiturate medication that can be used to treat seizures, but it can also be used in the treatment of pruritus (itching) associated with hepatitis A However, phenobarbital can cause side effects such as anal pruritus (itching around the amus) and orthostatic hypotension (a drop in blood pressure when standing up)."
+  },
+  {
+    "id": "med191",
+    "questionText": "An unconscious patient is receiving intermittent feeding through a NG tube. To evaluate if the previous feeding has been absorbed the Nurse",
+    "options": [
+      "Evaluate the intake in relation to the output.",
+      "Compare the patient's body weight to the baseline data.",
+      "Aspirate for residual volume and re-instil it"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Aspiration of residual volume is a standard practice in evaluating enteral feedings, and it provides information about the amount of residual volume in the stomach, which is essential for ensuring the correct amount of nutrition is administered, and preventing complications such as aspiration pneumonia."
+  },
+  {
+    "id": "med192",
+    "questionText": "As a charge Nurse performing assessment on a 20-year-old man with sickle cell disease, which of the following findings requins intervention?",
+    "options": [
+      "Multiple leg ulcers.",
+      "11b of $6.5a/41,$",
+      "Painful erection."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationales Immediate intervention is required the finding of Hb of $6.5g/dl$ us this indicates re anaemia which is a common complication im si cell disease."
+  },
+  {
+    "id": "med193",
+    "questionText": "As a newly qualified nurse attending to a patice diagnosed with gastritis, you understand that the following complications may result if lett untreated",
+    "options": ["Vomiting.", "Stenosis.", null],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Outreated gastritis can cause chronic inflammation of the stomach lining, leading to the formation of ulcers, which can cause pain and"
+  },
+  {
+    "id": "med194",
+    "questionText": "As a nurse assisting a patient in passive exercises to exparnd the chest, you would instruct a patient with airflow limitation to perform pursed lip breathing because it will",
+    "options": [
+      "facilitate oxygen intake.",
+      "improve ventilation and perfusion.",
+      "help with carbon dioxide elimination."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Pursed lip breathing is a breathing technique that involves inhaling through the nose and exhaling slowly through pursed lips, as if whistling. This technique helps to increase the expiratory time (help with carbon dioxide elimination) and decrease the respiratory rate, which can improve gas exchange and oxygenation in patients with airflow limitation, such as those with chronic obstructive pulmonary disease (COPD)."
+  },
+  {
+    "id": "med195",
+    "questionText": "As a preceptor on the ward, how would you explain vertigo to a first year RGN student on clinical rotation?",
+    "options": [
+      "A feeling of dizziness and discomfort.",
+      "A feeling of restlessness and listlessness.",
+      "An abnormal sensation of imbalance movement."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Vertigo is a type of dizziness characterized by an illusion of movement of spinning and is accompanied by feelings of unsteadiness, dizziness, and disorientation. It is caused by various underlying conditions and is best described as an abnormal sensation of movement or imbalance."
+  },
+  {
+    "id": "med196",
+    "questionText": "As a Student Nurse during your assessment of a patient with common cold, you observe that the sputum is green in colour. You may interpret this to mean..........",
+    "options": [
+      "Lowered immunity.",
+      "Allergic reaction,",
+      "Secondary infection."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: The presence of green sputum typically indicates the presence of pus and bacteria, which is a sign of a secondary infection."
+  },
+  {
+    "id": "med197",
+    "questionText": "As the attending nurse of a patient diagnosed with coeliac disease, you explain that the disease is caused by an auto immune response to",
+    "options": ["Galactose.", "Gluten.", "Glucose."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: It is a protein found in wheat, barley, and rye that triggers an abnormal immune response in individuals with coeliac disease, leading to damage to the small intestine and malabsorption of nutrients."
+  },
+  {
+    "id": "med198",
+    "questionText": "As the nurse in charge of the geriatric ward, you are to educate a menopausal women on her diet. You will include that she should eat foods rich in Vitamin D and calcium to prevent",
+    "options": ["osteomyelitis.", "osteoporosis.", "osteomalacia."],
+    "correctAnswer": "B",
+    "rationale": "Rationales Osteoporosis, a bone disease causing low bone mass and deterioration, leading to increased fracture risk, is more common in postmenopausal women due to decreased estrogen production, and can be prevented through consumption of calcium and vitamin D-rich foods which are crucial for strong bone development and maintenance."
+  },
+  {
+    "id": "med199",
+    "questionText": "At the community clinic where you work, a mother reports to your facility with her 10 year old son and complains of pains in the gum when chewing and sensitivity to cold or hot foods. Oral history revealed child refuses to brush teeth on daily basis. In your education to the muther and chuld you would include the following EXCEPT I. Brushing of teeth twice daily II. Avoidance of excessive sugar intake III. Flossing of tecili and rinsing of mouth after meals. IV. Eating hot meals to avoid bacteria boild up",
+    "options": [" and IV.", "I, II and III.", "I, II and IV"],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Eating hout meals cannot prevent bacteria build-up as it is ont the temperamre of the food that causes dental caries, but the brealalown of sugar and carbohydrates by bacteria in the mouth."
+  },
+  {
+    "id": "med200",
+    "questionText": "Auntie Adobea Fuseni, aged 24 years is being discharged after treatment of gastritis. What health education would the Nurse give to her before she leaves the hospital?",
+    "options": [
+      "Limit the intake of fatty foods and meat.",
+      "Occasionally. consult a dietician for diet list.",
+      "Reduce intake of highly seasoned or spicy food."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: These types of foods can irritate the digestive system and exacerbate symptoms of gastritis, which is an inflammation of the lining of the stomach."
+  },
+  {
+    "id": "med201",
+    "questionText": "Baby Liza Semetor, aged 9 months has been diagnosed with pneumonia. Which of the following clinical manifestations would indicate that Baby Liza has streptococcal pneumonia?",
+    "options": [
+      "Hoarseness, rhinitis, nonproductive cough",
+      "Low grade fever, nasal congestion, headache.",
+      "Pleuritic chest pain, sudden onset of chills and rapid fever."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Pleuritic chest pain (pain caused by the inflamed pleural membranes around the lungs), sudden onset of chills and rapid fever are signs of a severe form of pneumonia, and are often indicative of streptococcal pneumonia."
+  },
+  {
+    "id": "med202",
+    "questionText": "Barikisu Lamptey has developed pleurisy as a result of recurrent pneumonia. She complains of severe chest pain. The Nurse explains to Barikisu that the pain may get worse on...",
+    "options": [
+      "Holding her breathe for a while.",
+      "Changing her position.",
+      "Ting is dep breathe"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rale The flamed pleural tissue rubs against như cung lincreased pain and discomfiut, pecially with doge breathing or coughing."
+  },
+  {
+    "id": "med203",
+    "questionText": "Bi Adrogah, an eight-month old baby is on at the Paediatrie emergency ward with maleguinion What would be the initial action to be saken by the Norse",
+    "options": [
+      "Immediately call doctor on duty to see baby.",
+      "Evaluate baby's dietary intake.",
+      "Refer mother and baby to a dietician."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationale: This is to identify the underlying cause of malnutrition and determine any nutritional deficencios, as well as to ensure that the baby is receiving adequate nutrition to support growth and development"
+  },
+  {
+    "id": "med204",
+    "questionText": "Clinical manifestations of Crohns's disease EXCEPT: socurring in the colon include the following",
+    "options": [
+      "Mixture of healthy patts of the colon and inflamed areas.",
+      "Presence of continuous inflammagen of the colon.",
+      "Dysparrunia"
+    ],
+    "correctAnswer": "C",
+    "rationale": "Rationale: Dyspareunia, which is pati during sexual intercourse, is a symptom related to the reproductive system and not the garomirstinal system"
+  },
+  {
+    "id": "med205",
+    "questionText": "Clinical manifestations such asack and pains seus miserebrospina meningiti CSM) are",
+    "options": [
+      "Meningeal irritation.",
+      "Raisa intracranial pressure",
+      "Increased body temperatus."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale Neck and back pain in cerebrospinal meningitis is caused by mattingeal irritation due to the inflammation of the protective membranes surrounding the brain and spinal cord, which puts pressure on the nerves in the spinal column."
+  },
+  {
+    "id": "med206",
+    "questionText": "Community Based Therapeutic Care (CTC) is among the strategies recommended for the management of acute severe malnutrition. The following are among the advantages of CTC, It; I. Encourages early presentations II. Less costly III. Has a wide coverage",
+    "options": ["I and II.", "II and III.", "I and III"],
+    "correctAnswer": "B",
+    "rationale": "Rationale: CTC is considered less costly and has a wide coverage, making it an effective strategy for managing neute severe malnutrition,"
+  },
+  {
+    "id": "med207",
+    "questionText": "Defects forming Fallot'sdetenlogy include: I. Over-riding of the aorti II. Pulmonary stenosis III. Right ventricular hypertrophy IV. Ventricularental defect",
+    "options": ["I, II. III and IV"],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Fallot's tetralogy is a congenital heart defect that consists of four main components, including pulmonary stenosis, overriding of the septal defect."
+  },
+  {
+    "id": "med208",
+    "questionText": "During a discharge teaching of a client with hepatic cirrhosis, the nurse is sure to add that patient should avoid which of the following to prevent hepatic encephalopathy?",
+    "options": ["Plum.", "Cheese.", "Mushroom."],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Hepatic encephalopathy is a neurological coniplication that can occur in patients with liver disease, and it is important to avoid foods that are high in protein, such as cheese, in order to reduce the risk of developing this condition."
+  },
+  {
+    "id": "med209",
+    "questionText": "During a four (4) hourly checking of vital signs of a patient, you realized that the patient has an increase in blood pressure with bounding pulse and complains of headache during an IV infusion administration. This findings and complains are indicative of",
+    "options": ["Hyperglycaemia.", "Fluid overload.", "Air embolism."],
+    "correctAnswer": "B",
+    "rationale": "Rationale These signs are indicative of fluid overload, which means that the patient has an excessive volume of fluid in their circulatory system, and can lead to symptoms such as headache, shortness of breath, and oedema."
+  },
+  {
+    "id": "med210",
+    "questionText": "During a school health visit a pupil presented with a severe discharge from the left car. As a rotation nurse who was part of the school health visit team, how long would you instruct the pupil to keep drug impregnated cotton wick into the left ear?...... hours",
+    "options": ["24 to 72.", "12 to 22.", "24 to 48,"],
+    "correctAnswer": "C",
+    "rationale": "Rationale: The recommended length of time to keep a drug-impregnated cotton wick in the ear is 24 to 48 hours to allow for adequate medication absorption and avoid over-medication or damage to the ear canal."
+  },
+  {
+    "id": "med212",
+    "questionText": "During patient teaching about Vertigo to client prior to discharge from the ward, which of the following statements made by the client indicate understanding of the teaching about Peripheral Vertigo?",
+    "options": [
+      "\"Is a disorder of inner car and the VIII cranial nerve\".",
+      "\"Is not a disorder of VIII cranial nerve but vestibular nuclei.",
+      "\"Is a disorder of inner eat and vestibalar \""
+    ],
+    "correctAnswer": "A",
+    "rationale": "Rationale. Peripheral vertigo is caused by problems in the inner ear or the vestibular nerve, which is also known as the eighth cranial nerve. This nerve is responsible for carrying information about balance and spatial orientation from the inner ear to the brain."
+  },
+  {
+    "id": "med213",
+    "questionText": "During physical assessment of a patient with breathing difficulty, the patient who assumes a sitting position with arms liittet forward and laterally unto the edge of the bed (tripod position) is likely to be suffering from,",
+    "options": [
+      "Atelectasis.",
+      "Obstructive pulmonary disease",
+      "Pneumothorax."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationale: The tripod position (which helps by increasing lung expansion and improving oxygenation) is a sign of breathing difficulty associated with obstructive pulmonary disease as the patient assumes the position to improve their breathing."
+  },
+  {
+    "id": "med214",
+    "questionText": "During the administration of medication to patients, a first year student asked you why you administered methimazole to your patient who was diagnosed of hyperthyroidism. Your correct response should be",
+    "options": [
+      "It prevents the pituitary gland from releasing TSH.",
+      "It decreases the synthesis of thyroid hormone.",
+      "It reduces blood supply to the gland."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Rationale: Methimazole is an antithyroid medication used in the management of hyperthyroidism, a condition characterized by excessive thyroid hormone production. Methimazole works by inhibiting the production of thyroid hormones, specifically by blocking the enzyme thyroperoxidase, which is necessary for the synthesis of thyroid hormones."
+  },
+  {
+    "id": "med215",
+    "questionText": "During ward rounds at the Medical Unit, a student Nurse was asked to state the clinical manifestations of hepatitis B. Which of the following is NOT a manifestation of hepatitis B?",
+    "options": ["Epigastric pains.", "Fever.", "Jaundice."],
+    "correctAnswer": "A",
+    "rationale": "Rationale: Epigastric pains are not typically a direct manifestation of hepatitis B, while fever and jaundice are common symptoms."
+  },
+  {
+    "id": "med216",
+    "questionText": "During ward rounds was observed that a male pament wehe has beert on admission for the past week had his laboratory investigation results revealing Bar bus belingbin, creatinine and urea levels were above the normal ranges. This indicates that the gland that manufactures, stores, alters and excretes a lage number of substances involved in metabolison in the body is not functioning as it should. This gland is the",
+    "options": ["liver", "Jodney", "pancras"],
+    "correctAnswer": "A",
+    "rationale": "The liver is responsible for the metabolism, storage, alteration, and excretion of many substances in the body, and abnormal levels of bilirubin, creatinine, and urea are indicative of liver dysfunction."
+  },
+  {
+    "id": "med217",
+    "questionText": "During ward rounds the leader of the team reviewed a patient with renal disease. He explained that the blood flow to the kidneys are approximately 1200L minute. The Nurse understands that this accounts for ...... percent range of candice output.",
+    "options": ["30-35", "15.", "20-25"],
+    "correctAnswer": "C",
+    "rationale": "The renal blood flow accounts for 20- 25. of the carding output, providing a significant amount of blood to the kidneys for proper functioning and filtration of waste products."
+  },
+  {
+    "id": "med218",
+    "questionText": "Dunng Ward rounds, the medical team reviewed a client with diagnosis of Uveitis. The medical team lead asked the sumient nurses who were part of the ward rounds about the components of uveal tract. Which of the following responses from the student nurses are MOST appropriate? I. Choroid II. Ciliary body. III. Comea. IV. Iris.",
+    "options": ["I and II.", "I, II and III.", "1, It and IV."],
+    "correctAnswer": "C",
+    "rationale": "The usual tract in the eye that consists of the charant, elliary iris, and it is responsible for providing and and regulating the amount of light along the"
+  },
+  {
+    "id": "med221",
+    "questionText": "Foods in damaged cans are likely to cause food poisoning by organisms called",
+    "options": [
+      "Clostridium tetani,",
+      "Escherichia coli.",
+      "Clostridium botulinum."
+    ],
+    "correctAnswer": "C",
+    "rationale": "This organism is anaerobic, meaning it grows in the absence of oxygen, and can produce a illness if consumed. potent toxin in canned foods that can cause serious"
+  },
+  {
+    "id": "med222",
+    "questionText": "Hajia Alimatu Hopeson, a 53-year-old Bank Manager reported to the hospital with the complaints of headache, dizziness and palpitations Her body mass index was calculated to be 56kg/m2. The probable diagnosis of Hajia Alimatu would be",
+    "options": ["Normal.", "Obese", "Morbidly obese."],
+    "correctAnswer": "C",
+    "rationale": "Hajia Alimatu's body mass index (BMI) of 56 kg/m2 indicates that she is morbidly obese, which is associated with a number of health problems including cardiovascular disease, diabetes, and an increased risk of certain cancers."
+  },
+  {
+    "id": "med223",
+    "questionText": "In a patient with dysrhythmia, which of the following assessment findings would indicate a decreased cardiac output?",
+    "options": [
+      "Hypertension and bradycardia,",
+      "Chest pain and decreased mental ability.",
+      "Bounding pulse and increased temperature."
+    ],
+    "correctAnswer": "B",
+    "rationale": "A decreased cardiac output in a patient with dysrhythmia would indicate a decrease in the ability of the heart to pump blood effectively, leading to decreased perfusion of vital organs and tissues, which can manifest as symptoms such as fatigue, weakness, shortness of breath, and decreased mental ability."
+  },
+  {
+    "id": "med224",
+    "questionText": "In controlling the pain in a patient with gastric ulcer disease, the following are means of achieving pain relief EXCEPT:",
+    "options": [
+      "Encouraging adequate rest.",
+      "Avoiding stressful situations",
+      "Eating meals when desired."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Eating meals when desired may exacerbate pain by stimulating acid production in the stomach, thus it is not a means of achieving pain relief."
+  },
+  {
+    "id": "med225",
+    "questionText": "In educating a group of pregnant women on diet during pregnancy, you will tell them to eat foods rich in Vitamin D and calcium to prevent,",
+    "options": ["Osteomalacia.", "Osteomyelitis.", "Osteoporosis."],
+    "correctAnswer": "C",
+    "rationale": "Osteomalacia is caused by a lack of Vitamin D and results in soft bones, while a balanced diet during pregnancy that includes adequate Vitamin D and calcium can help prevent the development of osteoporosis, a condition fractures."
+  },
+  {
+    "id": "med226",
+    "questionText": "In educating a roan diagnosed with GERD, you should indicate that the risk factors for this disease includes the following EXCEPT.",
+    "options": ["Pregnancy.", "Regular exercise.", "Smoking."],
+    "correctAnswer": "B",
+    "rationale": "Regular exerci tot a risk factor for GERD and can potentially improve gastrointestinal function and weight management, whilu pregnancy and smoking are both known risk factors for GERD,"
+  },
+  {
+    "id": "med228",
+    "questionText": "In educating a patient with multiple sclerosis. Which of the following statement made by the patient indicate he understands the condition?",
+    "options": [
+      "There is no cure for the condition.",
+      "If she takes her medications religiously she can be cured.",
+      "If urinary complications do not occur she can get well."
+    ],
+    "correctAnswer": "A",
+    "rationale": "This shows an accurate comprehension of the condition, as multiple sclerosis is a chronic autoimmune disease with no current cure."
+  },
+  {
+    "id": "med229",
+    "questionText": "In managing a dyspnoeic patient diagnosed with emphysema, you understand that the oxygen saturation is usually low because of",
+    "options": [
+      "loss of aerating surface of alveoli.",
+      "infectious obstructions.",
+      "effusion of the pleural space,"
+    ],
+    "correctAnswer": "A",
+    "rationale": "Emphysema is a chronic obstructive pulmonary disease (COPD) that is characterized by destruction of the air saes in the lungs, which results ura decrease in the surface area available for gas exchange. T"
+  },
+  {
+    "id": "med230",
+    "questionText": "In managing a patient with pulmonary embolism, which of the following actions by the Nurse is MOST appropriate? Administer;",
+    "options": ["IV Quids.", "Intranasal oxygen.", "Oral aspirin."],
+    "correctAnswer": "C",
+    "rationale": "Aspirin helps to prevent further blood clots from forming and reduce the risk of complications in a patient with pulmonary embolism."
+  },
+  {
+    "id": "med231",
+    "questionText": "In managing hypertension, a calcium channel blocker is usually prescribed. Which of the medication? following medication belongs to this class of",
+    "options": ["Lisinopril.", "Bumetanide,", "Amlodipine."],
+    "correctAnswer": "C",
+    "rationale": "Calcium channel blockers are a class of medication, including examples such as amlodipine, diltiazem, and nifedipine, used to manage hypertension by relaxing the smooth muscle cells in blood vessels to lower blood pressure and reduce blood vessel resistance:"
+  },
+  {
+    "id": "med233",
+    "questionText": "In the care of Mr. Afful Seidu, with Non- this patient due to Hodgkin's Lymphoma the Nurse washes her hands frequently because the risk of infection is higher in",
+    "options": ["Neutropenia.", "Agranulocytosis.", "Апастна"],
+    "correctAnswer": "A",
+    "rationale": "Washing hands frequently simp to prevent infections due to neutropenia, condition in which the number of white to infections."
+  },
+  {
+    "id": "med234",
+    "questionText": "In the female medical ward where you wok 23years old female has been diagnosed urethritis. As the nurse caring for this patient you understand that the MOS common symple of this condition is",
+    "options": ["dysuria.", "discharge.", "haematuria."],
+    "correctAnswer": "A",
+    "rationale": "Urethritis is a condition characterized by inflammation of the urethra, the tube that came urine from the bladder out of the body. Dysuria, painful urination, is the most common symptom of urethritis in both men and women."
+  },
+  {
+    "id": "med235",
+    "questionText": "In the managerment of Cirrhosis of the liver, the Nurse monitors critically the changes in patient behavoiur, this is to identify and manage ......",
+    "options": [
+      "Hepatic failure.",
+      "Hepatic encephalopathy.",
+      "Cancer of the liver."
+    ],
+    "correctAnswer": "B",
+    "rationale": "The nurse monitors changes in the patient's behaviour to identify and manage hepatic encephalopathy in cirrhosis patients, as a buildup of toxic substances, including ammonia, can reach the brain and cause confusion, disorientation, and other prompt intervention."
+  },
+  {
+    "id": "med236",
+    "questionText": "In treating Peptic ulcers, a quadruple therapy is employed. Which antibiotics are used in this therapy?",
+    "options": [
+      "Metronidazole and clarithromycin.",
+      "Metronidazole and amoxicillin.",
+      "Metronidazole and tetracycline."
+    ],
+    "correctAnswer": "A",
+    "rationale": "A quadruple therapy for peptic ulcers typically includes a proton pump inhibitor ( omeprazole), bismuth subsalicylate, and two antibiotics, which are usually clarithromycin and metronidazole."
+  },
+  {
+    "id": "med237",
+    "questionText": "In using the nursing process for the nursing care of a patient, nursing diagnosis represents",
+    "options": [
+      "Patient health problems.",
+      "Actual nursing intervention.",
+      "Analysis of patient's data"
+    ],
+    "correctAnswer": "A",
+    "rationale": "A nursing diagnosis is a clinical Judgment about the individual, family or community response to actual or potential health problems or life processes."
+  },
+  {
+    "id": "med238",
+    "questionText": "lu your assessment of a patient on your ward you made a nursing diagnosis of \"luid volume deficit\". What are the risk factors of fluid volume deficit? I. Diabetes insipidus II. Excessive vomiting III. Gastro-intestinal suctioning IV. Osmotic diuresis",
+    "options": ["II and III.", "I, II and III.", "I, II, III and IV."],
+    "correctAnswer": "C",
+    "rationale": "They all cause an excessive loss of fluids or inadequate intake of fluids, leading to an imbalance in the body's fluid volume and potentially leading to dehydration and electrolyte imbalances."
+  },
+  {
+    "id": "med239",
+    "questionText": "Intravenous Ringer's Lactate is prescribed for Maadam Esi Bruce after she reported with diarrhoea weakness. The Nurse knows that Ringer's Lactate is used to expand intravascular volume and replace ...... fluid loss.",
+    "options": ["Extracellular.", "Intravascular.", "Intracellular"],
+    "correctAnswer": "A",
+    "rationale": "Ringer's Lactate is an isotonic crystalloid solution that is used to replace extracellular fluid loss and expand the intravascular volume in patients with dehydration, which makes option A the correct answer."
+  },
+  {
+    "id": "med240",
+    "questionText": "Iron deficiency anaemia develops when there is a loss of iron that becomes inadequate for red blood cell (RBC) production. It is the MOST cominon type of anaemia and is particularly common in;",
+    "options": ["Teenagers.", "The elderly.", "Middle age women."],
+    "correctAnswer": "C",
+    "rationale": "Middle age women are particularly affected by iron deficiency anemia because of the increased tron loss from menstrual Meding and during pregnancy, leading to inadequnu iron for red blood cell production."
+  },
+  {
+    "id": "med241",
+    "questionText": "It is NOT important for the Nurse to observe patient with tetanus for",
+    "options": [
+      "Respiratory tract spasm.",
+      "Restlessness and irritability.",
+      "Muscular rigidity."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Tetanus a serious bacterial infection that affects the nervous systent and can cause muscle stiffness and spasms. It is itoportant for the nurse to observe the patient for sympton such as respiratory tract spasms, which lead to difficulty breathing, and muscular rigidity, which can cause painful muscle contractions. However, restlessness and irritability are notypical symptoms of tetanus."
+  },
+  {
+    "id": "med242",
+    "questionText": "Joyce Ntim, a 33-year-old trader, was admitted with the diagnosis of aspiration pneumonia. During assessment, which of the following will the nurse consider as the greatest risk factor?",
+    "options": [
+      "Loss of airway reflexes.",
+      "Nasogastric tube feeding.",
+      "Esophageal disease."
+    ],
+    "correctAnswer": "B",
+    "rationale": "It involves the introduction of a foreign object (the feeding tube) into the patient's gastrointestinal tract, which can lead to the regurgitation of stomach contents into the lungs if the tube is not properly positioned or if the patient experiences vomiting or coughing, making it the greatest risk factor for aspiration pneumonia in this patient."
+  },
+  {
+    "id": "med243",
+    "questionText": "Kwame, 17 year student is being managed for diabetic ketoacidosis with intensive therapy. Which of the following would be the major side effect of this therapy?",
+    "options": ["Severe hypoglycemia.", "Nephropathy.", "Hypokalaemia."],
+    "correctAnswer": "C",
+    "rationale": "Intensive therapy for diabetic ketoacidosis typically involves insulin administration to lower blood glucose levels, which can cause a shift of potassium from the extracellular space to the intracellular space, resulting in hypokalaemia (low serum potassium levels)."
+  },
+  {
+    "id": "med244",
+    "questionText": "Laboratory investigatioms were requested for Mr. John Onoma. The results indicated protozoa and bacteria as causative agents for his condition. The doctor on duty assessed the result and described it as concomitant infections. This means, the presence of",
+    "options": [
+      "Parasites of different species in one host.",
+      "Several parasites in one host.",
+      "Two or more parasites in one host."
+    ],
+    "correctAnswer": "C",
+    "rationale": "A concomitant infection is defined as the simultaneous presence of two or more pathogens in a single host"
+  },
+  {
+    "id": "med245",
+    "questionText": "Maame Abena has a runny nose which is a manifestation of common cold. She uses her handkerchief to clean her nostrils. The handkerchief can be a source of transmission of infection to others. The handkerchief in this instance is a:",
+    "options": ["Reservoir.", "Vector.", "Fomite."],
+    "correctAnswer": "C",
+    "rationale": "The handkerchief in this instance is a fomite, a non-living object that can be contaminated with microorganisms and can serve as a means of transmitting infection."
+  },
+  {
+    "id": "med246",
+    "questionText": "Maame Adjoa Frema, aged 42 years was rushed to the emergency unit with the history of bronchial asthma. With the key complaint of difficulty in breathing, which of the following nursing diagnosis would be made for Madam Frema?",
+    "options": [
+      "Caregiver role strain related to dyspnoea.",
+      "Impaired physical mobility related to dyspnoea.",
+      "Ineffective breathing pattern related to dyspnoea."
+    ],
+    "correctAnswer": "C",
+    "rationale": "It accurately identifies the patient's primary concern, which is not getting enough oxygen to meet their body's needs, and highlights the connection between the dyspnoea and the ineffective breathing pattern."
+  },
+  {
+    "id": "med248",
+    "questionText": "Maame Gloria Estwa Heed 40 came to you unit with hypovolaemic . What would be the stage of the shock? Nurse's first action to take during the cotinetsatory",
+    "options": [
+      "Administer prescribed medications",
+      "Monitor the patient's haemodynamie status",
+      "Administor prescribed IV fluids."
+    ],
+    "correctAnswer": "C",
+    "rationale": "Fluid replacement is crucial in this stage to maintain blood pressure and prevent further fluid loss and progression to the decompensatory stage of shock,"
+  },
+  {
+    "id": "med249",
+    "questionText": "Maame Konadu Gyamwaa, a 38 year old cosmetologist with end-stage renal disease is undergoing Haemodialysis and was brought to your unit for further management. The following nursing goals would be set to manage Maame Konadu EXCEPT:",
+    "options": [
+      "Assessing fluid status of the Patient.",
+      "Ensuring intake of copious fluids.",
+      "Ensuring proper nutritional intake."
+    ],
+    "correctAnswer": "B",
+    "rationale": "Excessive fluid intake can further strain the already overburdened kidneys and lead to fluid buildup in the body, which can be harmful for their health."
+  },
+  {
+    "id": "med250",
+    "questionText": "Maame Sylvia Adomako has been diagnosed of Urethritis. Maame Sylvia is likely to experience symptom of her condition which of the following as the MOST common",
+    "options": ["Dysuria.", "Haematuria.", "Urethral discharge."],
+    "correctAnswer": "A",
+    "rationale": "Urethritis is a condition characterized by inflammation of the urethra and the most common symptom is painful urination (dysuria)."
+  },
+  {
+    "id": "med251",
+    "questionText": "Mada Salamatu Boakye, a 46 year old diabetic patient who is on your ward complains of feeling faint and dizzy during Nurses ward rounds. What Immediate action would you take as a taking over Nurse?",
+    "options": [
+      "Give a glucose drink promptly.",
+      "Administer insulin on a sliding scale.",
+      "Obtain a specimen of urine for testing."
+    ],
+    "correctAnswer": "A",
+    "rationale": "Mada Salamatu Boakye may be experiencing hypoglycaemia (low blood sugar), which can cause feelings of faintness and dizziness, and drinking a glucose drink can quickly raise her blood sugar levels and alleviate these symptoms."
+  },
+  {
+    "id": "med252",
+    "questionText": "Madam Aba Nando has been admitted with pericarditis. She complained of severe chest pain. To relieve this discomfort, the Nurse will ask her to",
+    "options": ["Breathe deeply.", "Lean forward.", "Sleep quietly.."],
+    "correctAnswer": "B",
+    "rationale": "This position can help to reduce the pressure on the inflamed pericardium and alleviate the intensity of the discomfort."
+  },
+  {
+    "id": "med253",
+    "questionText": "Madam Abena Manu, 64 years old, with the history of an overdose of aspirin tablets was brought to the OPD by her son. Which of the following is consistent with acute aspirin toxicity?",
+    "options": ["Respiratory depression.", "Hypothermia.", "Tinnitus."],
+    "correctAnswer": "A",
+    "rationale": "Aspirin toxicity can lead to respiratory depression because the drug inhibits the production of prostaglandins, which play a role in maintaining normal breathing, leading to decreased respiratory function and potentially fatal respiratory depression."
+  },
+  {
+    "id": "med254",
+    "questionText": "Madam Adwoah Mose, a 59 year old woman reported to the unit with her husband and two daughters with the complaints of chocking and a heavy sensation in the upper chest. She described the chest pain as sharp radiating to the neck, jaw and shoulders, subsiding when she is at rest in the couch. She was apprehensive and felt she was going to die. She was diagnosed of Stable Angina. The Nurse is educating the family of Madam Adwoah Mose on her condition. Which of the following statements by a family member require further teaching?",
+    "options": [
+      "Achieve and maintain normal blood pressure",
+      "1 need to hold on to my daily walle since it aggravate my pain.",
+      "Alternate activities with periods of rest"
+    ],
+    "correctAnswer": "B",
+    "rationale": "This statement requires further teaching because physical activity is usually beneficial for stable angina patients, not something that would worsen the symptoms,"
+  },
+  {
+    "id": "med255",
+    "questionText": "Madam Akosua Ansch was diagnosed of Hypokalemia and placed on Tablet Show K 20mg daily. While teaching Madam Ansah on her medication, Nurse Akowush encouraged her to.",
+    "options": [
+      "Take each dose with a meal and a full glass of water.",
+      "Monitor pulse and blood pressure before and after taking medication.",
+      "Crush or chew the tablet before swallowing for quicker absorption,"
+    ],
+    "correctAnswer": "A",
+    "rationale": "This will improve absorption of the medication and reduce gastrointestinal side effects, as opposed to crushing or chewing the tablet."
+  },
+  {
+    "id": "med256",
+    "questionText": "Madam Akosua Omari was diagnosed with Leukaemia. Patients suffering from leukaemia are nursed in protective isolation because;",
+    "options": [
+      "To prevent the transmission of infection via formites.",
+      "To increase their resistance to microorganism.",
+      "Because their immune system cannot react to microbial invasion."
+    ],
+    "correctAnswer": "C",
+    "rationale": "This is to reduce the risk of infection, as the disease can impair the immune system and make it difficult for the patient to fight off infections."
+  },
+  {
+    "id": "med257",
+    "questionText": "Madam Akua Petu is on admission with CCF. To assess for fluid volume excess in Madam Akua Petu, the Nurse monitors",
+    "options": [
+      "Intake and output 24 hourly.",
+      "Colour of the skin regularly.",
+      "Vital signs 4 hourly."
+    ],
+    "correctAnswer": "A",
+    "rationale": "This helps to assess for signs of fluid accumulation which could lead to further complications, and to determine the effectiveness of fluid management interventions. CCF stands for Congestive Heart Failure, which is a condition"
+  }
+]
