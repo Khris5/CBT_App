@@ -9,12 +9,10 @@ import ReviewScreen from "./components/ReviewScreen";
 function shuffleArray(array) {
   let currentIndex = array.length,
     randomIndex;
-  // While there remain elements to shuffle.
   while (currentIndex !== 0) {
     // Pick a remaining element.
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
-    // And swap it with the current element.
     [array[currentIndex], array[randomIndex]] = [
       array[randomIndex],
       array[currentIndex],
@@ -32,7 +30,7 @@ const TIME_LIMITS = {
 };
 
 function App() {
-  const [view, setView] = useState("config"); // 'config', 'session', 'results', 'review'
+  const [view, setView] = useState("config");
   const [allQuestions, setAllQuestions] = useState([]);
   const [sessionConfig, setSessionConfig] = useState({
     count: QUESTION_COUNTS[0],
@@ -67,7 +65,6 @@ function App() {
           throw new Error("Invalid question data format.");
         }
 
-        // Combine and potentially add unique IDs if needed (assuming 'id' is unique across files for now)
         const combined = [...medicineData, ...surgeryData];
         // Simple check for duplicate IDs - log warning if found
         const ids = new Set();

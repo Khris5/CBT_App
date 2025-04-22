@@ -310,21 +310,20 @@ button:disabled {
 }
 
 /* Add checkmark/cross icons (Optional - Requires font-awesome or SVGs) */
-/* 
+
 .review-mode .label-correct::before {
-  content: '\2714';  Unicode check mark 
+  content: "\2714";
   color: green;
   margin-right: 8px;
   font-weight: bold;
 }
 
-.review-mode .label-incorrect::before {
-  content: '\2718';  Unicode cross mark 
+/* .review-mode .label-incorrect::before {
+  content: "\2718";
   color: red;
   margin-right: 8px;
   font-weight: bold;
-} 
-*/
+} */
 
 .review-mode .rationale {
   margin-top: 20px;
