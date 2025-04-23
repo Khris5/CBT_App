@@ -26,16 +26,16 @@
   },
   {
     "id": "med004",
-    "questionText": "A 16 year old boy has been booked for laparotomy following a diagnosis of intestinal obstruction. Describe the measures for allaying his anxiety prior to surgery? I. Allow patient to express his fears and anxiety II. Encourage patient to start grieving before the surgery III. Ensure relative stay with patient 24 hours",
+    "questionText": "A 16 year old boy has been booked for laparotomy following a diagnosis of intestinal obstruction. Describe the measures for allaying his anxiety prior to surgery? \nI. Allow patient to express his fears and anxiety \nII. Encourage patient to start grieving before the surgery \nIII. Ensure relative stay with patient 24 hours",
     "options": ["I only", "I and II.", "I and III"],
     "correctAnswer": "A",
-    "rationale": "Encouraging the patient to start grieving before the surgery may increase his stress levels, while ensuring a relative stays with the patient for 24 hours may not be feasible and to necessarily alleviate the patient's anxiety."
+    "rationale": "Encouraging the patient to start grieving before the surgery may increase his anxiety and stress levels, while ensuring a relative stays with the patient for 24 hours may not be feasible and to necessarily alleviate the patient's anxiety."
   },
   {
     "id": "med005",
-    "questionText": "A 17-year-old student has been booked for laparotomy following a diagnosis of intestinal obstruction. Which of the following measures would you put in place to allay patient's anxiety prior to the surgery? I. Allow patient to express fears and anxieties II. Encourage patient to start grieving before the surgery III. Ensure relatives stay with patient 24 hours IV. Provide a relaxed and non-threatening atmosphere.",
+    "questionText": "A 17-year-old student has been booked for laparotomy following a diagnosis of intestinal obstruction. Which of the following measures would you put in place to allay patient's anxiety prior to the surgery? \nI. Allow patient to express fears and anxieties \nII. Encourage patient to start grieving before the surgery \nIII. Ensure relatives stay with patient 24 hours \nIV. Provide a relaxed and non-threatening atmosphere.",
     "options": ["I and III", "I, III and IV.", "I and V."],
-    "correctAnswer": "B",
+    "correctAnswer": "C",
     "rationale": "Encouraging the patient to start grieving before the surgery may increase his anxiety and stress levels, while ensuring a relative stays with the patient for 24 hours may not be feasible and may not necessarily alleviate the patient's anxiety."
   },
   {

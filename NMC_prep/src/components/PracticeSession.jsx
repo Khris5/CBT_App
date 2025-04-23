@@ -1,20 +1,30 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useEffect, useCallback, useRef } from "react";
 import Timer from "./Timer";
 import QuestionCard from "./QuestionCard";
 
-function PracticeSession({ questions, timeLimit, onSubmit }) {
-  const [userAnswers, setUserAnswers] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false); // Prevent double submission
-  const sessionEndedRef = useRef(false); // Ref to track if session ended (time up or manual submit)
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+function PracticeSession({
+  questions,
+  timeLimit,
+  startTime,
+  onSubmit,
+  currentQuestionIndex,
+  setCurrentQuestionIndex,
+  userAnswers,
+  setUserAnswers,
+}) {
+  const [isSubmitting, setIsSubmitting] = React.useState(false); // Keep local state for submission status
+  const sessionEndedRef = useRef(false);
 
-  // Handler for when an answer changes in a QuestionCard
-  const handleAnswerChange = useCallback((questionId, selectedOption) => {
-    setUserAnswers((prevAnswers) => ({
-      ...prevAnswers,
-      [questionId]: selectedOption,
-    }));
-  }, []);
+  // Handler for when an answer changes - uses setUserAnswers from props
+  const handleAnswerChange = useCallback(
+    (questionId, selectedLetter) => {
+      setUserAnswers((prevAnswers) => ({
+        ...prevAnswers,
+        [questionId]: selectedLetter,
+      }));
+    },
+    [setUserAnswers]
+  );
 
   // Function to submit the session
   const submitTest = useCallback(() => {
@@ -28,10 +38,12 @@ function PracticeSession({ questions, timeLimit, onSubmit }) {
   // Handler for when the timer runs out
   const handleTimeUp = useCallback(() => {
     console.log("Time is up!");
-    submitTest();
+    if (!sessionEndedRef.current) {
+      submitTest();
+    }
   }, [submitTest]);
 
-  // Navigation Handlers
+  // Navigation Handlers - use setCurrentQuestionIndex from props
   const handleNext = () => {
     setCurrentQuestionIndex((prevIndex) =>
       Math.min(prevIndex + 1, questions.length - 1)
@@ -58,12 +70,17 @@ function PracticeSession({ questions, timeLimit, onSubmit }) {
     }
   }, [questions, submitTest]);
 
-  // Get the current question based on the index
+  // Get the current question based on the index from props
   const currentQuestion = questions[currentQuestionIndex];
 
   if (!currentQuestion) {
     // Handle case where questions might be loading or empty after initial check
     return <div className="loading">Loading question...</div>;
+  }
+
+  // Handle case where startTime might be null briefly on load/transition
+  if (startTime === null) {
+    return <div className="loading">Initializing session...</div>;
   }
 
   return (
@@ -72,7 +89,11 @@ function PracticeSession({ questions, timeLimit, onSubmit }) {
         <h2>
           Practice Test ({currentQuestionIndex + 1} / {questions.length})
         </h2>
-        <Timer initialTime={timeLimit} onTimeUp={handleTimeUp} />
+        <Timer
+          totalDuration={timeLimit}
+          startTime={startTime}
+          onTimeUp={handleTimeUp}
+        />
       </div>
 
       {/* Display only the current question */}

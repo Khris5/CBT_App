@@ -1,9 +1,13 @@
-import React, { useState, useMemo } from "react";
+import React, { useMemo } from "react";
 import QuestionCard from "./QuestionCard";
 
-function ReviewScreen({ questions, userAnswers, onRestart }) {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-
+function ReviewScreen({
+  questions,
+  userAnswers,
+  onRestart,
+  currentQuestionIndex,
+  setCurrentQuestionIndex,
+}) {
   // Determine the status of each question for the number buttons
   const questionStatuses = useMemo(() => {
     return questions.map((q) => {

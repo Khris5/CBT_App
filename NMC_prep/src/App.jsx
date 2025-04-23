@@ -21,26 +21,115 @@ function shuffleArray(array) {
   return array;
 }
 
-const QUESTION_COUNTS = [50, 60, 70, 80];
+const QUESTION_COUNTS = [20, 50, 60, 70, 80];
 const TIME_LIMITS = {
-  50: 30 * 60, // 30 minutes
-  60: 35 * 60, // 35 minutes
-  70: 40 * 60, // 40 minutes
-  80: 45 * 60, // 45 minutes
+  20: 20 * 60,
+  50: 50 * 60, // 50 minutes
+  60: 60 * 60, // 60 minutes
+  70: 70 * 60, // 70 minutes
+  80: 80 * 60, // 80 minutes
+};
+
+// --- LocalStorage Key ---
+const LOCAL_STORAGE_KEY = "nmcPrepCbtState";
+
+// --- Function to load state from LocalStorage ---
+const loadState = () => {
+  try {
+    const serializedState = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (serializedState === null) {
+      return undefined; // No state saved
+    }
+    return JSON.parse(serializedState);
+  } catch (err) {
+    console.error("Could not load state from localStorage", err);
+    return undefined; // Error loading state
+  }
+};
+
+// --- Function to save state to LocalStorage ---
+const saveState = (state) => {
+  try {
+    const stateToSave = {
+      view: state.view,
+      sessionConfig: state.sessionConfig,
+      sessionQuestions: state.sessionQuestions,
+      userAnswers: state.userAnswers,
+      results: state.results,
+      currentQuestionIndex: state.currentQuestionIndex,
+      sessionStartTime: state.sessionStartTime,
+    };
+    const serializedState = JSON.stringify(stateToSave);
+    localStorage.setItem(LOCAL_STORAGE_KEY, serializedState);
+  } catch (err) {
+    console.error("Could not save state to localStorage", err);
+  }
 };
 
 function App() {
-  const [view, setView] = useState("config");
+  // --- Load initial state from localStorage or set defaults ---
+  const initialAppState = loadState();
+  const defaultState = {
+    view: "config",
+    sessionConfig: {
+      count: QUESTION_COUNTS[0],
+      timeLimit: TIME_LIMITS[QUESTION_COUNTS[0]],
+    },
+    sessionQuestions: [],
+    userAnswers: {},
+    results: { score: 0, total: 0 },
+    currentQuestionIndex: 0,
+    sessionStartTime: null,
+  };
+
+  const [view, setView] = useState(initialAppState?.view ?? defaultState.view);
   const [allQuestions, setAllQuestions] = useState([]);
-  const [sessionConfig, setSessionConfig] = useState({
-    count: QUESTION_COUNTS[0],
-    timeLimit: TIME_LIMITS[QUESTION_COUNTS[0]],
-  });
-  const [sessionQuestions, setSessionQuestions] = useState([]);
-  const [userAnswers, setUserAnswers] = useState({});
-  const [results, setResults] = useState({ score: 0, total: 0 });
+  const [sessionConfig, setSessionConfig] = useState(
+    initialAppState?.sessionConfig ?? defaultState.sessionConfig
+  );
+  const [sessionQuestions, setSessionQuestions] = useState(
+    initialAppState?.sessionQuestions ?? defaultState.sessionQuestions
+  );
+  const [userAnswers, setUserAnswers] = useState(
+    initialAppState?.userAnswers ?? defaultState.userAnswers
+  );
+  const [results, setResults] = useState(
+    initialAppState?.results ?? defaultState.results
+  );
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(
+    initialAppState?.currentQuestionIndex ?? defaultState.currentQuestionIndex
+  );
+  const [sessionStartTime, setSessionStartTime] = useState(
+    initialAppState?.sessionStartTime ?? defaultState.sessionStartTime
+  );
+
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // --- Effect to SAVE state whenever relevant parts change ---
+  useEffect(() => {
+    // Don't save while initially loading questions
+    if (!isLoading) {
+      saveState({
+        view,
+        sessionConfig,
+        sessionQuestions,
+        userAnswers,
+        results,
+        currentQuestionIndex,
+        sessionStartTime,
+      });
+    }
+  }, [
+    view,
+    sessionConfig,
+    sessionQuestions,
+    userAnswers,
+    results,
+    currentQuestionIndex,
+    sessionStartTime,
+    isLoading,
+  ]);
 
   // Fetch question data on initial load
   useEffect(() => {
@@ -115,7 +204,9 @@ function App() {
 
       setSessionConfig({ count: selectedCount, timeLimit });
       setSessionQuestions(selected);
-      setUserAnswers({}); // Reset answers for new session
+      setUserAnswers({});
+      setCurrentQuestionIndex(0);
+      setSessionStartTime(Date.now());
       setView("session");
     },
     [allQuestions]
@@ -154,6 +245,7 @@ function App() {
 
       setResults({ score, total: sessionQuestions.length });
       setUserAnswers(finalAnswers); // Store the final answers (letters) for review
+      setSessionStartTime(null);
       setView("results");
     },
     [sessionQuestions]
@@ -165,10 +257,11 @@ function App() {
 
   const restartSession = () => {
     setView("config");
-    // Reset other relevant states if necessary
     setSessionQuestions([]);
     setUserAnswers({});
     setResults({ score: 0, total: 0 });
+    setCurrentQuestionIndex(0);
+    setSessionStartTime(null);
   };
 
   if (isLoading) {
@@ -185,7 +278,7 @@ function App() {
       {view === "config" && (
         <ConfigScreen
           questionCounts={QUESTION_COUNTS}
-          defaultCount={QUESTION_COUNTS[0]}
+          defaultCount={sessionConfig.count}
           onStartSession={startSession}
         />
       )}
@@ -193,7 +286,12 @@ function App() {
         <PracticeSession
           questions={sessionQuestions}
           timeLimit={sessionConfig.timeLimit}
+          startTime={sessionStartTime}
           onSubmit={submitSession}
+          currentQuestionIndex={currentQuestionIndex}
+          setCurrentQuestionIndex={setCurrentQuestionIndex}
+          userAnswers={userAnswers}
+          setUserAnswers={setUserAnswers}
         />
       )}
       {view === "results" && (
@@ -209,6 +307,8 @@ function App() {
           questions={sessionQuestions}
           userAnswers={userAnswers}
           onRestart={restartSession}
+          currentQuestionIndex={currentQuestionIndex}
+          setCurrentQuestionIndex={setCurrentQuestionIndex}
         />
       )}
     </div>
