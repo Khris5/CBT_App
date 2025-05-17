@@ -12,7 +12,7 @@ function ConfigScreen({ questionCounts, defaultCount, onStartSession }) {
   };
 
   return (
-    <div className="config-screen">
+    <div className="config-screen ">
       <h2>Configure Your Practice Session</h2>
       <div className="config-option">
         <label htmlFor="question-count">Number of Questions:</label>
