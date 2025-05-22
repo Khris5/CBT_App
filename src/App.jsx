@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from 'react';
+import { useAuth } from './contexts/AuthContext'; // Import useAuth hook
 import "./App.css";
 import ConfigScreen from "./components/ConfigScreen";
 import PracticeSession from "./components/PracticeSession";
@@ -67,7 +68,12 @@ const saveState = (state) => {
 };
 
 function App() {
+  const { session, user, loading: authLoading, signInWithGoogle, signOut } = useAuth(); 
   // --- Load initial state from localStorage or set defaults ---
+  console.log(user);
+  console.log(authLoading);
+
+  
   const initialAppState = loadState();
   const defaultState = {
     view: "config",
@@ -272,7 +278,25 @@ function App() {
     return <div className="error">Error: {error}</div>;
   }
 
+  if (authLoading) {
+    return <div style={{ textAlign: 'center', marginTop: '50px', fontSize: '1.2em' }}>Loading authentication state...</div>;
+  }
+
   return (
+    <>
+      {/* Authentication UI at the top */}
+      <div style={{ padding: '10px', borderBottom: '1px solid #eee', marginBottom: '20px', textAlign: 'right' }}>
+        {user ? (
+          <>
+            <span style={{ marginRight: '15px' }}>Logged in as: {user.email}</span>
+            <button onClick={signOut} style={{ padding: '8px 12px', cursor: 'pointer' }}>Sign Out</button>
+          </>
+        ) : (
+          <button onClick={signInWithGoogle} style={{ padding: '8px 12px', cursor: 'pointer' }}>Sign In with Google</button>
+        )}
+      </div>
+
+      {/* Existing App Content */}
     <div className="App">
       <h1>NMC Prep CBT</h1>
       {view === "config" && (
@@ -312,6 +336,7 @@ function App() {
         />
       )}
     </div>
+    </>
   );
 }
 
