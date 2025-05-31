@@ -26,5 +26,4 @@ dist-ssr
 *.sln
 *.sw?
 
-public/surgery_questions.json
-public/medicine_questions.json
+scripts/migrate_questions.cjs

@@ -1,164 +1,199 @@
-import { createContext, useState, useEffect, useContext } from 'react';
-import { supabase } from '../lib/supabaseClient';
+import { createContext, useState, useEffect, useContext } from "react";
+import { supabase } from "../lib/supabaseClient";
 
 const AuthContext = createContext();
+
 export const AuthProvider = ({ children }) => {
   const [session, setSession] = useState(null);
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
-  
-  console.log('[AuthProvider] Rendering. Current loading state:', loading);
+
+  console.log(
+    "[AuthProvider] Current state - loading:",
+    loading,
+    "user:",
+    user?.id
+  );
 
   useEffect(() => {
-    console.log('[AuthProvider useEffect] Effect started. Setting loading to true.');
-    setLoading(true); // Ensure loading is true at the start of effect
+    console.log("[AuthProvider] Setting up auth listener...");
 
-    // Helper function to fetch profile with timeout protection
-    const fetchUserProfile = async (currentUser) => {
-      console.log('[fetchUserProfile] Called for user:', currentUser?.id);
-      if (!currentUser) {
-        console.log('[fetchUserProfile] No current user. Setting profile to null.');
-        setProfile(null);
-        return; // Explicitly return if no user
-      }
-
-      try {
-        console.log(`[fetchUserProfile] Attempting to query 'profiles' table for id: ${currentUser.id}`);
-        
-        // Create a timeout promise that rejects after 5 seconds
-        const timeoutPromise = new Promise((_, reject) => {
-          setTimeout(() => {
-            reject(new Error('Supabase query timeout after 5 seconds'));
-          }, 5000); // 5 second timeout
-        });
-        
-        // Create the Supabase query promise
-        const queryPromise = supabase
-          .from('profiles')
-          .select('*')
-          .eq('id', currentUser.id)
-          .single();
-        
-        console.log(`[fetchUserProfile] Awaiting Supabase query with timeout for id: ${currentUser.id}`);
-        
-        // Race the query against the timeout
-        const { data: profileData, error: profileError } = await Promise.race([
-          queryPromise,
-          timeoutPromise.then(() => {
-            throw new Error('Query timeout');
-          })
-        ]);
-
-        console.log(`[fetchUserProfile] Supabase query completed for id: ${currentUser.id}. Error:`, profileError, "Data:", profileData);
-
-        if (profileError) {
-          console.error(`[fetchUserProfile] Error object present after query for id: ${currentUser.id}. Message:`, profileError.message);
-          setProfile(null);
-        } else if (profileData) {
-          console.log(`[fetchUserProfile] Profile data found for id: ${currentUser.id}:`, profileData);
-          setProfile(profileData);
-        } else {
-          console.log(`[fetchUserProfile] No profile data for id: ${currentUser.id}. Setting profile to null.`);
-          setProfile(null);
-        }
-      } catch (e) {
-        console.error(`[fetchUserProfile] EXCEPTION caught for id: ${currentUser.id}. Message:`, e.message);
-        // Important: Still set profile to null even on timeout
-        setProfile(null);
-      } finally {
-        console.log(`[fetchUserProfile] Execution finished for user: ${currentUser?.id}`);
-      }
-    };
-
-    // Check initial session with extra error protection
-    supabase.auth.getSession().then(async ({ data: { session: initialSession } }) => {
-      try {
-        const currentUser = initialSession?.user ?? null;
-        setSession(initialSession);
-        setUser(currentUser);
-        console.log('[AuthProvider getSession then] Fetching profile for user:', currentUser?.id);
-        await fetchUserProfile(currentUser); // Fetch profile for initial session
-        console.log('[AuthProvider getSession then] Profile fetched for user:', currentUser?.id +'. Setting loading to false.');
-      } catch (error) {
-        console.error('[AuthProvider getSession then] Error during profile fetch:', error.message);
-      } finally {
-        // Always set loading to false, regardless of success or failure
-        setLoading(false);
-      }
-    }).catch(error => {
-      console.error('Error getting initial session:', error.message);
-      setSession(null);
-      setUser(null);
-      setProfile(null);
-      setLoading(false); // Still set loading to false on error
+    // Get initial session immediately
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      console.log("[AuthProvider] Initial session loaded:", !!session);
+      setSession(session);
+      setUser(session?.user ?? null);
+      setLoading(false);
     });
 
-    // Listen for auth state changes with improved error handling
-    const { data: authListener } = supabase.auth.onAuthStateChange(
-      async (_event, newSession) => {
-        console.log('[AuthProvider onAuthStateChange] Event received:', _event);
-        
-        try {
-          const newUser = newSession?.user ?? null;
-          setSession(newSession);
-          setUser(newUser);
-          console.log('[AuthProvider onAuthStateChange] New user:', newUser?.id);
-          
-          // Only attempt to fetch profile if there's a user
-          if (newUser) {
-            await fetchUserProfile(newUser);
-          } else {
-            setProfile(null);
-          }
-        } catch (error) {
-          console.error('[AuthProvider onAuthStateChange] Error:', error.message);
-          // Don't change user/session state on error, but ensure profile is null
-          setProfile(null);
-        } finally {
-          // Always ensure loading is completed
-          console.log('[AuthProvider onAuthStateChange] Setting loading to false regardless of outcome');
-          setLoading(false);
-        }
-      }
-    );
+    // Listen to auth changes - following Supabase best practices
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      console.log(
+        "[AuthProvider] Auth event:",
+        event,
+        "Session exists:",
+        !!session
+      );
 
-    // Cleanup subscription on unmount
-    return () => {
-      if (authListener && authListener.subscription) {
-        authListener.subscription.unsubscribe();
+      // Handle each event type according to Supabase docs
+      switch (event) {
+        case "INITIAL_SESSION":
+          // This fires right after client construction with initial session from storage
+          console.log("[AuthProvider] INITIAL_SESSION event");
+          setSession(session);
+          setUser(session?.user ?? null);
+          setLoading(false);
+          break;
+
+        case "SIGNED_IN":
+          // Fires on sign in and when refocusing tabs
+          // Check if this is actually a new user to avoid unnecessary updates
+          console.log("[AuthProvider] SIGNED_IN event");
+          setSession(session);
+          setUser(session?.user ?? null);
+
+          // Defer profile fetching to avoid blocking the callback
+          if (session?.user) {
+            setTimeout(() => {
+              fetchUserProfile(session.user);
+            }, 0);
+          }
+          break;
+
+        case "SIGNED_OUT":
+          // User signed out - clean up all state
+          console.log("[AuthProvider] SIGNED_OUT event - cleaning up state");
+          setSession(null);
+          setUser(null);
+          setProfile(null);
+          break;
+
+        case "TOKEN_REFRESHED":
+          // New tokens fetched - update session in memory
+          console.log("[AuthProvider] TOKEN_REFRESHED event");
+          setSession(session);
+          setUser(session?.user ?? null);
+          break;
+
+        case "USER_UPDATED":
+          // User profile updated via updateUser()
+          console.log("[AuthProvider] USER_UPDATED event");
+          setSession(session);
+          setUser(session?.user ?? null);
+
+          // Defer profile refetch to get updated data
+          if (session?.user) {
+            setTimeout(() => {
+              fetchUserProfile(session.user);
+            }, 0);
+          }
+          break;
+
+        case "PASSWORD_RECOVERY":
+          // User landed on password recovery page
+          console.log("[AuthProvider] PASSWORD_RECOVERY event");
+          setSession(session);
+          setUser(session?.user ?? null);
+          break;
+
+        default:
+          console.log("[AuthProvider] Unknown auth event:", event);
+          break;
       }
+    });
+
+    return () => {
+      console.log("[AuthProvider] Cleaning up auth subscription");
+      subscription.unsubscribe();
     };
   }, []);
 
-  // Function to sign in with Google
-  const signInWithGoogle = async () => {
+  // Profile fetching function - deferred to avoid blocking auth callbacks
+  const fetchUserProfile = async (currentUser) => {
+    if (!currentUser?.id) {
+      console.log("[fetchUserProfile] No user provided");
+      setProfile(null);
+      return;
+    }
+
     try {
-      const { error } = await supabase.auth.signInWithOAuth({ provider: 'google' });
+      console.log(
+        "[fetchUserProfile] Fetching profile for user:",
+        currentUser.id
+      );
+
+      const { data, error } = await supabase
+        .from("profiles")
+        .select("*")
+        .eq("id", currentUser.id)
+        .maybeSingle();
+
       if (error) {
-        console.error('Error signing in with Google:', error.message);
+        console.error("[fetchUserProfile] Error:", error);
+        setProfile(null);
+        return;
       }
+
+      console.log("[fetchUserProfile] Profile loaded:", !!data);
+      setProfile(data);
     } catch (error) {
-      console.error('Exception during Google sign in:', error.message);
+      console.error("[fetchUserProfile] Exception:", error);
+      setProfile(null);
     }
   };
 
-  // Function to sign out
+  // Sign in with Google
+  const signInWithGoogle = async () => {
+    try {
+      console.log("[signInWithGoogle] Initiating Google OAuth...");
+
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: `${window.location.origin}`,
+        },
+      });
+
+      if (error) {
+        console.error("[signInWithGoogle] OAuth error:", error);
+        throw error;
+      }
+
+      console.log("[signInWithGoogle] OAuth initiated");
+      return data;
+    } catch (error) {
+      console.error("[signInWithGoogle] Failed:", error);
+      throw error;
+    }
+  };
+
+  // Sign out
   const signOut = async () => {
     try {
+      console.log("[signOut] Signing out...");
+
       const { error } = await supabase.auth.signOut();
+
       if (error) {
-        console.error('Error signing out:', error.message);
+        console.error("[signOut] Error:", error);
+        throw error;
       }
+
+      console.log("[signOut] Success");
+      // State will be cleaned up by the SIGNED_OUT event
     } catch (error) {
-      console.error('Exception during sign out:', error.message);
+      console.error("[signOut] Failed:", error);
+      throw error;
     }
   };
 
   const value = {
     session,
     user,
-    profile, // Added profile to context value
+    profile,
     loading,
     signInWithGoogle,
     signOut,
@@ -171,7 +206,7 @@ export const AuthProvider = ({ children }) => {
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (context === undefined) {
-    throw new Error('useAuth must be used within an AuthProvider');
+    throw new Error("useAuth must be used within an AuthProvider");
   }
   return context;
 };

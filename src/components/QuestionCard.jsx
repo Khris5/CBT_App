@@ -1,33 +1,68 @@
-import React from "react";
-
 // Helper to convert index (0, 1, 2) to letter ('A', 'B', 'C')
 const indexToLetter = (index) => String.fromCharCode(65 + index);
 
 // Helper to convert letter ('A', 'B', 'C') to index (0, 1, 2)
-const letterToIndex = (letter) => letter.charCodeAt(0) - 65;
+const letterToIndex = (letter) => {
+  if (typeof letter !== "string" || letter.length !== 1) return -1;
+  return letter.toUpperCase().charCodeAt(0) - 65;
+};
 
 function QuestionCard({
   question,
   questionNumber,
-  userAnswer, // Now expected to be 'A', 'B', 'C', or undefined
+  userAnswer, // Expected to be 'A', 'B', 'C', or undefined
   onAnswerChange, // Only used in practice mode
   isReviewMode = false, // Flag to differentiate modes
 }) {
-  const { id, questionText, options, correctAnswer, rationale } = question; // correctAnswer is now expected to be 'A', 'B', or 'C'
+  // Safely extract question properties with fallbacks
+  const {
+    id,
+    questionText = "Question text not available",
+    options = [],
+    correctAnswer,
+    rationale,
+  } = question || {};
+
+  // Validate question data
+  if (!question || !id) {
+    return (
+      <div className="question-card error">
+        <p className="text-red-500">Error: Invalid question data</p>
+      </div>
+    );
+  }
+
+  if (!Array.isArray(options) || options.length === 0) {
+    return (
+      <div className="question-card error">
+        <h4>
+          {questionNumber}. {questionText}
+        </h4>
+        <p className="text-red-500">Error: No answer options available</p>
+      </div>
+    );
+  }
 
   const handleOptionChange = (event) => {
     if (onAnswerChange && !isReviewMode) {
-      const selectedIndex = parseInt(event.target.dataset.index, 10); // Get index from data attribute
-      const selectedLetter = indexToLetter(selectedIndex); // Convert index to letter
-      onAnswerChange(id, selectedLetter);
+      const selectedIndex = parseInt(event.target.dataset.index, 10);
+      if (
+        !isNaN(selectedIndex) &&
+        selectedIndex >= 0 &&
+        selectedIndex < options.length
+      ) {
+        const selectedLetter = indexToLetter(selectedIndex);
+        onAnswerChange(id, selectedLetter);
+      }
     }
   };
 
   return (
     <div className={`question-card ${isReviewMode ? "review-mode" : ""}`}>
-      <h4>
+      <h4 className="question-text">
         {questionNumber}. {questionText}
       </h4>
+
       <div className="options">
         {options.map((optionText, index) => {
           const optionLetter = indexToLetter(index); // 'A', 'B', 'C'
@@ -45,6 +80,7 @@ function QuestionCard({
               optionClassName += " correct-answer";
               labelClassName += " label-correct";
             }
+
             // Highlight the user's selection
             if (isUserSelected) {
               optionClassName += " user-selected";
@@ -55,9 +91,6 @@ function QuestionCard({
                 // User selected the correct answer
                 labelClassName += " label-correct";
               }
-            } else if (userAnswer === undefined && isCorrect) {
-              // If user didn't answer, still ensure correct answer label is styled
-              labelClassName += " label-correct";
             }
           }
 
@@ -67,19 +100,22 @@ function QuestionCard({
                 type="radio"
                 id={optionId}
                 name={`question-${id}`}
-                value={optionLetter} // Use letter as value for consistency, though we use index for change handling
-                data-index={index} // Store index here to easily get it in handler
+                value={optionLetter}
+                data-index={index}
                 checked={isUserSelected}
                 onChange={handleOptionChange}
                 disabled={isReviewMode}
+                className="option-input"
               />
               <label htmlFor={optionId} className={labelClassName}>
-                {optionText} {/* Display the actual option text */}
+                <span className="option-letter">{optionLetter}.</span>
+                <span className="option-text">{optionText}</span>
               </label>
             </div>
           );
         })}
       </div>
+
       {isReviewMode && (
         <div className="rationale">
           <strong>Explanation:</strong>{" "}
