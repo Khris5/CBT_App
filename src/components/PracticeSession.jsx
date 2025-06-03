@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useRef } from "react";
+import { useEffect, useCallback, useRef, useState } from "react";
 import Timer from "./Timer";
 import QuestionCard from "./QuestionCard";
 
@@ -12,10 +12,9 @@ function PracticeSession({
   userAnswers,
   setUserAnswers,
 }) {
-  const [isSubmitting, setIsSubmitting] = React.useState(false); // Keep local state for submission status
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const sessionEndedRef = useRef(false);
 
-  // Handler for when an answer changes - uses setUserAnswers from props
   const handleAnswerChange = useCallback(
     (questionId, selectedLetter) => {
       setUserAnswers((prevAnswers) => ({
@@ -26,7 +25,6 @@ function PracticeSession({
     [setUserAnswers]
   );
 
-  // Function to submit the session
   const submitTest = useCallback(() => {
     if (sessionEndedRef.current) return;
     sessionEndedRef.current = true;
@@ -35,7 +33,6 @@ function PracticeSession({
     onSubmit(userAnswers);
   }, [onSubmit, userAnswers]);
 
-  // Handler for when the timer runs out
   const handleTimeUp = useCallback(() => {
     console.log("Time is up!");
     if (!sessionEndedRef.current) {
@@ -43,7 +40,6 @@ function PracticeSession({
     }
   }, [submitTest]);
 
-  // Navigation Handlers - use setCurrentQuestionIndex from props
   const handleNext = () => {
     setCurrentQuestionIndex((prevIndex) =>
       Math.min(prevIndex + 1, questions.length - 1)
@@ -60,7 +56,6 @@ function PracticeSession({
     }
   };
 
-  // Effect to handle potential edge case: if questions list becomes empty
   useEffect(() => {
     if (!questions || questions.length === 0) {
       console.warn("PracticeSession received no questions. Ending session.");
@@ -70,84 +65,99 @@ function PracticeSession({
     }
   }, [questions, submitTest]);
 
-  // Get the current question based on the index from props
   const currentQuestion = questions[currentQuestionIndex];
 
   if (!currentQuestion) {
-    // Handle case where questions might be loading or empty after initial check
-    return <div className="loading">Loading question...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen bg-gray-100">
+        <div className="text-xl text-gray-600">Loading question...</div>
+      </div>
+    );
   }
 
-  // Handle case where startTime might be null briefly on load/transition
   if (startTime === null) {
-    return <div className="loading">Initializing session...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen bg-gray-100">
+        <div className="text-xl text-gray-600">Initializing session...</div>
+      </div>
+    );
   }
+
+  const baseButtonClasses = "px-6 py-2 rounded-md font-semibold text-white transition-colors duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed";
+  const primaryButtonClasses = `${baseButtonClasses} bg-blue-600 hover:bg-blue-700 focus:ring-blue-500`;
+  const secondaryButtonClasses = `${baseButtonClasses} bg-gray-600 hover:bg-gray-700 focus:ring-gray-500`;
+  const navButtonClasses = "px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed";
+  const questionNavButtonBase = "w-10 h-10 flex items-center justify-center border rounded-md text-sm font-medium transition-colors duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-opacity-50";
 
   return (
-    <div className="practice-session single-question-view">
-      <div className="session-header">
-        <h2>
-          Practice Test ({currentQuestionIndex + 1} / {questions.length})
-        </h2>
+    <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 bg-gray-50 min-h-screen flex flex-col">
+      <header className="mb-6 flex flex-col sm:flex-row justify-between items-center pb-4 border-b border-gray-200">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-0">
+          Practice Test <span className="text-gray-500 font-normal">({currentQuestionIndex + 1} / {questions.length})</span>
+        </h1>
         <Timer
           totalDuration={timeLimit}
           startTime={startTime}
           onTimeUp={handleTimeUp}
         />
-      </div>
+      </header>
 
-      {/* Display only the current question */}
-      <div className="current-question-container">
+      <main className="flex-grow">
         <QuestionCard
-          key={currentQuestion.id} // Key ensures component remounts if ID changes unexpectedly
+          key={currentQuestion.id}
           questionNumber={currentQuestionIndex + 1}
           question={currentQuestion}
           userAnswer={userAnswers[currentQuestion.id]}
           onAnswerChange={handleAnswerChange}
           isReviewMode={false}
         />
-      </div>
+      </main>
 
-      {/* Main Navigation Buttons */}
-      <div className="question-navigation main-nav">
-        <button onClick={handlePrevious} disabled={currentQuestionIndex === 0}>
-          &larr; Previous
-        </button>
-        <button
-          onClick={handleNext}
-          disabled={currentQuestionIndex === questions.length - 1}
-        >
-          Next &rarr;
-        </button>
-      </div>
-
-      {/* Question Number Navigation */}
-      <div className="question-navigation number-nav">
-        <p>Go to question:</p>
-        <div className="number-buttons-container">
-          {questions.map((q, index) => (
-            <button
-              key={q.id}
-              onClick={() => handleGoToQuestion(index)}
-              className={`question-number-btn ${
-                index === currentQuestionIndex ? "current" : ""
-              } ${userAnswers[q.id] !== undefined ? "answered" : ""}`}
-              title={`Go to question ${index + 1}`}
-            >
-              {index + 1}
-            </button>
-          ))}
+      <nav className="mt-6 py-4 border-t border-gray-200">
+        <div className="flex justify-between items-center mb-6">
+          <button onClick={handlePrevious} disabled={currentQuestionIndex === 0} className={navButtonClasses}>
+            &larr; Previous
+          </button>
+          <button onClick={handleNext} disabled={currentQuestionIndex === questions.length - 1} className={navButtonClasses}>
+            Next &rarr;
+          </button>
         </div>
-      </div>
 
-      {/* Submit Button */}
-      <button
-        onClick={submitTest}
-        disabled={isSubmitting || sessionEndedRef.current}
-        className="submit-button session-submit"
-      >
-        {isSubmitting ? "Submitting..." : "Submit All Answers"}
-      </button>
+        <div className="mb-6">
+          <p className="text-sm font-medium text-gray-700 mb-2 text-center sm:text-left">Go to question:</p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {questions.map((q, index) => {
+              let qNavBtnClasses = `${questionNavButtonBase} border-gray-300 text-gray-700 hover:bg-gray-100 focus:ring-indigo-500`;
+              if (userAnswers[q.id] !== undefined) {
+                qNavBtnClasses = `${questionNavButtonBase} border-blue-400 bg-blue-50 text-blue-700 hover:bg-blue-100 focus:ring-blue-500`;
+              }
+              if (index === currentQuestionIndex) {
+                qNavBtnClasses = `${questionNavButtonBase} bg-blue-600 text-white border-blue-600 ring-2 ring-blue-500 ring-offset-1`;
+              }
+              return (
+                <button
+                  key={q.id}
+                  onClick={() => handleGoToQuestion(index)}
+                  className={qNavBtnClasses}
+                  title={`Go to question ${index + 1}`}
+                >
+                  {index + 1}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="text-center">
+          <button
+            onClick={submitTest}
+            disabled={isSubmitting || sessionEndedRef.current}
+            className={`${primaryButtonClasses} w-full sm:w-auto`}
+          >
+            {isSubmitting ? "Submitting..." : "Submit All Answers"}
+          </button>
+        </div>
+      </nav>
     </div>
   );
 }

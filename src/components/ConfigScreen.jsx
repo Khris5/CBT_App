@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 
 const questionOptions = [20, 30, 40, 50, 60];
 const categoryOptions = ["Medicine Only", "Surgery Only", "Combined"];

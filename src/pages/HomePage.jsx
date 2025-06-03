@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
+import { useNavigate } from "react-router-dom"; // Added useNavigate
 import { useAuth } from "../contexts/AuthContext";
 import { supabase } from "../lib/supabaseClient";
 import "../App.css";
@@ -9,51 +10,12 @@ import ReviewScreen from "../components/ReviewScreen";
 import LoginPromptModal from "../components/Modals/LoginPromptModal";
 import { ShuffleArray } from "../utils/ShuffleArray";
 import validateQuestion from "../utils/ValidateQuestions";
-
-
-const LOCAL_STORAGE_KEY = "nmcPrepCbtState";
-
-// Safe localStorage operations with error handling
-const loadState = () => {
-  try {
-    const serializedState = localStorage.getItem(LOCAL_STORAGE_KEY);
-    if (serializedState === null) return null;
-    const parsed = JSON.parse(serializedState);
-    // Validate loaded state structure
-    if (typeof parsed === "object" && parsed !== null) {
-      return parsed;
-    }
-    return null;
-  } catch (err) {
-    console.error("Could not load state from localStorage", err);
-    return null;
-  }
-};
-
-const saveState = (state) => {
-  try {
-    const stateToSave = {
-      view: state.view,
-      sessionConfig: state.sessionConfig,
-      sessionQuestions: state.sessionQuestions,
-      userAnswers: state.userAnswers,
-      results: state.results,
-      currentQuestionIndex: state.currentQuestionIndex,
-      sessionStartTime: state.sessionStartTime,
-      activeUserSessionId: state.activeUserSessionId,
-    };
-    const serializedState = JSON.stringify(stateToSave);
-    localStorage.setItem(LOCAL_STORAGE_KEY, serializedState);
-  } catch (err) {
-    console.error("Could not save state to localStorage", err);
-  }
-};
-
+import { loadState, saveState } from "../utils/LocalStorageState";
 
 
 const HomePage = () => {
+  const navigate = useNavigate(); // Initialized useNavigate
   const { user, loading: authLoading, signInWithGoogle } = useAuth();
-
   // Initialize state with proper defaults
   const initialState = useMemo(() => {
     const loaded = loadState();
@@ -86,13 +48,18 @@ const HomePage = () => {
   );
   const [activeUserSessionId, setActiveUserSessionId] = useState(
     initialState.activeUserSessionId
-  );
+  ); 
+  
 
   // State for authentication modal and session management
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [isStartingSession, setIsStartingSession] = useState(false);
   const [isFetchingQuestions, setIsFetchingQuestions] = useState(false);
   const [startSessionError, setStartSessionError] = useState(null);
+  
+  // New state for submission handling
+  const [isSubmittingSession, setIsSubmittingSession] = useState(false);
+  const [submissionError, setSubmissionError] = useState(null);
 
   // Save state to localStorage when it changes
   useEffect(() => {
@@ -261,44 +228,136 @@ const HomePage = () => {
     [user, fetchQuestionsFromDatabase]
   );
 
-  // Submit the practice session
+  // Enhanced submitSession function with Supabase operations
   const submitSession = useCallback(
-    (finalAnswers) => {
+    async (finalAnswers) => {
+      // Clear any previous submission errors
+      setSubmissionError(null);
+      
       if (!sessionQuestions.length) {
         console.error("No practice questions to evaluate");
+        setSubmissionError("No questions found to evaluate. Please try again.");
         return;
       }
 
-      let score = 0;
-      sessionQuestions.forEach((q) => {
-        const userAnswerLetter = finalAnswers[q.id];
-        const correctAnswerLetter = q.correctanswerletter;
+      if (!activeUserSessionId) {
+        console.error("No active session ID found");
+        setSubmissionError("Session ID not found. Please restart the session.");
+        return;
+      }
 
-        if (
-          userAnswerLetter &&
-          correctAnswerLetter &&
-          userAnswerLetter.toLowerCase() === correctAnswerLetter.toLowerCase()
-        ) {
-          score++;
+      setIsSubmittingSession(true);
+
+      try {
+        // Step 1: Calculate score and prepare session questions data
+        let score = 0;
+        const sessionQuestionsData = [];
+        
+        sessionQuestions.forEach((question, index) => {
+          const userAnswerLetter = finalAnswers[question.id];
+          const correctAnswerLetter = question.correctanswerletter;
+          
+          // Check if answer is correct
+          const isCorrect = userAnswerLetter && 
+            correctAnswerLetter && 
+            userAnswerLetter.toLowerCase() === correctAnswerLetter.toLowerCase();
+          
+          if (isCorrect) {
+            score++;
+          }
+
+          // Prepare data for session_questions table
+          sessionQuestionsData.push({
+            user_session_id: activeUserSessionId,
+            question_id: question.id,
+            user_answer_letter: userAnswerLetter || null,
+            is_correct: isCorrect,
+            order_in_session: index
+          });
+        });
+
+        console.log(`Session completed: ${score}/${sessionQuestions.length} correct answers`);
+
+        // Step 2: Perform Supabase operations concurrently
+        const supabaseOperations = [
+          // Update user_sessions table
+          supabase
+            .from('user_sessions')
+            .update({
+              ended_at: new Date().toISOString(),
+              score_achieved: score
+            })
+            .eq('id', activeUserSessionId),
+          
+          // Batch insert into session_questions table
+          supabase
+            .from('session_questions')
+            .insert(sessionQuestionsData)
+        ];
+
+        const [sessionUpdateResult, questionsInsertResult] = await Promise.all(supabaseOperations);
+
+        // Check for errors in session update
+        if (sessionUpdateResult.error) {
+          console.error('Error updating user session:', sessionUpdateResult.error);
+          throw new Error(`Failed to update session: ${sessionUpdateResult.error.message}`);
         }
-      });
 
-      setResults({ score, total: sessionQuestions.length });
-      setUserAnswers(finalAnswers);
-      setSessionStartTime(null);
-      setView("results");
+        // Check for errors in questions insert
+        if (questionsInsertResult.error) {
+          console.error('Error inserting session questions:', questionsInsertResult.error);
+          throw new Error(`Failed to save question results: ${questionsInsertResult.error.message}`);
+        }
+
+        console.log('Session data successfully saved to Supabase');
+
+        // Step 3: Update local state and transition to results view
+        setResults({ score, total: sessionQuestions.length });
+        setUserAnswers(finalAnswers);
+        setSessionStartTime(null);
+        setView("results");
+
+      } catch (error) {
+        console.error("Error submitting session:", error);
+        setSubmissionError(
+          error.message || "Failed to save session results. Please try again."
+        );
+        
+        // Still update local state for user to see results, even if Supabase save failed
+        const score = sessionQuestions.reduce((acc, question) => {
+          const userAnswerLetter = finalAnswers[question.id];
+          const correctAnswerLetter = question.correctanswerletter;
+          
+          if (userAnswerLetter && 
+              correctAnswerLetter && 
+              userAnswerLetter.toLowerCase() === correctAnswerLetter.toLowerCase()) {
+            return acc + 1;
+          }
+          return acc;
+        }, 0);
+
+        setResults({ score, total: sessionQuestions.length });
+        setUserAnswers(finalAnswers);
+        setSessionStartTime(null);
+        setView("results");
+        
+      } finally {
+        setIsSubmittingSession(false);
+      }
     },
-    [sessionQuestions]
+    [user, sessionQuestions, activeUserSessionId, userAnswers, sessionConfig] // Added dependency array
   );
 
   // Navigate to review screen
-  const reviewAnswers = useCallback(() => {
-    setCurrentQuestionIndex(0); // Reset to first question for review
-    setView("review");
-  }, []);
+  const onReviewSession = useCallback((sessionId) => {
+    console.log("Navigating to review session with ID:", sessionId);
+    navigate(`/review/${sessionId}`);
+    
+  }, [navigate]); // Added navigate to dependency array
 
-  // Restart the application
-  const restartSession = useCallback(() => {
+  // Navigate back to config screen / start new session
+  const onStartNewSession = useCallback(() => {
+    console.log("Starting new session - resetting all state");
     setView("config");
     setSessionConfig(null);
     setsessionQuestions([]);
@@ -307,7 +366,9 @@ const HomePage = () => {
     setCurrentQuestionIndex(0);
     setSessionStartTime(null);
     setActiveUserSessionId(null);
+    
     setStartSessionError(null);
+    setSubmissionError(null);
   }, []);
 
   // Handle modal close
@@ -337,12 +398,20 @@ const HomePage = () => {
         </div>
       )}
 
+      {/* Display submission error if any */}
+      {submissionError && (
+        <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
+          {submissionError}
+        </div>
+      )}
+
       {/* Display loading indicator when starting session or fetching questions */}
-      {(isStartingSession || isFetchingQuestions) && (
+      {(isStartingSession || isFetchingQuestions || isSubmittingSession) && (
         <div className="mb-4 p-4 bg-blue-100 border border-blue-400 text-blue-700 rounded">
-          {isStartingSession && !isFetchingQuestions && "Creating your practice session..."}
+          {isStartingSession && !isFetchingQuestions && !isSubmittingSession && "Creating your practice session..."}
           {isFetchingQuestions && "Loading questions from database..."}
-          {isStartingSession && isFetchingQuestions && "Setting up your practice session..."}
+          {isSubmittingSession && "Saving your results..."}
+          {isStartingSession && isFetchingQuestions && !isSubmittingSession && "Setting up your practice session..."}
         </div>
       )}
 
@@ -365,27 +434,22 @@ const HomePage = () => {
           setUserAnswers={setUserAnswers}
           activeUserSessionId={activeUserSessionId}
           sessionConfig={sessionConfig}
+          isSubmitting={isSubmittingSession}
         />
       )}
 
       {view === "results" && (
         <ResultsScreen
-          score={results.score}
-          total={results.total}
-          onReview={reviewAnswers}
-          onRestart={restartSession}
+          scoreAchieved={results.score}
+          totalQuestionsInSession={results.total}
+          userSessionId={activeUserSessionId}
+          onReviewSession={onReviewSession}
+          onStartNewSession={onStartNewSession}
+          userDetails= {user.user_metadata}
         />
       )}
 
-      {view === "review" && sessionQuestions.length > 0 && (
-        <ReviewScreen
-          questions={sessionQuestions}
-          userAnswers={userAnswers}
-          onRestart={restartSession}
-          currentQuestionIndex={currentQuestionIndex}
-          setCurrentQuestionIndex={setCurrentQuestionIndex}
-        />
-      )}
+      {/* ReviewScreen is now handled by its own route /review/:sessionId */}
 
       {/* Login Modal */}
       <LoginPromptModal
