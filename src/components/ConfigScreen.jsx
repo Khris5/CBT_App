@@ -22,9 +22,8 @@ function ConfigScreen({ onStartSession }) {
     const sessionConfig = {
       numQuestions: selectedNumQuestions,
       category: selectedCategory,
-      timeLimitSeconds: timeLimitMinutes * 60,
+      timeLimitMinutes: timeLimitMinutes,
     };
-
     console.log("Starting session with config:", sessionConfig);
     onStartSession(sessionConfig);
   };

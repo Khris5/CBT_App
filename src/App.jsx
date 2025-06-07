@@ -4,7 +4,9 @@ import { useAuth } from "./contexts/AuthContext";
 import MainLayout from "./components/Layout/MainLayout";
 import HomePage from "./pages/HomePage";
 import DashboardPage from "./pages/DashboardPage";
-import ReviewScreen from "./components/ReviewScreen"; // Added import
+import ReviewScreen from "./components/ReviewScreen";
+import PracticeSession from "./components/PracticeSession";
+import ResultsScreen from "./components/ResultsScreen";
 
 // A wrapper for protected routes
 const ProtectedRoute = ({ children }) => {
@@ -46,6 +48,22 @@ function App() {
           element={
             <ProtectedRoute>
               <ReviewScreen />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/session/:sessionId"
+          element={
+            <ProtectedRoute>
+              <PracticeSession />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/results/:sessionId"
+          element={
+            <ProtectedRoute>
+              <ResultsScreen />
             </ProtectedRoute>
           }
         />

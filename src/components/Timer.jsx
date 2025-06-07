@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
-function Timer({ totalDuration, startTime, onTimeUp }) {
+function Timer({ totalDuration, startTimeISO, onTimeUp }) {
+  const startTime = Date.parse(startTimeISO);
+
   const [timeLeft, setTimeLeft] = useState(totalDuration);
   const intervalRef = useRef(null);
   const timeUpCalledRef = useRef(false);
