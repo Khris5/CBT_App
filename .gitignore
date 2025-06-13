@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -23,5 +26,4 @@ dist-ssr
 *.sln
 *.sw?
 
-public/surgery_questions.json
-public/medicine_questions.json
+scripts/migrate_questions.cjs

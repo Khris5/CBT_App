@@ -1,25 +1,198 @@
-import React from "react";
+import { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { supabase } from '../lib/supabaseClient';
+import { FaRedo, FaClipboardList } from 'react-icons/fa';
+import Spinner from './Spinner';
+import ErrorMessage from './ErrorMessage';
 
-function ResultsScreen({ score, total, onReview, onRestart }) {
-  const percentage = total > 0 ? ((score / total) * 100).toFixed(1) : 0;
+const ResultsScreen = () => {
+  const { sessionId } = useParams();
+  const navigate = useNavigate();
+
+  const [sessionDetails, setSessionDetails] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    if (!sessionId) {
+      setError("No session ID provided.");
+      setIsLoading(false);
+      return;
+    }
+
+    const fetchSessionResults = async () => {
+      setIsLoading(true);
+      setError(null);
+      try {
+        const { data, error: sessionError } = await supabase
+          .from('user_sessions')
+          .select(`
+            score_achieved,
+            total_questions_in_session,
+            category_selection,
+            ended_at,
+            user_id,
+            profiles ( full_name )
+          `)
+          .eq('id', sessionId)
+          .single();
+
+        if (sessionError) {
+          console.log(`sessionError`, sessionError);
+          throw new Error(`Failed to load session results. Please check your connection or try again. (Details: ${sessionError.message})`);
+        }
+        if (!data) {
+          throw new Error('Could not find results for this session. The session may not exist or has been removed.');
+        }
+        console.log(`sessionDetails`, data);
+        setSessionDetails(data);
+        
+        if (data.profiles && data.profiles.full_name) {
+          setUserName(data.profiles.full_name.trim().split(/\s+/)[1] || 'User');
+        } else {
+          // Fallback if profile or name is not available
+          const { data: { user } } = await supabase.auth.getUser();
+          setUserName(user?.email?.split('@')[0] || 'User');
+        }
+
+      } catch (err) {
+        console.error("Error fetching session results:", err);
+        setError(err.message || 'An unexpected error occurred while loading your results. Please try again.');
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchSessionResults();
+  }, [sessionId]);
+
+  const getScoreMessage = (percentage) => {
+    if (percentage >= 90) return `Excellent work, ${userName}! 🎉`;
+    if (percentage >= 80) return `Great job, ${userName}! 👏`;
+    if (percentage >= 70) return `Well done, ${userName}! 👍`;
+    if (percentage >= 60) return `Good effort, ${userName}! 💪`;
+    return `Keep practicing, ${userName}! 📚`;
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex flex-col justify-center items-center min-h-screen bg-background text-text-primary">
+        <Spinner size="h-16 w-16" />
+        <p className="text-xl mt-4">Loading results...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex flex-col justify-center items-center min-h-screen bg-background p-4">
+        <ErrorMessage message={error} />
+        <button
+          onClick={() => navigate('/')}
+          className="mt-6 bg-accent hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75"
+        >
+          Go to Homepage
+        </button>
+      </div>
+    );
+  }
+
+  if (!sessionDetails) {
+    // This case should ideally be covered by the error state if data fetching failed.
+    // Or it might mean the session ID was valid but no data returned, which is an edge case.
+    return (
+      <div className="flex flex-col justify-center items-center min-h-screen bg-background p-4 text-text-primary">
+        <ErrorMessage message="Session results are not available or could not be displayed. Please try returning to the dashboard." />
+        <button
+          onClick={() => navigate('/')}
+          className="mt-6 bg-accent hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75"
+        >
+          Go to Homepage
+        </button>
+      </div>
+    );
+  }
+
+  const { score_achieved, total_questions_in_session, category_selection, ended_at } = sessionDetails;
+  const percentage = total_questions_in_session > 0 ? Math.round((score_achieved / total_questions_in_session) * 100) : 0;
+  const scoreMessage = getScoreMessage(percentage);
 
   return (
-    <div className="results-screen">
-      <h2>Session Complete!</h2>
-      <h3>Your Score:</h3>
-      <p className="score-display">
-        {score} out of {total} ({percentage}%)
-      </p>
-      <div className="results-actions">
-        <button onClick={onReview} className="review-button">
-          Review Answers
-        </button>
-        <button onClick={onRestart} className="restart-button">
-          Start New Session
-        </button>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-background p-4 md:p-8">
+      <div className="bg-white rounded-lg shadow-xl border border-gray-300 p-8 md:p-12 max-w-2xl w-full text-center">
+        <div className="mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-text-primary mb-2">
+            Session Complete!
+          </h1>
+          <p className="text-lg text-text-secondary">
+            Here's how you performed in {category_selection || 'the test'}.
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <div className="bg-orange-50 rounded-lg p-6 mb-4 shadow-inner border border-orange-200">
+            <h2 className="text-xl font-semibold text-text-primary mb-3">
+              Your Score
+            </h2>
+            <div className="flex items-baseline justify-center mb-3">
+              <span className="text-5xl md:text-6xl font-bold text-accent">
+                {score_achieved}
+              </span>
+              <span className="text-2xl md:text-3xl font-medium text-text-secondary mx-2">
+                /
+              </span>
+              <span className="text-3xl md:text-4xl font-semibold text-text-secondary">
+                {total_questions_in_session}
+              </span>
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-accent mb-3">
+              {percentage}%
+            </div>
+            <p className="text-lg font-medium text-text-primary">
+              {scoreMessage}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 text-sm text-text-secondary">
+            <div className="bg-green-100 border border-green-300 rounded-lg p-3 shadow">
+              <div className="font-semibold text-green-700">Correct</div>
+              <div className="text-2xl font-bold text-green-600">{score_achieved}</div>
+            </div>
+            <div className="bg-red-100 border border-red-300 rounded-lg p-3 shadow">
+              <div className="font-semibold text-red-700">Incorrect</div>
+              <div className="text-2xl font-bold text-red-600">{total_questions_in_session - score_achieved}</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            onClick={() => navigate(`/review/${sessionId}`)}
+            className="bg-accent hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75"
+          >
+            <FaClipboardList />
+            Review Answers
+          </button>
+          <button
+            onClick={() => navigate('/')}
+            className="border-2 border-accent text-accent hover:bg-orange-100 hover:border-orange-600 font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75"
+          >
+            <FaRedo />
+            Start New Session
+          </button>
+        </div>
+
+        {ended_at && (
+          <div className="mt-8 pt-6 border-t border-gray-300">
+            <p className="text-xs text-text-secondary">
+              Completed on: {new Date(ended_at).toLocaleString()}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
-}
+};
 
 export default ResultsScreen;
