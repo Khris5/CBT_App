@@ -14,7 +14,7 @@ function ConfigScreen({ onStartSession, isLoading }) {
 
   // Calculate time limit: 1 minute per question
   const timeLimitMinutes = useMemo(
-    () => selectedNumQuestions,
+    () => Math.round((selectedNumQuestions * 2) / 3),
     [selectedNumQuestions]
   );
 
@@ -102,7 +102,9 @@ function ConfigScreen({ onStartSession, isLoading }) {
               {timeLimitMinutes} minutes
             </span>
           </p>
-          <p className="text-sm text-gray-600 mt-1">(1 minute per question)</p>
+          <p className="text-sm text-gray-600 mt-1">
+            (40 seconds per question)
+          </p>
         </div>
 
         {/* Session Summary */}

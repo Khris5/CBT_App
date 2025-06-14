@@ -123,7 +123,7 @@ const DashboardPage = () => {
             </p>
           </div>
         </div>
-        {/* You can add more profile details here if needed */}
+        {/*more profile details here if needed */}
       </div>
 
       {/* Summary Statistics Section (Optional) */}
@@ -187,18 +187,18 @@ const DashboardPage = () => {
                 <div
                   key={session.id}
                   onClick={() => handleSessionClick(session.id)}
-                  className="bg-gray-100 hover:bg-gray-200 p-4 rounded-lg shadow-sm border border-gray-300 cursor-pointer transition-all duration-200 ease-in-out transform hover:scale-[1.01]"
+                  className="bg-gray-100 hover:bg-gray-200 p-2 sm:p-4 rounded-lg shadow-sm border border-gray-300 cursor-pointer transition-all duration-200 ease-in-out transform hover:scale-[1.01]"
                 >
                   <div className="flex flex-row justify-between items-start sm:items-center">
                     <div>
                       <p className="text-sm font-semibold text-accent">
                         {formatDate(session.started_at)}
                       </p>
-                      <p className="text-lg font-bold text-text-primary mt-1">
+                      <p className=" font-bold text-text-primary mt-1">
                         {session.category_selection}
                       </p>
                     </div>
-                    <div className="mt-3 sm:mt-0 sm:text-right">
+                    <div className=" sm:mt-0 sm:text-right">
                       <p className="text-md font-semibold text-text-primary">
                         Score: {session.score_achieved}/
                         {session.total_questions_in_session}

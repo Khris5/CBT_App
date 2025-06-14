@@ -21,7 +21,6 @@ function QuestionCard({
     options = [],
     correctanswerletter,
     explanation,
-    category,
   } = question || {};
 
   const [isGenerating, setIsGenerating] = useState(false);
@@ -101,7 +100,7 @@ function QuestionCard({
         isReviewMode ? "border-l-4 border-accent" : ""
       }`}
     >
-      <h4 className="text-xl font-semibold mb-5 text-text-primary">
+      <h4 className="text-lg md:text-xl font-semibold mb-5 text-text-primary">
         <span className="text-accent mr-2">{questionNumber}.</span>{" "}
         {questiontext}
       </h4>
@@ -114,7 +113,7 @@ function QuestionCard({
           const isCorrect = correctanswerletter === optionLetter;
 
           let optionBaseClasses =
-            "flex items-center p-3 rounded-md border transition-all duration-150 ease-in-out";
+            "flex items-center pl-3 rounded-md border transition-all duration-150 ease-in-out";
           let optionStateClasses =
             "border-gray-300 hover:bg-gray-100 hover:border-gray-400";
           let labelTextClasses = "text-text-primary";
@@ -166,7 +165,7 @@ function QuestionCard({
               />
               <label
                 htmlFor={optionId}
-                className={`flex-1 cursor-pointer ${labelTextClasses}`}
+                className={`flex-1 p-3 cursor-pointer ${labelTextClasses}`}
               >
                 <span className="font-semibold mr-2">{optionLetter}.</span>
                 <span>{optionText}</span>

@@ -194,7 +194,7 @@ const ReviewScreen = () => {
     <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 bg-background text-text-primary min-h-screen flex flex-col">
       {/* Header: Session Summary & Back Button */}
       <header className="mb-6 pb-4 border-b border-gray-300">
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-between items-center mb-4">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary">
             Session Review
             <span className="text-text-secondary font-normal ml-2 text-xl">
@@ -203,7 +203,7 @@ const ReviewScreen = () => {
           </h1>
           <button
             onClick={() => navigate("/dashboard")}
-            className="border-2 border-accent text-accent hover:bg-orange-100 hover:text-orange-700 font-semibold sm:py-2 sm:px-4 py-1 px-2 rounded-lg transition-colors duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 text-sm flex items-center"
+            className="border-2 border-accent text-accent hover:bg-orange-100 hover:text-orange-700 font-semibold py-2 px-4 rounded-lg transition-colors duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 text-sm flex items-center"
           >
             <FaArrowLeft className="h-4 w-4 mr-2" /> Go to Dashboard
           </button>
