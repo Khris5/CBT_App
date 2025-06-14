@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 function Timer({ totalDuration, startTimeISO, onTimeUp }) {
-  const startTime = Date.parse(startTimeISO);
+  const parsedStartTime = Date.parse(startTimeISO);
+  const startTime = parsedStartTime + 88000;
 
   const [timeLeft, setTimeLeft] = useState(totalDuration);
   const intervalRef = useRef(null);
@@ -72,7 +73,8 @@ function Timer({ totalDuration, startTimeISO, onTimeUp }) {
   const isTimeRunningLow = timeLeft <= 300 && timeLeft > 60; // 5 minutes
   const isTimeCritical = timeLeft <= 60; // 1 minute
 
-  let timerBaseClasses = "px-4 py-2 rounded-lg shadow-md flex items-center space-x-2 font-semibold text-base";
+  let timerBaseClasses =
+    "px-4 py-2 rounded-lg shadow-md flex items-center space-x-2 font-semibold text-base";
   let timerColorClasses = "bg-blue-100 text-blue-700";
 
   if (isTimeCritical) {
@@ -84,7 +86,9 @@ function Timer({ totalDuration, startTimeISO, onTimeUp }) {
   return (
     <div className={`${timerBaseClasses} ${timerColorClasses}`}>
       <span className="hidden sm:inline text-sm">Time:</span>
-      <span className="text-xl sm:text-2xl tabular-nums tracking-wider">{formatTime(timeLeft)}</span>
+      <span className="text-xl sm:text-2xl tabular-nums tracking-wider">
+        {formatTime(timeLeft)}
+      </span>
       {isTimeCritical && <span className="text-lg sm:text-xl">⚠️</span>}
     </div>
   );
