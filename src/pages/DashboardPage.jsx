@@ -96,7 +96,7 @@ const DashboardPage = () => {
   }
 
   return (
-    <div className="container mx-auto p-6 bg-background min-h-screen">
+    <div className="container mx-auto p-4 bg-background min-h-screen">
       <h1 className="text-3xl font-semibold sm:text-4xl sm:font-bold text-text-primary mb-8">
         User Dashboard
       </h1>
