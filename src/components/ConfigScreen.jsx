@@ -12,9 +12,9 @@ function ConfigScreen({ onStartSession, isLoading }) {
   const [selectedNumQuestions, setSelectedNumQuestions] = useState(20);
   const [selectedCategory, setSelectedCategory] = useState("Combined");
 
-  // Calculate time limit: 1 minute per question
+  // Calculate time limit: 1 minute per question + 20% buffer
   const timeLimitMinutes = useMemo(
-    () => Math.round((selectedNumQuestions * 2) / 3),
+    () => Math.round(selectedNumQuestions + selectedNumQuestions * 0.2),
     [selectedNumQuestions]
   );
 
@@ -29,7 +29,6 @@ function ConfigScreen({ onStartSession, isLoading }) {
       category: selectedCategory,
       timeLimitMinutes: timeLimitMinutes,
     };
-    console.log("Starting session with config:", sessionConfig);
     onStartSession(sessionConfig);
   };
 
@@ -103,7 +102,7 @@ function ConfigScreen({ onStartSession, isLoading }) {
             </span>
           </p>
           <p className="text-sm text-gray-600 mt-1">
-            (40 seconds per question)
+            (1.10 minutes per question)
           </p>
         </div>
 
