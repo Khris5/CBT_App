@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ErrorMessage from "./ErrorMessage";
-import { supabaseAdmin, supabase } from "../lib/supabaseClient";
+import { supabaseAdmin } from "../lib/supabaseClient";
 import generateExplanation from "../lib/googleAPI";
 import Spinner from "./Spinner";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer";
@@ -53,24 +53,39 @@ function QuestionCard({
     setGenerationError(null);
     try {
       const generatedText = await generateExplanation(question);
+      const parsedText = JSON.parse(generatedText);
 
       // Update Supabase first
-
-      const { error: updateError } = await supabaseAdmin
+      const { error: updateExplanationError } = await supabaseAdmin
         .from("questions")
-        .update({ explanation: generatedText })
+        .update({ explanation: parsedText?.explanation })
         .eq("id", id);
 
-      if (updateError) {
-        throw updateError;
+      if (updateExplanationError) {
+        throw updateExplanationError;
+      }
+
+      if (!parsedText?.isAnswerCorrect || false) {
+        const { error: updateAnswerError } = await supabaseAdmin
+          .from("questions")
+          .update({ correctanswerletter: parsedText?.correctAnswerLetter })
+          .eq("id", id);
+        if (updateAnswerError) {
+          throw updateAnswerError;
+        }
+        setLocalExplanation(
+          `**Sorry the marked answer above is wrong. The correct answer is ${parsedText?.correctAnswerLetter}** \n\n${parsedText?.explanation}`
+        );
       }
 
       // Update local state to show immediately
-      setLocalExplanation(generatedText);
+      if (parsedText?.isAnswerCorrect) {
+        setLocalExplanation(parsedText?.explanation);
+      }
 
       // Notify parent component to update its state for persistence across re-renders
       if (onExplanationGenerated) {
-        onExplanationGenerated(id, generatedText);
+        onExplanationGenerated(id, parsedText?.explanation);
       }
     } catch (err) {
       console.error("Failed to generate or save explanation:", err);
