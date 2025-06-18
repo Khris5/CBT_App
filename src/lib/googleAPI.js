@@ -71,7 +71,8 @@ async function generateExplanation(question) {
   } catch (error) {
     console.error("Error generating explanation from Google API:", error);
     throw new Error(
-      "Failed to generate explanation. The API may be busy or configured incorrectly."
+      error?.message ||
+        "Failed to generate explanation. The API may be busy or configured incorrectly."
     );
   }
 }
