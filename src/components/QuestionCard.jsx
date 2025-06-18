@@ -53,39 +53,42 @@ function QuestionCard({
     setGenerationError(null);
     try {
       const generatedText = await generateExplanation(question);
-      const parsedText = JSON.parse(generatedText);
+      const {
+        correctAnswerLetter,
+        explanation: newExplanation,
+        isAnswerCorrect,
+      } = JSON.parse(generatedText);
 
       // Update Supabase first
       const { error: updateExplanationError } = await supabaseAdmin
         .from("questions")
-        .update({ explanation: parsedText?.explanation })
+        .update({ explanation: newExplanation })
         .eq("id", id);
 
       if (updateExplanationError) {
-        throw updateExplanationError;
+        throw new Error(updateExplanationError);
       }
-
-      if (!parsedText?.isAnswerCorrect || false) {
+      if (!isAnswerCorrect || false) {
+        setLocalExplanation(
+          `**Sorry the marked answer (${correctanswerletter}) above is wrong. The correct answer is (${correctAnswerLetter})** \n\n${newExplanation}`
+        );
         const { error: updateAnswerError } = await supabaseAdmin
           .from("questions")
-          .update({ correctanswerletter: parsedText?.correctAnswerLetter })
+          .update({ correctanswerletter: correctAnswerLetter })
           .eq("id", id);
         if (updateAnswerError) {
-          throw updateAnswerError;
+          throw new Error(updateAnswerError);
         }
-        setLocalExplanation(
-          `**Sorry the marked answer above is wrong. The correct answer is ${parsedText?.correctAnswerLetter}** \n\n${parsedText?.explanation}`
-        );
       }
 
       // Update local state to show immediately
-      if (parsedText?.isAnswerCorrect) {
-        setLocalExplanation(parsedText?.explanation);
+      if (isAnswerCorrect) {
+        setLocalExplanation(newExplanation);
       }
 
       // Notify parent component to update its state for persistence across re-renders
       if (onExplanationGenerated) {
-        onExplanationGenerated(id, parsedText?.explanation);
+        onExplanationGenerated(id, newExplanation);
       }
     } catch (err) {
       console.error("Failed to generate or save explanation:", err);

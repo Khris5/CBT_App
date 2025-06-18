@@ -120,7 +120,6 @@ const PracticeSession = () => {
         }));
 
         setQuestionsList(formattedQuestions);
-        console.log(`formattedQuestions`, formattedQuestions);
       } catch (err) {
         console.error("Error in fetchSessionData:", err);
         setError(
@@ -293,9 +292,6 @@ const PracticeSession = () => {
   // Submission error is specifically the 'error' state when 'isSubmitting' was true and failed.
   const submissionErrorMessage =
     error && sessionEndedRef.current === false && isSubmitting === false;
-  console.log(
-    `time limit: ${sessionConfig.time_limit_seconds}, started at: ${sessionConfig.started_at}`
-  );
 
   return (
     <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 bg-background text-text-primary min-h-screen flex flex-col">

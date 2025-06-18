@@ -84,9 +84,9 @@ const ReviewScreen = () => {
           explanation: sq.questions.explanation,
         }));
         setReviewedQuestions(processedQuestions);
-        console.log(`questionsData`, questionsData);
+        // console.log(`questionsData`, questionsData);
 
-        console.log(`reviewedQuestions`, reviewedQuestions);
+        // console.log(`reviewedQuestions`, reviewedQuestions);
       } catch (err) {
         console.error("Error fetching review data:", err);
         setError(err.message || "Failed to load review data.");

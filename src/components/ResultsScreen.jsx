@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { supabase } from '../lib/supabaseClient';
-import { FaRedo, FaClipboardList } from 'react-icons/fa';
-import Spinner from './Spinner';
-import ErrorMessage from './ErrorMessage';
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { supabase } from "../lib/supabaseClient";
+import { FaRedo, FaClipboardList } from "react-icons/fa";
+import Spinner from "./Spinner";
+import ErrorMessage from "./ErrorMessage";
 
 const ResultsScreen = () => {
   const { sessionId } = useParams();
@@ -12,7 +12,7 @@ const ResultsScreen = () => {
   const [sessionDetails, setSessionDetails] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [userName, setUserName] = useState('');
+  const [userName, setUserName] = useState("");
 
   useEffect(() => {
     if (!sessionId) {
@@ -26,39 +26,48 @@ const ResultsScreen = () => {
       setError(null);
       try {
         const { data, error: sessionError } = await supabase
-          .from('user_sessions')
-          .select(`
+          .from("user_sessions")
+          .select(
+            `
             score_achieved,
             total_questions_in_session,
             category_selection,
             ended_at,
             user_id,
             profiles ( full_name )
-          `)
-          .eq('id', sessionId)
+          `
+          )
+          .eq("id", sessionId)
           .single();
 
         if (sessionError) {
-          console.log(`sessionError`, sessionError);
-          throw new Error(`Failed to load session results. Please check your connection or try again. (Details: ${sessionError.message})`);
+          console.error(`sessionError`, sessionError);
+          throw new Error(
+            `Failed to load session results. Please check your connection or try again. (Details: ${sessionError.message})`
+          );
         }
         if (!data) {
-          throw new Error('Could not find results for this session. The session may not exist or has been removed.');
+          throw new Error(
+            "Could not find results for this session. The session may not exist or has been removed."
+          );
         }
-        console.log(`sessionDetails`, data);
         setSessionDetails(data);
-        
+
         if (data.profiles && data.profiles.full_name) {
-          setUserName(data.profiles.full_name.trim().split(/\s+/)[1] || 'User');
+          setUserName(data.profiles.full_name.trim().split(/\s+/)[1] || "User");
         } else {
           // Fallback if profile or name is not available
-          const { data: { user } } = await supabase.auth.getUser();
-          setUserName(user?.email?.split('@')[0] || 'User');
+          const {
+            data: { user },
+          } = await supabase.auth.getUser();
+          setUserName(user?.email?.split("@")[0] || "User");
         }
-
       } catch (err) {
         console.error("Error fetching session results:", err);
-        setError(err.message || 'An unexpected error occurred while loading your results. Please try again.');
+        setError(
+          err.message ||
+            "An unexpected error occurred while loading your results. Please try again."
+        );
       } finally {
         setIsLoading(false);
       }
@@ -89,7 +98,7 @@ const ResultsScreen = () => {
       <div className="flex flex-col justify-center items-center min-h-screen bg-background p-4">
         <ErrorMessage message={error} />
         <button
-          onClick={() => navigate('/')}
+          onClick={() => navigate("/")}
           className="mt-6 bg-accent hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75"
         >
           Go to Homepage
@@ -105,7 +114,7 @@ const ResultsScreen = () => {
       <div className="flex flex-col justify-center items-center min-h-screen bg-background p-4 text-text-primary">
         <ErrorMessage message="Session results are not available or could not be displayed. Please try returning to the dashboard." />
         <button
-          onClick={() => navigate('/')}
+          onClick={() => navigate("/")}
           className="mt-6 bg-accent hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75"
         >
           Go to Homepage
@@ -114,8 +123,16 @@ const ResultsScreen = () => {
     );
   }
 
-  const { score_achieved, total_questions_in_session, category_selection, ended_at } = sessionDetails;
-  const percentage = total_questions_in_session > 0 ? Math.round((score_achieved / total_questions_in_session) * 100) : 0;
+  const {
+    score_achieved,
+    total_questions_in_session,
+    category_selection,
+    ended_at,
+  } = sessionDetails;
+  const percentage =
+    total_questions_in_session > 0
+      ? Math.round((score_achieved / total_questions_in_session) * 100)
+      : 0;
   const scoreMessage = getScoreMessage(percentage);
 
   return (
@@ -126,7 +143,7 @@ const ResultsScreen = () => {
             Session Complete!
           </h1>
           <p className="text-lg text-text-secondary">
-            Here's how you performed in {category_selection || 'the test'}.
+            Here's how you performed in {category_selection || "the test"}.
           </p>
         </div>
 
@@ -157,11 +174,15 @@ const ResultsScreen = () => {
           <div className="grid grid-cols-2 gap-4 text-sm text-text-secondary">
             <div className="bg-green-100 border border-green-300 rounded-lg p-3 shadow">
               <div className="font-semibold text-green-700">Correct</div>
-              <div className="text-2xl font-bold text-green-600">{score_achieved}</div>
+              <div className="text-2xl font-bold text-green-600">
+                {score_achieved}
+              </div>
             </div>
             <div className="bg-red-100 border border-red-300 rounded-lg p-3 shadow">
               <div className="font-semibold text-red-700">Incorrect</div>
-              <div className="text-2xl font-bold text-red-600">{total_questions_in_session - score_achieved}</div>
+              <div className="text-2xl font-bold text-red-600">
+                {total_questions_in_session - score_achieved}
+              </div>
             </div>
           </div>
         </div>
@@ -175,7 +196,7 @@ const ResultsScreen = () => {
             Review Answers
           </button>
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate("/")}
             className="border-2 border-accent text-accent hover:bg-orange-100 hover:border-orange-600 font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-75"
           >
             <FaRedo />
