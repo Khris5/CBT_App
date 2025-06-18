@@ -53,13 +53,16 @@ function QuestionCard({
     setGenerationError(null);
     try {
       const generatedText = await generateExplanation(question);
-      const { correctAnswerLetter, explanation, isAnswerCorrect } =
-        JSON.parse(generatedText);
+      const {
+        correctAnswerLetter,
+        explanation: newExplanation,
+        isAnswerCorrect,
+      } = JSON.parse(generatedText);
 
       // Update Supabase first
       const { error: updateExplanationError } = await supabaseAdmin
         .from("questions")
-        .update({ explanation: explanation })
+        .update({ explanation: newExplanation })
         .eq("id", id);
 
       if (updateExplanationError) {
@@ -67,7 +70,7 @@ function QuestionCard({
       }
       if (!isAnswerCorrect || false) {
         setLocalExplanation(
-          `**Sorry the marked answer (${correctanswerletter}) above is wrong. The correct answer is (${correctAnswerLetter})** \n\n${explanation}`
+          `**Sorry the marked answer (${correctanswerletter}) above is wrong. The correct answer is (${correctAnswerLetter})** \n\n${newExplanation}`
         );
         const { error: updateAnswerError } = await supabaseAdmin
           .from("questions")
@@ -80,12 +83,12 @@ function QuestionCard({
 
       // Update local state to show immediately
       if (isAnswerCorrect) {
-        setLocalExplanation(explanation);
+        setLocalExplanation(newExplanation);
       }
 
       // Notify parent component to update its state for persistence across re-renders
       if (onExplanationGenerated) {
-        onExplanationGenerated(id, explanation);
+        onExplanationGenerated(id, newExplanation);
       }
     } catch (err) {
       console.error("Failed to generate or save explanation:", err);
