@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ErrorMessage from "./ErrorMessage";
 import { supabaseAdmin } from "../lib/supabaseClient";
 import generateExplanation from "../lib/googleAPI";
@@ -27,7 +27,7 @@ function QuestionCard({
   const [generationError, setGenerationError] = useState(null);
   // Use the explanation from the parent first, but allow a local override once generated
   const [localExplanation, setLocalExplanation] = useState(explanation);
-
+  const prevCorrectAnswer = useRef(correctanswerletter);
   if (!question || !id) {
     return (
       <div className="bg-background p-6 rounded-lg shadow-md mb-6">
@@ -68,10 +68,11 @@ function QuestionCard({
       if (updateExplanationError) {
         throw new Error(updateExplanationError);
       }
-      if (!isAnswerCorrect || false) {
-        setLocalExplanation(
-          `**Sorry the marked answer (${correctanswerletter}) above is wrong. The correct answer is (${correctAnswerLetter})** \n\n${newExplanation}`
-        );
+      if (
+        (!isAnswerCorrect &&
+          prevCorrectAnswer.current !== correctAnswerLetter) ||
+        false
+      ) {
         const { error: updateAnswerError } = await supabaseAdmin
           .from("questions")
           .update({ correctanswerletter: correctAnswerLetter })
@@ -79,6 +80,9 @@ function QuestionCard({
         if (updateAnswerError) {
           throw new Error(updateAnswerError);
         }
+        setLocalExplanation(
+          `**Sorry the marked answer above (${prevCorrectAnswer.current}) is wrong. The correct answer is (${correctAnswerLetter})** \n\n${newExplanation}`
+        );
       }
 
       // Update local state to show immediately
