@@ -5,7 +5,7 @@ import QuestionCard from "./QuestionCard";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
-
+import { stillInSession } from "../utils/SessionStatus";
 // Helper to convert object options {A: "text", B: "text"} to array ["text", "text"]
 // preserving order A, B, C, D etc.
 const transformOptionsToArray = (optionsObject) => {
@@ -39,7 +39,7 @@ const ReviewScreen = () => {
         const { data: sessionData, error: sessionError } = await supabase
           .from("user_sessions")
           .select(
-            "score_achieved, total_questions_in_session, category_selection, started_at"
+            "score_achieved, total_questions_in_session, category_selection, started_at, ended_at,time_limit_seconds"
           )
           .eq("id", sessionId)
           .single();
@@ -48,6 +48,10 @@ const ReviewScreen = () => {
         if (!sessionData) throw new Error("Session not found.");
         setSessionDetails(sessionData);
 
+        if (stillInSession(sessionData)) {
+          navigate(`/session/${sessionId}`);
+          return;
+        }
         const { data: questionsData, error: questionsError } = await supabase
           .from("session_questions")
           .select(
@@ -84,9 +88,6 @@ const ReviewScreen = () => {
           explanation: sq.questions.explanation,
         }));
         setReviewedQuestions(processedQuestions);
-        // console.log(`questionsData`, questionsData);
-
-        // console.log(`reviewedQuestions`, reviewedQuestions);
       } catch (err) {
         console.error("Error fetching review data:", err);
         setError(err.message || "Failed to load review data.");
