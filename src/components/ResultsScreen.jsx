@@ -4,6 +4,7 @@ import { supabase } from "../lib/supabaseClient";
 import { FaRedo, FaClipboardList } from "react-icons/fa";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
+import { stillInSession } from "../utils/SessionStatus";
 
 const ResultsScreen = () => {
   const { sessionId } = useParams();
@@ -33,6 +34,8 @@ const ResultsScreen = () => {
             total_questions_in_session,
             category_selection,
             ended_at,
+            time_limit_seconds,
+            started_at,
             user_id,
             profiles ( full_name )
           `
@@ -51,8 +54,11 @@ const ResultsScreen = () => {
             "Could not find results for this session. The session may not exist or has been removed."
           );
         }
+        if (stillInSession(data)) {
+          navigate(`/session/${sessionId}`);
+          return;
+        }
         setSessionDetails(data);
-
         if (data.profiles && data.profiles.full_name) {
           setUserName(data.profiles.full_name.trim().split(/\s+/)[1] || "User");
         } else {
@@ -108,8 +114,6 @@ const ResultsScreen = () => {
   }
 
   if (!sessionDetails) {
-    // This case should ideally be covered by the error state if data fetching failed.
-    // Or it might mean the session ID was valid but no data returned, which is an edge case.
     return (
       <div className="flex flex-col justify-center items-center min-h-screen bg-background p-4 text-text-primary">
         <ErrorMessage message="Session results are not available or could not be displayed. Please try returning to the dashboard." />

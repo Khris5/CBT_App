@@ -5,7 +5,7 @@ import Timer from "./Timer";
 import QuestionCard from "./QuestionCard";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
-
+import { stillInSession } from "../utils/SessionStatus";
 // Helper to transform options from DB object to array for QuestionCard
 const transformOptionsToArray = (optionsObject) => {
   if (!optionsObject || typeof optionsObject !== "object") return [];
@@ -79,7 +79,7 @@ const PracticeSession = () => {
         const { data: sessionData, error: sessionError } = await supabase
           .from("user_sessions")
           .select(
-            "time_limit_seconds, started_at, category_selection, total_questions_in_session, user_id"
+            "time_limit_seconds, started_at, ended_at, category_selection, total_questions_in_session, user_id"
           )
           .eq("id", sessionId)
           .single();
@@ -92,6 +92,10 @@ const PracticeSession = () => {
           throw new Error(
             "Could not find the session details. It might have been removed or the link is incorrect."
           );
+        if (!stillInSession(sessionData)) {
+          navigate(`/results/${sessionId}`);
+          return;
+        }
         setSessionConfig(sessionData);
 
         // 2. Fetch questions for the session
