@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { supabase } from "../lib/supabaseClient";
 import QuestionCard from "./QuestionCard";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
 import { stillInSession } from "../utils/SessionStatus";
+import {
+  userSessionQuery_supabase,
+  sessionQuestionsQuery_supabase,
+} from "../supabase/SupabaseQueries";
+
 // Helper to convert object options {A: "text", B: "text"} to array ["text", "text"]
 // preserving order A, B, C, D etc.
 const transformOptionsToArray = (optionsObject) => {
@@ -36,14 +40,9 @@ const ReviewScreen = () => {
       setError(null);
       setCurrentQuestionIndex(0); // Reset index when new session is loaded
       try {
-        const { data: sessionData, error: sessionError } = await supabase
-          .from("user_sessions")
-          .select(
-            "score_achieved, total_questions_in_session, category_selection, started_at, ended_at,time_limit_seconds"
-          )
-          .eq("id", sessionId)
-          .single();
-
+        const { sessionData, sessionError } = await userSessionQuery_supabase(
+          sessionId
+        );
         if (sessionError) throw sessionError;
         if (!sessionData) throw new Error("Session not found.");
         setSessionDetails(sessionData);
@@ -52,31 +51,13 @@ const ReviewScreen = () => {
           navigate(`/session/${sessionId}`);
           return;
         }
-        const { data: questionsData, error: questionsError } = await supabase
-          .from("session_questions")
-          .select(
-            `
-            order_in_session,
-            user_answer_letter,
-            is_correct,
-            question_id,
-            questions (
-              questiontext,
-              options, 
-              correctanswerletter,
-              explanation,
-              category
-            )
-          `
-          )
-          .eq("user_session_id", sessionId)
-          .order("order_in_session", { ascending: true });
-
+        const { sessionQuestionsData, questionsError } =
+          await sessionQuestionsQuery_supabase(sessionId);
         if (questionsError) throw questionsError;
-        if (!questionsData)
+        if (!sessionQuestionsData)
           throw new Error("No questions found for this session.");
 
-        const processedQuestions = questionsData.map((sq) => ({
+        const processedQuestions = sessionQuestionsData.map((sq) => ({
           id: sq.question_id,
           orderInSession: sq.order_in_session,
           userAnswerLetter: sq.user_answer_letter,

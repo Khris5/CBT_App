@@ -1,6 +1,86 @@
 import { GoogleGenAI } from "@google/genai";
 
-async function generateExplanation(question) {
+export async function generateExplanations(questions) {
+  const schema = {
+    type: "array",
+    items: {
+      type: "object",
+      properties: {
+        id: {
+          type: "string",
+          description:
+            "The question id would be provided in the questions below. Output them as they are",
+        },
+        correctAnswerLetter: {
+          type: "string",
+          description: "The letter (A, B, C, or D) of the correct answer.",
+        },
+        explanation: {
+          type: "string",
+          description:
+            "A brief explanation, about 5 sentences, detailing why the correct answer is right and the others are wrong.",
+        },
+      },
+      required: ["id", "correctAnswerLetter", "explanation"],
+    },
+  };
+  const prompt = `
+    Evaluate these questions and textbook answers below . Provide your output in the JSON format specified. Textbook answers are stated by the book to be the right answer but it **may** not be accurate.
+
+    For correctAnswerLetter, Analyse the questons and the options and deduce the most accurate answer then output the letter (A,B,C,D) of the option you believe is correct.
+
+    For explanation, provide a brief explanation (~5 sentences) for why the correct answer is correct for the following multiple-choice question. Be sure to give a good explanation to help the user understand the question and answer better.
+    Focus on the core reasoning and avoid unnecessary jargon.
+
+    Note: In the explanation don't single out the textbook answer being wrong, just explain why the correct answer is correct.
+     Questions:
+    ${questions
+      .map(
+        (q, index) => `
+          ${index + 1}. ID: ${q.id}
+          Question: ${q.questiontext}
+          options: ${q.options
+            .map((opt, index) => `${String.fromCharCode(65 + index)}: ${opt}`)
+            .join("\n")}
+          Textbook Answer: ${q.correctanswerletter}
+    `
+      )
+      .join("\n")}
+  
+  `;
+
+  const ai = new GoogleGenAI({
+    apiKey: import.meta.env.VITE_GEMINI_AI_KEY,
+  });
+  const config = {
+    responseMimeType: "application/json",
+    responseSchema: schema,
+    systemInstruction: [
+      {
+        text: `You are a helpful medical/health education assistant.`,
+      },
+    ],
+  };
+  const model = "gemini-2.5-flash-preview-05-20";
+  const contents = prompt;
+
+  try {
+    const response = await ai.models.generateContent({
+      model,
+      config,
+      contents,
+    });
+    return response.text;
+  } catch (error) {
+    console.error("Error generating explanation from Google API:", error);
+    throw new Error(
+      error?.message ||
+        "Failed to generate explanation. The API may be busy or configured incorrectly."
+    );
+  }
+}
+
+export async function generateExplanationSingle(question) {
   const { questiontext, options, correctanswerletter } = question;
 
   const optionsString = options
@@ -76,5 +156,3 @@ async function generateExplanation(question) {
     );
   }
 }
-
-export default generateExplanation;

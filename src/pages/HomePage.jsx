@@ -4,10 +4,13 @@ import { useAuth } from "../contexts/AuthContext";
 import { supabase } from "../lib/supabaseClient";
 import ConfigScreen from "../components/ConfigScreen";
 import LoginPromptModal from "../components/Modals/LoginPromptModal";
-import { ShuffleArray } from "../utils/ShuffleArray";
 import validateQuestion from "../utils/ValidateQuestions";
 import Spinner from "../components/Spinner";
 import ErrorMessage from "../components/ErrorMessage";
+import {
+  createUserSession_supabase,
+  createSessionQuestions_supabase,
+} from "../supabase/SupabaseQueries";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -19,25 +22,31 @@ const HomePage = () => {
 
   const fetchAndPrepareQuestions = useCallback(
     async (category, numQuestions) => {
-      let query = supabase
-        .from("questions")
-        .select(
-          "id, questiontext, options, correctanswerletter, explanation, category"
-        );
+      let categories;
+      switch (category) {
+        case "Medicine Only":
+          categories = ["Medicine"];
+          break;
+        case "Surgery Only":
+          categories = ["Surgery"];
+          break;
+        case "General Only":
+          categories = ["General"];
+          break;
+        case "Combined":
+          categories = ["Medicine", "Surgery", "General"];
+          break;
+        default:
+          categories = null;
+      }
 
-      if (category === "Medicine Only")
-        query = query.eq("category", "Medicine");
-      else if (category === "Surgery Only")
-        query = query.eq("category", "Surgery");
-      else if (category === "General Only")
-        query = query.eq("category", "General");
-      else if (category === "Combined")
-        query = query.or(
-          "category.eq.Medicine,category.eq.Surgery,category.eq.General"
-        );
+      const { data: allMatchingQuestions, error: queryError } =
+        await supabase.rpc("get_random_questions", {
+          num_questions: numQuestions,
+          categories: categories,
+        });
 
-      const { data: allMatchingQuestions, error: queryError } = await query;
-
+      console.log("allMatchingQuestions", allMatchingQuestions);
       if (queryError)
         throw new Error(`Database query failed: ${queryError.message}`);
       if (!allMatchingQuestions || allMatchingQuestions.length === 0)
@@ -47,11 +56,7 @@ const HomePage = () => {
       if (validatedQuestions.length === 0)
         throw new Error("No valid questions found after filtering.");
 
-      const shuffledQuestions = ShuffleArray(validatedQuestions);
-      return shuffledQuestions.slice(
-        0,
-        Math.min(numQuestions, shuffledQuestions.length)
-      );
+      return validatedQuestions;
     },
     []
   );
@@ -74,18 +79,16 @@ const HomePage = () => {
         if (fetchedQuestions.length === 0) {
           throw new Error("No questions could be prepared for the session.");
         }
-
+        const userSessionsData = {
+          user_id: user.id,
+          category_selection: config.category,
+          time_limit_seconds: config.timeLimitMinutes * 60,
+          total_questions_in_session: fetchedQuestions.length,
+        };
         // 1. Create User Session
-        const { data: sessionData, error: sessionError } = await supabase
-          .from("user_sessions")
-          .insert({
-            user_id: user.id,
-            category_selection: config.category,
-            time_limit_seconds: config.timeLimitMinutes * 60,
-            total_questions_in_session: fetchedQuestions.length,
-          })
-          .select("id") // Select the new session ID
-          .single();
+        const { sessionData, sessionError } = await createUserSession_supabase(
+          userSessionsData
+        );
 
         if (sessionError)
           throw new Error(`Failed to create session: ${sessionError.message}`);
@@ -100,14 +103,12 @@ const HomePage = () => {
             user_session_id: newSessionId,
             question_id: question.id,
             order_in_session: index + 1,
-            // user_answer_letter and is_correct will be updated during/after the session
           })
         );
 
-        const { error: sqError } = await supabase
-          .from("session_questions")
-          .insert(sessionQuestionsToInsert);
-
+        const { sqError } = await createSessionQuestions_supabase(
+          sessionQuestionsToInsert
+        );
         if (sqError) {
           // Attempt to clean up the created user_session if questions fail
           await supabase.from("user_sessions").delete().eq("id", newSessionId);

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { supabase } from "../lib/supabaseClient";
 import { FaRedo, FaClipboardList } from "react-icons/fa";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
 import { stillInSession } from "../utils/SessionStatus";
+import { userSessionQuery_supabase } from "../supabase/SupabaseQueries";
 
 const ResultsScreen = () => {
   const { sessionId } = useParams();
@@ -26,23 +26,8 @@ const ResultsScreen = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const { data, error: sessionError } = await supabase
-          .from("user_sessions")
-          .select(
-            `
-            score_achieved,
-            total_questions_in_session,
-            category_selection,
-            ended_at,
-            time_limit_seconds,
-            started_at,
-            user_id,
-            profiles ( full_name )
-          `
-          )
-          .eq("id", sessionId)
-          .single();
-
+        const { sessionData: data, sessionError } =
+          await userSessionQuery_supabase(sessionId);
         if (sessionError) {
           console.error(`sessionError`, sessionError);
           throw new Error(
@@ -59,15 +44,7 @@ const ResultsScreen = () => {
           return;
         }
         setSessionDetails(data);
-        if (data.profiles && data.profiles.full_name) {
-          setUserName(data.profiles.full_name.trim().split(/\s+/)[1] || "User");
-        } else {
-          // Fallback if profile or name is not available
-          const {
-            data: { user },
-          } = await supabase.auth.getUser();
-          setUserName(user?.email?.split("@")[0] || "User");
-        }
+        setUserName(data?.profiles?.full_name.trim().split(/\s+/)[1] || "User");
       } catch (err) {
         console.error("Error fetching session results:", err);
         setError(
