@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import ErrorMessage from "./ErrorMessage";
 import { supabaseAdmin } from "../lib/supabaseClient";
-import generateExplanation from "../lib/googleAPI";
+import { generateExplanationSingle } from "../lib/googleAPI";
 import Spinner from "./Spinner";
 import { MarkdownRenderer } from "../utils/MarkdownRenderer";
 // Helper to convert index (0, 1, 2) to letter ('A', 'B', 'C')
@@ -52,37 +52,33 @@ function QuestionCard({
     setIsGenerating(true);
     setGenerationError(null);
     try {
-      const generatedText = await generateExplanation(question);
+      const generatedText = await generateExplanationSingle(question);
       const {
         correctAnswerLetter,
         explanation: newExplanation,
         isAnswerCorrect,
       } = JSON.parse(generatedText);
+      const updateData = { explanation: newExplanation, is_edited: true };
 
-      // Update Supabase first
-      const { error: updateExplanationError } = await supabaseAdmin
-        .from("questions")
-        .update({ explanation: newExplanation })
-        .eq("id", id);
-
-      if (updateExplanationError) {
-        throw new Error(updateExplanationError);
-      }
       if (
         (!isAnswerCorrect &&
           prevCorrectAnswer.current !== correctAnswerLetter) ||
         false
       ) {
-        const { error: updateAnswerError } = await supabaseAdmin
-          .from("questions")
-          .update({ correctanswerletter: correctAnswerLetter })
-          .eq("id", id);
-        if (updateAnswerError) {
-          throw new Error(updateAnswerError);
-        }
         setLocalExplanation(
           `**Sorry the marked answer above (${prevCorrectAnswer.current}) is wrong. The correct answer is (${correctAnswerLetter})** \n\n${newExplanation}`
         );
+        updateData.correctanswerletter = correctAnswerLetter;
+      }
+      console.log(updateData);
+      // Update Supabase first
+      const { error: updateExplanationError } = await supabaseAdmin;
+      // .from("questions")
+      // .update(updateData)
+      // .eq("id", id);
+
+      if (updateExplanationError) {
+        throw new Error(updateExplanationError);
       }
 
       // Update local state to show immediately

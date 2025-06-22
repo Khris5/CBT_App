@@ -1,11 +1,17 @@
 import { useEffect, useCallback, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { supabase } from "../lib/supabaseClient";
 import Timer from "./Timer";
 import QuestionCard from "./QuestionCard";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
 import { stillInSession } from "../utils/SessionStatus";
+import { processSessionQuestionsInBackground } from "../utils/BackgrondProcess";
+import {
+  userSessionQuery_supabase,
+  sessionQuestionsQuery_supabase,
+  updateSessionQuestions_supabase,
+  updateUserSessions_supabase,
+} from "../supabase/SupabaseQueries";
 // Helper to transform options from DB object to array for QuestionCard
 const transformOptionsToArray = (optionsObject) => {
   if (!optionsObject || typeof optionsObject !== "object") return [];
@@ -27,6 +33,7 @@ const PracticeSession = () => {
   const [error, setError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sessionEndedRef = useRef(false);
+  const [backgroundController, setBackgroundController] = useState(null);
 
   // Load initial state (answers, currentIndex) from localStorage
   useEffect(() => {
@@ -76,13 +83,9 @@ const PracticeSession = () => {
       setError(null);
       try {
         // 1. Fetch session configuration
-        const { data: sessionData, error: sessionError } = await supabase
-          .from("user_sessions")
-          .select(
-            "time_limit_seconds, started_at, ended_at, category_selection, total_questions_in_session, user_id"
-          )
-          .eq("id", sessionId)
-          .single();
+        const { sessionData, sessionError } = await userSessionQuery_supabase(
+          sessionId
+        );
 
         if (sessionError)
           throw new Error(
@@ -99,14 +102,8 @@ const PracticeSession = () => {
         setSessionConfig(sessionData);
 
         // 2. Fetch questions for the session
-        const { data: sessionQuestionsData, error: questionsError } =
-          await supabase
-            .from("session_questions")
-            .select(
-              "id, question_id, order_in_session, questions (id, questiontext, options, correctanswerletter, explanation)"
-            )
-            .eq("user_session_id", sessionId)
-            .order("order_in_session", { ascending: true });
+        const { sessionQuestionsData, questionsError } =
+          await sessionQuestionsQuery_supabase(sessionId);
 
         if (questionsError)
           throw new Error(
@@ -124,6 +121,21 @@ const PracticeSession = () => {
         }));
 
         setQuestionsList(formattedQuestions);
+
+        const controller = new AbortController();
+        setBackgroundController(controller);
+
+        const questions = sessionQuestionsData.map((sq) => sq.questions);
+        console.log("Questions:", questions);
+        processSessionQuestionsInBackground(questions, controller.signal).catch(
+          (error) => {
+            if (error.name === "AbortError") {
+              console.log("Background processing cancelled");
+            } else {
+              console.error("Background question correction failed:", error);
+            }
+          }
+        );
       } catch (err) {
         console.error("Error in fetchSessionData:", err);
         setError(
@@ -138,6 +150,14 @@ const PracticeSession = () => {
     fetchSessionData();
   }, [sessionId]);
 
+  useEffect(() => {
+    return () => {
+      if (backgroundController) {
+        backgroundController.abort();
+        console.log("Cancelled background processing due to component unmount");
+      }
+    };
+  }, [backgroundController]);
   const handleAnswerChange = useCallback(
     (questionId, selectedLetter) => {
       setUserAnswers((prevAnswers) => ({
@@ -154,7 +174,10 @@ const PracticeSession = () => {
     sessionEndedRef.current = true;
     setIsSubmitting(true);
     setError(null); // Clear previous submission errors
-
+    if (backgroundController) {
+      backgroundController.abort();
+      setBackgroundController(null);
+    }
     try {
       let score = 0;
       const sessionQuestionUpdates = questionsList.map((q) => {
@@ -174,23 +197,19 @@ const PracticeSession = () => {
       });
 
       // Update session_questions with answers and correctness
-      const { error: updateError } = await supabase
-        .from("session_questions")
-        .upsert(sessionQuestionUpdates, { onConflict: "id" });
-
+      const { updateError } = await updateSessionQuestions_supabase(
+        sessionQuestionUpdates
+      );
       if (updateError)
         throw new Error(
           `Failed to save your answers. Please try submitting again. (Details: ${updateError.message})`
         );
 
       // Update user_sessions with score
-      const { error: sessionUpdateError } = await supabase
-        .from("user_sessions")
-        .update({
-          score_achieved: score,
-          ended_at: new Date().toISOString(),
-        })
-        .eq("id", sessionId);
+      const { sessionUpdateError } = await updateUserSessions_supabase(
+        score,
+        sessionId
+      );
 
       if (sessionUpdateError)
         throw new Error(
