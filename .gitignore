@@ -26,4 +26,4 @@ dist-ssr
 *.sln
 *.sw?
 
-scripts/migrate_questions.cjs
+scripts/migrate_questions.js

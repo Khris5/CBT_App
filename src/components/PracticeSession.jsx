@@ -126,7 +126,6 @@ const PracticeSession = () => {
         setBackgroundController(controller);
 
         const questions = sessionQuestionsData.map((sq) => sq.questions);
-        console.log("Questions:", questions);
         processSessionQuestionsInBackground(questions, controller.signal).catch(
           (error) => {
             if (error.name === "AbortError") {
