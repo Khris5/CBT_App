@@ -10,10 +10,10 @@ const indexToLetter = (index) => String.fromCharCode(65 + index);
 function QuestionCard({
   question,
   questionNumber,
-  userAnswer, // Expected to be 'A', 'B', 'C', or undefined
-  onAnswerChange, // Only used in practice mode
-  isReviewMode = false, // Flag to differentiate modes
-  onExplanationGenerated, // Callback to update parent state
+  userAnswer,
+  onAnswerChange,
+  isReviewMode = false,
+  onExplanationGenerated,
 }) {
   const {
     id,
@@ -70,12 +70,11 @@ function QuestionCard({
         );
         updateData.correctanswerletter = correctAnswerLetter;
       }
-      console.log(updateData);
       // Update Supabase first
-      const { error: updateExplanationError } = await supabaseAdmin;
-      // .from("questions")
-      // .update(updateData)
-      // .eq("id", id);
+      const { error: updateExplanationError } = await supabaseAdmin
+        .from("questions")
+        .update(updateData)
+        .eq("id", id);
 
       if (updateExplanationError) {
         throw new Error(updateExplanationError);
@@ -150,7 +149,7 @@ function QuestionCard({
                 labelTextClasses = "text-green-800 font-bold";
               } else {
                 optionStateClasses =
-                  "bg-red-50 border-red-500 ring-1 ring-red-500";
+                  "bg-red-50 border-red-600 ring-2 ring-red-600";
                 labelTextClasses = "text-red-800 font-medium";
               }
             } else if (isCorrect) {
