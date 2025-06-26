@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { supabase } from "../lib/supabaseClient";
 import { useNavigate } from "react-router-dom";
@@ -24,6 +24,7 @@ const DashboardPage = () => {
   const [totalSessions, setTotalSessions] = useState(0);
   const [isLoadingPage, setIsLoadingPage] = useState(false);
   const SESSIONS_PER_PAGE = 10;
+  const [recentAverage, setRecentAverage] = useState(0);
 
   // Calculate total pages
   const totalPages = Math.ceil(totalSessions / SESSIONS_PER_PAGE);
@@ -41,10 +42,7 @@ const DashboardPage = () => {
     setFetchError(null);
 
     try {
-      // Calculate offset for pagination
       const offset = (page - 1) * SESSIONS_PER_PAGE;
-
-      // Fetch sessions with pagination
       const { data, error, count } = await supabase
         .from("user_sessions")
         .select(
@@ -56,6 +54,25 @@ const DashboardPage = () => {
         .range(offset, offset + SESSIONS_PER_PAGE - 1);
 
       if (error) throw error;
+
+      if (page === 1) {
+        if (data && data.length > 0) {
+          const totalPercentageSum = data.reduce((acc, session) => {
+            if (session.total_questions_in_session > 0) {
+              return (
+                acc +
+                session.score_achieved / session.total_questions_in_session
+              );
+            }
+            return acc;
+          }, 0);
+          const average = Math.round((totalPercentageSum / data.length) * 100);
+          setRecentAverage(average);
+        } else {
+          // If the user has no sessions at all
+          setRecentAverage(0);
+        }
+      }
 
       setPastSessions(data || []);
       setTotalSessions(count || 0);
@@ -70,7 +87,9 @@ const DashboardPage = () => {
   };
 
   useEffect(() => {
-    fetchSessions(1);
+    if (user) {
+      fetchSessions(1);
+    }
   }, [user]);
 
   const formatDate = (dateString) => {
@@ -97,18 +116,6 @@ const DashboardPage = () => {
     }
   };
 
-  // Calculate overall statistics (based on all sessions, not just current page)
-  const overallAverageScore = useMemo(() => {
-    if (pastSessions.length === 0) return 0;
-    const totalScore = pastSessions.reduce(
-      (acc, session) =>
-        acc + session.score_achieved / session.total_questions_in_session,
-      0
-    );
-    return Math.round((totalScore / pastSessions.length) * 100);
-  }, [pastSessions]);
-
-  // Pagination component
   const PaginationControls = () => {
     if (totalPages <= 1) return null;
 
@@ -182,7 +189,9 @@ const DashboardPage = () => {
     );
   };
 
+  // No changes to loading/error/profile states
   if (authLoading) {
+    // ...
     return (
       <div className="flex flex-col justify-center items-center min-h-screen bg-background text-text-primary">
         <Spinner size="h-16 w-16" />
@@ -192,6 +201,7 @@ const DashboardPage = () => {
   }
 
   if (!user || !profile) {
+    // ...
     return (
       <div className="flex flex-col justify-center items-center min-h-screen bg-background p-4">
         <ErrorMessage message="Could not load user profile. Please try logging out and logging in again." />
@@ -211,8 +221,9 @@ const DashboardPage = () => {
         User Dashboard
       </h1>
 
-      {/* User Information Section */}
+      {/* User Information Section (no changes) */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-8">
+        {/* ... */}
         <h2 className="text-2xl font-semibold text-text-primary mb-4">
           My Profile
         </h2>
@@ -235,7 +246,7 @@ const DashboardPage = () => {
         </div>
       </div>
 
-      {/* Summary Statistics Section */}
+      {/* --- MODIFIED: Summary Statistics Section --- */}
       {!isLoadingSessions && !fetchError && totalSessions > 0 && (
         <div className="bg-white shadow-md rounded-lg p-6 mb-8">
           <h2 className="text-2xl font-semibold text-text-primary mb-4 flex items-center">
@@ -252,17 +263,16 @@ const DashboardPage = () => {
             </div>
             <div className="bg-gray-100 p-4 rounded-md shadow-sm border border-gray-200">
               <p className="text-sm text-gray-700 font-medium">
-                Current Page Average Score
+                Recent Average Score (Last {Math.min(10, totalSessions)})
               </p>
               <p className="text-2xl font-bold text-text-primary">
-                {overallAverageScore}%
+                {recentAverage}%
               </p>
             </div>
           </div>
         </div>
       )}
 
-      {/* Past Practice Sessions Section */}
       <div className="bg-white shadow-md rounded-lg p-6">
         <h2 className="text-2xl font-semibold text-text-primary mb-4">
           Past Practice Sessions
@@ -292,7 +302,6 @@ const DashboardPage = () => {
           )}
           {!isLoadingSessions && !fetchError && pastSessions.length > 0 && (
             <>
-              {/* Loading overlay for page changes */}
               <div className="relative">
                 {isLoadingPage && (
                   <div className="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center z-10 rounded-lg">
@@ -352,7 +361,6 @@ const DashboardPage = () => {
                 </div>
               </div>
 
-              {/* Pagination Controls */}
               <PaginationControls />
             </>
           )}
