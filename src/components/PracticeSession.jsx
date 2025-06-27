@@ -20,6 +20,19 @@ const transformOptionsToArray = (optionsObject) => {
     .map(([, value]) => value);
 };
 
+const fetchQuestionData = async (sessionId) => {
+  const { sessionQuestionsData, questionsError } =
+    await sessionQuestionsQuery_supabase(sessionId);
+  if (questionsError)
+    throw new Error(
+      `Failed to load questions for this session. Please try refreshing. (Details: ${questionsError.message})`
+    );
+  if (!sessionQuestionsData || sessionQuestionsData.length === 0)
+    throw new Error(
+      "No questions are available for this session. Please check the session setup."
+    );
+  return sessionQuestionsData;
+};
 const PracticeSession = () => {
   const { sessionId } = useParams();
   const navigate = useNavigate();
@@ -55,7 +68,6 @@ const PracticeSession = () => {
   // Save current state (answers, currentIndex) to localStorage
   useEffect(() => {
     if (sessionId && !isLoading) {
-      // Avoid saving during initial load before data is ready
       try {
         localStorage.setItem(
           `practiceState_${sessionId}`,
@@ -102,17 +114,7 @@ const PracticeSession = () => {
         setSessionConfig(sessionData);
 
         // 2. Fetch questions for the session
-        const { sessionQuestionsData, questionsError } =
-          await sessionQuestionsQuery_supabase(sessionId);
-
-        if (questionsError)
-          throw new Error(
-            `Failed to load questions for this session. Please try refreshing. (Details: ${questionsError.message})`
-          );
-        if (!sessionQuestionsData || sessionQuestionsData.length === 0)
-          throw new Error(
-            "No questions are available for this session. Please check the session setup."
-          );
+        const sessionQuestionsData = await fetchQuestionData(sessionId);
         const formattedQuestions = sessionQuestionsData.map((sq) => ({
           ...sq.questions,
           options: transformOptionsToArray(sq.questions.options), // Ensure options are an array
@@ -170,6 +172,15 @@ const PracticeSession = () => {
   const handleSessionSubmit = useCallback(async () => {
     if (sessionEndedRef.current || !questionsList.length || !sessionConfig)
       return;
+    const sessionQuestionsData = await fetchQuestionData(sessionId);
+    const formattedQuestions = sessionQuestionsData.map((sq) => ({
+      ...sq.questions,
+      options: transformOptionsToArray(sq.questions.options), // Ensure options are an array
+      session_question_id: sq.id,
+      order_in_session: sq.order_in_session,
+    }));
+
+    setQuestionsList(formattedQuestions);
     sessionEndedRef.current = true;
     setIsSubmitting(true);
     setError(null); // Clear previous submission errors
