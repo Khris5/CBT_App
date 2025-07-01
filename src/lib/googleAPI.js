@@ -1,29 +1,144 @@
 import { GoogleGenAI } from "@google/genai";
+const PRO_MODEL = "gemini-2.5-pro";
+const FLASH_MODEL = "gemini-2.5-flash-preview-05-20";
 
-export async function generateExplanations(questions) {
-  const schema = {
-    type: "array",
-    items: {
-      type: "object",
-      properties: {
-        id: {
-          type: "string",
-          description:
-            "The question id would be provided in the questions below. Output them as they are",
-        },
-        correctAnswerLetter: {
-          type: "string",
-          description: "The letter (A, B, C, or D) of the correct answer.",
-        },
-        explanation: {
-          type: "string",
-          description:
-            "A brief explanation, about 5 sentences, detailing why the correct answer is right and the others are wrong.",
-        },
+const schema = {
+  type: "array",
+  items: {
+    type: "object",
+    properties: {
+      id: {
+        type: "string",
+        description:
+          "The question id would be provided in the questions below. Output them as they are",
       },
-      required: ["id", "correctAnswerLetter", "explanation"],
+      correctAnswerLetter: {
+        type: "string",
+        description: "The letter (A, B, C, or D) of the correct answer.",
+      },
+      explanation: {
+        type: "string",
+        description:
+          "A brief explanation, about 5 sentences, detailing why the correct answer is right and the others are wrong.",
+      },
     },
-  };
+    required: ["id", "correctAnswerLetter", "explanation"],
+  },
+};
+const configFor2_5Pro = {
+  thinkingConfig: {
+    thinkingBudget: -1,
+  },
+  responseMimeType: "application/json",
+  responseSchema: schema,
+  systemInstruction: [
+    {
+      text: `You are a helpful medical/health education assistant.`,
+    },
+  ],
+};
+const configFor2_5Flash = {
+  responseMimeType: "application/json",
+  responseSchema: schema,
+  systemInstruction: [
+    {
+      text: `You are a helpful medical/health education assistant.`,
+    },
+  ],
+};
+const schema_single = {
+  type: "object",
+  properties: {
+    isAnswerCorrect: {
+      type: "boolean",
+      description: "Whether the textbook's answer is correct.",
+    },
+    correctAnswerLetter: {
+      type: "string",
+      description: "Then letter (A, B, C, or D) of the correct answer.",
+    },
+    explanation: {
+      type: "string",
+      description:
+        "A brief explanation, about 5 sentences, detailing why the correct answer is right and the others are wrong.",
+    },
+  },
+  required: ["isAnswerCorrect", "correctAnswerLetter", "explanation"],
+};
+const configFor2_5Flash_single = {
+  responseMimeType: "application/json",
+  responseSchema: schema_single,
+  systemInstruction: [
+    {
+      text: `You are a helpful medical/health education assistant.`,
+    },
+  ],
+};
+const configFor2_5Pro_single = {
+  thinkingConfig: {
+    thinkingBudget: -1,
+  },
+  responseMimeType: "application/json",
+  responseSchema: schema_single,
+  systemInstruction: [
+    {
+      text: `You are a helpful medical/health education assistant.`,
+    },
+  ],
+};
+
+async function generateWithFallback({
+  prompt,
+  proConfig,
+  flashConfig,
+  abortSignal,
+}) {
+  const ai = new GoogleGenAI({
+    apiKey: import.meta.env.VITE_GEMINI_AI_KEY,
+  });
+
+  // --- ATTEMPT 1: PRO MODEL ---
+  try {
+    console.log(`[API] Attempting request with Primary Model: ${PRO_MODEL}`);
+    const proResponse = await ai.models.generateContent({
+      model: PRO_MODEL,
+      config: proConfig,
+      contents: prompt,
+      abortSignal,
+    });
+    console.log(`[API] ✅ Success with Primary Model: ${PRO_MODEL}`);
+    return proResponse.text;
+  } catch (proError) {
+    if (abortSignal?.aborted) {
+      throw new Error("API call cancelled by user.");
+    }
+    console.warn(
+      `[API] ⚠️ Primary Model (${PRO_MODEL}) failed. Error: ${proError.message}`
+    );
+    console.log(`[API] Triggering fallback to: ${FLASH_MODEL}`);
+
+    // --- ATTEMPT 2: FLASH MODEL (FALLBACK) ---
+    try {
+      const flashResponse = await ai.models.generateContent({
+        model: FLASH_MODEL,
+        config: flashConfig,
+        contents: prompt,
+        abortSignal,
+      });
+      console.log(`[API] ✅ Success with Fallback Model: ${FLASH_MODEL}`);
+      return flashResponse.text;
+    } catch (flashError) {
+      console.error(
+        `[API] ❌ Fallback Model (${FLASH_MODEL}) also failed. Error: ${flashError.message}`
+      );
+      throw new Error(
+        `API call failed for both models. Last error: ${flashError.message}`
+      );
+    }
+  }
+}
+
+export async function generateExplanations(questions, abortSignal) {
   const prompt = `
     Evaluate these questions and textbook answers below . Provide your output in the JSON format specified. Textbook answers are stated by the book to be the right answer but it **may** not be accurate.
 
@@ -40,44 +155,19 @@ export async function generateExplanations(questions) {
           ${index + 1}. ID: ${q.id}
           Question: ${q.questiontext}
           options: ${q.options
-            .map((opt, index) => `${String.fromCharCode(65 + index)}: ${opt}`)
+            .map((opt, i) => `${String.fromCharCode(65 + i)}: ${opt}`)
             .join("\n")}
           Textbook Answer: ${q.correctanswerletter}
     `
       )
       .join("\n")}
-  
   `;
-
-  const ai = new GoogleGenAI({
-    apiKey: import.meta.env.VITE_GEMINI_AI_KEY,
+  return generateWithFallback({
+    prompt,
+    proConfig: configFor2_5Pro,
+    flashConfig: configFor2_5Flash,
+    abortSignal,
   });
-  const config = {
-    responseMimeType: "application/json",
-    responseSchema: schema,
-    systemInstruction: [
-      {
-        text: `You are a helpful medical/health education assistant.`,
-      },
-    ],
-  };
-  const model = "gemini-2.5-flash-preview-05-20";
-  const contents = prompt;
-
-  try {
-    const response = await ai.models.generateContent({
-      model,
-      config,
-      contents,
-    });
-    return response.text;
-  } catch (error) {
-    console.error("Error generating explanation from Google API:", error);
-    throw new Error(
-      error?.message ||
-        "Failed to generate explanation. The API may be busy or configured incorrectly."
-    );
-  }
 }
 
 export async function generateExplanationSingle(question) {
@@ -86,26 +176,6 @@ export async function generateExplanationSingle(question) {
   const optionsString = options
     .map((opt, index) => `${String.fromCharCode(65 + index)}: ${opt}`)
     .join("\n");
-
-  const schema = {
-    type: "object",
-    properties: {
-      isAnswerCorrect: {
-        type: "boolean",
-        description: "Whether the textbook's answer is correct.",
-      },
-      correctAnswerLetter: {
-        type: "string",
-        description: "Then letter (A, B, C, or D) of the correct answer.",
-      },
-      explanation: {
-        type: "string",
-        description:
-          "A brief explanation, about 5 sentences, detailing why the correct answer is right and the others are wrong.",
-      },
-    },
-    required: ["isAnswerCorrect", "correctAnswerLetter", "explanation"],
-  };
   const prompt = `
     Evaluate the question below and the answer from the textbook. Provide your output in the JSON format specified. 
 
@@ -126,33 +196,9 @@ export async function generateExplanationSingle(question) {
     Textbook Answer: ${correctanswerletter}
   `;
 
-  const ai = new GoogleGenAI({
-    apiKey: import.meta.env.VITE_GEMINI_AI_KEY,
+  return generateWithFallback({
+    prompt,
+    proConfig: configFor2_5Pro_single,
+    flashConfig: configFor2_5Flash_single,
   });
-  const config = {
-    responseMimeType: "application/json",
-    responseSchema: schema,
-    systemInstruction: [
-      {
-        text: `You are a helpful medical/health education assistant.`,
-      },
-    ],
-  };
-  const model = "gemini-2.5-flash-preview-05-20";
-  const contents = prompt;
-
-  try {
-    const response = await ai.models.generateContent({
-      model,
-      config,
-      contents,
-    });
-    return response.text;
-  } catch (error) {
-    console.error("Error generating explanation from Google API:", error);
-    throw new Error(
-      error?.message ||
-        "Failed to generate explanation. The API may be busy or configured incorrectly."
-    );
-  }
 }
