@@ -46,7 +46,6 @@ const HomePage = () => {
           categories: categories,
         });
 
-      console.log("allMatchingQuestions", allMatchingQuestions);
       if (queryError)
         throw new Error(`Database query failed: ${queryError.message}`);
       if (!allMatchingQuestions || allMatchingQuestions.length === 0)

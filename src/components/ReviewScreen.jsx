@@ -216,7 +216,6 @@ const ReviewScreen = () => {
           {reviewedQuestions.map((q, index) => {
             let qStatusClass =
               "border-gray-300 text-text-secondary hover:bg-gray-100 focus:ring-accent";
-            // q.isCorrect refers to the correctness of the user's answer for this question
             if (
               q.userAnswerLetter === undefined ||
               q.userAnswerLetter === null ||
@@ -224,7 +223,7 @@ const ReviewScreen = () => {
             ) {
               qStatusClass =
                 "border-yellow-500 bg-yellow-100 text-yellow-700 hover:bg-yellow-200 focus:ring-yellow-500"; // Unanswered
-            } else if (q.isCorrect) {
+            } else if (q.correctanswerletter === q.userAnswerLetter) {
               qStatusClass =
                 "border-green-500 bg-green-100 text-green-700 hover:bg-green-200 focus:ring-green-500"; // Correct
             } else {
@@ -240,7 +239,8 @@ const ReviewScreen = () => {
                 q.userAnswerLetter === ""
               )
                 qStatusClass += " ring-yellow-600";
-              else if (q.isCorrect) qStatusClass += " ring-green-600";
+              else if (q.correctanswerletter === q.userAnswerLetter)
+                qStatusClass += " ring-green-600";
               else qStatusClass += " ring-red-600";
             }
 
@@ -252,7 +252,7 @@ const ReviewScreen = () => {
                 title={`Question ${index + 1}: ${
                   q.userAnswerLetter === undefined
                     ? "Unanswered"
-                    : q.isCorrect
+                    : q.correctanswerletter === q.userAnswerLetter
                     ? "Correct"
                     : "Incorrect"
                 }`}

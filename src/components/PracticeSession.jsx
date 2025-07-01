@@ -192,7 +192,7 @@ const PracticeSession = () => {
       let score = 0;
       const sessionQuestionUpdates = questionsList.map((q) => {
         const userAnswer = userAnswers[q.id];
-        const isCorrect = userAnswer === q.correctanswerletter;
+        const isCorrect = userAnswer?.trim() === q.correctanswerletter?.trim();
         if (isCorrect) {
           score++;
         }
