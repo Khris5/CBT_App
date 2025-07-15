@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 function Timer({ totalDuration, startTimeISO, onTimeUp }) {
   const parsedStartTime = Date.parse(startTimeISO);
-  const startTime = parsedStartTime + 88000;
+  const startTime = parsedStartTime; // + 88000;
 
   const [timeLeft, setTimeLeft] = useState(totalDuration);
   const intervalRef = useRef(null);

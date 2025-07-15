@@ -217,10 +217,6 @@ const DashboardPage = () => {
 
   return (
     <div className="container mx-auto p-4 bg-background min-h-screen">
-      <h1 className="text-3xl font-semibold sm:text-4xl sm:font-bold text-text-primary mb-8">
-        User Dashboard
-      </h1>
-
       {/* User Information Section (no changes) */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-8">
         {/* ... */}
@@ -249,7 +245,7 @@ const DashboardPage = () => {
       {/* --- MODIFIED: Summary Statistics Section --- */}
       {!isLoadingSessions && !fetchError && totalSessions > 0 && (
         <div className="bg-white shadow-md rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-text-primary mb-4 flex items-center">
+          <h2 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4 flex items-center">
             <FaChartBar className="mr-3 text-accent" /> Session Statistics
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -274,7 +270,7 @@ const DashboardPage = () => {
       )}
 
       <div className="bg-white shadow-md rounded-lg p-6">
-        <h2 className="text-2xl font-semibold text-text-primary mb-4">
+        <h2 className="text-xl sm:text-2xl font-semibold text-text-primary mb-4">
           Past Practice Sessions
         </h2>
         <div className="text-text-primary">
@@ -321,12 +317,12 @@ const DashboardPage = () => {
                           <p className="text-sm font-semibold text-accent">
                             {formatDate(session.started_at)}
                           </p>
-                          <p className="font-bold text-text-primary mt-1">
+                          <p className="font-semibold text-text-primary mt-1">
                             {session.category_selection}
                           </p>
                         </div>
                         <div className="sm:mt-0 sm:text-right">
-                          <p className="text-md font-semibold text-text-primary">
+                          <p className="font-semibold text-text-primary flex items-center">
                             Score: {session.score_achieved}/
                             {session.total_questions_in_session}
                             <span

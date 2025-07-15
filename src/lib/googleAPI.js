@@ -25,19 +25,7 @@ const schema = {
     required: ["id", "correctAnswerLetter", "explanation"],
   },
 };
-const configFor2_5Pro = {
-  thinkingConfig: {
-    thinkingBudget: -1,
-  },
-  responseMimeType: "application/json",
-  responseSchema: schema,
-  systemInstruction: [
-    {
-      text: `You are a helpful medical/health education assistant.`,
-    },
-  ],
-};
-const configFor2_5Flash = {
+const config_multiple = {
   responseMimeType: "application/json",
   responseSchema: schema,
   systemInstruction: [
@@ -65,19 +53,7 @@ const schema_single = {
   },
   required: ["isAnswerCorrect", "correctAnswerLetter", "explanation"],
 };
-const configFor2_5Flash_single = {
-  responseMimeType: "application/json",
-  responseSchema: schema_single,
-  systemInstruction: [
-    {
-      text: `You are a helpful medical/health education assistant.`,
-    },
-  ],
-};
-const configFor2_5Pro_single = {
-  thinkingConfig: {
-    thinkingBudget: -1,
-  },
+const config_single = {
   responseMimeType: "application/json",
   responseSchema: schema_single,
   systemInstruction: [
@@ -87,12 +63,55 @@ const configFor2_5Pro_single = {
   ],
 };
 
-async function generateWithFallback({
-  prompt,
-  proConfig,
-  flashConfig,
-  abortSignal,
-}) {
+const newQuestionSchema = {
+  type: "array",
+  items: {
+    type: "object",
+    properties: {
+      questionText: {
+        type: "string",
+        description: "The full text of the multiple-choice question.",
+      },
+      options: {
+        type: "array",
+        items: { type: "string" },
+        description: "An array of 3-4 potential answers.",
+      },
+      correctAnswerLetter: {
+        type: "string",
+        description:
+          "The letter (A, B, C, D, etc.) corresponding to the correct option.",
+      },
+      explanation: {
+        type: "string",
+        description:
+          "A brief explanation, about 5 sentences, detailing why the correct answer is right and the others are wrong.",
+      },
+      topic: {
+        type: "string",
+        description: "The primary medical topic this question relates to.",
+      },
+    },
+    required: [
+      "questionText",
+      "options",
+      "correctAnswerLetter",
+      "explanation",
+      "topic",
+    ],
+  },
+};
+
+const configForNewQuestions = {
+  responseMimeType: "application/json",
+  responseSchema: newQuestionSchema,
+  systemInstruction: [
+    {
+      text: `You are an expert nursing question generator. Create challenging, case scenerio based multiple-choice questions. Ensure options are plausible and the explanation is clear and educational.`,
+    },
+  ],
+};
+async function generateWithFallback({ prompt, config, abortSignal }) {
   const ai = new GoogleGenAI({
     apiKey: import.meta.env.VITE_GEMINI_AI_KEY,
   });
@@ -102,7 +121,7 @@ async function generateWithFallback({
     console.log(`[API] Attempting request with Primary Model: ${PRO_MODEL}`);
     const proResponse = await ai.models.generateContent({
       model: PRO_MODEL,
-      config: proConfig,
+      config,
       contents: prompt,
       abortSignal,
     });
@@ -121,7 +140,7 @@ async function generateWithFallback({
     try {
       const flashResponse = await ai.models.generateContent({
         model: FLASH_MODEL,
-        config: flashConfig,
+        config,
         contents: prompt,
         abortSignal,
       });
@@ -164,10 +183,54 @@ export async function generateExplanations(questions, abortSignal) {
   `;
   return generateWithFallback({
     prompt,
-    proConfig: configFor2_5Pro,
-    flashConfig: configFor2_5Flash,
+    config: config_multiple,
     abortSignal,
   });
+}
+
+export async function generateQuestionsForTopic(
+  topics,
+  numQuestions,
+  abortSignal
+) {
+  const prompt = `
+    Please generate ${numQuestions} unique, high-quality, case scenerio based multiple-choice questions.
+    The questions would be used to test a nursing student's knowledge of the following nursing topics: ${topics.join(
+      ", "
+    )}.
+    
+    For each question, provide:
+    1.  A clear and concise question (questionText).
+    2.  An array of 3-4 plausible options (options).
+    3.  The letter of the correct answer (correctAnswerLetter).
+    4.  A brief explanation for the correct answer (explanation).
+    5.  The specific topic it falls under from the list provided (topic).
+
+    Distribute the questions evenly across the topics if multiple are selected.
+    Ensure the output is a JSON array that strictly follows the provided schema.
+  `;
+
+  const generatedRaw = await generateWithFallback({
+    prompt,
+    config: configForNewQuestions,
+    abortSignal,
+  });
+
+  // Parse and add unique IDs and other metadata
+  const generatedQuestions = JSON.parse(generatedRaw);
+
+  return generatedQuestions.map((q) => ({
+    is_ai_generated: true,
+    questiontext: q.questionText,
+    correctanswerletter: q.correctAnswerLetter,
+    topic: q.topic,
+    explanation: q.explanation,
+    options: q.options,
+    category: "AI_generated",
+    is_edited: true,
+    edited_at: new Date(),
+    created_at: new Date(),
+  }));
 }
 
 export async function generateExplanationSingle(question) {
@@ -198,7 +261,7 @@ export async function generateExplanationSingle(question) {
 
   return generateWithFallback({
     prompt,
-    proConfig: configFor2_5Pro_single,
-    flashConfig: configFor2_5Flash_single,
+    config: config_single,
+    abortSignal,
   });
 }

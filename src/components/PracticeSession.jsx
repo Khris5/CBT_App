@@ -5,6 +5,7 @@ import QuestionCard from "./QuestionCard";
 import Spinner from "./Spinner";
 import ErrorMessage from "./ErrorMessage";
 import { stillInSession } from "../utils/SessionStatus";
+import ConfirmationModal from "./Modals/ConfirmationModal";
 import { processSessionQuestionsInBackground } from "../utils/BackgrondProcess";
 import {
   userSessionQuery_supabase,
@@ -47,6 +48,7 @@ const PracticeSession = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sessionEndedRef = useRef(false);
   const [backgroundController, setBackgroundController] = useState(null);
+  const [showConfirmationModal, setShowConfirmationModal] = useState(false);
 
   // Load initial state (answers, currentIndex) from localStorage
   useEffect(() => {
@@ -169,28 +171,27 @@ const PracticeSession = () => {
     [setUserAnswers]
   );
 
-  const handleSessionSubmit = useCallback(async () => {
-    if (sessionEndedRef.current || !questionsList.length || !sessionConfig)
-      return;
-    const sessionQuestionsData = await fetchQuestionData(sessionId);
-    const formattedQuestions = sessionQuestionsData.map((sq) => ({
-      ...sq.questions,
-      options: transformOptionsToArray(sq.questions.options), // Ensure options are an array
-      session_question_id: sq.id,
-      order_in_session: sq.order_in_session,
-    }));
-
-    setQuestionsList(formattedQuestions);
+  const handleConfirmSubmit = useCallback(async () => {
+    setShowConfirmationModal(false);
+    if (sessionEndedRef.current || !sessionConfig) return;
     sessionEndedRef.current = true;
     setIsSubmitting(true);
     setError(null); // Clear previous submission errors
+
     if (backgroundController) {
       backgroundController.abort();
       setBackgroundController(null);
     }
     try {
+      const sessionQuestionsData = await fetchQuestionData(sessionId);
+      const questionsWithAnswers = sessionQuestionsData.map((sq) => ({
+        ...sq.questions,
+        options: transformOptionsToArray(sq.questions.options),
+        session_question_id: sq.id,
+        order_in_session: sq.order_in_session,
+      }));
       let score = 0;
-      const sessionQuestionUpdates = questionsList.map((q) => {
+      const sessionQuestionUpdates = questionsWithAnswers.map((q) => {
         const userAnswer = userAnswers[q.id];
         const isCorrect = userAnswer?.trim() === q.correctanswerletter?.trim();
         if (isCorrect) {
@@ -239,13 +240,24 @@ const PracticeSession = () => {
     } finally {
       setIsSubmitting(false);
     }
-  }, [sessionId, userAnswers, questionsList, navigate, sessionConfig]);
+  }, [
+    sessionId,
+    userAnswers,
+    questionsList,
+    navigate,
+    sessionConfig,
+    backgroundController,
+  ]);
+
+  const handleSessionSubmit = () => {
+    setShowConfirmationModal(true);
+  };
 
   const handleTimeUp = useCallback(() => {
     if (!sessionEndedRef.current) {
-      handleSessionSubmit();
+      handleConfirmSubmit();
     }
-  }, [handleSessionSubmit]);
+  }, [handleConfirmSubmit]);
 
   const handleNext = () => {
     setCurrentQuestionIndex((prevIndex) =>
@@ -418,6 +430,14 @@ const PracticeSession = () => {
             {isSubmitting ? "Submitting..." : "Submit All Answers"}
           </button>
         </div>
+
+        <ConfirmationModal
+          isOpen={showConfirmationModal}
+          onClose={() => setShowConfirmationModal(false)}
+          onConfirm={handleConfirmSubmit}
+          title="Confirm Submission"
+          message="Are you sure you want to submit your answers? You cannot make changes after this."
+        />
       </nav>
     </div>
   );

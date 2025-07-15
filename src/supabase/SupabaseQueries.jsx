@@ -20,6 +20,41 @@ export const createSessionQuestions_supabase = async (
 
   return { sqError };
 };
+
+export const insertQuestions_supabase = async (questionsToInsert) => {
+  const questionsForDb = questionsToInsert.map(
+    ({
+      id,
+      questiontext,
+      options,
+      correctanswerletter,
+      explanation,
+      category,
+      topic,
+      is_ai_generated,
+      is_edited,
+      edited_at,
+      created_at,
+    }) => ({
+      id,
+      questiontext,
+      options,
+      correctanswerletter,
+      explanation,
+      category,
+      topic,
+      is_ai_generated,
+      is_edited,
+      edited_at,
+      created_at,
+    })
+  );
+  const { data, error } = await supabase
+    .from("questions")
+    .insert(questionsForDb)
+    .select();
+  return { data, error };
+};
 // userSessionQuery_supabase used in PracticeSession.jsx and ResultsScreen.jsx
 export const userSessionQuery_supabase = async (sessionId) => {
   const { data: sessionData, error: sessionError } = await supabase
