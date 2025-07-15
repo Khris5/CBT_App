@@ -47,7 +47,7 @@ function ConfigScreen({ onStartSession, isLoading }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-4 mb-5 w-full">
+    <div className="flex flex-col items-center justify-center mb-3 w-full">
       <div className="bg-white shadow-xl rounded-lg px-4 py-6 md:p-8 w-full max-w-lg space-y-6">
         {/* Number of Questions Selector */}
         <div className="space-y-2">
@@ -96,13 +96,10 @@ function ConfigScreen({ onStartSession, isLoading }) {
         {/* Timer Information Display */}
         <div className="text-center py-3 bg-gray-100 rounded-md">
           <p className="text-lg font-medium text-text-primary">
-            Time Limit:{" "}
+            Est. Time Limit:{" "}
             <span className="text-accent font-semibold">
               {timeLimitMinutes} minutes
             </span>
-          </p>
-          <p className="text-sm text-gray-600 mt-1">
-            (1.10 minutes per question)
           </p>
         </div>
 
