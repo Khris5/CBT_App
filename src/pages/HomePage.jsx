@@ -52,14 +52,11 @@ const HomePage = () => {
           categories: categories,
         });
 
-      if (queryError)
-        throw new Error(`Database query failed: ${queryError.message}`);
-      if (!allMatchingQuestions || allMatchingQuestions.length === 0)
-        throw new Error("No questions found for the selected criteria.");
+      if (queryError) throw new Error("We couldn't load questions from our database. Please check your connection and try again.");
+      if (!allMatchingQuestions || allMatchingQuestions.length === 0) throw new Error("No questions were found for the selected category. Please try a different one.");
 
       const validatedQuestions = allMatchingQuestions.filter(validateQuestion);
-      if (validatedQuestions.length === 0)
-        throw new Error("No valid questions found after filtering.");
+      if (validatedQuestions.length === 0) throw new Error("We found some questions, but they didn't meet our quality standards. Please try again.");
 
       return validatedQuestions;
     },
@@ -81,9 +78,7 @@ const HomePage = () => {
           config.category,
           config.numQuestions
         );
-        if (fetchedQuestions.length === 0) {
-          throw new Error("No questions could be prepared for the session.");
-        }
+        if (fetchedQuestions.length === 0) throw new Error("We couldn't prepare any questions for your session. Please try a different category or number of questions.");
         const userSessionsData = {
           user_id: user.id,
           category_selection: config.category,
@@ -95,10 +90,8 @@ const HomePage = () => {
           userSessionsData
         );
 
-        if (sessionError)
-          throw new Error(`Failed to create session: ${sessionError.message}`);
-        if (!sessionData || !sessionData.id)
-          throw new Error("Session creation did not return an ID.");
+        if (sessionError) throw new Error("We couldn't create your practice session. Please try again in a few moments.");
+        if (!sessionData || !sessionData.id) throw new Error("Something went wrong while setting up your session. Please try again.");
 
         const newSessionId = sessionData.id;
 
@@ -159,18 +152,14 @@ const HomePage = () => {
           numQuestions
         );
         if (!generatedQuestions || generatedQuestions.length === 0) {
-          throw new Error(
-            "The AI failed to generate questions. Please adjust topics or try again."
-          );
+          throw new Error("The AI couldn't generate questions for the selected topics. Please try different topics or a smaller number of questions.");
         }
 
         // 2. Insert questions into Supabase
         setLoadingMessage("Saving new questions...");
         const { data: insertedQuestions, error: insertError } =
           await insertQuestions_supabase(generatedQuestions);
-        if (insertError) {
-          throw new Error(`Failed to save questions: ${insertError.message}`);
-        }
+        if (insertError) throw new Error("We couldn't save the new AI-generated questions. Please check your connection and try again.");
 
         // 3. Create a user session
         setLoadingMessage("Preparing your session...");
@@ -183,9 +172,8 @@ const HomePage = () => {
         const { sessionData, sessionError } = await createUserSession_supabase(
           userSessionsData
         );
-        if (sessionError) {
-          throw new Error(`Failed to create session: ${sessionError.message}`);
-        }
+        if (sessionError) throw new Error("We couldn't create your practice session. Please try again in a few moments.");
+
         const sessionId = sessionData.id;
 
         // 4. Link questions to the session
@@ -197,12 +185,7 @@ const HomePage = () => {
         const { sqError } = await createSessionQuestions_supabase(
           sessionQuestions
         );
-        if (sqError) {
-          await supabase.from("user_sessions").delete().eq("id", sessionId);
-          throw new Error(
-            `Failed to link questions to session: ${sqError.message}`
-          );
-        }
+        if (sqError) throw new Error("We had trouble linking questions to your session. Please try again.");
 
         // 5. Navigate to the practice session
         navigate(`/session/${sessionId}`);

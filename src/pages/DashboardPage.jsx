@@ -79,7 +79,7 @@ const DashboardPage = () => {
       setCurrentPage(page);
     } catch (err) {
       console.error("Error fetching past sessions:", err);
-      setFetchError("Failed to load past sessions. Please try again later.");
+      setFetchError("We couldn't retrieve your past sessions. Please check your internet connection and try again.");
     } finally {
       setIsLoadingSessions(false);
       setIsLoadingPage(false);

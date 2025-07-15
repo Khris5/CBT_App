@@ -75,12 +75,13 @@ const newQuestionSchema = {
       options: {
         type: "array",
         items: { type: "string" },
-        description: "An array of 3-4 potential answers.",
+        description:
+          "An array of 3-4 potential answers(without the A, B, C, D, etc.)",
       },
       correctAnswerLetter: {
         type: "string",
         description:
-          "The letter (A, B, C, D, etc.) corresponding to the correct option.",
+          "The letter (A, B, C, etc.) corresponding to the correct option.",
       },
       explanation: {
         type: "string",

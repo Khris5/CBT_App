@@ -31,7 +31,7 @@ function QuestionCard({
   if (!question || !id) {
     return (
       <div className="bg-background p-6 rounded-lg shadow-md mb-6">
-        <ErrorMessage message="Error: Invalid question data provided." />
+        <ErrorMessage message="This question could not be displayed because the data is invalid. Please try refreshing." />
       </div>
     );
   }
@@ -43,7 +43,7 @@ function QuestionCard({
           <span className="text-accent mr-2">{questionNumber}.</span>{" "}
           {questiontext}
         </h4>
-        <ErrorMessage message="Error: No answer options available for this question." />
+        <ErrorMessage message="This question is missing its answer options and cannot be displayed." />
       </div>
     );
   }
@@ -77,7 +77,9 @@ function QuestionCard({
         .eq("id", id);
 
       if (updateExplanationError) {
-        throw new Error(updateExplanationError);
+        throw new Error(
+          "We couldn't save the new explanation. Please try generating it again."
+        );
       }
 
       // Update local state to show immediately
@@ -91,7 +93,10 @@ function QuestionCard({
       }
     } catch (err) {
       console.error("Failed to generate or save explanation:", err);
-      setGenerationError(err.message || "An unexpected error occurred.");
+      setGenerationError(
+        err.message ||
+          "An unexpected error occurred while generating the explanation. Please try again."
+      );
     } finally {
       setIsGenerating(false);
     }

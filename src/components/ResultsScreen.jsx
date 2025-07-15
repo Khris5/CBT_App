@@ -17,7 +17,9 @@ const ResultsScreen = () => {
 
   useEffect(() => {
     if (!sessionId) {
-      setError("No session ID provided.");
+      setError(
+        "No session ID provided. Please use a valid link from your dashboard."
+      );
       setIsLoading(false);
       return;
     }
@@ -31,12 +33,12 @@ const ResultsScreen = () => {
         if (sessionError) {
           console.error(`sessionError`, sessionError);
           throw new Error(
-            `Failed to load session results. Please check your connection or try again. (Details: ${sessionError.message})`
+            "We couldn't load your session results. Please check your internet connection and try again."
           );
         }
         if (!data) {
           throw new Error(
-            "Could not find results for this session. The session may not exist or has been removed."
+            "We couldn't find any results for this session. The link might be old or the session has been removed."
           );
         }
         if (stillInSession(data)) {
