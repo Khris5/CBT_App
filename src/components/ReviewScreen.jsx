@@ -31,7 +31,9 @@ const ReviewScreen = () => {
   useEffect(() => {
     if (!sessionId) {
       setIsLoading(false);
-      setError("No session ID was found. Please access this page through a valid link from your dashboard.");
+      setError(
+        "No session ID was found. Please access this page through a valid link from your dashboard."
+      );
       return;
     }
 
@@ -43,8 +45,14 @@ const ReviewScreen = () => {
         const { sessionData, sessionError } = await userSessionQuery_supabase(
           sessionId
         );
-        if (sessionError) throw new Error("We couldn't load the session details. Please check your connection and try again.");
-        if (!sessionData) throw new Error("We couldn't find this session. The link might be expired or incorrect.");
+        if (sessionError)
+          throw new Error(
+            "We couldn't load the session details. Please check your connection and try again."
+          );
+        if (!sessionData)
+          throw new Error(
+            "We couldn't find this session. The link might be expired or incorrect."
+          );
         setSessionDetails(sessionData);
 
         if (stillInSession(sessionData)) {
@@ -53,8 +61,12 @@ const ReviewScreen = () => {
         }
         const { sessionQuestionsData, questionsError } =
           await sessionQuestionsQuery_supabase(sessionId);
-        if (questionsError) throw new Error("We had trouble loading the questions for this review. Please try refreshing the page.");
-        if (!sessionQuestionsData) throw new Error("There are no questions to review for this session.");
+        if (questionsError)
+          throw new Error(
+            "We had trouble loading the questions for this review. Please try refreshing the page."
+          );
+        if (!sessionQuestionsData)
+          throw new Error("There are no questions to review for this session.");
 
         const processedQuestions = sessionQuestionsData.map((sq) => ({
           id: sq.question_id,
@@ -68,9 +80,13 @@ const ReviewScreen = () => {
           explanation: sq.questions.explanation,
         }));
         setReviewedQuestions(processedQuestions);
+        console.log("reviewedQuestions", processedQuestions);
       } catch (err) {
         console.error("Error fetching review data:", err);
-        setError(err.message || "An unexpected error occurred while loading your review. Please try again.");
+        setError(
+          err.message ||
+            "An unexpected error occurred while loading your review. Please try again."
+        );
       } finally {
         setIsLoading(false);
       }

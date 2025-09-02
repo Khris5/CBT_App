@@ -25,9 +25,13 @@ const fetchQuestionData = async (sessionId) => {
   const { sessionQuestionsData, questionsError } =
     await sessionQuestionsQuery_supabase(sessionId);
   if (questionsError)
-    throw new Error("We couldn't load the questions for this session. Please check your internet connection and try refreshing the page.");
+    throw new Error(
+      "We couldn't load the questions for this session. Please check your internet connection and try refreshing the page."
+    );
   if (!sessionQuestionsData || sessionQuestionsData.length === 0)
-    throw new Error("There are no questions in this session. It might be an old or broken link. Please start a new session from the homepage.");
+    throw new Error(
+      "There are no questions in this session. It might be an old or broken link. Please start a new session from the homepage."
+    );
   return sessionQuestionsData;
 };
 const PracticeSession = () => {
@@ -83,7 +87,9 @@ const PracticeSession = () => {
   // Fetch session data and questions
   useEffect(() => {
     if (!sessionId) {
-      setError("No session ID was found. Please access this page through a valid session link from the homepage.");
+      setError(
+        "No session ID was found. Please access this page through a valid session link from the homepage."
+      );
       setIsLoading(false);
       return;
     }
@@ -98,9 +104,13 @@ const PracticeSession = () => {
         );
 
         if (sessionError)
-          throw new Error("We couldn't load your session's configuration. Please check your internet connection and refresh the page.");
+          throw new Error(
+            "We couldn't load your session's configuration. Please check your internet connection and refresh the page."
+          );
         if (!sessionData)
-          throw new Error("We couldn't find this session. The link may be expired or incorrect. Please start a new session.");
+          throw new Error(
+            "We couldn't find this session. The link may be expired or incorrect. Please start a new session."
+          );
         if (!stillInSession(sessionData)) {
           navigate(`/results/${sessionId}`);
           return;
@@ -175,17 +185,31 @@ const PracticeSession = () => {
       setBackgroundController(null);
     }
     try {
+      // Use the questions already loaded into state if available to ensure
+      // consistent grading against what the user saw (soft-freeze)
       const sessionQuestionsData = await fetchQuestionData(sessionId);
-      const questionsWithAnswers = sessionQuestionsData.map((sq) => ({
+      const freshMapped = sessionQuestionsData.map((sq) => ({
         ...sq.questions,
         options: transformOptionsToArray(sq.questions.options),
         session_question_id: sq.id,
         order_in_session: sq.order_in_session,
       }));
+      const questionsWithAnswers =
+        questionsList && questionsList.length === freshMapped.length
+          ? questionsList.map((q) => ({
+              ...q,
+              session_question_id: freshMapped.find((f) => f.id === q.id)
+                ?.session_question_id,
+              order_in_session: freshMapped.find((f) => f.id === q.id)
+                ?.order_in_session,
+            }))
+          : freshMapped;
       let score = 0;
       const sessionQuestionUpdates = questionsWithAnswers.map((q) => {
         const userAnswer = userAnswers[q.id];
-        const isCorrect = userAnswer?.trim() === q.correctanswerletter?.trim();
+        const isCorrect =
+          (userAnswer || "").trim().toUpperCase() ===
+          (q.correctanswerletter || "").trim().toUpperCase();
         if (isCorrect) {
           score++;
         }
@@ -204,7 +228,9 @@ const PracticeSession = () => {
         sessionQuestionUpdates
       );
       if (updateError)
-        throw new Error("We couldn't save your answers. Please check your connection and try submitting again.");
+        throw new Error(
+          "We couldn't save your answers. Please check your connection and try submitting again."
+        );
 
       // Update user_sessions with score
       const { sessionUpdateError } = await updateUserSessions_supabase(
@@ -213,7 +239,9 @@ const PracticeSession = () => {
       );
 
       if (sessionUpdateError)
-        throw new Error("We had trouble finalizing your session score. Please try submitting again.");
+        throw new Error(
+          "We had trouble finalizing your session score. Please try submitting again."
+        );
 
       // Clear localStorage for this session
       localStorage.removeItem(`practiceState_${sessionId}`);
