@@ -58,17 +58,17 @@ function QuestionCard({
         explanation: newExplanation,
         isAnswerCorrect,
       } = JSON.parse(generatedText);
+      const normalizedLetter = (correctAnswerLetter || "")
+        .toString()
+        .trim()
+        .toUpperCase();
       const updateData = { explanation: newExplanation, is_edited: true };
 
-      if (
-        (!isAnswerCorrect &&
-          prevCorrectAnswer.current !== correctAnswerLetter) ||
-        false
-      ) {
+      if (!isAnswerCorrect && prevCorrectAnswer.current !== normalizedLetter) {
         setLocalExplanation(
-          `**Sorry the marked answer above (${prevCorrectAnswer.current}) is wrong. The correct answer is (${correctAnswerLetter})** \n\n${newExplanation}`
+          `**Sorry the marked answer above (${prevCorrectAnswer.current}) is wrong. The correct answer is (${normalizedLetter})** \n\n${newExplanation}`
         );
-        updateData.correctanswerletter = correctAnswerLetter;
+        updateData.correctanswerletter = normalizedLetter;
       }
       // Update Supabase first
       const { error: updateExplanationError } = await supabaseAdmin
