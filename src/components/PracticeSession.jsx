@@ -194,15 +194,24 @@ const PracticeSession = () => {
         session_question_id: sq.id,
         order_in_session: sq.order_in_session,
       }));
+
+      const freshById = new Map(freshMapped.map((f) => [f.id, f]));
       const questionsWithAnswers =
-        questionsList && questionsList.length === freshMapped.length
-          ? questionsList.map((q) => ({
-              ...q,
-              session_question_id: freshMapped.find((f) => f.id === q.id)
-                ?.session_question_id,
-              order_in_session: freshMapped.find((f) => f.id === q.id)
-                ?.order_in_session,
-            }))
+        questionsList && questionsList.length
+          ? questionsList.map((q) => {
+              const fm = freshById.get(q.id);
+              return {
+                ...q,
+                session_question_id:
+                  fm && fm.session_question_id != null
+                    ? fm.session_question_id
+                    : q.session_question_id,
+                order_in_session:
+                  fm && fm.order_in_session != null
+                    ? fm.order_in_session
+                    : q.order_in_session,
+              };
+            })
           : freshMapped;
       let score = 0;
       const sessionQuestionUpdates = questionsWithAnswers.map((q) => {
