@@ -1,6 +1,21 @@
 import { generateExplanations } from "../lib/googleAPI";
 import { supabaseAdmin } from "../lib/supabaseClient";
 
+// Normalize options to an array for reliable letter bounds
+function normalizeOptionsToArray(options) {
+  if (Array.isArray(options)) return options;
+  if (options && typeof options === "object") {
+    return Object.entries(options)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([, v]) => v);
+  }
+  return [];
+}
+
+function createNonce() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+}
+
 function validateCorrection(correction) {
   const errors = [];
 
@@ -144,7 +159,16 @@ async function processBatchWithRetries(
         `🔄 Processing batch ${batchNumber}/${totalBatches}, Attempt ${attempt}/${MAX_RETRIES}...`
       );
 
-      const correctionsJSON = await generateExplanations(batch, abortSignal);
+      // Attach nonces to batch to guarantee one-to-one mapping from AI
+      const batchWithNonces = batch.map((q) => ({
+        ...q,
+        nonce: createNonce(),
+      }));
+
+      const correctionsJSON = await generateExplanations(
+        batchWithNonces,
+        abortSignal
+      );
 
       let parsedCorrections;
       try {
@@ -163,7 +187,47 @@ async function processBatchWithRetries(
           `AI response length mismatch. Expected ${batch.length}, got ${parsedCorrections.length}.`
         );
       }
-      const results = await updateQuestionsInDB(parsedCorrections, batch);
+      // Build correction map by id for validation
+      const idToCorrection = new Map();
+      for (const c of parsedCorrections) {
+        if (!c?.id) {
+          throw new Error("AI response item missing id");
+        }
+        idToCorrection.set(c.id, c);
+      }
+
+      // Validate nonce and letter bounds per item; normalize letter
+      const normalizedCorrections = [];
+      for (const q of batchWithNonces) {
+        const corr = idToCorrection.get(q.id);
+        if (!corr) {
+          throw new Error(`AI response missing item for id ${q.id}`);
+        }
+        if (corr.nonce !== q.nonce) {
+          throw new Error(`Nonce mismatch for id ${q.id}`);
+        }
+        const optionsArr = normalizeOptionsToArray(q.options);
+        const letter = (corr.correctAnswerLetter || "")
+          .toString()
+          .trim()
+          .toUpperCase();
+        const minLetterCode = "A".charCodeAt(0);
+        const maxLetterCode =
+          minLetterCode + Math.max(optionsArr.length - 1, 0);
+        const code = letter.charCodeAt(0);
+        if (!letter || code < minLetterCode || code > maxLetterCode) {
+          throw new Error(
+            `Invalid correctAnswerLetter '${corr.correctAnswerLetter}' for id ${q.id} with ${optionsArr.length} options`
+          );
+        }
+        normalizedCorrections.push({
+          id: q.id,
+          correctAnswerLetter: letter,
+          explanation: corr.explanation,
+        });
+      }
+
+      const results = await updateQuestionsInDB(normalizedCorrections, batch);
 
       // Check for partial failures. If any item failed, retry the whole batch.
       if (results.failed > 0) {

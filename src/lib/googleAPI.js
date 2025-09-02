@@ -2,6 +2,17 @@ import { GoogleGenAI } from "@google/genai";
 const PRO_MODEL = "gemini-2.5-pro";
 const FLASH_MODEL = "gemini-2.5-flash-preview-05-20";
 
+// Normalize options to an array (supports array or object keyed by letters)
+function normalizeOptionsToArray(options) {
+  if (Array.isArray(options)) return options;
+  if (options && typeof options === "object") {
+    return Object.entries(options)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([, v]) => v);
+  }
+  return [];
+}
+
 const schema = {
   type: "array",
   items: {
@@ -11,6 +22,11 @@ const schema = {
         type: "string",
         description:
           "The question id would be provided in the questions below. Output them as they are",
+      },
+      nonce: {
+        type: "string",
+        description:
+          "Echo back the exact nonce provided with the question. Do not modify.",
       },
       correctAnswerLetter: {
         type: "string",
@@ -22,7 +38,7 @@ const schema = {
           "A brief explanation, about 5 sentences, detailing why the correct answer is right and the others are wrong.",
       },
     },
-    required: ["id", "correctAnswerLetter", "explanation"],
+    required: ["id", "nonce", "correctAnswerLetter", "explanation"],
   },
 };
 const config_multiple = {
@@ -116,7 +132,7 @@ async function generateWithFallback({ prompt, config, abortSignal }) {
   const ai = new GoogleGenAI({
     apiKey: import.meta.env.VITE_GEMINI_AI_KEY,
   });
-
+  console.log("prompt", prompt);
   // --- ATTEMPT 1: PRO MODEL ---
   try {
     console.log(`[API] Attempting request with Primary Model: ${PRO_MODEL}`);
@@ -159,29 +175,38 @@ async function generateWithFallback({ prompt, config, abortSignal }) {
 }
 
 export async function generateExplanations(questions, abortSignal) {
-  const prompt = `
-    Evaluate these questions and textbook answers below . Provide your output in the JSON format specified. Textbook answers are stated by the book to be the right answer but it **may** not be accurate.
+  // Build a JSON-structured prompt to minimize cross-item bleed and ensure mapping
+  const items = questions.map((q) => {
+    const opts = normalizeOptionsToArray(q.options);
+    return {
+      id: q.id,
+      nonce: q.nonce, // if present (batch processor attaches)
+      questionText: q.questiontext,
+      options: opts,
+      textbookAnswerLetter: q.correctanswerletter,
+    };
+  });
 
-    For correctAnswerLetter, Analyse the questons and the options and deduce the most accurate answer then output the letter (A,B,C,D) of the option you believe is correct.
+  const prompt = [
+    {
+      role: "user",
+      parts: [
+        {
+          text: `You are evaluating multiple-choice items with provided textbook answers (which may be inaccurate).
+          Return JSON only that strictly follows the provided schema. Produce an array whose length and order exactly match the input array.
+          For each item output: id (copy exactly), nonce (echo exactly), correctAnswerLetter, and explanation.
 
-    For explanation, provide a brief explanation (~5 sentences) for why the correct answer is correct for the following multiple-choice question. Be sure to give a good explanation to help the user understand the question and answer better.
-    Focus on the core reasoning and avoid unnecessary jargon.
-
-    Note: In the explanation don't single out the textbook answer being wrong, just explain why the correct answer is correct.
-     Questions:
-    ${questions
-      .map(
-        (q, index) => `
-          ${index + 1}. ID: ${q.id}
-          Question: ${q.questiontext}
-          options: ${q.options
-            .map((opt, i) => `${String.fromCharCode(65 + i)}: ${opt}`)
-            .join("\n")}
-          Textbook Answer: ${q.correctanswerletter}
-    `
-      )
-      .join("\n")}
-  `;
+          Rules:
+          - Determine the most accurate answer from the question and options; do not assume the textbook answer is correct.
+          - correctAnswerLetter must be a single uppercase letter within the range of the provided options (A = first option, B = second, etc.).
+          - Explanation should be ~5 sentences, concise, focus on core reasoning, and be educational; avoid unnecessary jargon.
+          - Do not mention that the textbook answer might be wrong; simply justify why the correct answer is right.
+          - Output JSON only with no extra commentary, or pre/post text.`,
+        },
+        { text: JSON.stringify({ items }) },
+      ],
+    },
+  ];
   return generateWithFallback({
     prompt,
     config: config_multiple,
@@ -237,32 +262,35 @@ export async function generateQuestionsForTopic(
 export async function generateExplanationSingle(question) {
   const { questiontext, options, correctanswerletter } = question;
 
-  const optionsString = options
-    .map((opt, index) => `${String.fromCharCode(65 + index)}: ${opt}`)
-    .join("\n");
-  const prompt = `
-    Evaluate the question below and the answer from the textbook. Provide your output in the JSON format specified. 
+  const opts = normalizeOptionsToArray(options);
+  const payload = {
+    questionText: questiontext,
+    options: opts,
+    textbookAnswerLetter: correctanswerletter,
+  };
+  const prompt = [
+    {
+      role: "user",
+      parts: [
+        {
+          text: `Evaluate the question and its textbook answer.
+Return JSON only that strictly follows the provided schema: isAnswerCorrect (boolean), correctAnswerLetter, explanation.
 
-    For isAnswerCorrect, I want you to analyze the question and the "textbook answer" from the prompt below, then with your own knowledge determine if its textbook answer is correct or not. Be 100% sure that the textbook answer is wrong before outputting false
-
-    For correctAnswerLetter, if the textbook answer, then output the option for the textbook answer. If it is wrong, output the letter (A,B,C,D) of the option you believe is correct.
-
-    For explanation, provide a brief explanation (~5 sentences) for why the correct answer is correct for the following multiple-choice question. Be sure to give a good explanation to help the user understand the question and answer better.
-    Focus on the core reasoning and avoid unnecessary jargon.
-
-    Note: In the explanation don't single out the textbook answer being wrong, just explain why the correct answer is correct.
-
-    Question: ${questiontext}
-
-    Options:
-    ${optionsString}
-
-    Textbook Answer: ${correctanswerletter}
-  `;
+Rules:
+- Be 100% certain before setting isAnswerCorrect to false.
+- If the textbook answer is correct, set correctAnswerLetter to the textbook letter; otherwise set it to the letter you judge correct.
+- correctAnswerLetter must be within the provided options (A = first option, B = second, etc.).
+- Explanation should be ~5 sentences, concise, focus on core reasoning; avoid unnecessary jargon.
+- Do not call out that the textbook answer is wrong; simply justify the correct answer.
+- Output JSON only with no extra commentary or pre/post text.`,
+        },
+        { text: JSON.stringify(payload) },
+      ],
+    },
+  ];
 
   return generateWithFallback({
     prompt,
     config: config_single,
-    abortSignal,
   });
 }
