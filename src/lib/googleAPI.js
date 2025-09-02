@@ -132,7 +132,6 @@ async function generateWithFallback({ prompt, config, abortSignal }) {
   const ai = new GoogleGenAI({
     apiKey: import.meta.env.VITE_GEMINI_AI_KEY,
   });
-  console.log("prompt", prompt);
   // --- ATTEMPT 1: PRO MODEL ---
   try {
     console.log(`[API] Attempting request with Primary Model: ${PRO_MODEL}`);

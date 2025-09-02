@@ -80,7 +80,6 @@ const ReviewScreen = () => {
           explanation: sq.questions.explanation,
         }));
         setReviewedQuestions(processedQuestions);
-        console.log("reviewedQuestions", processedQuestions);
       } catch (err) {
         console.error("Error fetching review data:", err);
         setError(
